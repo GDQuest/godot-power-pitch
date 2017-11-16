@@ -3,8 +3,9 @@ tool extends Node
 enum DIRECTION {PREVIOUS, NEXT}
 
 export(bool) var add_text_shadow = true
-export(bool) var particles = false
+export(bool) var particles = true setget set_particles_active
 
+var ready = false
 
 export(String, FILE, '*.gd') var slides_path = 'res://slides/fr.gd'
 var slides = []
@@ -14,6 +15,8 @@ const TITLE = 'title'
 const SUBTITLE = 'subtitle'
 const BODY = 'body'
 const PICTURE = 'picture'
+const VIDEO = 'video'
+const DEMO = 'demo'
 const FOOTER = 'footer'
 const BACKGROUND = 'background'
 const DEMO = 'demo'
@@ -23,6 +26,8 @@ var current_slide = {
 	SUBTITLE: '',
 	BODY: '',
 	PICTURE: '',
+	VIDEO: '',
+	DEMO: '',
 	FOOTER: '',
 	BACKGROUND: '',
 	DEMO: ''
@@ -33,7 +38,11 @@ onready var slide_node = $Slide
 var slide_index = 0
 var slide_count = 0
 
+
 func _ready():
+	if Engine.is_editor_hint():
+		return
+	ready = true
 	slides = load(slides_path).new().data
 	slide_count = len(slides)
 
@@ -75,14 +84,23 @@ func change_slide(index):
 		current_slide[key] = slide[key]
 
 	slide_node.title = current_slide[TITLE]
+	slide_node.subtitle = current_slide[SUBTITLE]
+
 	slide_node.body = current_slide[BODY].replace('\t', '')
 	slide_node.picture_path = current_slide[PICTURE]
-	slide_node.subtitle = current_slide[SUBTITLE]
+	slide_node.video_path = current_slide[VIDEO]
+	slide_node.demo_path = current_slide[DEMO]
+
 	slide_node.footer = current_slide[FOOTER]
 
 
 func set_particles_active(value):
+	if Engine.is_editor_hint():
+		pass
+	elif not ready:
+		return
 	particles = value
+
 	$Foreground/Particles.visible = value
 	$Background/Particles.visible = value
 	for node in $Foreground/Particles.get_children():

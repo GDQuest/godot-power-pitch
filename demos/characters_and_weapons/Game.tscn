@@ -8,31 +8,31 @@
 
 [node name="bg" type="Sprite" parent="."]
 
-position = Vector2( 960, 540.5 )
-scale = Vector2( 1.40556, 1.40495 )
+position = Vector2( 960, 567.25 )
+scale = Vector2( 1, 0.930339 )
 texture = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 
-position = Vector2( 890, 830 )
-weapon_scene_path = "res://demos/characters_and_weapons/characters/weapons/spear/Spear.tscn"
+position = Vector2( 910, 700 )
+weapon_scene_path = "res://demos/characters_and_weapons/characters/weapons/sword/Sword.tscn"
 
 [node name="Enemy" parent="." instance=ExtResource( 3 )]
 
-position = Vector2( 1530, 630 )
+position = Vector2( 1340, 620 )
 weapon_scene_path = "res://demos/characters_and_weapons/characters/weapons/spear/Spear.tscn"
 max_health = 1
 
 [node name="Enemy2" parent="." instance=ExtResource( 3 )]
 
-position = Vector2( 1500, 930 )
+position = Vector2( 1240, 840 )
 weapon_scene_path = "res://demos/characters_and_weapons/characters/weapons/spear/Spear.tscn"
 max_health = 1
 
 [node name="Enemy3" parent="." instance=ExtResource( 3 )]
 
-position = Vector2( 370, 730 )
+position = Vector2( 490, 630 )
 weapon_scene_path = "res://demos/characters_and_weapons/characters/weapons/spear/Spear.tscn"
 max_health = 1
 

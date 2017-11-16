@@ -9,7 +9,7 @@ export var armor = 0
 
 
 func take_damage(damage):
-	life = life - damage + armor
+	life -= damage + armor
 	if life < 0:
 		emit('dead')
 

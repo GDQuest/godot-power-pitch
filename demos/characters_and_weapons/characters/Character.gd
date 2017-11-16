@@ -14,7 +14,7 @@ enum STATES {IDLE, WALK, ATTACK, STAGGER, DIE, DEAD}
 var current_state = null
 var previous_state = null
 
-var speed = 400
+var speed = 600
 var look_direction = Vector2(1, 0)
 var move_direction = Vector2()
 var input_direction = Vector2()

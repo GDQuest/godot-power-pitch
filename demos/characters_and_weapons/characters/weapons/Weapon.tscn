@@ -3,7 +3,6 @@
 [ext_resource path="res://demos/characters_and_weapons/characters/weapons/Weapon.gd" type="Script" id=1]
 [ext_resource path="res://demos/characters_and_weapons/characters/weapons/sword/sword_enemy.png" type="Texture" id=2]
 
-
 [sub_resource type="Animation" id=1]
 
 resource_name = "_setup"
@@ -22,7 +21,7 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath(".:rotation_deg")
+tracks/1/path = NodePath(".:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -63,7 +62,7 @@ tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ false ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("CollisionPolygon2D:disabled")
@@ -117,7 +116,7 @@ tracks/2/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1.3, 1.3 ), Vector2( 1, 1 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath(".:rotation_deg")
+tracks/3/path = NodePath(".:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -132,7 +131,8 @@ tracks/3/keys = {
 "weapon",
 ]]
 
-rotation = 1.72285
+visible = false
+rotation = 1.5708
 input_pickable = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -161,14 +161,14 @@ autoplay = ""
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 
-position = Vector2( 1.90735e-06, 0 )
+position = Vector2( 1.90735e-006, 0 )
 build_mode = 0
 polygon = PoolVector2Array( 26, -13, 26, 13, 129, 13, 160, 0, 130, -13 )
+disabled = true
 one_way_collision = true
 
 [node name="Sprite" type="Sprite" parent="."]
 
-scale = Vector2( 1.02945, 1.02945 )
 texture = ExtResource( 2 )
 offset = Vector2( 72, 0 )
 _sections_unfolded = [ "Offset", "Transform" ]
