@@ -5,68 +5,101 @@ export(String) var title setget set_title
 export(String) var subtitle setget set_subtitle
 export(String) var body setget set_body
 export(String) var picture_path setget set_picture
+export(String) var video_path setget set_video
+export(String) var demo_path setget set_demo
 export(String) var footer setget set_footer
 
 var shadow = false
 
-var nodes = {
-		'title': null,
-		'subtitle': null,
-		'body': null,
-		'picture': null,
-		'footer': null
-}
 
-func _ready():
-	nodes = {
-		'title': $Margin/Frame/Top/Title/Text,
-		'subtitle': $Margin/Frame/Top/Subtitle,
-		'body': $Margin/Frame/Body/Text,
-		'picture': $Margin/Frame/Body/SidePicture,
-		'footer': $Margin/Frame/Footer
-	}
+onready var title_node = $Margin/Frame/Top/Title
+onready var subtitle_node = $Margin/Frame/Top/Subtitle
+onready var body_node = $Margin/Frame/Body/Text
+onready var picture_node = $Margin/Frame/Body/Picture
+onready var video_node = $Margin/Frame/Body/Video
+onready var demo_node = $Margin/Demo
+onready var footer_node = $Margin/Frame/Footer
 
 
 func set_title(value):
 	title = value
 
-	if not nodes['title']: # Bugs somehow
+	if not title_node:
 		return
-#	if not 'title' in nodes.keys():
-
-	nodes['title'].text = value
-	nodes['title'].get_node('Shadow').text = value
+	
+	title_node.get_node('Text').text = value
+	title_node.get_node('Text/Shadow').text = value
+	
+	title_node.visible = not value == ''
 
 
 func set_subtitle(value):
 	subtitle = value
 
-	if not nodes['subtitle']:
+	if not subtitle_node:
 		return
-	nodes['subtitle'].text = value
-	nodes['subtitle'].get_node('Shadow').text = value
+	subtitle_node.text = value
+	subtitle_node.get_node('Shadow').text = value
+	
+	subtitle_node.visible = not value == ''
 
 func set_body(value):
 	body = value
 
-	if not nodes['body']:
+	if not body_node:
 		return
-	nodes['body'].bbcode_text = value
-	nodes['body'].get_node('Shadow').bbcode_text = value
-	nodes['body'].visible = not value == ''
+	body_node.bbcode_text = value
+	body_node.get_node('Shadow').bbcode_text = value
+	
+	body_node.visible = not value == ''
 
 
 func set_picture(value):
-	if not nodes['picture']:
+	picture_path = value
+	if not picture_node:
 		return
-	nodes['picture'].texture = load(value) if value else null
-	nodes['picture'].visible = not value == ''
+	picture_node.texture = load(value) if value else null
+	picture_node.visible = not value == ''
 
 
 func set_footer(value):
 	footer = value
 
-	if not nodes['footer']:
+	if not footer_node:
 		return
-	nodes['footer'].text = value
+	footer_node.text = value
+	footer_node.visible = not value == ''
 
+
+func set_demo(value):
+	demo_path = value
+
+	if not demo_node:
+		return
+	if demo_node.get_child_count() > 0:
+		for node in demo_node.get_children():
+			node.queue_free()
+	if demo_path == '':
+		return
+	demo_node.add_child(load(demo_path).instance())
+
+
+func set_video(value):
+	"""
+	At the moment there's no way to know the video size
+	The node's min size is 720p so you shouldn't show other 
+	nodes at the same time: it'll push against them and 
+	expand the slide's margin container
+	"""
+	video_path = value
+	
+	if not video_node:
+		return
+
+	video_node.visible = not value == ''
+	if value == '':
+		video_node.stream = null
+		return
+	
+	video_node.stream = load(value)
+	video_node.play()
