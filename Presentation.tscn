@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://presentation.gd" type="Script" id=1]
 [ext_resource path="res://slides/img/shared/bg.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Video.gd" type="Script" id=10]
 [ext_resource path="res://slides/img/multiplatform-editor.jpg" type="Texture" id=11]
 [ext_resource path="res://assets/fonts/opensans-italic.ttf" type="DynamicFontData" id=12]
+[ext_resource path="res://TouchControl.tscn" type="PackedScene" id=13]
 
 [sub_resource type="Gradient" id=1]
 
@@ -268,6 +269,10 @@ _sections_unfolded = [ "Angle", "Animation", "Color", "Damping", "Gravity", "Hue
 [node name="Presentation" type="Node"]
 
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 750.0 ],
+"_edit_vertical_guides_": [ 530.0 ]
+}
 add_text_shadow = true
 particles = true
 slides_path = "res://slides/fr.gd"
@@ -740,18 +745,35 @@ _sections_unfolded = [ "BBCode", "Material", "Theme" ]
 show_behind_parent = true
 _sections_unfolded = [ "Visibility" ]
 
-[node name="TouchControls" type="MarginContainer" parent="."]
+[node name="TouchControls" type="Container" parent="."]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -177.0
+margin_top = -330.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+_sections_unfolded = [ "Visibility", "custom_constants" ]
+
+[node name="Left" parent="TouchControls" instance=ExtResource( 13 )]
+
+margin_bottom = 1.0
+
+[node name="Right" parent="TouchControls" instance=ExtResource( 13 )]
+
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -165.0
+margin_bottom = 166.0
+rect_scale = Vector2( -1, 1 )
+_sections_unfolded = [ "Rect", "Size Flags" ]
 
 [node name="Foreground" type="Node" parent="."]
 

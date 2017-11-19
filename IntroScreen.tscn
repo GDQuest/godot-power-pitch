@@ -182,7 +182,7 @@ _sections_unfolded = [ "Theme", "custom_fonts" ]
 [node name="Timer" type="Timer" parent="."]
 
 process_mode = 1
-wait_time = 6.0
+wait_time = 4.0
 one_shot = false
 autostart = true
 

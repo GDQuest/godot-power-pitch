@@ -1,6 +1,6 @@
 extends Container
 
-const DEBUG_TIME_MULTIPLIER = 0.4
+const DEBUG_TIME_MULTIPLIER = 0.6
 export(bool) var DEBUG = false
 
 var fade_duration = 1.0
@@ -42,6 +42,10 @@ func _ready():
 	$Tween.interpolate_property($Text/Main, 'modulate', color_transparent, color_opaque, fade_duration, Tween.TRANS_QUINT, Tween.EASE_IN)
 	$Tween.start()
 
+
+func _input(event):
+	if event.is_action_pressed('ui_accept'):
+		get_tree().change_scene('res://Presentation.tscn')
 
 
 func go_to_next_line():
