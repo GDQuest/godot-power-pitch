@@ -9,10 +9,10 @@ var data = []
 
 
 func _init():
-#	for array in [intro, health, concepts, features, learning, gdquest, questions]:
-	for array in [features, learning, gdquest, questions]:
+	for array in [intro, health, concepts, features, learning, gdquest, questions]:
 		for val in array:
 			data.push_back(val)
+	print(len(data))
 
 
 var intro = [
@@ -526,6 +526,7 @@ var questions = [{
 		[url=http://www.rpginabox.com/]RPG in a Box[/url] par Justin
 		[url=https://www.youtube.com/user/ndee85]Andreas Esau[/url]
 		Wallrider par [url=https://www.youtube.com/user/ZylannMP3/videos]Zylann Productions[/url]
+
 		""",
 		'picture': 'res://slides/img/gdquest-business-card.png',
 		"footer": ""
