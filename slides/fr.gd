@@ -9,7 +9,8 @@ var data = []
 
 
 func _init():
-	for array in [intro, health, concepts, features, learning, gdquest, questions]:
+#	for array in [intro, health, concepts, features, learning, gdquest, questions]:
+	for array in [features, learning, gdquest, questions]:
 		for val in array:
 			data.push_back(val)
 
@@ -306,7 +307,13 @@ var features = [
 	},
 	{
 		'title': 'Réalité Virtuelle',
-		'video': 'res://slides/video/godot-vr-fightsim.ogv'
+		'video': 'res://slides/video/vr-capture.ogv',
+		'config': {
+			'video_size': {
+				'x': 756,
+				'y': 840
+			}
+		}
 	},
 	{
 		"title": "Interfaces complexes...",

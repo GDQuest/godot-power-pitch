@@ -103,3 +103,4 @@ func set_video(value):
 	
 	video_node.stream = load(value)
 	video_node.play()
+	video_node.paused = false
