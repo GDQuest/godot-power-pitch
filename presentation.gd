@@ -20,6 +20,7 @@ const DEMO = 'demo'
 const FOOTER = 'footer'
 const BACKGROUND = 'background'
 const DEMO = 'demo'
+const CONFIG = 'config'
 
 var current_slide = {
 	TITLE: '',
@@ -30,7 +31,8 @@ var current_slide = {
 	DEMO: '',
 	FOOTER: '',
 	BACKGROUND: '',
-	DEMO: ''
+	DEMO: '',
+	CONFIG: ''
 }
 
 onready var slide_node = $Slide
@@ -75,6 +77,9 @@ func go_to_next_slide(direction):
 
 
 func change_slide(index):
+	# Clean the slide's config
+	$Slide/Margin/Frame/Body/Video.rect_min_size = Vector2(1280, 720)
+
 	var slide = slides[index]
 
 	for key in current_slide.keys():
@@ -92,6 +97,12 @@ func change_slide(index):
 	slide_node.demo_path = current_slide[DEMO]
 
 	slide_node.footer = current_slide[FOOTER]
+	
+	if current_slide[CONFIG]:
+		var config = current_slide[CONFIG]
+		if 'video_size' in config.keys():
+			var video_size = config['video_size']
+			$Slide/Margin/Frame/Body/Video.rect_min_size = Vector2(video_size['x'], video_size['y'])
 
 
 func set_particles_active(value):
