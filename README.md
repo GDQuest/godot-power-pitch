@@ -1,15 +1,27 @@
-# A Godot 3 presentation made in Godot
+<h1 align="center">
+  A Godot 3 presentation made in Godot
+</h1>
 
-This presentation is made in Godot 3, available to the entire community to use all around the world.
+<p align='center'>
+  <img src="https://raw.githubusercontent.com/GDquest/godot-3-presentation/master/assets/screenshots/new-in-godot-3.png" alt="Clouds of words showing the new features in Godot 3.0" />
+</p>
 
-The code is under the MIT license terms. The pictures and video files are under CC-By 4.0 (see below for the full credits).
 
-## Call for translations
+This presentation **runs inside Godot 3**. It's open source, available to the entire community to use all around the world. It comes with **40 slides** and enough content for a 1 hour long conference.
 
-Please help translate the presentation! All you need to do is to copy the content of the fr.gd file and replace the text strings with translations.
+It has one big advantage over any external program: you can run game demos inside your slides.
 
-## How to use
+**The code is under the MIT license terms**. The pictures and video files are under CC-By 4.0 (see below for the full credits). The repository contains the entire Godot project, the text and pictures, but not the videos (130mb).
 
+**To download the full package, see the [ releases ](https://github.com/GDquest/godot-3-presentation/releases)**.
+
+## Help translate the slides
+
+The first version is only available in French. Please help translate the presentation so people can use it all around the world! To translate the slides: duplicate the `res://slides/fr.gd` file, and rename it to the language you're covering (en, es, pt, jp...) file and replace the text strings with translations.
+
+The presentation was designed with French people in mind, with some light touches of humor. Feel free to adapt the content to your culture!
+
+## How to customize the presentation
 
 The slides are defined in a GDscript file in the `slides` folder. The initial release only contains a presentation in French: `res://slides/fr.gd`.
 
@@ -30,16 +42,22 @@ Each slide is a dictionary with six slots. They are all optional, so you only ne
   If the body is empty, the picture or video will take all the space instead.
   Supports bbcode.
   """,
-  'picture': 'path/to/a/picture',
-  'video': 'path/to/a/video',
-  # Currently if you use a video, you should not use a body and a picture
-  # Godot only supports .webm and .ogv formats (encoded with libtheora)
-  'footer': 'A one line message at the bottom'
+  'picture': 'path/to/a/picture.png',
+    # Supports all image formats.
+    # Should support SVG too (automatically converted to bitmap by Godot).
+  'video': 'path/to/a/video.ogv',
+    # Currently if you use a video, you should not use a body and a picture
+    # Godot only supports .webm and .ogv formats (encoded with libtheora)
+  'demo': 'path/to/a/scene.tscn',
+    # Inserts the demo under the Demo node in the scene tree
+    # It's best to use it alone like videos
+    # It shows behind the text and pictures, so you may use it as an animated background
+  'footer': 'A one line message at the bottom, in italics'
 }
 
 ```
 
-See `res://slides/fr.gd` for a presentation example.``
+See `res://slides/fr.gd` in the Godot project for a presentation example.
 
 ## Credits
 
