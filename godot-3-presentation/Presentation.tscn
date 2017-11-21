@@ -1,6 +1,6 @@
 [gd_scene load_steps=31 format=2]
 
-[ext_resource path="res://presentation.gd" type="Script" id=1]
+[ext_resource path="res://Presentation.gd" type="Script" id=1]
 [ext_resource path="res://slides/img/shared/bg.png" type="Texture" id=2]
 [ext_resource path="res://slides/img/shared/particles/fairy.png" type="Texture" id=3]
 [ext_resource path="res://slides/img/shared/particles/fairy_big.png" type="Texture" id=4]
@@ -274,7 +274,7 @@ __meta__ = {
 "_edit_vertical_guides_": [ 530.0 ]
 }
 add_text_shadow = true
-particles = true
+particles = false
 slides_path = "res://slides/fr.gd"
 
 [node name="Background" type="Node" parent="."]
@@ -298,6 +298,8 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="Particles" type="Node2D" parent="Background"]
 
+visible = false
+
 [node name="Snow" type="Node2D" parent="Background/Particles"]
 
 _sections_unfolded = [ "Visibility" ]
@@ -305,7 +307,7 @@ _sections_unfolded = [ "Visibility" ]
 [node name="Small" type="Particles2D" parent="Background/Particles/Snow"]
 
 position = Vector2( 467.072, 288.19 )
-emitting = true
+emitting = false
 amount = 300
 lifetime = 6.0
 one_shot = false
@@ -328,7 +330,7 @@ _sections_unfolded = [ "Material", "Process Material", "Textures", "Time", "Visi
 [node name="Medium" type="Particles2D" parent="Background/Particles/Snow"]
 
 position = Vector2( 467.072, 288.19 )
-emitting = true
+emitting = false
 amount = 120
 lifetime = 4.0
 one_shot = false
@@ -779,13 +781,14 @@ _sections_unfolded = [ "Rect", "Size Flags" ]
 
 [node name="Particles" type="Node2D" parent="Foreground"]
 
+visible = false
 _sections_unfolded = [ "Visibility" ]
 
 [node name="Snow" type="Particles2D" parent="Foreground/Particles"]
 
 modulate = Color( 1, 1, 1, 0.430941 )
 position = Vector2( 467.072, 288.19 )
-emitting = true
+emitting = false
 amount = 80
 lifetime = 4.0
 one_shot = false
