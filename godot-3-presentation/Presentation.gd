@@ -3,7 +3,7 @@ tool extends Node
 enum DIRECTION {PREVIOUS, NEXT}
 
 export(bool) var add_text_shadow = true
-export(bool) var particles = true setget set_particles_active
+export(bool) var particles = false setget set_particles_active
 
 var ready = false
 
