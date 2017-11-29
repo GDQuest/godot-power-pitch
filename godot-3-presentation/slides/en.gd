@@ -9,59 +9,57 @@ var data = []
 
 
 func _init():
-	for array in [intro, health, concepts, features, learning, gdquest, questions]:
+	for array in [intro, health, concepts, features, learning, questions]:
 		for val in array:
 			data.push_back(val)
 
-
-# CURRENTLY IN FRENCH. NEEDS TRANSLATION - PLEASE HELP
 
 var intro = [
 	{
 		"title": "The engine you've waited for",
 		"subtitle": "Powerful, Free, Open Source",
 		'picture': 'res://slides/img/realtime-global-illumination.jpg',
-		"footer": "See Beckett's film 'Waiting for Godot'"
+		"footer": "See Beckett's 'Waiting for Godot'"
 	},
 	{
-		"title": "Godot, what about it?",
+		"title": "What is Godot?",
 		"body":
-			"""[b]The[b] Unity like free engine featuring :
+			"""[b]The[b] Unity-like Free engine featuring :
 
-			- Two distinct [color=%s]2d[/color] engine and [color=%s]3d[/color] engine
+			- Two separate [color=%s]2d[/color] and [color=%s]3d[/color] engines
 			- A complete editor to create your levels
-			- Works on multiple platforms PC, Mac, Linux
+			- Multiplatform: PC, Mac, Linux
 			- Exports available for PC, mobile, web*""" % [BLUE, PINK],
 		'picture': 'res://slides/img/2d-viewport-2.x.png',
-		"footer": "*And consoles for companies"
+		"footer": "*And consoles for businesses"
 	},
 	{
-		"title": "Examples of games ported with Godot",
+		"title": "A Godot console port",
 		"subtitles": "Deponia's PS4 version",
 		'picture': 'res://slides/img/deponia-ps4-game.png'
 	},
 	{
 		"title": "Its philosophy: all-in-one",
 		"body":
-			"""If something essential is missing, we add it !
+			"""If it misses anything essential, we add it !
 
 			- Code editor with embedded docs and autocompletion
 			- [color=%s]Animation[/color] editor with 2d rigging
 			- Visual programming for designers
-			- [color=%s]Shaders[/color] editors both standard and visual*
+			- [color=%s]Shader[/color] editors, both text and graph-based*
 			""" % [BLUE, GREEN],
 		'picture': 'res://slides/img/godot-2-shader-editor.png',
-		"footer": "*Not available in 3.0 yet, return of these feature scheluded for 3.1"
+		"footer": "*Not available in 3.0 yet, port in progress and completion scheluded for 3.1"
 	},
 	{
-		"title": "three programming languages",
-		'subtitle': 'Conceived to simplify your life',
+		"title": "Three programming languages",
+		'subtitle': 'To make your life easier',
 		"body":
-			"""Program faster with:
+			"""Code faster with:
 
-			- [color=%s]GDScript[/color], inspired by Python and Lua, and applied to games
-			- [color=%s]VisualScript[/color], for artists and designers in a team
-			- [color=%s]ShaderScript[/color], simplify the creation of materials
+			- [color=%s]GDScript[/color], inspired by Python and Lua, designed for games
+			- [color=%s]VisualScript[/color], for artists and designers in your team
+			- [color=%s]ShaderScript[/color], to simplify material creation
 			""" % [PINK, BLUE, GREEN],
 		'picture': 'res://slides/img/visual-script.png'
 	},
@@ -74,107 +72,109 @@ var intro = [
 
 var health = [
 	{
-		"title": "It is not the size that matters",
-		'subtitle': 'twenty megabytes of pure happyness',
+		"title": "Size does not matter",
+		'subtitle': 'Twenty megabytes of pure joy',
 		"body":
-			"""One [color=%s]20mo[/color] executable:
+			"""One [color=%s]20mb[/color] executable:
 
 			- Download it [color=%s]in few seconds[/color]
 			- [color=%s]No installation[/color]
 
-			Everything that requires more disc space is optional: export templates for mobile, mono and C#...
+			Everything that requires more disk space is optional: mobile export templates, Mono and C#...
 			""" % [BLUE, BLUE, BLUE],
 		'picture': 'res://slides/img/multiplatform-editor.jpg',
-		"footer": "This small file contains the engine, UI tools and everything needed to make a complete game"
+		"footer": "This small file contains the entire engine, UI tools and everything you need to make a complete game"
 	},
 	{
 		"title": "New in Godot 3",
-		'subtitle': 'buckle up...',
+		'subtitle': 'Please buckle your seatbelts',
 		'picture': 'res://slides/img/gltf-damaged-helmet.jpg',
-		"footer": "Everything within a little more than one year of development"
+		"footer": "All you're going to see took little more than a year of development"
 	},
 	{
 		"demo": "res://demos/new-in-godot-3/img.tscn"
 	},
 	{
-		"title": "Size does actually matter",
-		"subtitle": "We lied to you from the beginning!",
+		"title": "No, size does matter",
+		"subtitle": "The cake was a lie!",
 		"body":
-			"""An open source project [color=%s]in good shape[/color]:
+			"""An open source project [color=%s]in excellent shape[/color]:
 
-			- [color=%s]450+[/color] backers
+			- [color=%s]450+[/color] contributors
 			- 10 000+ commits
 			- 11 000+ stars
 
-			Financed up to [color=%s]4000$[/color] per month on Patreon, sponsored by Mozilla and even Microsoft for the support of C#
+			[color=%s]6000$[/color] a month on Patreon. Sponsored by Mozilla and even Microsoft for C# support.
 			""" % [GREEN, GREEN, GREEN],
 		'picture': 'res://slides/img/github-pulse-october.png',
-		"footer": "Juan, the lead developer, has already declined opportunities for other engine"
+		"footer": "Juan, the lead developer, already declined job offers for other engines"
 	},
 	{
-		"title": "Professionals are slowly driven to it",
+		"title": "Godot attracts professionals",
 		"subtitle": "",
 		"body":
-			"""Professionals already use Godot 2.0:
+			"""These professionals already use Godot 2.0:
 
-			- From Game [color=%s]studios[/color]: Gamblify, Guaranapps...
-			- in [color=%s]schools[/color]: School4Games, KidsCanCode...
-			- by [color=%s]videographers[/color]: Heartbeast, [i]GDQuest[/i]...
+			- [color=%s]Game studios[/color]: Gamblify, Guaranapps, Kivano...
+			- [color=%s]Schools[/color]: School4Games, KidsCanCode...
+			- [color=%s]Content creators[/color]: Heartbeast, [i]GDQuest[/i]...
 			""" % [PINK, BLUE, GREEN],
 		'picture': 'res://slides/img/gamblify-monsters-5.jpg',
-		"footer": "Be prepared to see even more after Godot 3.0's release"
+		"footer": "Get ready for more after Godot 3.0's release"
 	}
 ]
 
 
 var concepts = [
 	{
-		"title": "Godot great principles",
-		"subtitle": "Let's have a look at what makes it unique",
+		"title": "Godot's core principles",
+		"subtitle": "The design decisions that make it unique",
 		"body":
-			"""Every game engine is different. Godot has two particularities:
+			"""Every game engine is different. Godot differs from most in two ways:
 
-			- It integrates every [color=%s]tools[/color] you need to produce your game, editors for: [color=%s]levels[/color], [color=%s]animations[/color], etc.
-			- No enforced programming framework like [color=%s]MVC[/color]* or [color=%s]ECS[/color]*
+			- It integrates every [color=%s]tool[/color] you need to produce your game: 
+			[color=%s]level editor[/color], [color=%s]animation editor[/color], etc.
 
-			In Godot we use [color=%s]tree nodes[/color].
-			""" % [BLUE, BLUE, BLUE, GREEN, GREEN, GREEN, GREEN],
+			- No enforced programming patterns like [color=%s]MVC[/color]* or [color=%s]ECS[/color]*
+
+			Godot uses simpler [color=%s]node trees[/color] instead.
+			""" % [BLUE, BLUE, BLUE, GREEN, GREEN, GREEN],
 		'picture': 'res://slides/img/node-tree.png',
 		'footer': '*Model-View-Controller and Entity-Component System'
 	},
 	{
-		"title": "An object oriented editor",
-		"subtitle": "Inheritance, hierarchy and freedom: is that it, the flexi-security?",
+		"title": "An Object-Oriented editor",
+		"subtitle": "Inheritance, strong hierarchy and freedom",
 		"body":
-			"""Every game screen is a [color=%s]tree[/color] containing nodes.
+			"""Every game screen is a [color=%s]node tree[/color].
 
-			A group of nodes can be saved* in a scene: a [color=%s]branch[/color].
+			Any node group can be saved* as a scene: it becomes a [color=%s]branch[/color].
 
-			Every node [color=%s]inherit[/color] from base nodes and work more or less the same.
+			Every node [color=%s]inherits[/color] from base nodes: all nodes work more or less the same.
 			""" % [GREEN, BLUE, PINK],
 		'picture': 'res://slides/img/node-tree-2.png',
-		'footer': '*Encapsulated, speaking from a object oriented programming perspective.\nThis object oriented design helps you structure your scenes to reflect your game design.'
+		'footer': '*Encapsulated if we see it from an Object-Oriented perspective.\nThis design helps you structure your scenes so they reflect your game design.'
 	},
 	{
-		"title": "Godot is a Godot game",
-		"subtitle": "The editor uses the same engine as you",
+		"title": "Godot is a 'Godot game'",
+		"subtitle": "The editor relies on the game engine",
 		"body":
-			"""The interface relies on [color=%s]interface nodes[/color] from the engine.
+			"""The engine's own UI nodes power [color=%s]the editor's interface[/color].
 
-			These are not only powerful: you can create [color=%s]plugins[/color] the same way you create your games.
+			They are not only powerful: you can create [color=%s]plugins[/color] with the same code you use in your games.
 			""" % [GREEN, GREEN],
 		'picture': 'res://slides/img/fsm-plugin.png',
-		'footer': 'The editor also has a in-app asset store, like Unity or Game maker'
+		'footer': 'Godot also comes with a built-in a asset store, with a catch: everything is free'
 	},
 	{
-		"title": "Unity, Godot, which one is the best?",
-		"subtitle": "TL;DR: forget about which one is the 'best'",
+		"title": "Unity, Godot, which is the best?",
+		"subtitle": "TL;DR: forget about 'best'",
 		"body":
 			"""Each game engine [color=%s]answers different needs.[/color]
 
-			[i]Unity, Unreal, Godot, Game Maker, Phaser, LibGDX...[/i] Are all legit depending on the project.
+			[i]Unity, Unreal, Godot, Game Maker, Phaser, LibGDX...[/i] They're all valid options, depending on the project.
 
-			Today, [color=%s]Godot[/color] fulfill very well the needs of [color=%s]indies[/color].
+			Today, [color=%s]Godot[/color] answers the needs of [color=%s]indies[/color] very well.
 			""" % [BLUE, BLUE, BLUE],
 		'picture': 'res://slides/img/engine-logos.png',
 		'footer': 'There are no best engines: only technologies adapted to specific needs.\nHow to choose the right tool? With experience and prototypes'
@@ -185,78 +185,80 @@ var concepts = [
 var features = [
 	{
 		"title": "A few features...",
-		"subtitle": "...among many others",
+		"subtitle": "...among many",
 		"body":
-			"""game engines are so [color=%s]complex[/color] that it is hard to find your  way inside them.
+			"""Game engines are so [color=%s]complex[/color] it is hard to find out all they can do.
 
-			There are many new features in Godot 3, but also many interestinf tools in Godot 2.
+			There are many new tools in Godot 3, but also tons of interesting tools from previous releases.
 
-			Here are some key features that makes this engine stand out.
+			Here are some key features that make the engine stand out.
 			""" % PINK,
 		'picture': 'res://slides/img/some-features.png',
-		"footer": "We start with the things that will please developers"
+		"footer": "Let's start with the things that will please developers"
 	},
 	{
-		"title": "Program with C#",
-		"subtitle": "That should please programmers coming from Unity",
+		"title": "Code with C#",
+		"subtitle": "For C# developers and people coming from Unity",
 		"body":
-			"""Programming in [color=%s]C#[/color] is available in 3.0
+			"""[color=%s]C#[/color] is officially supported starting with version 3.0
 
-			Based on the last version of Mono,
-			XamarinStudio, VSCode, and Visual Studio supports
+			It's based on the lastest Mono compiler.
+			Code with XamarinStudio, VSCode, and Visual Studio.
 
-			It is one of the three languages included in the editor, with GDScript and VisualScript
+			It is one of the three officially supported gameplay programming languages, with GDScript and VisualScript
 			""" % ORANGE,
 		'picture': 'res://slides/img/c-sharp-vstudio.png',
-		"footer": "Work done by Ignacio R. Etcheverry, and sponsored by Microsoft"
+		"footer": "Work done by Ignacio R. Etcheverry, sponsored by Microsoft"
 	},
 	{
-		"title": "Good performances without compiling",
-		"subtitle": "Dynamic bindings with GDNative",
+		"title": "GDNative",
+		"subtitle": "Native performance without compiling",
 		"body":
-			"""Use any library [color=%s]dynamicly[/color]
+			"""Use any library [color=%s]dynamically[/color] with near native performance.
 
-			GDnative exposes [b]every[/b] engine functions
+			GDnative bridges Godot with external libraries.
 
-			Supports languages [color=%s]C[/color], [color=%s]C++[/color], [color=%s]Rust[/color], and [color=%s]D[/color] thanks to the community
-			""" % [GREEN, ORANGE, ORANGE, PINK, GREEN],
+			Currently supported languages: [color=%s]C[/color], [color=%s]C++[/color], [color=%s]Rust[/color], [color=%s]Python[/color], and [color=%s]D[/color], thanks to the community
+			""" % [GREEN, ORANGE, ORANGE, PINK, GREEN, GREEN],
 		'picture': 'res://slides/img/gdnative.png',
-		"footer": "Yes, C and C++ without re-compiling the engine! By Karroffel and Bojidar"
+		"footer": "Yes, C and C++ without re-compiling the engine! Thank Karroffel and Bojidar"
 	},
 	{
-		"title": "Signals or in-app observer",
-		"subtitle": "Make your nodes communicate without pairing them",
+		"title": "Signals or Godot's Observer",
+		"subtitle": "Send messages between your nodes without coupling them",
 		"body":
-			"""[color=%s]Connect[/color] some scenes with each other in the code or via the interface, without mutually exposing them.
+			"""Signals are Observers on steroids. [color=%s]Connect[/color] nodes with one another via the code or in the editor. Let them communicate without exposing the full class.
 
-			For example to update the lifebar of a character when he gets hit.
+			Define your own signals or use the many built-in ones. Bind variables and send values along with the signal.
 			""" % BLUE,
 		"picture": "res://slides/img/signals.png",
-		"footer": ""
+		"footer": "For example, to update the lifebar of a character when he gets hit"
 	},
 	{
 		"title": "Signals example",
 		"demo": "res://demos/lifebar/LevelMockup.tscn"
 	},
 	{
-		"title": "Animate each...",
-		"subtitle": "...and everything!",
+		"title": "Animate anything...",
+		"subtitle": "...or everything!",
 		"body":
-			"""Animate [b]every[/b] properties from [b]every[/b] nodes.
+			"""You can animate [b]any[/b] property on [b]any[/b] node.
 
-			[color=%s]Size[/color], [color=%s]position[/color], enable/disable [color=%s]collisions[/color], enable [color=%s]switches[/color]...
+			[color=%s]Size[/color], [color=%s]position[/color], enable/disable [color=%s]collisions[/color], [color=%s]booleans[/color]...
+
+			Call functions from the animation editor!
 			""" % [BLUE, BLUE, GREEN, GREEN],
 		'picture': 'res://slides/img/godot-skeleton-1280x720.png',
 		"footer": "GoBot by Andreas Esau"
 	},
 	{
-		"title": "Animation based fight",
+		"title": "Animation-based combat mechanics",
 		"demo": "res://demos/characters_and_weapons/Game.tscn",
-		"footer": "It is breath taking isn't it?"
+		"footer": "Isn't it breath-taking?"
 	},
 	{
-		"title": "Tilemaps editor",
-		"subtitle": "top-down and isometric",
+		"title": "Tilemap editor",
+		"subtitle": "Top-down and isometric",
 		'picture': 'res://slides/img/isometric-tilemap.png',
 	},
 	{
@@ -264,7 +266,7 @@ var features = [
 		"subtitle": "Point & Click, dialog trees...",
 		'picture': 'res://slides/img/dog-mendoza.png',
 		"body":
-			"""Escoria offers a language to write adventure games following the path of RenPy and other Visual Novel engines:
+			"""Escoria gives you a natural language to write adventure games, similar to that of RenPy and other Visual Novel engines:
 
 			[color=%s]:talk[/color]
 			[color=%s]say[/color] [color=%s]player[/color] "What a strange critter…" [color=%s]default[/color] avatar_panda
@@ -274,10 +276,10 @@ var features = [
 	{
 		"title": "A modern 3d engine",
 		'picture': 'res://slides/img/sponza-2.jpg',
-		"footer": "Designed to produce renders close to Blender Eevee"
+		"footer": "Designed to work well with Blender Eevee"
 	},
 	{
-		"title": "Lets speak  a bit about particules",
+		"title": "Lets talk about particules",
 		'demo': 'res://demos/many-particles/Sparkles.tscn',
 		"body":
 		"""
@@ -292,18 +294,18 @@ var features = [
 		"footer": "New engine = many more particules"
 	},
 	{
-		"title": "Augmented Virtual Reality",
+		"title": "Augmented and Virtual Reality",
 		"body":
-			"""Create games for [color=%s]Occulus Rift[/color], [color=%s]Gear VR[/color] and many others in Godot 3.
+			"""Create games for the [color=%s]Occulus Rift[/color], [color=%s]Gear VR[/color] and many others in Godot 3, powered by Valve's OpenVR.
 
-			Create games in [color=%s]Augmented reality[/color] with l'ARKit.
+			[color=%s]Augmented reality[/color] is also supported, with the ARKit.
 			""" % [PINK, PINK, GREEN],
 		'picture': 'res://slides/img/arkit-1280x720.jpg',
-		"footer": "Mainly by Bastiaan Olij, with the help of Karroffel and Hinsbart"
+		"footer": "Work by Bastiaan Olij, with the help of Karroffel and Hinsbart"
 	},
 	{
 		'title': 'Augmented Reality',
-		'footer': 'Yes, Bastiaan is no artist, but it works!',
+		'footer': 'Bastiaan isn\'t an artist, but it works like a charm!',
 		'video': 'res://slides/video/godot-arkit.ogv'
 	},
 	{
@@ -317,27 +319,29 @@ var features = [
 		}
 	},
 	{
-		"title": "Complex interfaces...",
-		"subtitle": "...and flexible",
+		"title": "Complex User Interface...",
+		"subtitle": "...made as easy as can be",
 		"body":
-			"""[color=%s]Container[/color] system, tabs, margins, [color=%s]anchoring[/color]...
+			"""[color=%s]Container[/color] system, tabs, margins, [color=%s]anchors[/color], node graphs...
+			
+			Godot ships with its own, very robust UI design and programming tools. Automated UI layouts, Photoshop-like smart snapping, grid and guides...
 
-			You can layout all of your UI within the editor
+			You can design all of your game and plugins' UI within the editor.
 			""" % [GREEN, GREEN],
 		'picture': 'res://slides/img/rpg-in-a-box-graph.png',
-		"footer": "Work done by Bastiaan Olij"
+		"footer": "RPG in a Box: an RPG editor made in Godot"
 	},
 	{
 		"title": "Sync script, sync scenes",
 		"body":
-			"""Test your game. Modify a script, a scene, a level: the change is [color=%s]instantaneous[/color].
+			"""Try out your game. Edit a script, a scene, a level: the change reflects [color=%s]in-game, in real time[/color].
 
-			This also works with your smart phone and on many devices simultaneously.
+			This also works with smartphones and on remote devices.
 
-			The changes are [color=%s]saved[/color] even when you close the game.
+			The changes are [color=%s]saved[/color] even after you closed the game.
 			""" % [BLUE, BLUE],
 		'picture': 'res://slides/img/jotsway-canyon-screen.png',
-		"footer": "Jotsway Canyon, tactical combat game by Johnny Goss"
+		"footer": "Jotsway Canyon, tactical-RPG by Johnny Goss"
 	},
 	{
 		'title': 'Script sync on Jotsway Canyon',
@@ -346,9 +350,9 @@ var features = [
 	{
 		"title": "Tool mode: Godot-ception",
 		"body":
-			"""Add the keyword [color=%s]tool[/color] above your scripts: they now work in the editor!
+			"""Add the [color=%s]tool[/color] keyword at the top of your scripts: the code runs in the editor!
 
-			Use [color=%s]tool[/color] to visualise the patrol path of an IA, test random generation, improve the level editor...
+			Use [color=%s]tool[/color] to visualise the patrol path of an IA, try out procedural generation, improve the level editor...
 			""" % [ORANGE, ORANGE],
 		'picture': 'res://slides/img/teddy-game.jpg',
 		"footer": ""
@@ -374,18 +378,18 @@ var features = [
 
 var create = [
 	{
-		"title": "What can be done with Godot?",
-		"subtitle": "First of all games, this seems expected",
-#		"footer": "To cut it short: many, many things",
-		'video': 'res://slides/video/furry-defenders.ogv',
+		"title": "What can you do with Godot?",
+		"subtitle": "Games, as you might expect",
+		"footer": "But there is more!",
+		'video': 'res://slides/video/furry-defenders.ogv'
 	},
 	{
 		"title": "Applications",
-		"subtitle": "for example, this presentation",
-		"video": 'res://slides/video/presentaception.ogv',
+		"subtitle": "For example, this slideshow",
+		"video": 'res://slides/video/presentaception.ogv'
 	},
 	{
-		"title": "Some... game engines???",
+		"title": "Game engines ?!",
 		"subtitle": "Welcome to RPG in a Box",
 #		"body":
 #			"""The interface reminds you something? Here is RPG in a Box, a voxel RPG making software conceived using Godot.
@@ -394,7 +398,7 @@ var create = [
 		"footer": ""
 	},
 	{
-		"title": "RPG in a Box",
+		"title": "Rogue-like in RPG in a Box",
 		"subtitle": "A game, made with an engine, made with an engine",
 		'video': 'res://slides/video/rpg-in-a-box-roguelike.ogv',
 	},
@@ -404,40 +408,41 @@ var create = [
 var learning = [
 	{
 		"title": "How to learn Godot?",
-		"subtitle": "And where, exactly?",
+		"subtitle": "The resources you should use",
 		'body':
 		"""Godot offers:
 
 		- A [b]very[/b] active [color=%s]community[/color]. Social networks, forum, IRC, Discord...
-		- A [color=%s]questions/answers[/color] site
-		- Some [color=%s]tutorials[/color] and an online [color=%s]manual[/color]
-		- A [color=%s]in app doc[/color] withing the editor
-		- An open source demo package
+		- A [color=%s]Questions/Answers[/color] website
+		- Official [color=%s]tutorials[/color] and an [color=%s]online manual[/color]
+		- A [color=%s]built-in reference[/color], available inside the editor
+		- Open source demos
 		""" % [BLUE, BLUE, GREEN, GREEN, PINK],
 		'picture': 'res://slides/img/docs-community-websites.png',
-		"footer": "The majority of ressources are in english. A good opportunity to practice."
+		"footer": "The bulk of the resources are in English. A good opportunity to practice it."
 	},
 	{
-		"title": "In-app help",
-		"subtitle": "No need to struggle with your browser",
+		"title": "Built-in reference",
+		"subtitle": "No need to switch to your web browser",
 		'body':
-		"""Select a piece of text in the script editor, click on [color=%s]Shift F1[/color]:
+		"""Select text in the script editor, press [color=%s]Shift F1[/color]:
 
-		A list of nodes, variables and functions corresponding appears instantly.
-		The reference opens [color=%s]in the scripts editor[/color].
+		A list of corresponding nodes, variables and functions appear instantly.
+
+		The code documentation opens [color=%s]right in the script editor[/color].
 		""" % [PINK, PINK],
 		'picture': 'res://slides/img/docs-integrated-help.png',
-		"footer": "Press F4 to open the search bar withing the opened reference"
+		"footer": "Press F4 to start with an empty search bar"
 	},
 	{
-		"title": "Videographers",
-		"subtitle": "Some recommendations for beginning",
+		"title": "Content Creators",
+		"subtitle": "Some recommendations to get start",
 		'body':
-		"""There are still few good and free video tutorial series for Godot. I recommend 3 channels:
+		"""There are still few good and free video tutorial series for Godot. Three recommended channels:
 
-		- [color=%s]KidsCanCode[/color], for beginners, complete series
-		- [color=%s]Angega Studios[/color], for beginners/intermediates, complete series
-		- [color=%s]GDQuest[/color], for intermédiaite levels
+		- [color=%s]KidsCanCode[/color], complete series for beginners
+		- [color=%s]Angega Studios[/color], complete series for beginners
+		- [color=%s]GDQuest[/color], for intermediate users
 		""" % [ORANGE, PINK, BLUE],
 		'picture': '',
 		"footer": "You can also follow Heartbeast and Ivan Skodje"
@@ -445,88 +450,20 @@ var learning = [
 ]
 
 
-var gdquest = [
-	{
-		"title": "Game Design Quest",
-		"subtitle": "The creation of video games with free softwares",
-		'body':
-		"""Former les [color=%s]créateurs indépendants[/color] du monde entier à toutes les [color=%s]techniques des professionnels[/color] de la création de jeux vidéo
-
-		Donner accès aux designers du monde entier à des ressources de qualité.
-		Couvrir [color=%s]tous les domaines[/color] liés à la création de jeux et d'applications interactives.
-		""" % [BLUE, GREEN, GREEN],
-		'picture': 'res://slides/img/gdquest-business-card.png',
-		"footer": "Pour impacter les gens, partez d'un concept précis, personnel, qui répond à un désir, ou mieux: un besoin"
-	},
-	{
-		"title": "Comment?",
-		"subtitle": "Plus facile à dire qu'à faire",
-		'body':
-		"""Pour percer, il faut être [color=%s]cohérent[/color], se [color=%s]démarquer[/color], et [color=%s]persévérer[/color]:
-
-		- Les [color=%s]logiciels libres[/color] pour rendre le contenu plus accessible
-		- La moitié du contenu est [color=%s]gratuit et/ou open source[/color]
-		- À l'opposé des tendances, [color=%s]la qualité plutôt que la quantité[/color]
-		- Proche des gens, avec une communication naturelle
-		""" % [GREEN, BLUE, PINK, GREEN, BLUE, PINK],
-		'picture': 'res://slides/img/gdquest-video-edit.png',
-		"footer": "La forme juridique? Fondation, trop dur, association, trop seul: micro-entreprise"
-	},
-	{
-		"title": "Gagner sa vie: le crowdfunding",
-		"subtitle": "Difficile de vivre de tout projet indépendent...",
-		'body':
-		"""...mais pas impossible. Il faut être aussi créatif sur le [color=%s]modèle économique[/color] que pour le reste:
-
-		Mélange de financement participatif, ventes et sous-traitance
-		Ajout de sponsors, subventions et création de technologies libres à l'avenir?
-
-		Le plus important, c'est de trouver une approche qui marche et qui est en [color=%s]accord avec soi[/color]
-		""" % [GREEN, BLUE],
-		'picture': 'res://slides/img/gdquest-ks-stretch-goals.png',
-		"footer": "Les backers financent à 50% du contenu gratuit/libre et à 50% des récompenses payantes"
-	},
-	{
-		"title": "Beaucoup de travail",
-		"subtitle": "Est-ce vraiment la santé?",
-		'body':
-		"""Se lancer dans le [color=%s]libre[/color] et sur le [color=%s]web[/color], c'est aussi:
-
-		- Pas de vacances depuis 1 an
-		- Pas de jours féries, peu de week-ends
-		- Du travail pour 5 personnes, de quoi en payer aucune
-		""" % [BLUE, ORANGE],
-		'picture': 'res://slides/img/gdquest-semaine-type.png',
-		"footer": "Communication, marketing, programmation, web, game design, vidéo, comptabilité..."
-	},
-	{
-		"title": "Et ça en vaut la peine",
-		"subtitle": "Surtout maintenant que GDQuest est sur les rails",
-		'body':
-		"""C'est une activité extrêmement [color=%s]épanouïssante[/color].
-
-		On apprend plus que dans la plupart des jobs: dans le jeu vidéo et dans le libre, les gens [color=%s]partagent leurs connaissances[/color].
-
-		L'indépendence, cela veut aussi dire que vous pouvez travailler [color=%s]depuis n'importe où[/color].
-		""" % [BLUE, BLUE, BLUE],
-		'picture': 'res://slides/img/gdquest-japan.jpg',
-		"footer": "Il y a un temps à investir pour démarrer: ensuite ça roule"
-	}
-]
-
-
 var questions = [{
-		"title": "Merci!",
-		"subtitle": "Vous avez été adorables. Des questions?",
+		"title": "Thank you!",
+		"subtitle": "Questions?",
 		'body':
-		"""Retrouvez la présentation et tous les liens sur [url=http://gdquest.com]GDQuest.com[/url]. Crédits:
+		"""This presentation is Open Source, get it on [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]
+		
+		Credits:
 
-		Furry Defenders par [url=http://www.kivano.games/]Kivano[/url]
-		[url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] par Guaranapps
-		[url=https://jaggygames.itch.io/jotswaycanyon]Jotsway Canyon[/url] par JaggyGames
-		[url=http://www.rpginabox.com/]RPG in a Box[/url] par Justin
+		Furry Defenders by [url=http://www.kivano.games/]Kivano[/url]
+		[url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] by Guaranapps
+		[url=https://jaggygames.itch.io/jotswaycanyon]Jotsway Canyon[/url] by JaggyGames
+		[url=http://www.rpginabox.com/]RPG in a Box[/url] by Justin
 		[url=https://www.youtube.com/user/ndee85]Andreas Esau[/url]
-		Wallrider par [url=https://www.youtube.com/user/ZylannMP3/videos]Zylann Productions[/url]
+		Wallrider by [url=https://www.youtube.com/user/ZylannMP3/videos]Zylann Productions[/url]
 		""",
 		'picture': 'res://slides/img/gdquest-business-card.png',
 		"footer": ""
