@@ -1,16 +1,13 @@
 tool extends Container
 
 
-export(String) var title setget set_title
-export(String) var subtitle setget set_subtitle
-export(String) var body setget set_body
-export(String) var picture_path setget set_picture
-export(String) var video_path setget set_video
-export(String) var demo_path setget set_demo
-export(String) var footer setget set_footer
-
-var shadow = false
-
+var title setget set_title
+var subtitle setget set_subtitle
+var body setget set_body
+var picture_path setget set_picture
+var video_path setget set_video
+var demo_path setget set_demo
+var footer setget set_footer
 
 onready var title_node = $Margin/Frame/Top/Title
 onready var subtitle_node = $Margin/Frame/Top/Subtitle
@@ -19,6 +16,8 @@ onready var picture_node = $Margin/Frame/Body/Picture
 onready var video_node = $Margin/Frame/Body/Video
 onready var demo_node = $Margin/Demo
 onready var footer_node = $Margin/Frame/Footer
+
+var shadow = false
 
 
 func set_title(value):
@@ -42,6 +41,7 @@ func set_subtitle(value):
 	subtitle_node.get_node('Shadow').text = value
 	
 	subtitle_node.visible = not value == ''
+
 
 func set_body(value):
 	body = value

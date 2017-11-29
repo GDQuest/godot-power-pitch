@@ -35,8 +35,6 @@ var current_slide = {
 	CONFIG: ''
 }
 
-onready var slide_node = $Slide
-
 var slide_index = 0
 var slide_count = 0
 
@@ -49,7 +47,7 @@ func _ready():
 	slide_count = len(slides)
 
 	if add_text_shadow:
-		slide_node.shadow = true
+		$Slide.shadow = true
 
 	set_particles_active(particles)
 	change_slide(slide_index)
@@ -88,15 +86,15 @@ func change_slide(index):
 	for key in slide.keys():
 		current_slide[key] = slide[key]
 
-	slide_node.title = current_slide[TITLE]
-	slide_node.subtitle = current_slide[SUBTITLE]
+	$Slide.title = current_slide[TITLE]
+	$Slide.subtitle = current_slide[SUBTITLE]
 
-	slide_node.body = current_slide[BODY].replace('\t', '')
-	slide_node.picture_path = current_slide[PICTURE]
-	slide_node.video_path = current_slide[VIDEO]
-	slide_node.demo_path = current_slide[DEMO]
+	$Slide.body = current_slide[BODY].replace('\t', '')
+	$Slide.picture_path = current_slide[PICTURE]
+	$Slide.video_path = current_slide[VIDEO]
+	$Slide.demo_path = current_slide[DEMO]
 
-	slide_node.footer = current_slide[FOOTER]
+	$Slide.footer = current_slide[FOOTER]
 	
 	if current_slide[CONFIG]:
 		var config = current_slide[CONFIG]
