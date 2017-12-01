@@ -7,7 +7,7 @@
 </p>
 
 
-This presentation **runs inside Godot 3**. It's open source, available to the entire community to use all around the world. It comes with **40 slides** and enough content for a 1 hour long conference.
+This presentation **runs inside Godot 3**. It's open source, available to the entire community to use all around the world. It comes with **40 slides** and enough content for a 1 hour long conference talk.
 
 It has one big advantage over any external program: you can run game demos inside your slides.
 
