@@ -58,7 +58,7 @@ var intro = [
 			"""Code faster with:
 
 			- [color=%s]GDScript[/color], inspired by Python and Lua, designed for games
-			- [color=%s]VisualScript[/color], for artists and designers in your team
+			- [color=%s]VisualScript[/color], for artists and designers on your team
 			- [color=%s]ShaderScript[/color], to simplify material creation
 			""" % [PINK, BLUE, GREEN],
 		'picture': 'res://slides/img/visual-script.png'
@@ -279,7 +279,7 @@ var features = [
 		"footer": "Designed to work well with Blender Eevee"
 	},
 	{
-		"title": "Lets talk about particules",
+		"title": "Lets talk about particles",
 		'demo': 'res://demos/many-particles/Sparkles.tscn',
 		"body":
 		"""
