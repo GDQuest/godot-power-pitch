@@ -15,9 +15,22 @@ It has one big advantage over any external program: you can run game demos insid
 
 **To download the full package, see the [ releases ](https://github.com/GDquest/godot-3-presentation/releases)**.
 
+## Controls
+
+Press <kbd>p</kbd> and <kbd>n</kbd> to jump to the **next** and the **previous** slide respectively. You may also use <kbd>,</kbd> and <kbd>.</kbd>, the <kbd><</kbd> and <kbd>></kbd> keys on QWERTY keyboards.
+
+They may seem weird but as you can have demos inside the slides, they work this way so they won't collide with other game examples.
+
+
 ## Help translate the slides
 
-The first version is only available in French. Please help translate the presentation so people can use it all around the world! To translate the slides: duplicate the `res://slides/fr.gd` file, and rename it to the language you're covering (en, es, pt, jp...) file and replace the text strings with translations.
+The presentation is available in:
+
+1. English
+1. Spanish
+1. French
+
+Please help translate it so people can use it all around the world! To translate the slides: duplicate the `res://slides/fr.gd` file, and rename it to the language you're covering (en, es, pt, jp...) file and replace the text strings with translations.
 
 The presentation was designed with French people in mind, with some light touches of humor. Feel free to adapt the content to your culture!
 
@@ -68,3 +81,8 @@ See `res://slides/fr.gd` in the Godot project for a presentation example.
 - [Andreas Esau](https://www.youtube.com/user/ndee85)
 - Wallrider par [Zylann Productions](https://www.youtube.com/user/ZylannMP3/videos)
 - HTC Vive/Virtual Reality demo modelled by Clelio Rossi, Davide Romboli and Andrea Laghi, developed by Lamberto Tedaldi
+
+### Translations
+
+English: Gabriel Marais
+Spanish: Antonio Torres Moríñigo

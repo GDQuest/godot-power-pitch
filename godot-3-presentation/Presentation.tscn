@@ -275,7 +275,7 @@ __meta__ = {
 }
 add_text_shadow = true
 particles = false
-slides_path = "res://slides/fr.gd"
+slides_path = "res://slides/en.gd"
 
 [node name="Background" type="Node" parent="."]
 
@@ -363,19 +363,6 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 5 )
 _sections_unfolded = [ "Rect" ]
-title = "C'est pas la taille qui compte"
-subtitle = "Vingt mégaoctets de pur bonheur"
-body = "Un seul exécutable de [color=#26BFE3]20mo[/color]:
-
-- Téléchargez le [color=#26BFE3]en quelques secondes[/color]
-- [color=#26BFE3]Pas d'installation[/color]
-
-Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#...
-"
-picture_path = null
-video_path = null
-demo_path = ""
-footer = "Ce petit fichier contient le moteur, les outils d'UI et tout pour faire un jeu complet"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Slide"]
 

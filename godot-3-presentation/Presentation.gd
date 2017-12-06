@@ -95,7 +95,7 @@ func change_slide(index):
 	$Slide.demo_path = current_slide[DEMO]
 
 	$Slide.footer = current_slide[FOOTER]
-	
+
 	if current_slide[CONFIG]:
 		var config = current_slide[CONFIG]
 		if 'video_size' in config.keys():
