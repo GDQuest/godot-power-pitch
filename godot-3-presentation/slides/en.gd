@@ -28,7 +28,7 @@ var intro = [
 
 			- Two separate [color=%s]2d[/color] and [color=%s]3d[/color] engines
 			- A complete editor to create your levels
-			- Multiplatform: PC, Mac, Linux
+			- Multiplatform: Windows, Mac, Linux
 			- Exports available for PC, mobile, web*""" % [BLUE, PINK],
 		'picture': 'res://slides/img/2d-viewport-2.x.png',
 		"footer": "*And consoles for businesses"
@@ -41,7 +41,7 @@ var intro = [
 	{
 		"title": "Its philosophy: all-in-one",
 		"body":
-			"""If it misses anything essential, we add it !
+			"""If it misses anything essential, we add it!
 
 			- Code editor with embedded docs and autocompletion
 			- [color=%s]Animation[/color] editor with 2d rigging
@@ -49,7 +49,7 @@ var intro = [
 			- [color=%s]Shader[/color] editors, both text and graph-based*
 			""" % [BLUE, GREEN],
 		'picture': 'res://slides/img/godot-2-shader-editor.png',
-		"footer": "*Not available in 3.0 yet, port in progress and completion scheluded for 3.1"
+		"footer": "*Not available in 3.0 yet, port in progress and completion scheduled for 3.1"
 	},
 	{
 		"title": "Three programming languages",
@@ -75,9 +75,9 @@ var health = [
 		"title": "Size does not matter",
 		'subtitle': 'Twenty megabytes of pure joy',
 		"body":
-			"""One [color=%s]20mb[/color] executable:
+			"""One [color=%s]20 MB[/color] executable:
 
-			- Download it [color=%s]in few seconds[/color]
+			- Download it [color=%s]in a few seconds[/color]
 			- [color=%s]No installation[/color]
 
 			Everything that requires more disk space is optional: mobile export templates, Mono and C#...
@@ -104,7 +104,7 @@ var health = [
 			- 10 000+ commits
 			- 11 000+ stars
 
-			[color=%s]6000$[/color] a month on Patreon. Sponsored by Mozilla and even Microsoft for C# support.
+			[color=%s]$6000[/color] a month on Patreon. Sponsored by Mozilla and even Microsoft for C# support.
 			""" % [GREEN, GREEN, GREEN],
 		'picture': 'res://slides/img/github-pulse-october.png',
 		"footer": "Juan, the lead developer, already declined job offers for other engines"
@@ -113,9 +113,9 @@ var health = [
 		"title": "Godot attracts professionals",
 		"subtitle": "",
 		"body":
-			"""These professionals already use Godot 2.0:
+			"""These professionals already use Godot 2.1:
 
-			- [color=%s]Game studios[/color]: Gamblify, Guaranapps, Kivano...
+			- [color=%s]Game studios[/color]: Gamblify, GuaranApps, Kivano...
 			- [color=%s]Schools[/color]: School4Games, KidsCanCode...
 			- [color=%s]Content creators[/color]: Heartbeast, [i]GDQuest[/i]...
 			""" % [PINK, BLUE, GREEN],
@@ -140,7 +140,7 @@ var concepts = [
 			Godot uses simpler [color=%s]node trees[/color] instead.
 			""" % [BLUE, BLUE, BLUE, GREEN, GREEN, GREEN],
 		'picture': 'res://slides/img/node-tree.png',
-		'footer': '*Model-View-Controller and Entity-Component System'
+		'footer': '*Model-View-Controller and Entity-Component-System'
 	},
 	{
 		"title": "An Object-Oriented editor",
@@ -221,18 +221,18 @@ var features = [
 			Currently supported languages: [color=%s]C[/color], [color=%s]C++[/color], [color=%s]Rust[/color], [color=%s]Python[/color], and [color=%s]D[/color], thanks to the community
 			""" % [GREEN, ORANGE, ORANGE, PINK, GREEN, GREEN],
 		'picture': 'res://slides/img/gdnative.png',
-		"footer": "Yes, C and C++ without re-compiling the engine! Thank Karroffel and Bojidar"
+		"footer": "Yes, C and C++ without re-compiling the engine! Thanks Karroffel and Bojidar"
 	},
 	{
-		"title": "Signals or Godot's Observer",
+		"title": "Signals or Godot's Observer Pattern",
 		"subtitle": "Send messages between your nodes without coupling them",
 		"body":
-			"""Signals are Observers on steroids. [color=%s]Connect[/color] nodes with one another via the code or in the editor. Let them communicate without exposing the full class.
+			"""Signals are events on steroids. [color=%s]Connect[/color] nodes with one another via the code or in the editor. Let them communicate without exposing the full class.
 
 			Define your own signals or use the many built-in ones. Bind variables and send values along with the signal.
 			""" % BLUE,
 		"picture": "res://slides/img/signals.png",
-		"footer": "For example, to update the lifebar of a character when he gets hit"
+		"footer": "For example, to update the lifebar of a character when they get hit"
 	},
 	{
 		"title": "Signals example",
@@ -254,7 +254,7 @@ var features = [
 	{
 		"title": "Animation-based combat mechanics",
 		"demo": "res://demos/characters_and_weapons/Game.tscn",
-		"footer": "Isn't it breath-taking?"
+		"footer": "Isn't it breathtaking?"
 	},
 	{
 		"title": "Tilemap editor",
@@ -279,7 +279,7 @@ var features = [
 		"footer": "Designed to work well with Blender Eevee"
 	},
 	{
-		"title": "Lets talk about particles",
+		"title": "Let's talk about particles",
 		'demo': 'res://demos/many-particles/Sparkles.tscn',
 		"body":
 		"""
@@ -291,7 +291,7 @@ var features = [
 
 		[center][color=%s]Ratatatatata[/color][/center]
 		""" % [PINK, PINK, ORANGE, GREEN],
-		"footer": "New engine = many more particules"
+		"footer": "New engine = many more particles"
 	},
 	{
 		"title": "Augmented and Virtual Reality",
@@ -338,7 +338,7 @@ var features = [
 
 			This also works with smartphones and on remote devices.
 
-			The changes are [color=%s]saved[/color] even after you closed the game.
+			The changes are [color=%s]saved[/color] even after you close the game.
 			""" % [BLUE, BLUE],
 		'picture': 'res://slides/img/jotsway-canyon-screen.png',
 		"footer": "Jotsway Canyon, tactical-RPG by Johnny Goss"
@@ -352,7 +352,7 @@ var features = [
 		"body":
 			"""Add the [color=%s]tool[/color] keyword at the top of your scripts: the code runs in the editor!
 
-			Use [color=%s]tool[/color] to visualise the patrol path of an IA, try out procedural generation, improve the level editor...
+			Use [color=%s]tool[/color] to visualise the patrol path of an AI, try out procedural generation, improve the level editor...
 			""" % [ORANGE, ORANGE],
 		'picture': 'res://slides/img/teddy-game.jpg',
 		"footer": ""
@@ -362,7 +362,7 @@ var features = [
 		'video': 'res://slides/video/andreas-godot-asset-drop.ogv'
 	},
 	{
-		'title': 'Get Teddy by Guaranapps',
+		'title': 'Get Teddy by GuaranApps',
 		'video': 'res://slides/video/guaranapps-level-editor.ogv'
 	},
 	{
@@ -389,7 +389,7 @@ var create = [
 		"video": 'res://slides/video/presentaception.ogv'
 	},
 	{
-		"title": "Game engines ?!",
+		"title": "Game engines?!",
 		"subtitle": "Welcome to RPG in a Box",
 #		"body":
 #			"""The interface reminds you something? Here is RPG in a Box, a voxel RPG making software conceived using Godot.
@@ -436,7 +436,7 @@ var learning = [
 	},
 	{
 		"title": "Content Creators",
-		"subtitle": "Some recommendations to get start",
+		"subtitle": "Some recommendations to get started",
 		'body':
 		"""There are still few good and free video tutorial series for Godot. Three recommended channels:
 
@@ -459,7 +459,7 @@ var questions = [{
 		Credits:
 
 		Furry Defenders by [url=http://www.kivano.games/]Kivano[/url]
-		[url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] by Guaranapps
+		[url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] by GuaranApps
 		[url=https://jaggygames.itch.io/jotswaycanyon]Jotsway Canyon[/url] by JaggyGames
 		[url=http://www.rpginabox.com/]RPG in a Box[/url] by Justin
 		[url=https://www.youtube.com/user/ndee85]Andreas Esau[/url]
