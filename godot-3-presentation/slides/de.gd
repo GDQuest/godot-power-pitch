@@ -65,7 +65,7 @@ var intro = [
 	},
 	{
 		"title": "GDScript Beispiel",
-		'picture': 'res://slides/img/GDScript-example.png'
+		'picture': 'res://slides/img/gdscript-example.png'
 	}
 ]
 
