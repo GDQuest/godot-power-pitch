@@ -29,6 +29,8 @@ The presentation is available in:
 1. English
 1. Spanish
 1. French
+1. Italian
+1. German
 
 Please help translate it so people can use it all around the world! To translate the slides: duplicate the `res://slides/fr.gd` file, and rename it to the language you're covering (en, es, pt, jp...) file and replace the text strings with translations.
 
@@ -86,3 +88,4 @@ See `res://slides/fr.gd` in the Godot project for a presentation example.
 
 English: Gabriel Marais
 Spanish: Antonio Torres Moríñigo
+Italian: Enrico Monese
