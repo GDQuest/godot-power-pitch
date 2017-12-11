@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/presentaception.ogv-9c0dfc9efb02fecba4c33d7a02ae3bed.ogvstr"
+
+[deps]
+
+source_md5="f3d33665838011aaf8a5554bc21a25b2"
+
+[params]
+
+loop=true

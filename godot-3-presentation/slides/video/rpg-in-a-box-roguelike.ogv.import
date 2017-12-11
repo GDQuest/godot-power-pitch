@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/rpg-in-a-box-roguelike.ogv-679ebc67077aef8ca623eaaf0cc2243e.ogvstr"
+
+[deps]
+
+source_md5="da7c375fa62848ec6d12e2bae16e72bc"
+
+[params]
+
+loop=true

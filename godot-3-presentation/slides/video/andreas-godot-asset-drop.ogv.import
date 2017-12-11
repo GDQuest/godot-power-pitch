@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/andreas-godot-asset-drop.ogv-09ad578165289901b885b02186b19ecc.ogvstr"
+
+[deps]
+
+source_md5="631e7f01baa0a85cc81d5b2cccc5a4bd"
+
+[params]
+
+loop=true

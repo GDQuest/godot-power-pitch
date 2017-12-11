@@ -275,7 +275,7 @@ __meta__ = {
 }
 add_text_shadow = true
 particles = false
-slides_path = "res://slides/en.gd"
+slides_path = "res://slides/es.gd"
 
 [node name="Background" type="Node" parent="."]
 

@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/zylann-wallrider-canon-tool.ogv-e9d8607c3fdc514c6fa0fd409afcc6d2.ogvstr"
+
+[deps]
+
+source_md5="9e4f6eeae9c0fe7a771ef03150681bea"
+
+[params]
+
+loop=true
