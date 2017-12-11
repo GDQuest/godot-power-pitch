@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/godot-vr-fightsim.ogv-d6649e27b9d807c8870caef44132a58a.ogvstr"
+
+[deps]
+
+source_md5="daf07145c9e89163d9c3e03e5f371450"
+
+[params]
+
+loop=true

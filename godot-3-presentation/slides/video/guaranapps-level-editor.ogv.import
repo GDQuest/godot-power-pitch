@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/guaranapps-level-editor.ogv-5249376aa12ff8b5747043615c4d404c.ogvstr"
+
+[deps]
+
+source_md5="5b9a5608f6c7d4e12391b5c8fb0c7a3c"
+
+[params]
+
+loop=true

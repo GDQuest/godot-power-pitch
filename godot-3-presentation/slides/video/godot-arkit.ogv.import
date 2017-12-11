@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/godot-arkit.ogv-77af38b70aa772dc08e6e37a8d7dd2ec.ogvstr"
+
+[deps]
+
+source_md5="86221db81c76b198afa80b2110c9105f"
+
+[params]
+
+loop=true

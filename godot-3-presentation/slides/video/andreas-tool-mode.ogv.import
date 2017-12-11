@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/andreas-tool-mode.ogv-112d7e7dc85f6ab423e2d21a59f97bba.ogvstr"
+
+[deps]
+
+source_md5="133e771c4a0c60d0732df22e84d7b6c9"
+
+[params]
+
+loop=true

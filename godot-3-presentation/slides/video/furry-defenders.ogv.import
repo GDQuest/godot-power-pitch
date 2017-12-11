@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/furry-defenders.ogv-218165b1c54004bcf9145d97899f3dbc.ogvstr"
+
+[deps]
+
+source_md5="1f74ee205fc24fdd1d845f1f4b138d79"
+
+[params]
+
+loop=true

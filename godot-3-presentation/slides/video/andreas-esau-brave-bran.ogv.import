@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/andreas-esau-brave-bran.ogv-5212aa75cc3735f3c8260aacb771dc20.ogvstr"
+
+[deps]
+
+source_md5="5ffaf44a3c3e1565df5812aab56d2f12"
+
+[params]
+
+loop=true

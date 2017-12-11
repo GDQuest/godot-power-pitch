@@ -1,0 +1,13 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/jotsway-canyon-live-scripting.ogv-2a3bf18b8eba4e315876b4e8d381cdad.ogvstr"
+
+[deps]
+
+source_md5="9dc815d0d72501b5102b37cbae200f60"
+
+[params]
+
+loop=true
