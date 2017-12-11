@@ -65,7 +65,7 @@ var intro = [
 	},
 	{
 		"title": "Esempio di GDScript",
-		'picture': 'res://slides/img/GDScript-example.png'
+		'picture': 'res://slides/img/gdscript-example.png'
 	}
 ]
 
@@ -153,7 +153,7 @@ var concepts = [
 			Ogni nodo [color=%s]eredita[/color] da nodi di base: tutti i nodi funzionano più o meno allo stesso modo.
 			""" % [GREEN, BLUE, PINK],
 		'picture': 'res://slides/img/node-tree-2.png',
-		'footer': '*Incapsulato se lo vediamo da una prospettiva orientata all' oggetto.\n Questo design ti aiuta a strutturare le scene in modo che riflettano il tuo design di gioco.'
+		'footer': '*Incapsulato se lo vediamo da una prospettiva orientata all oggetto.\n Questo design ti aiuta a strutturare le scene in modo che riflettano il tuo design di gioco.'
 	},
 	{
 		"title": "Godot è 'un gioco fatto con Godot'",
