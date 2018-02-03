@@ -196,87 +196,89 @@ var features = [
 		"footer": "Comecemos pelas que agradam os desenvolvedores"
 	},
 	{
-		"title": "Programmez en C#",
-		"subtitle": "De quoi ravir les programmeurs Unity",
+		"title": "Programe em C#",
+		"subtitle": "Para os programadores de C# e os usuários do Unity",
 		"body":
-			"""La programmation en [color=%s]C#[/color] est disponible sous 3.0
+			"""[color=%s]C#[/color] está disponível a partir da versão 3.0
 
-			Basé sur la dernière version de Mono,
-			Support de XamarinStudio, VSCode, et Visual Studio
+			Baseado na versão mais recente do compilador Mono,
+			Programe com XamarinStudio, VSCode, e Visual Studio
 
-			C'est l'un des trois langages inclus dans l'éditeur, avec GDScript et VisualScript
+			É uma das três linguagens inclusas no editor, além do GDScript e VisualScript
 			""" % ORANGE,
 		'picture': 'res://slides/img/c-sharp-vstudio.png',
-		"footer": "Travail réalisé par Ignacio R. Etcheverry, sponsorisé par Microsoft"
+		"footer": "Trabalho feito por Ignacio R. Etcheverry, apoiado pela Microsoft"
 	},
 	{
-		"title": "Les performances sans compiler",
-		"subtitle": "Bindings dynamiques avec GDNative",
+		"title": "GDNative",
+		"subtitle": "Desempenho nativo sem a necessidade de compilar",
 		"body":
-			"""Utilisez n'importe quelle librairie [color=%s]dynamiquement[/color]
+			"""Use qualquer biblioteca [color=%s]dinamicamente[/color] com desempenho próximo ao nativo
 
-			GDnative expose [b]toutes[/b] les fonctions du moteur
+			GDnative expõe [b]todas[/b] as funções do motor, ligando-o com bibliotecas externas
 
-			Support des langages [color=%s]C[/color], [color=%s]C[/color]++, [color=%s]Rust[/color], et [color=%s]D[/color] par la communauté
-			""" % [GREEN, ORANGE, ORANGE, PINK, GREEN],
+			Linguagens suportadas: [color=%s]C[/color], [color=%s]C[/color]++, [color=%s]Rust[/color], [color=%s]Python[/color], e [color=%s]D[/color] graças à comunidade
+			""" % [GREEN, ORANGE, ORANGE, PINK, GREEN, GREEN],
 		'picture': 'res://slides/img/gdnative.png',
-		"footer": "Oui, du C et du C++ sans re-compiler le moteur! Par Karroffel et Bojidar"
+		"footer": "Sim, C e C++ sem recompilar o motor! Agradecimentos a Karroffel e Bojidar"
 	},
 	{
-		"title": "Signals ou l'observer intégré",
-		"subtitle": "Faites communiquer vos nodes sans les coupler",
+		"title": "Sinais ou o observador integrado",
+		"subtitle": "Envie sinais entre seus nós sem precisar acoplá-los",
 		"body":
-			"""[color=%s]Connectez[/color] des scènes entre elles dans le code ou via l'interface, sans les exposer mutuellement.
+			"""[color=%s]Conecte[/color] nós através do código ou do editor sem expor dados desnecessários.
 
-			Par exemple pour mettre à jour la barre de vie d'un personnage lorsqu'il prend un coup.
+			Defina seus próprios sinais ou use os vários já prédefinidos. Ligue variáveis e envie valores juntos ao sinal.
 			""" % BLUE,
 		"picture": "res://slides/img/signals.png",
-		"footer": ""
+		"footer": "Por exemplo, atualizar a barra de vida de um personagem quando este recebe um ataque"
 	},
 	{
-		"title": "Exemple de signals",
+		"title": "Exemplo de sinais",
 		"demo": "res://demos/lifebar/LevelMockup.tscn"
 	},
 	{
-		"title": "Animez tout...",
-		"subtitle": "...et n'importe quoi!",
+		"title": "Anime qualquer coisa...",
+		"subtitle": "...não importa o quê!",
 		"body":
-			"""Animez [b]toutes[/b] les propriétés de [b]tous[/b] les noeuds.
+			"""Anime [b]qualquer[/b] propriedade de [b]qualquer[/b] nó.
 
-			[color=%s]Taille[/color], [color=%s]position[/color], activez/désactivez les [color=%s]collisions[/color], activez des [color=%s]interrupteurs[/color]...
+			[color=%s]Tamanho[/color], [color=%s]posição[/color], ativar/desativar [color=%s]colisões[/color], [color=%s][i]booleans[/i][/color]...
+			
+			Chame funções no editor de animação.
 			""" % [BLUE, BLUE, GREEN, GREEN],
 		'picture': 'res://slides/img/godot-skeleton-1280x720.png',
-		"footer": "GoBot par Andreas Esau"
+		"footer": "GoBot de Andreas Esau"
 	},
 	{
-		"title": "Combat à base d'animation",
+		"title": "Mecânicas de combate baseadas em animação",
 		"demo": "res://demos/characters_and_weapons/Game.tscn",
-		"footer": "Avouez que c'est à couper le souffle!"
+		"footer": "Não é incrível?"
 	},
 	{
-		"title": "Éditeur de tilemaps",
-		"subtitle": "En vue de haut comme isométrique",
+		"title": "Editor de tilemaps",
+		"subtitle": "Vista superior e isométrica",
 		'picture': 'res://slides/img/isometric-tilemap.png',
 	},
 	{
-		"title": "Escoria pour les jeux d'aventure",
-		"subtitle": "Point & Click, arbres de dialogues...",
+		"title": "Escoria para jogos de aventura",
+		"subtitle": "Point & Click, árvores de diálogos...",
 		'picture': 'res://slides/img/dog-mendoza.png',
 		"body":
-			"""Escoria offre un langage pour écrire des jeux d'aventure dans la veine de RenPy et autres moteurs de Visual Novel:
+			"""Escoria oferece uma linguagem natural para a escrita de jogos de aventura assim como RenPy e outros motores de Visual Novel:
 
 			[color=%s]:talk[/color]
-			[color=%s]say[/color] [color=%s]player[/color] "What a strange critter…" [color=%s]default[/color] avatar_panda
-			[color=%s]say[/color] [color=%s]chameleon[/color] "You know I can hear you, right?" [color=%s]default[/color] avatar_chameleon
+			[color=%s]say[/color] [color=%s]player[/color] "Que criatura estranha…" [color=%s]default[/color] avatar_panda
+			[color=%s]say[/color] [color=%s]chameleon[/color] "Sabe que posso te ouvir, não?" [color=%s]default[/color] avatar_chameleon
 			""" % [PINK, ORANGE, BLUE, ORANGE, ORANGE, BLUE, ORANGE,]
 	},
 	{
-		"title": "Moteur 3d dans l'ère du temps",
+		"title": "Um moderno motor 3D",
 		'picture': 'res://slides/img/sponza-2.jpg',
-		"footer": "Pensé pour offrir un rendu proche de Blender Eevee"
+		"footer": "Pensado para integrar-se bem com o Eevee do Blender"
 	},
 	{
-		"title": "Parlons un peu particules",
+		"title": "Agora vamos falar de partículas",
 		'demo': 'res://demos/many-particles/Sparkles.tscn',
 		"body":
 		"""
@@ -288,25 +290,25 @@ var features = [
 
 		[center][color=%s]Ratatatatata[/color][/center]
 		""" % [PINK, PINK, ORANGE, GREEN],
-		"footer": "Nouveau moteur = beaucoup plus de particules"
+		"footer": "Novo motor = muito mais partículas"
 	},
 	{
-		"title": "Réalité Virtuelle et Augmentée",
+		"title": "Realidade Virtual e Aumentada",
 		"body":
-			"""Créez des jeux pour l'[color=%s]Occulus Rift[/color], le [color=%s]Gear VR[/color] et bien d'autres dans Godot 3.
+			"""Crie jogos para[color=%s]Occulus Rift[/color], [color=%s]Gear VR[/color] e outros no Godot 3 através do OpenVR da Valve.
 
-			Créez des jeux en [color=%s]réalité augmentée[/color] avec l'ARKit.
+			Também crie jogos em [color=%s]realidade aumentada[/color] com o ARKit.
 			""" % [PINK, PINK, GREEN],
 		'picture': 'res://slides/img/arkit-1280x720.jpg',
-		"footer": "Gros du par Bastiaan Olij, avec l'aide de Karroffel et Hinsbart"
+		"footer": "Por Bastiaan Olij, com ajuda de Karroffel e Hinsbart"
 	},
 	{
-		'title': 'Réalité augmentée',
-		'footer': 'Certes, Bastiaan n\'est pas un artiste, mais ça marche!',
+		'title': 'Realidade aumentada',
+		'footer': 'Bastiaan não é um aryista, mas funciona bem!',
 		'video': 'res://slides/video/godot-arkit.ogv'
 	},
 	{
-		'title': 'Réalité Virtuelle',
+		'title': 'Realidade Virtual',
 		'video': 'res://slides/video/vr-capture.ogv',
 		'config': {
 			'video_size': {
@@ -316,18 +318,20 @@ var features = [
 		}
 	},
 	{
-		"title": "Interfaces complexes...",
-		"subtitle": "...et flexibles",
+		"title": "Interfaces de usuário complexas...",
+		"subtitle": "...e flexíveis",
 		"body":
-			"""Système de [color=%s]conteneurs[/color], tabs, marges, [color=%s]ancrage[/color]...
+			"""Sistema de [color=%s]contêineres[/color], tabulações, margens, [color=%s]ancoragem[/color], gráficos de nós...
 
-			Vous pouvez mettre en page toute votre UI dans l'éditeur
+                        Godot possui suas próprias robustas ferramentas para programação e para design de UI. Leiautes automatizados de UI, alinhamento inteligente como no Photoshop, grades e guias...
+
+			Você pode desenvolver seus jogos e plugins no editor.
 			""" % [GREEN, GREEN],
 		'picture': 'res://slides/img/rpg-in-a-box-graph.png',
-		"footer": "Travail par Bastiaan Olij"
+		"footer": "RPG in a Box: um editor de RPG feito no Godot. Trabalho de Bastiaan Olij"
 	},
 	{
-		"title": "Sync script, sync scenes",
+		"title": "Sincronize cenas e scripts",
 		"body":
 			"""Testez votre jeu. Modifiez un script, une scène, un niveau: le changement est [color=%s]immédiat[/color].
 
