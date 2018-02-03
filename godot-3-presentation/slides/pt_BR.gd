@@ -87,7 +87,7 @@ var health = [
 		"footer": "Um pequeno arquivo contém o motor, ferramentas para UI e tudo que precisa para fazer seu jogo"
 	},
 	{
-		"title": "Novidades da Godot 3",
+		"title": "Novidades do Godot 3",
 		'subtitle': 'Apertem os cintos...',
 		'picture': 'res://slides/img/gltf-damaged-helmet.jpg',
 		"footer": "Tudo a seguir foi feito em um pouco mais de um ano de desenvolvimento"
@@ -121,14 +121,14 @@ var health = [
 			- Os [color=%s]criadores de conteúdo[/color]: Heartbeast, [i]GDQuest[/i]...
 			""" % [PINK, BLUE, GREEN],
 		'picture': 'res://slides/img/gamblify-monsters-5.jpg',
-		"footer": "Preparem-se para ainda mais após o lançamento da Godot 3.0"
+		"footer": "Preparem-se para ainda mais após o lançamento do Godot 3.0"
 	}
 ]
 
 
 var concepts = [
 	{
-		"title": "Os princípios da Godot",
+		"title": "Os princípios do Godot",
 		"subtitle": "O que a faz Voyons un peu ce qui le rend unique",
 		"body":
 			"""Chaque moteur de jeu est différent. Godot a deux particularités:
