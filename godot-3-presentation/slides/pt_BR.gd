@@ -40,20 +40,20 @@ var intro = [
 		'picture': 'res://slides/img/deponia-ps4-game.png'
 	},
 	{
-		"title": "Sa philosophie: tout-en-un",
+		"title": "Sua filosofia: tudo em um",
 		"body":
-			"""S'il manque un outil essentiel, on l'ajoute !
+			"""Se falta algo essencial, nós adicionamos!
 
-			- Éditeur de code avec aide et auto-complétion riches
-			- Éditeur [color=%s]d'animation[/color] et rigging 2d
-			- Langage de programmation visuel pour les designers
-			- Éditeur de [color=%s]shaders[/color] standard et visuel*
+			- Editor de código com documentação embutida e autocompletar
+			- Editor de [color=%s]d'animação[/color] com [i]rigging[\i] 2d
+			- Linguagem de programação visual para os designers
+			- Editor de [i][color=%s]shaders[/color][/i] tradicional e visual*
 			""" % [BLUE, GREEN],
 		'picture': 'res://slides/img/godot-2-shader-editor.png',
-		"footer": "*Indisponible dans la 3.0, retour prévu pour la 3.1"
+		"footer": "*Indisponível na versão 3.0, previsto para a 3.1"
 	},
 	{
-		"title": "Trois langages de programmation",
+		"title": "Três linguagens de programação",
 		'subtitle': 'Conçus pour vous simplifier la vie',
 		"body":
 			"""Programmez plus vite à l'aide de:
