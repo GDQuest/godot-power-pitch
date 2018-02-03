@@ -54,18 +54,18 @@ var intro = [
 	},
 	{
 		"title": "Três linguagens de programação",
-		'subtitle': 'Conçus pour vous simplifier la vie',
+		'subtitle': 'Para tornar sua vida mais fácil',
 		"body":
-			"""Programmez plus vite à l'aide de:
+			"""Programe mais rápido com:
 
-			- [color=%s]GDScript[/color], inspiré de Python et Lua, conçu pour les jeux
-			- [color=%s]VisualScript[/color], pour les artistes et designers en équipe
-			- [color=%s]ShaderScript[/color], facilite la création de matériaux
+			- [color=%s]GDScript[/color], inspirada em Python e Lua, concebida para jogos
+			- [color=%s]VisualScript[/color], para os artistas e [i]designers[/i] de sua equpe
+			- [color=%s]ShaderScript[/color], para facilitar a criação de materiais
 			""" % [PINK, BLUE, GREEN],
 		'picture': 'res://slides/img/visual-script.png'
 	},
 	{
-		"title": "Exemple de GDScript",
+		"title": "Exemplo de GDScript",
 		'picture': 'res://slides/img/gdscript-example.png'
 	}
 ]
@@ -73,55 +73,55 @@ var intro = [
 
 var health = [
 	{
-		"title": "C'est pas la taille qui compte",
-		'subtitle': 'Vingt mégaoctets de pur bonheur',
+		"title": "O tamanho não importa",
+		'subtitle': 'Vinte megabytes de pura alegria',
 		"body":
-			"""Un seul exécutable de [color=%s]20mo[/color]:
+			"""Apenas um executável de [color=%s]20 MB[/color]:
 
-			- Téléchargez le [color=%s]en quelques secondes[/color]
-			- [color=%s]Pas d'installation[/color]
+			- Baixe em [color=%s]poucos segundos[/color]
+			- [color=%s]Não necessita de instalação[/color]
 
-			Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#...
+			Tudo o que ocupa mais espaço é opcional: [i]templates[\i] de exportação, Mono e C#...
 			""" % [BLUE, BLUE, BLUE],
 		'picture': 'res://slides/img/multiplatform-editor.jpg',
-		"footer": "Ce petit fichier contient le moteur, les outils d'UI et tout pour faire un jeu complet"
+		"footer": "Um pequeno arquivo contém o motor, ferramentas para UI e tudo que precisa para fazer seu jogo"
 	},
 	{
-		"title": "Nouveau dans Godot 3",
-		'subtitle': 'Attachez vos ceintures...',
+		"title": "Novidades da Godot 3",
+		'subtitle': 'Apertem os cintos...',
 		'picture': 'res://slides/img/gltf-damaged-helmet.jpg',
-		"footer": "Le tout en un peu plus d'un an de développement"
+		"footer": "Tudo a seguir foi feito em um pouco mais de um ano de desenvolvimento"
 	},
 	{
 		"demo": "res://demos/new-in-godot-3/img.tscn"
 	},
 	{
-		"title": "C'est bien la taille qui compte",
-		"subtitle": "On vous a menti depuis le début!",
+		"title": "Bem... O tamanho importa sim",
+		"subtitle": "The cake was a lie!",
 		"body":
-			"""Un projet libre [color=%s]en pleine forme[/color]:
+			"""Um projeto livre [color=%s]em ótima forma[/color]:
 
-			- [color=%s]450+[/color] contributeurs
+			- [color=%s]450+[/color] contribuidores
 			- 10 000+ commits
-			- 11 000+ étoiles
+			- 11 000+ stars
 
-			Financé à hauteur de [color=%s]4000$[/color] par mois sur Patreon, sponsorisé par Mozilla et même Microsoft pour le support de C#
+			[color=%s]6000$[/color] por mês no Patreon, apoio da Mozilla e até da Microsoft para suportar C#
 			""" % [GREEN, GREEN, GREEN],
 		'picture': 'res://slides/img/github-pulse-october.png',
-		"footer": "Juan, le lead développeur, a déjà refusé des postes sur les autres moteurs"
+		"footer": "Juan, o desenvolvedor-chefe, já recusou ofertas de trabalho de outros motores"
 	},
 	{
-		"title": "Les pros s'y intéressent doucement",
+		"title": "Godot atrai os profissionais",
 		"subtitle": "",
 		"body":
-			"""Des professionnels utilisent déjà Godot 2.0:
+			"""Estes profissionais já usam Godot 2.1:
 
-			- Que ce soient les [color=%s]studios[/color]: Gamblify, Guaranapps...
-			- Les [color=%s]écoles[/color]: School4Games, KidsCanCode...
-			- Les [color=%s]vidéastes[/color]: Heartbeast, [i]GDQuest[/i]...
+			- [color=%s][i]Game studios[\i][/color]: Gamblify, Guaranapps...
+			- [color=%s]Escolas[/color]: School4Games, KidsCanCode...
+			- Os [color=%s]criadores de conteúdo[/color]: Heartbeast, [i]GDQuest[/i]...
 			""" % [PINK, BLUE, GREEN],
 		'picture': 'res://slides/img/gamblify-monsters-5.jpg',
-		"footer": "Attendez-vous à voir plus de monde après la sortie de Godot 3.0"
+		"footer": "Preparem-se para ainda mais após o lançamento da Godot 3.0"
 	}
 ]
 
