@@ -323,7 +323,7 @@ var features = [
 		"body":
 			"""Sistema de [color=%s]contêineres[/color], tabulações, margens, [color=%s]ancoragem[/color], gráficos de nós...
 
-                        Godot possui suas próprias robustas ferramentas para programação e para design de UI. Leiautes automatizados de UI, alinhamento inteligente como no Photoshop, grades e guias...
+			Godot possui suas próprias robustas ferramentas para programação e para design de UI. Leiautes automatizados de UI, alinhamento inteligente como no Photoshop, grades e guias...
 
 			Você pode desenvolver seus jogos e plugins no editor.
 			""" % [GREEN, GREEN],
@@ -454,7 +454,7 @@ var questions = [{
 		'body':
 		"""Esta apresentação é livre, obtenha-a em [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]
 
-                Créditos:
+		Créditos:
                 
 		Furry Defenders de [url=http://www.kivano.games/]Kivano[/url]
 		[url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] de Guaranapps
