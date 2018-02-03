@@ -183,17 +183,17 @@ var concepts = [
 
 var features = [
 	{
-		"title": "Quelques features...",
-		"subtitle": "...parmi tant d'autres",
+		"title": "Algumas funcionalidades...",
+		"subtitle": "...entre muitas outras",
 		"body":
-			"""les moteurs sont si [color=%s]complexes[/color] qu'il est difficile de s'y retrouver.
+			"""Mototres de jogos são tão [color=%s]complexos[/color] que é difícil descobrir o que podem fazer.
 
-			Il y a beaucoup de nouveautés dans Godot 3, mais aussi beaucoup d'outils intéressants dans Godot 2.
+			Há muitas novas ferramentas no Godot 3, mas há muitas ferramentas interessantes desde o Godot 2.
 
-			Voici quelques fonctionalités choisies qui démarquent ce moteur.
+			Aqui vão algumas características que destacam o motor.
 			""" % PINK,
 		'picture': 'res://slides/img/some-features.png',
-		"footer": "On commence avec les trucs qui feront plaisir aux développeurs"
+		"footer": "Comecemos pelas que agradam os desenvolvedores"
 	},
 	{
 		"title": "Programmez en C#",
