@@ -304,7 +304,7 @@ var features = [
 	},
 	{
 		'title': 'Realidade aumentada',
-		'footer': 'Bastiaan não é um aryista, mas funciona bem!',
+		'footer': 'Bastiaan não é um artista, mas funciona muito bem!',
 		'video': 'res://slides/video/godot-arkit.ogv'
 	},
 	{
