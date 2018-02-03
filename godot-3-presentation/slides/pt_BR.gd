@@ -27,7 +27,7 @@ var intro = [
 		"body":
 			"""[b]Um[b] motor livre estilo Unity que possui:
 
-			- Motores [color=%s]2d[/color] e [color=%s]3d[/color] separados
+			- Motores [color=%s]2D[/color] e [color=%s]3D[/color] separados
 			- Um editor completo para criar seus níveis
 			- Suporte para PC, Mac e Linux
 			- Exporta para PC, mobile, web*""" % [BLUE, PINK],
@@ -45,7 +45,7 @@ var intro = [
 			"""Se falta algo essencial, nós adicionamos!
 
 			- Editor de código com documentação embutida e autocompletar
-			- Editor de [color=%s]animação[/color] com [i]rigging[/i] 2d
+			- Editor de [color=%s]animação[/color] com [i]rigging[/i] 2D
 			- Linguagem de programação visual para os designers
 			- Editor de [i][color=%s]shaders[/color][/i] tradicional e visual*
 			""" % [BLUE, GREEN],
@@ -186,7 +186,7 @@ var features = [
 		"title": "Algumas funcionalidades...",
 		"subtitle": "...entre muitas outras",
 		"body":
-			"""Mototres de jogos são tão [color=%s]complexos[/color] que é difícil descobrir o que podem fazer.
+			"""Motores de jogos são tão [color=%s]complexos[/color] que é difícil descobrir o que podem fazer.
 
 			Há muitas novas ferramentas no Godot 3, mas há muitas ferramentas interessantes desde o Godot 2.
 
@@ -295,7 +295,7 @@ var features = [
 	{
 		"title": "Realidade Virtual e Aumentada",
 		"body":
-			"""Crie jogos para[color=%s]Occulus Rift[/color], [color=%s]Gear VR[/color] e outros no Godot 3 através do OpenVR da Valve.
+			"""Crie jogos para [color=%s]Occulus Rift[/color], [color=%s]Gear VR[/color] e outros no Godot 3 através do OpenVR da Valve.
 
 			Também crie jogos em [color=%s]realidade aumentada[/color] com o ARKit.
 			""" % [PINK, PINK, GREEN],
