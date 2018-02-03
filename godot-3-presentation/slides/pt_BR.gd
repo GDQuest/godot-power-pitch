@@ -251,7 +251,7 @@ var features = [
 		"footer": "GoBot de Andreas Esau"
 	},
 	{
-		"title": "Mecânicas de combate baseadas em animação",
+		"title": "Combate baseado em animação",
 		"demo": "res://demos/characters_and_weapons/Game.tscn",
 		"footer": "Não é incrível?"
 	},
@@ -343,7 +343,7 @@ var features = [
 		"footer": "Jotsway Canyon, RPG tático de Johnny Goss"
 	},
 	{
-		'title': 'Sincronização de scripts em Jotsway Canyon',
+		'title': 'Sinc. de scripts em Jotsway Canyon',
 		'video': 'res://slides/video/jotsway-canyon-live-scripting.ogv'
 	},
 	{
