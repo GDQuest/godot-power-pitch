@@ -333,43 +333,43 @@ var features = [
 	{
 		"title": "Sincronize cenas e scripts",
 		"body":
-			"""Testez votre jeu. Modifiez un script, une scène, un niveau: le changement est [color=%s]immédiat[/color].
+			"""Teste seu jogo. Modifique um script, uma cena, um nível: a mudança é [color=%s]instantânea, em tempo real[/color].
 
-			Cela marche aussi avec votre téléphone et sur plusieurs appareils en simultané.
+			Também funciona com telefones celulares e dispositivos remotos.
 
-			Les changements sont [color=%s]sauvegardés[/color] même quand vous fermez le jeu.
+			As mudanças são [color=%s]salvas[/color] mesmo ao fechar o jogo.
 			""" % [BLUE, BLUE],
 		'picture': 'res://slides/img/jotsway-canyon-screen.png',
-		"footer": "Jotsway Canyon, jeu de combats tactiques par Johnny Goss"
+		"footer": "Jotsway Canyon, RPG tático de Johnny Goss"
 	},
 	{
-		'title': 'Script sync sur Jotsway Canyon',
+		'title': 'Sincronização de scripts em Jotsway Canyon',
 		'video': 'res://slides/video/jotsway-canyon-live-scripting.ogv'
 	},
 	{
-		"title": "Tool mode: la Godot-ception",
+		"title": "Modo ferramenta: Godot-ception",
 		"body":
-			"""Ajoutez le mot clé [color=%s]tool[/color] en haut de vos scripts: ils fonctionnent dans l'éditeur!
+			"""Adicione a palavra chave [color=%s]tool[/color] no começo de seus scripts: eles funcionarão no editor!
 
-			Utilisez [color=%s]tool[/color] pour visualiser le chemin de patrouille d'une IA, tester la génération aléatoire, améliorer l'éditeur de niveaux...
+			Use [color=%s]tool[/color] para visualizar o caminho que segue sua IA, testar a geração procedural, melhorar a edição de níveis...
 			""" % [ORANGE, ORANGE],
 		'picture': 'res://slides/img/teddy-game.jpg',
 		"footer": ""
 	},
 	{
-		'title': 'Asset dropper par Andreas Esau',
+		'title': 'Asset dropper, de Andreas Esau',
 		'video': 'res://slides/video/andreas-godot-asset-drop.ogv'
 	},
 	{
-		'title': 'Get Teddy par Guaranapps',
+		'title': 'Get Teddy, de Guaranapps',
 		'video': 'res://slides/video/guaranapps-level-editor.ogv'
 	},
 	{
-		'title': 'Wallrider, par Zylann',
+		'title': 'Wallrider, de Zylann',
 		'video': 'res://slides/video/zylann-wallrider-canon-level.ogv'
 	},
 	{
-		'title': 'Tool mode dans Wallrider',
+		'title': 'Modo ferramenta em Wallrider',
 		'video': 'res://slides/video/zylann-wallrider-canon-tool.ogv'
 	},
 ]
@@ -377,28 +377,28 @@ var features = [
 
 var create = [
 	{
-		"title": "Que peut-on faire avec Godot?",
-		"subtitle": "Déjà des jeux, cela semble logique",
-#		"footer": "Pour faire court: beaucoup, beaucoup de choses",
+		"title": "O que você pode fazer no Godot?",
+		"subtitle": "Jogos, obviamente",
+		"footer": "Mas há mais!",
 		'video': 'res://slides/video/furry-defenders.ogv',
 	},
 	{
-		"title": "Des applications",
-		"subtitle": "Par exemple, cette présentation",
+		"title": "Aplicações",
+		"subtitle": "Por exemplo, esta apresentação",
 		"video": 'res://slides/video/presentaception.ogv',
 	},
 	{
-		"title": "Des... moteurs de jeux???",
-		"subtitle": "Bienvenue dans RPG in a Box",
+		"title": "Outros motores de jogos???",
+		"subtitle": "Bem vindo a RPG in a Box",
 #		"body":
-#			"""L'interface vous rappelle quelque chose? Voici RPG in a Box, un logiciel de création de RPG en voxels conçu à l'aide de Godot.
+#			"""A interface te lembra de alguma coisa? Aqui está RPG in a Box, um software para criaçãp de RPG em voxels feito no Godot.
 #			""",
 		'picture': 'res://slides/img/rpg-in-a-box-map.png',
 		"footer": ""
 	},
 	{
-		"title": "RPG in a Box",
-		"subtitle": "Un jeu, fait avec un moteur, fait avec un moteur",
+		"title": "Roguelike em RPG in a Box",
+		"subtitle": "Um jogo feito em um motor feito em um motor",
 		'video': 'res://slides/video/rpg-in-a-box-roguelike.ogv',
 	},
 ]
@@ -406,44 +406,45 @@ var create = [
 
 var learning = [
 	{
-		"title": "Comment apprendre Godot?",
-		"subtitle": "Et où, en fait?",
+		"title": "Como aprender Godot?",
+		"subtitle": "Os recursos que deve usar",
 		'body':
-		"""Godot offre:
+		"""Godot oferece:
 
-		- Une [color=%s]communauté[/color] [b]très[/b] active. Réseaux sociaux, forum, IRC, Discord...
-		- Un site de [color=%s]questions/réponses[/color]
-		- Des [color=%s]tutoriels[/color] et un [color=%s]manuel[/color] en ligne
-		- Une [color=%s]référence intégrée[/color] à l'éditeur
-		- Un pack de démos open source
+		- Uma [color=%s]comunidade[/color] [b]muito[/b] ativa. Redes sociais, fórum, IRC, Discord...
+		- Um site de [color=%s]perguntas e respostas[/color]
+		- [color=%s]Tutoriais[/color] oficiais e um [color=%s]manual[/color] online
+		- [color=%s]Referências integradas[/color] ao editor
+		- Demos de código aberto
 		""" % [BLUE, BLUE, GREEN, GREEN, PINK],
 		'picture': 'res://slides/img/docs-community-websites.png',
-		"footer": "La majorité des ressources sont en anglais. Une bonne occasion de pratiquer."
+		"footer": "A maioria dos recursos está em inglês. Uma ótima ocasião para praticar."
 	},
 	{
-		"title": "L'aide intégrée",
-		"subtitle": "Pas besoin de jongler avec votre navigateur",
+		"title": "Documentação integrada",
+		"subtitle": "Não precisa abrir seu navegador",
 		'body':
-		"""Sélectionnez du texte dans l'éditeur de script, appuyez sur [color=%s]Shift F1[/color]:
+		"""Selecione texto no editor de script, aperte [color=%s]Shift F1[/color]:
 
-		Une liste des nodes, variables et fonctions correspondantes apparait instantannément.
-		La documentation s'ouvre [color=%s]dans l'éditeur de scripts[/color].
+		Uma lista de nós, variáveis e funções corresponentes aparecerá imediatamente.
+		
+		A documentação será aberta [color=%s]no editor de scripts[/color].
 		""" % [PINK, PINK],
 		'picture': 'res://slides/img/docs-integrated-help.png',
-		"footer": "Appuyez sur F4 pour ouvrir la fenêtre de recherche dans la référence"
+		"footer": "Pressione F4 para pesquisar na documentação"
 	},
 	{
-		"title": "Vidéastes",
-		"subtitle": "Quelques recommendations pour débuter",
+		"title": "Criadores de conteúdo",
+		"subtitle": "Algumas recomendações para iniciar",
 		'body':
-		"""Il existe encore peu de séries de tutoriels vidéo gratuits de qualité sur Godot. Je vous recommande 3 chaînes:
+		"""Há várias séries de tutoriais em vídeo gratuitos e de qualidade para Godot. Recomendamos três canais:
 
-		- [color=%s]KidsCanCode[/color], pour débutants, séries complètes
-		- [color=%s]Angega Studios[/color], pour débutants/intermédiaires, séries complètes
-		- [color=%s]GDQuest[/color], niveau intermédiaire
+		- [color=%s]KidsCanCode[/color], série completa para iniciantes
+		- [color=%s]Angega Studios[/color], série completa para iniciantes e intermediários
+		- [color=%s]GDQuest[/color], nível intermediário
 		""" % [ORANGE, PINK, BLUE],
 		'picture': '',
-		"footer": "Vous pouvez aussi suivre Heartbeast et Ivan Skodje"
+		"footer": "Também podem seguir Heartbeast e Ivan Skodje"
 	}
 ]
 
@@ -519,17 +520,19 @@ var gdquest = [
 
 
 var questions = [{
-		"title": "Merci!",
-		"subtitle": "Vous avez été adorables. Des questions?",
+		"title": "Obrigado!",
+		"subtitle": "Dúvidas?",
 		'body':
-		"""Retrouvez la présentation et tous les liens sur [url=http://gdquest.com]GDQuest.com[/url]. Crédits:
+		"""Esta apresentação é livre, obtenha-a em [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]
 
-		Furry Defenders par [url=http://www.kivano.games/]Kivano[/url]
-		[url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] par Guaranapps
-		[url=https://jaggygames.itch.io/jotswaycanyon]Jotsway Canyon[/url] par JaggyGames
-		[url=http://www.rpginabox.com/]RPG in a Box[/url] par Justin
+                Créditos:
+                
+		Furry Defenders de [url=http://www.kivano.games/]Kivano[/url]
+		[url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] de Guaranapps
+		[url=https://jaggygames.itch.io/jotswaycanyon]Jotsway Canyon[/url] de JaggyGames
+		[url=http://www.rpginabox.com/]RPG in a Box[/url] de Justin
 		[url=https://www.youtube.com/user/ndee85]Andreas Esau[/url]
-		Wallrider par [url=https://www.youtube.com/user/ZylannMP3/videos]Zylann Productions[/url]
+		Wallrider de [url=https://www.youtube.com/user/ZylannMP3/videos]Zylann Productions[/url]
 
 		""",
 		'picture': 'res://slides/img/gdquest-business-card.png',
