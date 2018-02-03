@@ -81,7 +81,7 @@ var health = [
 			- Baixe em [color=%s]poucos segundos[/color]
 			- [color=%s]Não necessita de instalação[/color]
 
-			Tudo o que ocupa mais espaço é opcional: [i]templates[\i] de exportação, Mono e C#...
+			Tudo o que ocupa mais espaço é opcional: [i]templates[/i] de exportação, Mono e C#...
 			""" % [BLUE, BLUE, BLUE],
 		'picture': 'res://slides/img/multiplatform-editor.jpg',
 		"footer": "Um pequeno arquivo contém o motor, ferramentas para UI e tudo que precisa para fazer seu jogo"
@@ -116,7 +116,7 @@ var health = [
 		"body":
 			"""Estes profissionais já usam Godot 2.1:
 
-			- [color=%s][i]Game studios[\i][/color]: Gamblify, Guaranapps...
+			- [color=%s][i]Game studios[/i][/color]: Gamblify, Guaranapps...
 			- [color=%s]Escolas[/color]: School4Games, KidsCanCode...
 			- Os [color=%s]criadores de conteúdo[/color]: Heartbeast, [i]GDQuest[/i]...
 			""" % [PINK, BLUE, GREEN],
@@ -128,8 +128,8 @@ var health = [
 
 var concepts = [
 	{
-		"title": "Les grands principes de Godot",
-		"subtitle": "Voyons un peu ce qui le rend unique",
+		"title": "Os princípios da Godot",
+		"subtitle": "O que a faz Voyons un peu ce qui le rend unique",
 		"body":
 			"""Chaque moteur de jeu est différent. Godot a deux particularités:
 
