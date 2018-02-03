@@ -139,7 +139,7 @@ var concepts = [
 			Godot usa [color=%s]node tree[/color] ou [color=%s]árvore de nós[/color].
 			""" % [BLUE, BLUE, BLUE, GREEN, GREEN, GREEN, GREEN],
 		'picture': 'res://slides/img/node-tree.png',
-		'footer': '*[i]Model-View-Controller[/i] e [i]Entity-Component System[/i]'
+		'footer': '*Model-View-Controller e Entity-Component System'
 	},
 	{
 		"title": "Um editor orientado a objetos",
@@ -152,7 +152,7 @@ var concepts = [
 			Todos os nós [color=%s]herdam[/color] dos nós base e funcionam de maneira parecida.
 			""" % [GREEN, BLUE, PINK],
 		'picture': 'res://slides/img/node-tree-2.png',
-		'footer': '*Encapsulamento, visto de uma perspectiva de programação orientada a objetos.\nIsso ajuda a estruturar suas cenas de modo que reflitam o seu [i]game design[/i].'
+		'footer': '*Encapsulamento, visto de uma perspectiva de programação orientada a objetos.\nIsso ajuda a estruturar suas cenas de modo que reflitam o seu game design.'
 	},
 	{
 		"title": "Godot é um jogo Godot",
@@ -163,7 +163,7 @@ var concepts = [
 			Eles não são apenas poderosos: você pode criar [color=%s]plugins[/color] da mesma maneira que cria jogos.
 			""" % [GREEN, GREEN],
 		'picture': 'res://slides/img/fsm-plugin.png',
-		'footer': 'Godot também possui uma loja de [i]assets[/i] integrada, como Unity ou Game Maker'
+		'footer': 'Godot também possui uma loja de assets integrada, como Unity ou Game Maker'
 	},
 	{
 		"title": "Unity, Godot, qual é o melhor?",
