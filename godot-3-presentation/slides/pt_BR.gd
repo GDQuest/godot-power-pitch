@@ -45,7 +45,7 @@ var intro = [
 			"""Se falta algo essencial, nós adicionamos!
 
 			- Editor de código com documentação embutida e autocompletar
-			- Editor de [color=%s]d'animação[/color] com [i]rigging[\i] 2d
+			- Editor de [color=%s]animação[/color] com [i]rigging[/i] 2d
 			- Linguagem de programação visual para os designers
 			- Editor de [i][color=%s]shaders[/color][/i] tradicional e visual*
 			""" % [BLUE, GREEN],
