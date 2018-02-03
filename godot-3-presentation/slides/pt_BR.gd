@@ -155,28 +155,28 @@ var concepts = [
 		'footer': '*Encapsulamento, visto de uma perspectiva de programação orientada a objetos.\nIsso ajuda a estruturar suas cenas de modo que reflitam o seu [i]game design[\i].'
 	},
 	{
-		"title": "Godot est un jeu Godot",
-		"subtitle": "L'éditeur utilise le même moteur que vous",
+		"title": "Godot é um jogo Godot",
+		"subtitle": "O editor usa o mesmo motor que você",
 		"body":
-			"""L'interface repose sur les [color=%s]nodes d'interface[/color] du moteur.
+			"""A interface do editor utiliza os [color=%s]nós de UI[/color] do próprio motor.
 
-			Ceux-ci ne sont pas que puissants: vous pouvez créer des [color=%s]plugins[/color] de la même manière que vous créez vos jeux.
+			Eles não são apenas poderosos: você pode criar [color=%s]plugins[/color] da mesma maneira que cria jogos.
 			""" % [GREEN, GREEN],
 		'picture': 'res://slides/img/fsm-plugin.png',
-		'footer': 'L\'éditeur possède un asset store intégré, comme Unity ou Game maker'
+		'footer': 'Godot também possui uma loja de [i]assets[/i] integrada, como Unity ou Game Maker'
 	},
 	{
-		"title": "Unity, Godot, c'est qui le meilleur?",
-		"subtitle": "TL;DR: oubliez les histoire de 'meilleur'",
+		"title": "Unity, Godot, qual é o melhor?",
+		"subtitle": "TL;DR: esqueça essa história de 'melhor'",
 		"body":
-			"""Chaque moteur de jeu [color=%s]répond à des besoins différents.[/color]
+			"""Cada motor de jogo [color=%s]resolve necessidades distintas.[/color]
 
-			[i]Unity, Unreal, Godot, Game Maker, Phaser, LibGDX...[/i] Tous sont valables en fonction du projet.
+			[i]Unity, Unreal, Godot, Game Maker, Phaser, LibGDX...[/i] Todos são válidos, dependendo do seu projeto.
 
-			Aujourd'hui, [color=%s]Godot[/color] répond bien aux besoins des [color=%s]indépendents[/color].
+			Atualmente, [color=%s]Godot[/color] responde bem às necessidades dos [color=%s]indies[/color].
 			""" % [BLUE, BLUE, BLUE],
 		'picture': 'res://slides/img/engine-logos.png',
-		'footer': 'Il n\'y a pas de meilleur moteur: seulement des technologies adaptées à un jeu donné.\nComment choisir le bon outil? Avec de l\'expérience et des prototypes'
+		'footer': 'Não há o melhor motor: apenas a tecnologia que melhor se adequa às suas necessidades.\nComo escolher a ferramenta certa? Através da experiência e protótipos'
 	}
 ]
 
