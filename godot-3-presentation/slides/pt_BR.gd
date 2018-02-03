@@ -9,7 +9,7 @@ var data = []
 
 
 func _init():
-	for array in [intro, health, concepts, features, learning, gdquest, questions]:
+	for array in [intro, health, concepts, features, learning, questions]:
 		for val in array:
 			data.push_back(val)
 	print(len(data))
