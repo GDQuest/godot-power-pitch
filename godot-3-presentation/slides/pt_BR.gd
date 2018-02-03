@@ -152,7 +152,7 @@ var concepts = [
 			Todos os nós [color=%s]herdam[/color] dos nós base e funcionam de maneira parecida.
 			""" % [GREEN, BLUE, PINK],
 		'picture': 'res://slides/img/node-tree-2.png',
-		'footer': '*Encapsulamento, visto de uma perspectiva de programação orientada a objetos.\nIsso ajuda a estruturar suas cenas de modo que reflitam o seu [i]game design[\i].'
+		'footer': '*Encapsulamento, visto de uma perspectiva de programação orientada a objetos.\nIsso ajuda a estruturar suas cenas de modo que reflitam o seu [i]game design[/i].'
 	},
 	{
 		"title": "Godot é um jogo Godot",
