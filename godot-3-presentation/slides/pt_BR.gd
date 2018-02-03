@@ -129,30 +129,30 @@ var health = [
 var concepts = [
 	{
 		"title": "Os princípios do Godot",
-		"subtitle": "O que a faz Voyons un peu ce qui le rend unique",
+		"subtitle": "O que o faz único",
 		"body":
-			"""Chaque moteur de jeu est différent. Godot a deux particularités:
+			"""Todo motor de jogo é diferente. Godot possui duas principais particularidades:
 
-			- Il intègre tous les [color=%s]outils[/color] pour produire votre jeu: [color=%s]éditeur de niveaux[/color], [color=%s]d'animation[/color], etc.
-			- Pas de modèle de programmation classique comme le [color=%s]MVC[/color]* ou l'[color=%s]ECS[/color]*
+			- Integração de todas [color=%s]ferramentas[/color] para produzir seu jogo: [color=%s]editor de níveis[/color], [color=%s]de animação[/color], etc.
+			- Não força padrões de projeto de software clássicos como [color=%s]MVC[/color]* ou [color=%s]ECS[/color]*
 
-			Dans Godot on parle de [color=%s]node tree[/color] ou [color=%s]arbre de noeuds[/color].
+			Godot usa [color=%s]node tree[/color] ou [color=%s]árvore de nós[/color].
 			""" % [BLUE, BLUE, BLUE, GREEN, GREEN, GREEN, GREEN],
 		'picture': 'res://slides/img/node-tree.png',
-		'footer': '*Model-View-Controller et Entity-Component System'
+		'footer': '*[i]Model-View-Controller[/i] e [i]Entity-Component System[/i]'
 	},
 	{
-		"title": "Un éditeur Orienté Objet",
-		"subtitle": "Héritage, hiérarchie et liberté: est-ce cela, la flexi-sécurité?",
+		"title": "Um editor orientado a objetos",
+		"subtitle": "Herança, hierarquia e liberdade",
 		"body":
-			"""Chaque écran de jeu est un [color=%s]arbre[/color] de nodes.
+			"""Toda cena de seu jogo é uma [color=%s]árvore[/color] de nós.
 
-			Un groupe de nodes peut être sauvé* dans une scène: une [color=%s]branche[/color].
+			Um grupo de nós pode ser salvo* como uma cena: torna-se um [color=%s]ramo[/color].
 
-			Tous les nodes [color=%s]héritent[/color] de noeuds de base et fonctionnent un peu pareil.
+			Todos os nós [color=%s]herdam[/color] dos nós base e funcionam de maneira parecida.
 			""" % [GREEN, BLUE, PINK],
 		'picture': 'res://slides/img/node-tree-2.png',
-		'footer': '*Encapsulé, pour parler en termes de programmation orientée objet.\nCe design orienté objet vous aide à structurer vos scènes pour refléter votre game design.'
+		'footer': '*Encapsulamento, visto de uma perspectiva de programação orientada a objetos.\nIsso ajuda a estruturar suas cenas de modo que reflitam o seu [i]game design[\i].'
 	},
 	{
 		"title": "Godot est un jeu Godot",
