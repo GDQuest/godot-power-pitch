@@ -132,7 +132,7 @@ var concepts = [
 		"body":
 			"""Every game engine is different. Godot differs from most in two ways:
 
-			- It integrates every [color=%s]tool[/color] you need to produce your game: 
+			- It integrates every [color=%s]tool[/color] you need to produce your game:
 			[color=%s]level editor[/color], [color=%s]animation editor[/color], etc.
 
 			- No enforced programming patterns like [color=%s]MVC[/color]* or [color=%s]ECS[/color]*
@@ -323,7 +323,7 @@ var features = [
 		"subtitle": "...made as easy as can be",
 		"body":
 			"""[color=%s]Container[/color] system, tabs, margins, [color=%s]anchors[/color], node graphs...
-			
+
 			Godot ships with its own, very robust UI design and programming tools. Automated UI layouts, Photoshop-like smart snapping, grid and guides...
 
 			You can design all of your game and plugins' UI within the editor.
@@ -455,7 +455,7 @@ var questions = [{
 		"subtitle": "Questions?",
 		'body':
 		"""This presentation is Open Source, get it on [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]
-		
+
 		Credits:
 
 		Furry Defenders by [url=http://www.kivano.games/]Kivano[/url]

@@ -11,7 +11,7 @@ var previous_mind_state = null
 var last_move_direction = Vector2()
 
 onready var wait_timer = $WaitTimer
-onready var attack_timer = $AttackTimer
+#onready var attack_timer = $AttackTimer
 
 var first_ai_cycle = true
 
