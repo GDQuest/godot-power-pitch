@@ -31,6 +31,7 @@ The presentation is available in:
 1. French
 1. Italian
 1. German
+1. Portuguese
 
 Please help translate it so people can use it all around the world! To translate the slides: duplicate the `res://slides/fr.gd` file, and rename it to the language you're covering (en, es, pt, jp...) file and replace the text strings with translations.
 
