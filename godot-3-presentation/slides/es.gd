@@ -24,9 +24,7 @@ var intro = [
 	{
 		"title": "¿Qué es Godot?",
 		"body":
-			"""[b]Un[b] motor estilo Unity que contiene:
-
-			- Dos motores independientes: [color=%s]2d[/color] y [color=%s]3d[/color].
+			"""[b]Un[b] motor estilo Unity que contiene:\n- Dos motores independientes: [color=%s]2d[/color] y [color=%s]3d[/color].
 			- Un editor completo donde crear tus niveles
 			- Multiplatforma: PC, Mac, Linux
 			- Exporta a PC, dispositivos móviles, web*""" % [BLUE, PINK],
@@ -132,7 +130,7 @@ var concepts = [
 		"body":
 			"""Todos los motores de juegos son distintos. Godot es distinto por dos motivos:
 
-			- Implementa todas las [color=%s]herramientas[/color] que necesitas para hacer tu juego: 
+			- Implementa todas las [color=%s]herramientas[/color] que necesitas para hacer tu juego:
 			[color=%s]editor de niveles[/color], [color=%s]editor de animaciones[/color], etc.
 
 			- No fuerza patrones de programación como [color=%s]MVC[/color]* o [color=%s]ECS[/color]*
@@ -323,7 +321,7 @@ var features = [
 		"subtitle": "...hecha tan sencilla como es posible",
 		"body":
 			"""Sistema de [color=%s]contenedores[/color], sangrías, márgenes, [color=%s]anclajes[/color], grafos de nodos...
-			
+
 			Godot integra sus propias herramientas de diseño y programación de UI. Layouts automáticos de UI, ajuste inteligente, cuadrículas y guías...
 
 			Puedes diseñar la UI de tus juegos y plugins directamente desde el editor.
@@ -455,7 +453,7 @@ var questions = [{
 		"subtitle": "¿Preguntas?",
 		'body':
 		"""Esta presentación es libre, puedes obtenerla en [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]
-		
+
 		Créditos:
 
 		Furry Defenders por [url=http://www.kivano.games/]Kivano[/url]

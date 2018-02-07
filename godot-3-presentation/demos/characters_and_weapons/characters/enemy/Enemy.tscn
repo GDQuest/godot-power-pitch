@@ -4,7 +4,6 @@
 [ext_resource path="res://demos/characters_and_weapons/characters/enemy/Enemy.gd" type="Script" id=2]
 [ext_resource path="res://demos/characters_and_weapons/characters/enemy/foe_pink.png" type="Texture" id=3]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0

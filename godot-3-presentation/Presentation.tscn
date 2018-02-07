@@ -21,6 +21,7 @@ colors = PoolColorArray( 1, 1, 1, 0, 0.949554, 0.962803, 0.992188, 1, 0.5896, 0.
 
 [sub_resource type="GradientTexture" id=2]
 
+flags = 4
 gradient = SubResource( 1 )
 width = 2048
 
@@ -33,6 +34,7 @@ _data = [ Vector2( 0, 0.553711 ), 0.0, 0.960892, 0, 0, Vector2( 0.569993, 1 ), 0
 
 [sub_resource type="CurveTexture" id=4]
 
+flags = 4
 width = 2048
 curve = SubResource( 3 )
 
@@ -79,6 +81,7 @@ _sections_unfolded = [ "Angle", "Damping", "Gravity", "Hue Variation", "Initial 
 
 [sub_resource type="GradientTexture" id=6]
 
+flags = 4
 gradient = SubResource( 1 )
 width = 2048
 
@@ -133,6 +136,7 @@ tracks/0/path = NodePath("Margin/Frame/Body/Text:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 2, 2.5 ),
 "transitions": PoolRealArray( 0.482298, 0.482298, 1 ),
@@ -144,6 +148,7 @@ tracks/1/path = NodePath("Margin/Frame/Top/Title/Text:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.7, 1.2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
@@ -161,6 +166,7 @@ tracks/0/path = NodePath("Margin/Frame/Top/Title/Text:rect_position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.3 ),
 "transitions": PoolRealArray( 0.203637, 1.70745 ),
@@ -172,6 +178,7 @@ tracks/1/path = NodePath("Margin/Frame/Top/Title/Text:rect_size")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
@@ -266,7 +273,7 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Animation", "Color", "Damping", "Gravity", "Hue Variation", "Initial Velocity", "Scale" ]
 
-[node name="Presentation" type="Node"]
+[node name="Presentation" type="Node" index="0"]
 
 script = ExtResource( 1 )
 __meta__ = {
@@ -275,11 +282,11 @@ __meta__ = {
 }
 add_text_shadow = true
 particles = false
-slides_path = "res://slides/es.gd"
+slides_path = "res://slides/visite-bts.gd"
 
-[node name="Background" type="Node" parent="."]
+[node name="Background" type="Node" parent="." index="0"]
 
-[node name="TextureRect" type="TextureRect" parent="Background"]
+[node name="TextureRect" type="TextureRect" parent="Background" index="0"]
 
 show_behind_parent = true
 anchor_left = 0.0
@@ -287,8 +294,8 @@ anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 1
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 texture = ExtResource( 2 )
@@ -296,15 +303,15 @@ expand = true
 stretch_mode = 0
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Particles" type="Node2D" parent="Background"]
+[node name="Particles" type="Node2D" parent="Background" index="1"]
 
 visible = false
 
-[node name="Snow" type="Node2D" parent="Background/Particles"]
+[node name="Snow" type="Node2D" parent="Background/Particles" index="0"]
 
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Small" type="Particles2D" parent="Background/Particles/Snow"]
+[node name="Small" type="Particles2D" parent="Background/Particles/Snow" index="0"]
 
 position = Vector2( 467.072, 288.19 )
 emitting = false
@@ -327,7 +334,7 @@ h_frames = 1
 v_frames = 1
 _sections_unfolded = [ "Material", "Process Material", "Textures", "Time", "Visibility" ]
 
-[node name="Medium" type="Particles2D" parent="Background/Particles/Snow"]
+[node name="Medium" type="Particles2D" parent="Background/Particles/Snow" index="1"]
 
 position = Vector2( 467.072, 288.19 )
 emitting = false
@@ -350,41 +357,40 @@ h_frames = 1
 v_frames = 1
 _sections_unfolded = [ "Material", "Process Material", "Textures", "Time", "Visibility" ]
 
-[node name="Slide" type="Container" parent="."]
+[node name="Slide" type="Container" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 5 )
 _sections_unfolded = [ "Rect" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Slide"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Slide" index="0"]
 
+root_node = NodePath("..")
+autoplay = "test"
 playback_process_mode = 1
 playback_default_blend_time = 0.0
-root_node = NodePath("..")
+playback_speed = 1.0
 anims/appear = SubResource( 8 )
 anims/test = SubResource( 9 )
-playback/active = true
-playback/speed = 1.0
 blend_times = [  ]
-autoplay = "test"
 
-[node name="Margin" type="MarginContainer" parent="Slide"]
+[node name="Margin" type="MarginContainer" parent="Slide" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_constants/margin_right = 120
@@ -395,7 +401,7 @@ script = ExtResource( 6 )
 _sections_unfolded = [ "Rect", "Visibility", "custom_constants" ]
 margin = Vector2( 120, 60 )
 
-[node name="Frame" type="VBoxContainer" parent="Slide/Margin"]
+[node name="Frame" type="VBoxContainer" parent="Slide/Margin" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -406,15 +412,15 @@ margin_top = 60.0
 margin_right = 1800.0
 margin_bottom = 1020.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 2
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_constants/separation = 40
 alignment = 0
 _sections_unfolded = [ "Axis Stretch", "Patch Margin", "custom_constants" ]
 
-[node name="Top" type="VBoxContainer" parent="Slide/Margin/Frame"]
+[node name="Top" type="VBoxContainer" parent="Slide/Margin/Frame" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -423,14 +429,14 @@ anchor_bottom = 0.0
 margin_right = 1680.0
 margin_bottom = 154.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 1
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
 _sections_unfolded = [ "Rect" ]
 
-[node name="Title" type="HBoxContainer" parent="Slide/Margin/Frame/Top"]
+[node name="Title" type="HBoxContainer" parent="Slide/Margin/Frame/Top" index="0"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -440,15 +446,15 @@ anchor_bottom = 0.0
 margin_right = 1680.0
 margin_bottom = 100.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 1
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_constants/separation = 20
 alignment = 1
 _sections_unfolded = [ "custom_constants" ]
 
-[node name="Icon2" type="TextureRect" parent="Slide/Margin/Frame/Top/Title"]
+[node name="Icon2" type="TextureRect" parent="Slide/Margin/Frame/Top/Title" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -459,15 +465,15 @@ margin_right = 230.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 100, 100 )
 rect_pivot_offset = Vector2( 50, 50 )
-rect_clip_content = false
 mouse_filter = 1
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 texture = ExtResource( 7 )
 expand = true
 stretch_mode = 5
 
-[node name="Text" type="Label" parent="Slide/Margin/Frame/Top/Title"]
+[node name="Text" type="Label" parent="Slide/Margin/Frame/Top/Title" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -477,8 +483,8 @@ margin_left = 250.0
 margin_right = 1430.0
 margin_bottom = 100.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 10 )
@@ -490,7 +496,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "BBCode", "Rect", "custom_fonts" ]
 
-[node name="Shadow" type="Label" parent="Slide/Margin/Frame/Top/Title/Text"]
+[node name="Shadow" type="Label" parent="Slide/Margin/Frame/Top/Title/Text" index="0"]
 
 modulate = Color( 0, 0, 0, 1 )
 show_behind_parent = true
@@ -501,8 +507,8 @@ anchor_bottom = 1.0
 margin_top = 4.0
 margin_bottom = 4.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 10 )
@@ -514,7 +520,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "BBCode", "Visibility", "custom_fonts" ]
 
-[node name="Icon" type="TextureRect" parent="Slide/Margin/Frame/Top/Title"]
+[node name="Icon" type="TextureRect" parent="Slide/Margin/Frame/Top/Title" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -525,15 +531,15 @@ margin_right = 1550.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 100, 100 )
 rect_pivot_offset = Vector2( 50, 50 )
-rect_clip_content = false
 mouse_filter = 1
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 texture = ExtResource( 7 )
 expand = true
 stretch_mode = 5
 
-[node name="Subtitle" type="Label" parent="Slide/Margin/Frame/Top"]
+[node name="Subtitle" type="Label" parent="Slide/Margin/Frame/Top" index="1"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -544,8 +550,8 @@ margin_top = 104.0
 margin_right = 1680.0
 margin_bottom = 154.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 11 )
@@ -557,7 +563,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "BBCode", "Rect", "custom_fonts" ]
 
-[node name="Shadow" type="Label" parent="Slide/Margin/Frame/Top/Subtitle"]
+[node name="Shadow" type="Label" parent="Slide/Margin/Frame/Top/Subtitle" index="0"]
 
 modulate = Color( 0, 0, 0, 1 )
 show_behind_parent = true
@@ -570,8 +576,8 @@ margin_top = -21.0
 margin_right = 880.0
 margin_bottom = 29.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 11 )
@@ -583,7 +589,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "BBCode", "Rect", "Visibility", "custom_fonts" ]
 
-[node name="Body" type="HBoxContainer" parent="Slide/Margin/Frame"]
+[node name="Body" type="HBoxContainer" parent="Slide/Margin/Frame" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -593,15 +599,15 @@ margin_top = 194.0
 margin_right = 1680.0
 margin_bottom = 875.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 1
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 60
 alignment = 1
 _sections_unfolded = [ "Anchor", "custom_constants" ]
 
-[node name="Text" type="RichTextLabel" parent="Slide/Margin/Frame/Body"]
+[node name="Text" type="RichTextLabel" parent="Slide/Margin/Frame/Body" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -610,8 +616,9 @@ anchor_bottom = 0.0
 margin_right = 810.0
 margin_bottom = 681.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
+rect_clip_content = true
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = SubResource( 14 )
@@ -625,12 +632,24 @@ Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#
 "
 visible_characters = -1
 percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Un seul exécutable de 20mo:
+
+- Téléchargez le en quelques secondes
+- Pas d'installation
+
+Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#...
+"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
 override_selected_font_color = false
 script = ExtResource( 9 )
 _sections_unfolded = [ "BBCode", "Rect", "Theme" ]
 center = true
 
-[node name="Shadow" type="RichTextLabel" parent="Slide/Margin/Frame/Body/Text"]
+[node name="Shadow" type="RichTextLabel" parent="Slide/Margin/Frame/Body/Text" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
 show_behind_parent = true
@@ -639,8 +658,9 @@ anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
+rect_clip_content = true
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 5
 size_flags_vertical = 3
 theme = SubResource( 14 )
@@ -654,12 +674,24 @@ Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#
 "
 visible_characters = -1
 percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Un seul exécutable de 20mo:
+
+- Téléchargez le en quelques secondes
+- Pas d'installation
+
+Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#...
+"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
 override_selected_font_color = false
 script = ExtResource( 9 )
 _sections_unfolded = [ "Anchor", "BBCode", "Margin", "Material", "Size Flags", "Visibility" ]
 center = true
 
-[node name="Video" type="VideoPlayer" parent="Slide/Margin/Frame/Body"]
+[node name="Video" type="VideoPlayer" parent="Slide/Margin/Frame/Body" index="1"]
 
 visible = false
 anchor_left = 0.0
@@ -672,8 +704,8 @@ margin_right = 1480.0
 margin_bottom = 743.0
 rect_min_size = Vector2( 1280, 720 )
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 audio_track = 0
@@ -682,11 +714,12 @@ volume_db = 0.0
 autoplay = false
 paused = false
 expand = true
+buffering_msec = 500
 bus = "Master"
 script = ExtResource( 10 )
 _sections_unfolded = [ "Rect", "Size Flags" ]
 
-[node name="Picture" type="TextureRect" parent="Slide/Margin/Frame/Body"]
+[node name="Picture" type="TextureRect" parent="Slide/Margin/Frame/Body" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -697,8 +730,8 @@ margin_right = 1680.0
 margin_bottom = 681.0
 rect_min_size = Vector2( 600, 600 )
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 1
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 11 )
@@ -706,7 +739,7 @@ expand = true
 stretch_mode = 6
 _sections_unfolded = [ "Size Flags" ]
 
-[node name="Footer" type="Label" parent="Slide/Margin/Frame"]
+[node name="Footer" type="Label" parent="Slide/Margin/Frame" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -716,8 +749,8 @@ margin_top = 915.0
 margin_right = 1680.0
 margin_bottom = 960.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 theme = SubResource( 16 )
@@ -729,12 +762,12 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "BBCode", "Material", "Theme" ]
 
-[node name="Demo" type="Node2D" parent="Slide/Margin"]
+[node name="Demo" type="Node2D" parent="Slide/Margin" index="1"]
 
 show_behind_parent = true
 _sections_unfolded = [ "Visibility" ]
 
-[node name="TouchControls" type="Container" parent="."]
+[node name="TouchControls" type="Container" parent="." index="2"]
 
 visible = false
 anchor_left = 0.0
@@ -743,17 +776,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -330.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
+mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 _sections_unfolded = [ "Visibility", "custom_constants" ]
 
-[node name="Left" parent="TouchControls" instance=ExtResource( 13 )]
+[node name="Left" parent="TouchControls" index="0" instance=ExtResource( 13 )]
 
 margin_bottom = 1.0
+mouse_default_cursor_shape = 0
 
-[node name="Right" parent="TouchControls" instance=ExtResource( 13 )]
+[node name="Right" parent="TouchControls" index="1" instance=ExtResource( 13 )]
 
 anchor_left = 1.0
 anchor_top = 0.5
@@ -762,16 +796,17 @@ anchor_bottom = 0.5
 margin_top = -165.0
 margin_bottom = 166.0
 rect_scale = Vector2( -1, 1 )
+mouse_default_cursor_shape = 0
 _sections_unfolded = [ "Rect", "Size Flags" ]
 
-[node name="Foreground" type="Node" parent="."]
+[node name="Foreground" type="Node" parent="." index="3"]
 
-[node name="Particles" type="Node2D" parent="Foreground"]
+[node name="Particles" type="Node2D" parent="Foreground" index="0"]
 
 visible = false
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Snow" type="Particles2D" parent="Foreground/Particles"]
+[node name="Snow" type="Particles2D" parent="Foreground/Particles" index="0"]
 
 modulate = Color( 1, 1, 1, 0.430941 )
 position = Vector2( 467.072, 288.19 )

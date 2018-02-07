@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://demos/character-controller/environment/pit.gd" type="Script" id=1]
+[ext_resource path="res://demos/character-controller/environment/pit.png" type="Texture" id=2]
+
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 50.6151, 30.6767 )
+
+[node name="Gap" type="Area2D" groups=[
+"gap",
+"environment",
+]]
+
+input_pickable = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 8
+collision_mask = 3
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+
+[node name="Gap" type="Sprite" parent="."]
+
+position = Vector2( 1, -24.0106 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+position = Vector2( 1, -24.2276 )
+shape = SubResource( 1 )
+
+
