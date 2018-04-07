@@ -9,7 +9,7 @@ var video_path setget set_video
 var demo_path setget set_demo
 var footer setget set_footer
 
-onready var title_node = $Margin/Frame/Top/Title
+onready var title_node = $Margin/Frame/Top/Center/Title
 onready var subtitle_node = $Margin/Frame/Top/Subtitle
 onready var body_node = $Margin/Frame/Body/Text
 onready var picture_node = $Margin/Frame/Body/Picture
@@ -26,8 +26,8 @@ func set_title(value):
 	if not title_node:
 		return
 	
-	title_node.get_node('Text').text = value
-	title_node.get_node('Text/Shadow').text = value
+	title_node.text = value
+	title_node.get_node('Shadow').text = value
 	
 	title_node.visible = not value == ''
 
