@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://slides/demos/character-controller/characters/character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://slides/demos/character-controller/characters/player/player.gd" type="Script" id=2]
+[ext_resource path="res://slides/demos/character-controller/characters/player/body.png" type="Texture" id=3]
+[ext_resource path="res://slides/demos/character-controller/helpers/direction/direction-visualizer.gd" type="Script" id=4]
+[ext_resource path="res://slides/demos/character-controller/helpers/direction/arrow.png" type="Texture" id=5]
+[ext_resource path="res://slides/demos/character-controller/helpers/source-code-pro-bold.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://slides/demos/character-controller/helpers/state-visualizer.gd" type="Script" id=7]
+
+
+
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 20
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 6 )
+
+[node name="Player" instance=ExtResource( 1 )]
+
+script = ExtResource( 2 )
+
+[node name="Body" parent="Pivot"]
+
+texture = ExtResource( 3 )
+
+[node name="DirectionVisualizer" type="Position2D" parent="."]
+
+editor/display_folded = true
+script = ExtResource( 4 )
+scale_range = Vector2( 0.5, 1 )
+
+[node name="Arrow" type="Sprite" parent="DirectionVisualizer"]
+
+position = Vector2( 56.0362, -0.163977 )
+texture = ExtResource( 5 )
+offset = Vector2( 33.8244, -0.589883 )
+
+[node name="Tween" type="Tween" parent="DirectionVisualizer"]
+
+playback_process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[node name="StateVisualizer" type="Label" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -35.0
+margin_top = 24.0
+margin_right = 35.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+text = "STATE"
+align = 1
+valign = 1
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script = ExtResource( 7 )
+
+
