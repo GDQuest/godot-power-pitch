@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://content/demos/characters_and_weapons/art/bg.png" type="Texture" id=1]
+[ext_resource path="res://content/demos/characters_and_weapons/characters/player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://content/demos/characters_and_weapons/characters/enemy/Enemy.tscn" type="PackedScene" id=3]
+
+[node name="Game" type="Node"]
+
+[node name="bg" type="Sprite" parent="." index="0"]
+
+position = Vector2( 960, 567.25 )
+scale = Vector2( 1, 0.930339 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Player" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 910, 700 )
+weapon_scene_path = "res://demos/characters_and_weapons/characters/weapons/sword/Sword.tscn"
+
+[node name="Enemy" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 1340, 620 )
+weapon_scene_path = "res://demos/characters_and_weapons/characters/weapons/spear/Spear.tscn"
+max_health = 1
+
+[node name="Enemy2" parent="." index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 1240, 840 )
+weapon_scene_path = "res://demos/characters_and_weapons/characters/weapons/spear/Spear.tscn"
+max_health = 1
+
+[node name="Enemy3" parent="." index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 490, 630 )
+weapon_scene_path = "res://demos/characters_and_weapons/characters/weapons/spear/Spear.tscn"
+max_health = 1
+
+

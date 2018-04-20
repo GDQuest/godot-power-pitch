@@ -1,6 +1,7 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://slides/img/shared/particles/glitch.png" type="Texture" id=1]
+[ext_resource path="res://content/img/shared/particles/glitch.png" type="Texture" id=1]
+
 
 [sub_resource type="Gradient" id=8]
 
