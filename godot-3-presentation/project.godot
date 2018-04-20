@@ -14,6 +14,10 @@ config/name="Create your own games with Godot 3"
 run/main_scene="res://Presentation.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalConstants="*res://content/demos/attacks/global-constants.gd"
+
 [display]
 
 window/size/width=1920

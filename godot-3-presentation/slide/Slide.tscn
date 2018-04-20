@@ -72,7 +72,7 @@ tracks/1/keys = {
 "values": [ Vector2( 1720, 145 ) ]
 }
 
-[node name="Slide" type="Container" index="0"]
+[node name="Slide" type="Container"]
 
 anchor_left = 0.0
 anchor_top = 0.0

@@ -39,6 +39,7 @@ func _on_Presentation_new_slide_requested(slide_data):
 		$VBoxContainer/Body.picture_path = ''
 	if current_slide_data['video'] != '':
 		$VBoxContainer/Body.video_path = BASE_PATH_VIDEO + current_slide_data['video']
+		print(BASE_PATH_VIDEO + current_slide_data['video'])
 	else:
 		$VBoxContainer/Body.video_path = ''
 
