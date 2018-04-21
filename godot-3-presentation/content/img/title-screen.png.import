@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gdquest-business-card.png-102b9a486748385d3741cf5d158477db.stex"
+path="res://.import/title-screen.png-846e76342490d840a9acd5976933a2fc.stex"
 
 [deps]
 
-source_file="res://content/img/gdquest-business-card.png"
-source_md5="840bc30f040747964f16baf9b78ab1c4"
+source_file="res://content/img/title-screen.png"
+source_md5="b5ffea1f40ae5fa67afd88e7395f15b1"
 
-dest_files=[ "res://.import/gdquest-business-card.png-102b9a486748385d3741cf5d158477db.stex" ]
-dest_md5="ad47ca3f6d2d0e494afd560435680c2d"
+dest_files=[ "res://.import/title-screen.png-846e76342490d840a9acd5976933a2fc.stex" ]
+dest_md5="55248bbb8f7fafec141d2cd8d5d02dbb"
 
 [params]
 
