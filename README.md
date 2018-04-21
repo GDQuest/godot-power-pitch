@@ -3,7 +3,7 @@
 </h1>
 
 <p align='center'>
-  <img src="https://raw.githubusercontent.com/GDquest/godot-3-presentation/master/img/new-in-godot-3.png" alt="Clouds of words showing the new features in Godot 3.0" />
+  <img src="https://raw.githubusercontent.com/GDquest/godot-3-presentation/master/img/title-screen.png" alt="Clouds of words showing the new features in Godot 3.0" />
 </p>
 
 
