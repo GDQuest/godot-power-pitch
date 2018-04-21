@@ -7,7 +7,6 @@
 [ext_resource path="res://content/demos/attacks/characters/weapon/weapon-pivot.gd" type="Script" id=5]
 [ext_resource path="res://content/demos/attacks/characters/shadow.png" type="Texture" id=6]
 
-
 [sub_resource type="Animation" id=1]
 
 resource_name = "SETUP"
@@ -253,6 +252,7 @@ _sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
 
 [node name="Body" type="Sprite" parent="BodyPivot" index="0"]
 
+modulate = Color( 1, 0.296875, 0.296875, 1 )
 texture = ExtResource( 3 )
 offset = Vector2( 0.335912, -58.7778 )
 _sections_unfolded = [ "Visibility" ]
