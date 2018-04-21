@@ -2,11 +2,15 @@
 
 importer="Theora"
 type="VideoStreamTheora"
-path="res://.import/furry-defenders.ogv-218165b1c54004bcf9145d97899f3dbc.ogvstr"
+path="res://.import/furry-defenders.ogv-aa1a484b2c6a0aa4d08bdabc379011ab.ogvstr"
 
 [deps]
 
+source_file="res://content/video/furry-defenders.ogv"
 source_md5="1f74ee205fc24fdd1d845f1f4b138d79"
+
+dest_files=[ "res://.import/furry-defenders.ogv-aa1a484b2c6a0aa4d08bdabc379011ab.ogvstr" ]
+dest_md5="1c1c68ed1f4dda765043ddfcc4fe8f5e"
 
 [params]
 

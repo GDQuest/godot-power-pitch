@@ -2,11 +2,15 @@
 
 importer="Theora"
 type="VideoStreamTheora"
-path="res://.import/zylann-wallrider-canon-tool.ogv-e9d8607c3fdc514c6fa0fd409afcc6d2.ogvstr"
+path="res://.import/zylann-wallrider-canon-tool.ogv-77b0c69a6a2e6e48b4577b48a65fb84d.ogvstr"
 
 [deps]
 
+source_file="res://content/video/zylann-wallrider-canon-tool.ogv"
 source_md5="9e4f6eeae9c0fe7a771ef03150681bea"
+
+dest_files=[ "res://.import/zylann-wallrider-canon-tool.ogv-77b0c69a6a2e6e48b4577b48a65fb84d.ogvstr" ]
+dest_md5="49ea5629b6359c7606126722e0e5c1a8"
 
 [params]
 

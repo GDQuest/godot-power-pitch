@@ -1,0 +1,17 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/shooter-game.ogv-d7a7b548019a03d1448a73951c1b31df.ogvstr"
+
+[deps]
+
+source_file="res://content/video/shooter-game.ogv"
+source_md5="2ffd819046023273a58d9c77c0ca2826"
+
+dest_files=[ "res://.import/shooter-game.ogv-d7a7b548019a03d1448a73951c1b31df.ogvstr" ]
+dest_md5="e7f22fec56e75aa99c6918f3c80986d1"
+
+[params]
+
+loop=true

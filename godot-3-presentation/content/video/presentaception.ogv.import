@@ -2,11 +2,15 @@
 
 importer="Theora"
 type="VideoStreamTheora"
-path="res://.import/presentaception.ogv-9c0dfc9efb02fecba4c33d7a02ae3bed.ogvstr"
+path="res://.import/presentaception.ogv-bc292feaba2a82c23ef1a804c9afa082.ogvstr"
 
 [deps]
 
+source_file="res://content/video/presentaception.ogv"
 source_md5="f3d33665838011aaf8a5554bc21a25b2"
+
+dest_files=[ "res://.import/presentaception.ogv-bc292feaba2a82c23ef1a804c9afa082.ogvstr" ]
+dest_md5="4aff946f155dabf9d7d49e3680e265a4"
 
 [params]
 

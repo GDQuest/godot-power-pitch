@@ -2,11 +2,15 @@
 
 importer="Theora"
 type="VideoStreamTheora"
-path="res://.import/andreas-tool-mode.ogv-112d7e7dc85f6ab423e2d21a59f97bba.ogvstr"
+path="res://.import/andreas-tool-mode.ogv-56f478715a913cbfff47a8e9e6a3aef8.ogvstr"
 
 [deps]
 
+source_file="res://content/video/andreas-tool-mode.ogv"
 source_md5="133e771c4a0c60d0732df22e84d7b6c9"
+
+dest_files=[ "res://.import/andreas-tool-mode.ogv-56f478715a913cbfff47a8e9e6a3aef8.ogvstr" ]
+dest_md5="7144c25f78f279905f2bb597440bd000"
 
 [params]
 

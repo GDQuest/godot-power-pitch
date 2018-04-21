@@ -2,11 +2,15 @@
 
 importer="Theora"
 type="VideoStreamTheora"
-path="res://.import/andreas-godot-asset-drop.ogv-09ad578165289901b885b02186b19ecc.ogvstr"
+path="res://.import/andreas-godot-asset-drop.ogv-6ac5c88af9793ba542124180522f8002.ogvstr"
 
 [deps]
 
+source_file="res://content/video/andreas-godot-asset-drop.ogv"
 source_md5="631e7f01baa0a85cc81d5b2cccc5a4bd"
+
+dest_files=[ "res://.import/andreas-godot-asset-drop.ogv-6ac5c88af9793ba542124180522f8002.ogvstr" ]
+dest_md5="6c5032f7bc7b1fd7d5129bf7ba959261"
 
 [params]
 

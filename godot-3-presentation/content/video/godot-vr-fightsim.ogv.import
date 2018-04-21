@@ -2,11 +2,15 @@
 
 importer="Theora"
 type="VideoStreamTheora"
-path="res://.import/godot-vr-fightsim.ogv-d6649e27b9d807c8870caef44132a58a.ogvstr"
+path="res://.import/godot-vr-fightsim.ogv-fe225af0d317362b7d8aa4d181dd0997.ogvstr"
 
 [deps]
 
+source_file="res://content/video/godot-vr-fightsim.ogv"
 source_md5="daf07145c9e89163d9c3e03e5f371450"
+
+dest_files=[ "res://.import/godot-vr-fightsim.ogv-fe225af0d317362b7d8aa4d181dd0997.ogvstr" ]
+dest_md5="bbf120faece3bfd3e7dce44225b24390"
 
 [params]
 
