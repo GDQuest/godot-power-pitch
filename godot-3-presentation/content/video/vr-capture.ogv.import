@@ -2,11 +2,15 @@
 
 importer="Theora"
 type="VideoStreamTheora"
-path="res://.import/vr-capture.ogv-37843a97326043a5a21a5ee7decd58f6.ogvstr"
+path="res://.import/vr-capture.ogv-f1047781f2fecc19135f744d38a1bc87.ogvstr"
 
 [deps]
 
+source_file="res://content/video/vr-capture.ogv"
 source_md5="e632c67852f31ff364b6cc3e048e3c23"
+
+dest_files=[ "res://.import/vr-capture.ogv-f1047781f2fecc19135f744d38a1bc87.ogvstr" ]
+dest_md5="b25fabb392eb6440963d89a93febc449"
 
 [params]
 

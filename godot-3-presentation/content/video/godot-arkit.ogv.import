@@ -2,11 +2,15 @@
 
 importer="Theora"
 type="VideoStreamTheora"
-path="res://.import/godot-arkit.ogv-77af38b70aa772dc08e6e37a8d7dd2ec.ogvstr"
+path="res://.import/godot-arkit.ogv-cc336b240e8cedd255b0ede74d2ca5ba.ogvstr"
 
 [deps]
 
+source_file="res://content/video/godot-arkit.ogv"
 source_md5="86221db81c76b198afa80b2110c9105f"
+
+dest_files=[ "res://.import/godot-arkit.ogv-cc336b240e8cedd255b0ede74d2ca5ba.ogvstr" ]
+dest_md5="09ed49e6b823b54248c866f4d04b79a7"
 
 [params]
 
