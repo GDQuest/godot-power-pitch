@@ -1,11 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://slide/body/body.gd" type="Script" id=1]
-[ext_resource path="res://slide/body/text_theme.tres" type="Theme" id=2]
-[ext_resource path="res://slide/body/body_text.gd" type="Script" id=3]
-[ext_resource path="res://slide/body/video.gd" type="Script" id=4]
-[ext_resource path="res://content/img/multiplatform-editor.jpg" type="Texture" id=5]
-
+[ext_resource path="res://slide/body/margin.gd" type="Script" id=2]
+[ext_resource path="res://slide/body/text_theme.tres" type="Theme" id=3]
+[ext_resource path="res://slide/body/body_text.gd" type="Script" id=4]
+[ext_resource path="res://slide/body/video.gd" type="Script" id=5]
+[ext_resource path="res://content/img/multiplatform-editor.jpg" type="Texture" id=6]
 
 [node name="Body" type="Container"]
 
@@ -58,7 +58,8 @@ custom_constants/margin_right = 80
 custom_constants/margin_top = 24
 custom_constants/margin_left = 80
 custom_constants/margin_bottom = 24
-_sections_unfolded = [ "Margin", "custom_constants" ]
+script = ExtResource( 2 )
+_sections_unfolded = [ "custom_constants" ]
 
 [node name="Rows" type="HBoxContainer" parent="Margin" index="0"]
 
@@ -94,7 +95,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-theme = ExtResource( 2 )
+theme = ExtResource( 3 )
 bbcode_enabled = true
 bbcode_text = "Un seul exécutable de [color=#26BFE3]20mo[/color]:
 
@@ -118,7 +119,7 @@ scroll_active = false
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 _sections_unfolded = [ "BBCode", "Theme", "custom_fonts", "custom_styles" ]
 center = true
 
@@ -139,7 +140,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-theme = ExtResource( 2 )
+theme = ExtResource( 3 )
 bbcode_enabled = true
 bbcode_text = "Un seul exécutable de [color=#26BFE3]20mo[/color]:
 
@@ -163,7 +164,7 @@ scroll_active = false
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 _sections_unfolded = [ "Rect" ]
 center = true
 
@@ -193,7 +194,7 @@ paused = false
 expand = true
 buffering_msec = 500
 bus = "Master"
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 
 [node name="Picture" type="TextureRect" parent="Margin/Rows" index="2"]
 
@@ -212,7 +213,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 expand = true
 stretch_mode = 6
 _sections_unfolded = [ "Margin", "Size Flags" ]

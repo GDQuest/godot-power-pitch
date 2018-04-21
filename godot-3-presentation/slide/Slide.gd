@@ -13,7 +13,7 @@ var current_slide_data = {
 	'picture': '',
 	'video': '',
 	'demo': '',
-	'footnote': '',
+	'footer': '',
 	'background': '',
 	'config': ''
 }
@@ -31,6 +31,12 @@ func _on_Presentation_new_slide_requested(slide_data):
 	$VBoxContainer/Header.subtitle = current_slide_data['subtitle']
 
 	$VBoxContainer/Body.text = current_slide_data['body'].replace('\t', '')
+
+	#FIXME: move this out of here
+	if not current_slide_data['title'] and not current_slide_data['footer']:
+		$VBoxContainer/Body/Margin.set_use_margins(false)
+	else:
+		$VBoxContainer/Body/Margin.set_use_margins(true)
 
 	# FIXME: refactor this
 	if current_slide_data['picture'] != '':
@@ -53,9 +59,9 @@ func _on_Presentation_new_slide_requested(slide_data):
 	$VBoxContainer/Footer.text = current_slide_data['footer']
 
 	# MOVE TO BODY
-#	$VBoxContainer/Body/Margin/Rows/Video.rect_min_size = Vector2(1280, 720)
-#	if slide_data['config']:
-#		var config = slide_data['config']
-#		if 'video_size' in config.keys():
-#			var video_size = config['video_size']
-#			$VBoxContainer/Margin/Frame/Body/Video.rect_min_size = Vector2(video_size['x'], video_size['y'])
+	$VBoxContainer/Body/Margin/Rows/Video.rect_min_size = Vector2(1280, 720)
+	if current_slide_data['config']:
+		var config = current_slide_data['config']
+		if 'video_size' in config.keys():
+			var video_size = config['video_size']
+			$VBoxContainer/Body/Margin/Rows/Video.rect_min_size = Vector2(video_size['x'], video_size['y'])

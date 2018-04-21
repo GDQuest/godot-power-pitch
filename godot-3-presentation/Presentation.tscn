@@ -79,7 +79,7 @@ __meta__ = {
 }
 add_text_shadow = true
 particles = false
-slides_path = "res://content/en.gd"
+slides_path = "res://content/ichi-pixel.gd"
 
 [node name="Slide" parent="." index="0" instance=ExtResource( 2 )]
 
