@@ -2,11 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/godot-icon.svg-c97bbf55b42df99d55273d02762e75d6.stex"
+path="res://.import/godot-icon.svg-7bef919fb56600864ca0ae91c48dc3cc.stex"
 
 [deps]
 
-source_md5="a470baa362b39be8f8d3f942cb2b1f14"
+source_file="res://content/img/shared/godot-icon.svg"
+source_md5="6d080966c58c66ac80ca3c5b3752f1b4"
+
+dest_files=[ "res://.import/godot-icon.svg-7bef919fb56600864ca0ae91c48dc3cc.stex" ]
+dest_md5="9acb25125a17cb7194505acf5b530173"
 
 [params]
 

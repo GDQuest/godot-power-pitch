@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gdquest-business-card.png-102b9a486748385d3741cf5d158477db.stex"
+path="res://.import/modern-engine.jpg-99ac151c2c14c1eb3cb9bb75045237cf.stex"
 
 [deps]
 
-source_file="res://content/img/gdquest-business-card.png"
-source_md5="840bc30f040747964f16baf9b78ab1c4"
+source_file="res://content/img/modern-engine.jpg"
+source_md5="2bd8ecde1ce373d78082b5fb62ca8da0"
 
-dest_files=[ "res://.import/gdquest-business-card.png-102b9a486748385d3741cf5d158477db.stex" ]
-dest_md5="ad47ca3f6d2d0e494afd560435680c2d"
+dest_files=[ "res://.import/modern-engine.jpg-99ac151c2c14c1eb3cb9bb75045237cf.stex" ]
+dest_md5="5ac0b18908cc7e48013ae0820c2964ac"
 
 [params]
 

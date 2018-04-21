@@ -1,7 +1,6 @@
 extends 'properties.gd'
 
 
-
 func _init():
 	for array in [intro, health, concepts, features, learning, questions]:
 		for val in array:
