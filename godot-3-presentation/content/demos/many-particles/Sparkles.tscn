@@ -1,19 +1,19 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://content/img/shared/particles/glitch.png" type="Texture" id=1]
 
-
-[sub_resource type="Gradient" id=8]
+[sub_resource type="Gradient" id=1]
 
 offsets = PoolRealArray( 0, 0.0761246, 0.352941 )
 colors = PoolColorArray( 1, 0.926208, 0.636719, 1, 1, 0.940918, 0, 1, 1, 0.694702, 0.046875, 1 )
 
-[sub_resource type="GradientTexture" id=9]
+[sub_resource type="GradientTexture" id=2]
 
-gradient = SubResource( 8 )
+flags = 4
+gradient = SubResource( 1 )
 width = 2048
 
-[sub_resource type="ParticlesMaterial" id=10]
+[sub_resource type="ParticlesMaterial" id=3]
 
 render_priority = 0
 trail_divisor = 1
@@ -43,7 +43,7 @@ angle = 0.0
 angle_random = 0.0
 scale = 0.06
 scale_random = 0.1
-color_ramp = SubResource( 9 )
+color_ramp = SubResource( 2 )
 hue_variation = 0.1
 hue_variation_random = 0.4
 anim_speed = 0.0
@@ -58,8 +58,9 @@ _sections_unfolded = [ "Animation", "Color", "Emission Shape", "Scale" ]
 offsets = PoolRealArray( 0.017301, 0.083045, 0.307958, 0.754325, 1 )
 colors = PoolColorArray( 1, 1, 1, 1, 1, 0.890625, 0, 1, 1, 0.28125, 0, 1, 1, 0, 0, 1, 1, 0.781818, 0.781818, 0 )
 
-[sub_resource type="GradientTexture" id=11]
+[sub_resource type="GradientTexture" id=5]
 
+flags = 4
 gradient = SubResource( 4 )
 width = 2048
 
@@ -72,10 +73,11 @@ _data = [ Vector2( 0, -0.0429688 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.0859375 ), 0.0
 
 [sub_resource type="CurveTexture" id=7]
 
+flags = 4
 width = 2048
 curve = SubResource( 6 )
 
-[sub_resource type="ParticlesMaterial" id=12]
+[sub_resource type="ParticlesMaterial" id=8]
 
 render_priority = 0
 trail_divisor = 1
@@ -105,7 +107,7 @@ angle = 90.0
 angle_random = 0.4
 scale = 0.16
 scale_random = 0.1
-color_ramp = SubResource( 11 )
+color_ramp = SubResource( 5 )
 hue_variation = 0.0
 hue_variation_random = 0.4
 hue_variation_curve = SubResource( 7 )
@@ -116,31 +118,13 @@ anim_offset_random = 1.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Animation", "Color", "Damping", "Emission Shape" ]
 
-[sub_resource type="Animation" id=13]
+[node name="Sparkles" type="Node2D" index="0"]
 
-length = 3.0
-loop = true
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:rotation_deg")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 1.9, 2.3 ),
-"transitions": PoolRealArray( 0.362343, 1, 0.338078, 1 ),
-"update": 0,
-"values": [ 0.0, -164.774, -164.774, 0.0 ]
-}
-
-[node name="Sparkles" type="Node2D"]
-
-position = Vector2( 990, 430 )
+position = Vector2( 990, 230 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Particles2D" type="Particles2D" parent="."]
+[node name="Particles2D" type="Particles2D" parent="." index="0"]
 
-visible = false
 position = Vector2( 0, -1 )
 emitting = false
 amount = 40000
@@ -155,14 +139,14 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
-process_material = SubResource( 10 )
+process_material = SubResource( 3 )
 texture = ExtResource( 1 )
 normal_map = null
 h_frames = 4
 v_frames = 1
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform" ]
 
-[node name="Particles2D3" type="Particles2D" parent="."]
+[node name="Particles2D3" type="Particles2D" parent="." index="1"]
 
 position = Vector2( 47.9995, -55.9993 )
 rotation = 3.61928
@@ -179,14 +163,14 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
-process_material = SubResource( 12 )
+process_material = SubResource( 8 )
 texture = ExtResource( 1 )
 normal_map = null
 h_frames = 4
 v_frames = 1
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform" ]
 
-[node name="Particles2D8" type="Particles2D" parent="."]
+[node name="Particles2D8" type="Particles2D" parent="." index="2"]
 
 position = Vector2( 47.9995, -55.9993 )
 rotation = 3.61928
@@ -203,14 +187,14 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
-process_material = SubResource( 12 )
+process_material = SubResource( 8 )
 texture = ExtResource( 1 )
 normal_map = null
 h_frames = 4
 v_frames = 1
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform" ]
 
-[node name="Particles2D4" type="Particles2D" parent="."]
+[node name="Particles2D4" type="Particles2D" parent="." index="3"]
 
 position = Vector2( 47.9995, -55.9993 )
 rotation = 0.765048
@@ -227,14 +211,14 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
-process_material = SubResource( 12 )
+process_material = SubResource( 8 )
 texture = ExtResource( 1 )
 normal_map = null
 h_frames = 4
 v_frames = 1
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform" ]
 
-[node name="Particles2D9" type="Particles2D" parent="."]
+[node name="Particles2D9" type="Particles2D" parent="." index="4"]
 
 position = Vector2( 47.9995, -55.9993 )
 rotation = 0.765048
@@ -251,14 +235,14 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
-process_material = SubResource( 12 )
+process_material = SubResource( 8 )
 texture = ExtResource( 1 )
 normal_map = null
 h_frames = 4
 v_frames = 1
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform" ]
 
-[node name="Particles2D5" type="Particles2D" parent="."]
+[node name="Particles2D5" type="Particles2D" parent="." index="5"]
 
 position = Vector2( -41.2842, -7.28126 )
 rotation = 3.14712
@@ -275,14 +259,14 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
-process_material = SubResource( 12 )
+process_material = SubResource( 8 )
 texture = ExtResource( 1 )
 normal_map = null
 h_frames = 4
 v_frames = 1
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform" ]
 
-[node name="Particles2D6" type="Particles2D" parent="."]
+[node name="Particles2D6" type="Particles2D" parent="." index="6"]
 
 position = Vector2( -41.2842, -7.28126 )
 rotation = 0.0992262
@@ -299,14 +283,14 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
-process_material = SubResource( 12 )
+process_material = SubResource( 8 )
 texture = ExtResource( 1 )
 normal_map = null
 h_frames = 4
 v_frames = 1
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform" ]
 
-[node name="Particles2D2" type="Particles2D" parent="."]
+[node name="Particles2D2" type="Particles2D" parent="." index="7"]
 
 position = Vector2( -27.913, 14.3155 )
 rotation = -1.33941
@@ -323,14 +307,14 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
-process_material = SubResource( 12 )
+process_material = SubResource( 8 )
 texture = ExtResource( 1 )
 normal_map = null
 h_frames = 4
 v_frames = 1
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform" ]
 
-[node name="Particles2D7" type="Particles2D" parent="."]
+[node name="Particles2D7" type="Particles2D" parent="." index="8"]
 
 position = Vector2( -27.913, 14.3155 )
 emitting = true
@@ -346,22 +330,11 @@ fract_delta = true
 visibility_rect = Rect2( -100, -100, 200, 200 )
 local_coords = false
 draw_order = 0
-process_material = SubResource( 12 )
+process_material = SubResource( 8 )
 texture = ExtResource( 1 )
 normal_map = null
 h_frames = 4
 v_frames = 1
 _sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time", "Transform" ]
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-root_node = NodePath("..")
-anims/move = SubResource( 13 )
-playback/active = true
-playback/speed = 1.0
-blend_times = [  ]
-autoplay = "move"
 
 

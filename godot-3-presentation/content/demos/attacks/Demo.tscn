@@ -3,7 +3,7 @@
 [ext_resource path="res://content/demos/attacks/characters/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://content/demos/attacks/characters/monster/Dummy.tscn" type="PackedScene" id=2]
 
-[node name="Demo" type="Node" index="0"]
+[node name="Demo" type="Node"]
 
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
