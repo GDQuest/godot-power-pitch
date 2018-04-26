@@ -4,7 +4,6 @@
 [ext_resource path="res://assets/fonts/montserrat/montserrat-black.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://assets/fonts/montserrat/montserrat-extrabold.ttf" type="DynamicFontData" id=3]
 
-
 [sub_resource type="DynamicFont" id=1]
 
 size = 88
@@ -22,7 +21,7 @@ use_filter = true
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
-[node name="Header" type="Container"]
+[node name="Header" type="Container" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -75,6 +74,7 @@ custom_fonts/font = SubResource( 1 )
 text = "C'est pas la taille qui compte"
 align = 1
 valign = 1
+clip_text = true
 uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -102,6 +102,7 @@ custom_fonts/font = SubResource( 1 )
 text = "C'est pas la taille qui compte"
 align = 1
 valign = 1
+clip_text = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -126,6 +127,7 @@ custom_fonts/font = SubResource( 2 )
 text = "Vingt mégaoctets de pur bonheur"
 align = 1
 valign = 1
+clip_text = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -154,6 +156,7 @@ custom_fonts/font = SubResource( 2 )
 text = "Vingt mégaoctets de pur bonheur"
 align = 1
 valign = 1
+clip_text = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
