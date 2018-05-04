@@ -245,7 +245,7 @@ var features = [
 		"footer": "GoBot di Andreas Esau"
 	},
 	{
-		"title": "Meccanica di combattimento basata sull' animazione",
+		"title": "Combattimento ed animazioni",
 		"demo": "characters_and_weapons/Game.tscn",
 		"footer": "Non è mozzafiato?"
 	},
@@ -325,7 +325,7 @@ var features = [
 		"footer": "'RPG in a box': un editor RPG realizzato in Godot"
 	},
 	{
-		"title": "Sincronizza script, sincronizza scene",
+		"title": "Sincronizza script e scene",
 		"body":
 			"""Prova il tuo gioco. Modifica uno script, una scena, un livello: il cambiamento si riflette [color=%s]in gioco, in tempo reale[/color].
 
@@ -337,7 +337,8 @@ var features = [
 		"footer": "Jotsway Canyon, RPG tattico di Johnny Goss"
 	},
 	{
-		'title': 'Sincronizzazione script su Jotsway Canyon',
+		'title': 'Script su Jotsway Canyon',
+		"subtitle": "Sincronizzazione editor e gioco",
 		'video': 'jotsway-canyon-live-scripting.ogv'
 	},
 	{
