@@ -32,3 +32,7 @@ func go_to_slide(direction):
 	slide_index = clamp(slide_index + direction, 0, len(slides_data) - 1)
 	var new_slide_data = slides_data[slide_index]
 	emit_signal('new_slide_requested', new_slide_data)
+
+
+func _on_TouchControls_slide_change_requested(direction):
+	go_to_slide(direction)

@@ -2,11 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bg-gradient.png-37ee5a12d150ed65ead799c36bbcbf30.stex"
+path="res://.import/arrow_right.png-cfb5483e6159556a0aa1703a149a9424.stex"
 
 [deps]
 
-source_md5="d09608e93fba92cef61f2687402dcce3"
+source_file="res://touch_controls/touch_button/arrow_right.png"
+source_md5="af7936e22761c7b8ea9e777a34247fae"
+
+dest_files=[ "res://.import/arrow_right.png-cfb5483e6159556a0aa1703a149a9424.stex" ]
+dest_md5="f5e19c546bce243a2356983a2c0925ab"
 
 [params]
 
