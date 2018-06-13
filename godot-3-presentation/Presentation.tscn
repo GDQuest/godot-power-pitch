@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Presentation.gd" type="Script" id=1]
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=2]
 [ext_resource path="res://slide/Background.tscn" type="PackedScene" id=3]
 [ext_resource path="res://content/img/shared/particles/fairy_big.png" type="Texture" id=4]
+[ext_resource path="res://touch_controls/TouchControls.tscn" type="PackedScene" id=5]
 
 [sub_resource type="Gradient" id=1]
 
@@ -121,6 +122,10 @@ h_frames = 1
 v_frames = 1
 _sections_unfolded = [ "Material", "Process Material", "Textures", "Time", "Visibility" ]
 
+[node name="TouchControls" parent="." index="3" instance=ExtResource( 5 )]
+
 [connection signal="new_slide_requested" from="." to="Slide" method="_on_Presentation_new_slide_requested"]
+
+[connection signal="slide_change_requested" from="TouchControls" to="." method="_on_TouchControls_slide_change_requested"]
 
 
