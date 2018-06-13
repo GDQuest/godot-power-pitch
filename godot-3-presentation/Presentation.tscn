@@ -74,11 +74,10 @@ _sections_unfolded = [ "Angle", "Animation", "Color", "Damping", "Gravity", "Hue
 
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 750.0 ],
-"_edit_vertical_guides_": [ 530.0 ]
+"_edit_horizontal_guides_": [  ],
+"_edit_vertical_guides_": [  ]
 }
 add_text_shadow = true
-particles = false
 slides_path = "res://content/ichi-pixel.gd"
 
 [node name="Slide" parent="." index="0" instance=ExtResource( 2 )]
