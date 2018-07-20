@@ -9,7 +9,7 @@
 [ext_resource path="res://slide/body/Picture.gd" type="Script" id=7]
 [ext_resource path="res://slide/body/Demo.gd" type="Script" id=8]
 
-[node name="Body" type="Container" index="0"]
+[node name="Body" type="Container"]
 
 anchor_left = 0.0
 anchor_top = 0.0
