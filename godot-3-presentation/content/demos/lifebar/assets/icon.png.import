@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-6887aa63979d775beb05c64cfa68aa31.stex"
+path="res://.import/icon.png-673eb17638556ec580c398ba64ea49b1.stex"
 
 [deps]
 
-source_md5="c3558f79862e8e00c74fb188280dd8ef"
+source_file="res://content/demos/lifebar/assets/icon.png"
+dest_files=[ "res://.import/icon.png-673eb17638556ec580c398ba64ea49b1.stex" ]
 
 [params]
 

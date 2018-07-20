@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bg.png-0e8f97e18dafcb63dcbab4755e410487.stex"
+path="res://.import/bg.png-01e06bf296ca00f52a014f8ecdd0f60b.stex"
 
 [deps]
 
-source_md5="4ba8e7abbd3cfe3fe0d9172a7a57a0f9"
+source_file="res://content/demos/characters_and_weapons/art/bg.png"
+dest_files=[ "res://.import/bg.png-01e06bf296ca00f52a014f8ecdd0f60b.stex" ]
 
 [params]
 

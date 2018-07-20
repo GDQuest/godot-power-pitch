@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gdquest-japan.jpg-9a71fee94983e063d79002296c25f1d0.stex"
+path="res://.import/gdquest-japan.jpg-fd17d569a4aec6cccce8d438cb6701c1.stex"
 
 [deps]
 
-source_md5="72d6f40a63a826a67cfbeb8463fd283c"
+source_file="res://content/img/gdquest-japan.jpg"
+dest_files=[ "res://.import/gdquest-japan.jpg-fd17d569a4aec6cccce8d438cb6701c1.stex" ]
 
 [params]
 

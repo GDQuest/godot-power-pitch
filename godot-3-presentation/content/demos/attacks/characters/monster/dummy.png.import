@@ -7,10 +7,7 @@ path="res://.import/dummy.png-27b6bfb1cb6a2da883b1b246f9f91c25.stex"
 [deps]
 
 source_file="res://content/demos/attacks/characters/monster/dummy.png"
-source_md5="350cc6b5fe8094016f0af1ea5813c80a"
-
 dest_files=[ "res://.import/dummy.png-27b6bfb1cb6a2da883b1b246f9f91c25.stex" ]
-dest_md5="bcc8143a3ada3ebc1aadfb95bc4ecafc"
 
 [params]
 

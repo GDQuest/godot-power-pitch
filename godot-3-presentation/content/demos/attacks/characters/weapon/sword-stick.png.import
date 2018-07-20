@@ -7,10 +7,7 @@ path="res://.import/sword-stick.png-1553647327943eeb56475d47abb451b9.stex"
 [deps]
 
 source_file="res://content/demos/attacks/characters/weapon/sword-stick.png"
-source_md5="25ec036e0865c68404814e457aa3f492"
-
 dest_files=[ "res://.import/sword-stick.png-1553647327943eeb56475d47abb451b9.stex" ]
-dest_md5="55a8cea5b5fe085160c762816ce70922"
 
 [params]
 

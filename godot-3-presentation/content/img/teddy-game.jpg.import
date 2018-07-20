@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/teddy-game.jpg-ecfc7f5cc8a944f5a04da2daeba626a2.stex"
+path="res://.import/teddy-game.jpg-7b6b1b713bf74e70e3e8106bec7abbd1.stex"
 
 [deps]
 
-source_md5="7bb6df8077cc5f52058591f5be0e654f"
+source_file="res://content/img/teddy-game.jpg"
+dest_files=[ "res://.import/teddy-game.jpg-7b6b1b713bf74e70e3e8106bec7abbd1.stex" ]
 
 [params]
 

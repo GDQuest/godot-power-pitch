@@ -7,10 +7,7 @@ path="res://.import/godot-3.0.jpg-395cc92a5e7fc98d7d435000e3c3d245.stex"
 [deps]
 
 source_file="res://content/img/godot-3.0.jpg"
-source_md5="68494d95eaf1f2da875918b23916a24b"
-
 dest_files=[ "res://.import/godot-3.0.jpg-395cc92a5e7fc98d7d435000e3c3d245.stex" ]
-dest_md5="ea894120bf168fa1c4cc47e22ffd7e46"
 
 [params]
 

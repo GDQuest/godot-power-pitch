@@ -7,10 +7,7 @@ path="res://.import/arrow_right.png-cfb5483e6159556a0aa1703a149a9424.stex"
 [deps]
 
 source_file="res://touch_controls/touch_button/arrow_right.png"
-source_md5="af7936e22761c7b8ea9e777a34247fae"
-
 dest_files=[ "res://.import/arrow_right.png-cfb5483e6159556a0aa1703a149a9424.stex" ]
-dest_md5="f5e19c546bce243a2356983a2c0925ab"
 
 [params]
 

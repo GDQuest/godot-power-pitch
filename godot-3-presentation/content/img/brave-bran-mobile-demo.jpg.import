@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brave-bran-mobile-demo.jpg-7562273620747a2711cd2236442a3525.stex"
+path="res://.import/brave-bran-mobile-demo.jpg-b8b7b7b718349fc26ece6c0e28026fb2.stex"
 
 [deps]
 
-source_md5="28262ed40b6cb27399e60870a5c7d504"
+source_file="res://content/img/brave-bran-mobile-demo.jpg"
+dest_files=[ "res://.import/brave-bran-mobile-demo.jpg-b8b7b7b718349fc26ece6c0e28026fb2.stex" ]
 
 [params]
 

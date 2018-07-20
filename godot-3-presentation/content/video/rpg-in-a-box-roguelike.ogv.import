@@ -7,10 +7,7 @@ path="res://.import/rpg-in-a-box-roguelike.ogv-0212d18d4cbdf736301bc1d65de54301.
 [deps]
 
 source_file="res://content/video/rpg-in-a-box-roguelike.ogv"
-source_md5="da7c375fa62848ec6d12e2bae16e72bc"
-
 dest_files=[ "res://.import/rpg-in-a-box-roguelike.ogv-0212d18d4cbdf736301bc1d65de54301.ogvstr" ]
-dest_md5="e0b420c9d11dca0c8b2263e975fb486d"
 
 [params]
 

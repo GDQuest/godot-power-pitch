@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jotsway-canyon-screen.png-3bfe742ac0fbdf62b2b982994a73ebbf.stex"
+path="res://.import/jotsway-canyon-screen.png-8e5bf969bd02678d85f84175735e2039.stex"
 
 [deps]
 
-source_md5="3f6d36db11fae28c1da0b68ac06b253f"
+source_file="res://content/img/jotsway-canyon-screen.png"
+dest_files=[ "res://.import/jotsway-canyon-screen.png-8e5bf969bd02678d85f84175735e2039.stex" ]
 
 [params]
 

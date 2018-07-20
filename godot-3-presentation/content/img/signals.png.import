@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/signals.png-909c99a638ae1858ff908abae0b29892.stex"
+path="res://.import/signals.png-3e6ba5767dce01f59e2ac339441b76da.stex"
 
 [deps]
 
-source_md5="a3aea48eed7b60ab63ff4484367528b4"
+source_file="res://content/img/signals.png"
+dest_files=[ "res://.import/signals.png-3e6ba5767dce01f59e2ac339441b76da.stex" ]
 
 [params]
 

@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/anim-tools.jpg-78c81c23fc635f4008127270123c23a3.stex"
+path="res://.import/anim-tools.jpg-f0e80abd29fc205c0883322a88dff5de.stex"
 
 [deps]
 
-source_md5="e02aeab584089df0c051d56ace17841f"
+source_file="res://content/img/anim-tools.jpg"
+dest_files=[ "res://.import/anim-tools.jpg-f0e80abd29fc205c0883322a88dff5de.stex" ]
 
 [params]
 

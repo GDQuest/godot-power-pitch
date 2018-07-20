@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lifebar_bg.png-8787adf463dcbad8a78aba95863ff7b8.stex"
+path="res://.import/lifebar_bg.png-3822ab5feeb55983d965ffc243e9bfa2.stex"
 
 [deps]
 
-source_md5="df50f22ac78c3f6bdc76d80b2ca5bfe8"
+source_file="res://content/demos/lifebar/assets/GUI/lifebar_bg.png"
+dest_files=[ "res://.import/lifebar_bg.png-3822ab5feeb55983d965ffc243e9bfa2.stex" ]
 
 [params]
 

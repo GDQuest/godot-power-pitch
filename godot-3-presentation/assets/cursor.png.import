@@ -6,7 +6,8 @@ path="res://.import/cursor.png-224f93d013e0812359a323dac1948615.stex"
 
 [deps]
 
-source_md5="08aeaaefb82547d795bfed6cd7a6fcc5"
+source_file="res://assets/cursor.png"
+dest_files=[ "res://.import/cursor.png-224f93d013e0812359a323dac1948615.stex" ]
 
 [params]
 

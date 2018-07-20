@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/isometric-tilemap.png-36adddc1aa09d91c2f9240bb27aa2a87.stex"
+path="res://.import/isometric-tilemap.png-114bd07257aa67d621ea0ecfec08ba6c.stex"
 
 [deps]
 
-source_md5="4023d4d0ad9f0d8394de7509b2470a03"
+source_file="res://content/img/isometric-tilemap.png"
+dest_files=[ "res://.import/isometric-tilemap.png-114bd07257aa67d621ea0ecfec08ba6c.stex" ]
 
 [params]
 

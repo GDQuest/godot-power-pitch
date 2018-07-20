@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/engine-logos.png-5069ee3f974c89ddc4a0dec2ab1e24c3.stex"
+path="res://.import/engine-logos.png-888626ca60fb05d6a33ec747977f9d53.stex"
 
 [deps]
 
-source_md5="93801bf2e04761faa929006704e8d920"
+source_file="res://content/img/engine-logos.png"
+dest_files=[ "res://.import/engine-logos.png-888626ca60fb05d6a33ec747977f9d53.stex" ]
 
 [params]
 

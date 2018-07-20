@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sword_enemy.png-f0ceb115383e0b31bd32b2079b7ef27c.stex"
+path="res://.import/sword_enemy.png-fa5f9bceeb985f5313e5a4fa50e23729.stex"
 
 [deps]
 
-source_md5="ed1eaaa1beeefcca2a732da08be3a249"
+source_file="res://content/demos/characters_and_weapons/characters/weapons/sword/sword_enemy.png"
+dest_files=[ "res://.import/sword_enemy.png-fa5f9bceeb985f5313e5a4fa50e23729.stex" ]
 
 [params]
 

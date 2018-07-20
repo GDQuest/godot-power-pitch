@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/visual-script.png-1a83f5edcfdb6fa140f08698b458dcb0.stex"
+path="res://.import/visual-script.png-02a832614a291a9bf9faaa9a0b43553f.stex"
 
 [deps]
 
-source_md5="bd025028a45a060070edf809c480ae69"
+source_file="res://content/img/visual-script.png"
+dest_files=[ "res://.import/visual-script.png-02a832614a291a9bf9faaa9a0b43553f.stex" ]
 
 [params]
 

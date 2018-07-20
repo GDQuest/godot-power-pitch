@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/buddy_green.png-93f4cb0e95b5ce4df3c402ea8357ab50.stex"
+path="res://.import/buddy_green.png-a10aeff5cba012c57af139c91bf90ffe.stex"
 
 [deps]
 
-source_md5="c4528aa19c3ddcd0fed29ad83f2e2d2b"
+source_file="res://content/demos/lifebar/assets/chararacters/buddy_green.png"
+dest_files=[ "res://.import/buddy_green.png-a10aeff5cba012c57af139c91bf90ffe.stex" ]
 
 [params]
 

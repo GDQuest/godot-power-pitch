@@ -7,10 +7,7 @@ path="res://.import/poison-bubble.png-2816a517038566ad1b765120ff0c8513.stex"
 [deps]
 
 source_file="res://content/demos/attacks/vfx/poison-bubble.png"
-source_md5="1ca1f09c756f9be6411544ee19986aa6"
-
 dest_files=[ "res://.import/poison-bubble.png-2816a517038566ad1b765120ff0c8513.stex" ]
-dest_md5="97cea9893d99401ea05f14f8402722ad"
 
 [params]
 

@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gltf-damaged-helmet.jpg-dfecbb80ed880255ce9198378430ba47.stex"
+path="res://.import/gltf-damaged-helmet.jpg-b9ed06c5c5fcedfe9f7cba6c8c067c8f.stex"
 
 [deps]
 
-source_md5="b7e9b314b7802c295026da5c20d9a928"
+source_file="res://content/img/gltf-damaged-helmet.jpg"
+dest_files=[ "res://.import/gltf-damaged-helmet.jpg-b9ed06c5c5fcedfe9f7cba6c8c067c8f.stex" ]
 
 [params]
 

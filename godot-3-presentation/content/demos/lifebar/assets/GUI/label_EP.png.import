@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/label_EP.png-c02552952a9c66932988165f5bd71ca5.stex"
+path="res://.import/label_EP.png-1f30236f203044e6a035a602796fb34f.stex"
 
 [deps]
 
-source_md5="d44710c9ac39eca6bb75a795f6b2edb7"
+source_file="res://content/demos/lifebar/assets/GUI/label_EP.png"
+dest_files=[ "res://.import/label_EP.png-1f30236f203044e6a035a602796fb34f.stex" ]
 
 [params]
 

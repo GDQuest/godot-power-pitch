@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gamblify-monsters-5.jpg-442fd74b7bd8971aee095c9b7790dddd.stex"
+path="res://.import/gamblify-monsters-5.jpg-a6dd8749b42235f9fc02b6ad2371a126.stex"
 
 [deps]
 
-source_md5="b88df3fe47628423546bb1c69531a3f0"
+source_file="res://content/img/gamblify-monsters-5.jpg"
+dest_files=[ "res://.import/gamblify-monsters-5.jpg-a6dd8749b42235f9fc02b6ad2371a126.stex" ]
 
 [params]
 

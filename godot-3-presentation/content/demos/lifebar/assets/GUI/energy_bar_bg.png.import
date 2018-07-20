@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/energy_bar_bg.png-fb2ae962fec1915c3578e74258a3b79e.stex"
+path="res://.import/energy_bar_bg.png-0d456679cabf41ca2ff5282e9218ecf8.stex"
 
 [deps]
 
-source_md5="b57ae8662f855dbbf3a188c7b28b8c7b"
+source_file="res://content/demos/lifebar/assets/GUI/energy_bar_bg.png"
+dest_files=[ "res://.import/energy_bar_bg.png-0d456679cabf41ca2ff5282e9218ecf8.stex" ]
 
 [params]
 

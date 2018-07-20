@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/car-3d.jpg-6e1ab9e1eca5cf29b3c50bdde9ebdad4.stex"
+path="res://.import/car-3d.jpg-1e65baccdedbf5114f12f38846d1bcf3.stex"
 
 [deps]
 
-source_md5="13f8ee7af29ebe7107125bf52a59b708"
+source_file="res://content/img/car-3d.jpg"
+dest_files=[ "res://.import/car-3d.jpg-1e65baccdedbf5114f12f38846d1bcf3.stex" ]
 
 [params]
 

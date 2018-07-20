@@ -7,10 +7,7 @@ path="res://.import/jotsway-canyon-live-scripting.ogv-364e4f063a8ba982194fc039bd
 [deps]
 
 source_file="res://content/video/jotsway-canyon-live-scripting.ogv"
-source_md5="9dc815d0d72501b5102b37cbae200f60"
-
 dest_files=[ "res://.import/jotsway-canyon-live-scripting.ogv-364e4f063a8ba982194fc039bd30fce0.ogvstr" ]
-dest_md5="a26c22954de67807744bde733f216381"
 
 [params]
 
