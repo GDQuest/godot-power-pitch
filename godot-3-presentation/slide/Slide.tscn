@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://slide/Slide.gd" type="Script" id=1]
-[ext_resource path="res://slide/header/Header.tscn" type="PackedScene" id=2]
-[ext_resource path="res://slide/body/Body.tscn" type="PackedScene" id=3]
-[ext_resource path="res://slide/footer/Footer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://theme/godot.theme" type="Theme" id=1]
+[ext_resource path="res://slide/Slide.gd" type="Script" id=2]
+[ext_resource path="res://slide/header/Header.tscn" type="PackedScene" id=3]
+[ext_resource path="res://slide/body/Body.tscn" type="PackedScene" id=4]
+[ext_resource path="res://slide/footer/Footer.tscn" type="PackedScene" id=5]
 
 [sub_resource type="Animation" id=1]
 
@@ -86,8 +87,9 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-script = ExtResource( 1 )
-_sections_unfolded = [ "Rect" ]
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Theme" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
 
@@ -115,15 +117,33 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
 
-[node name="Header" parent="Column" index="0" instance=ExtResource( 2 )]
+[node name="Header" parent="Column" index="0" instance=ExtResource( 3 )]
 
-[node name="Body" parent="Column" index="1" instance=ExtResource( 3 )]
+anchor_right = 0.0
+margin_right = 1920.0
+margin_bottom = 210.0
 
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 4 )]
+[node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
 
-[connection signal="content_updated" from="." to="Column/Body" method="_on_Slide_content_updated"]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 214.0
+margin_right = 1920.0
+margin_bottom = 936.0
+
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 5 )]
+
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 940.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+_sections_unfolded = [ "Material", "Rect", "Size Flags", "Theme", "Visibility" ]
 
 [connection signal="content_updated" from="." to="Column/Header" method="_on_Slide_content_updated"]
+
+[connection signal="content_updated" from="." to="Column/Body" method="_on_Slide_content_updated"]
 
 [connection signal="content_updated" from="." to="Column/Footer" method="_on_Slide_content_updated"]
 

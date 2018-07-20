@@ -1,28 +1,25 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://slide/footer/Footer.gd" type="Script" id=1]
-[ext_resource path="res://slide/body/text_theme.tres" type="Theme" id=2]
 
-
-[node name="Footer" type="Container" index="0"]
+[node name="Footer" type="ColorRect"]
 
 show_behind_parent = true
 anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 940.0
-margin_right = 1920.0
-margin_bottom = 1080.0
-rect_min_size = Vector2( 1920, 140 )
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -140.0
+rect_min_size = Vector2( 0, 140 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
+color = Color( 0.2, 0.247059, 0.403922, 1 )
 script = ExtResource( 1 )
-_sections_unfolded = [ "Material", "Rect", "Size Flags", "Visibility" ]
+_sections_unfolded = [ "Material", "Rect", "Theme", "Visibility" ]
 
 [node name="Text" type="Label" parent="." index="0"]
 
@@ -36,7 +33,6 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-theme = ExtResource( 2 )
 text = "Ce petit fichier contient le moteur, les outils d'UI et tout pour faire un jeu complet"
 align = 1
 valign = 1
@@ -46,21 +42,5 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "BBCode", "Material", "Theme" ]
-
-[node name="ColorRect" type="ColorRect" parent="." index="1"]
-
-show_behind_parent = true
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 3
-size_flags_vertical = 1
-color = Color( 0.2, 0.247059, 0.403922, 1 )
-_sections_unfolded = [ "Rect", "Size Flags" ]
 
 

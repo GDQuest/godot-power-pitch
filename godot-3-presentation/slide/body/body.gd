@@ -1,4 +1,4 @@
-extends Container
+extends Control
 
 export(bool) var center = true
 

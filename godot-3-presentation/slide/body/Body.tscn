@@ -1,23 +1,19 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://slide/body/Body.gd" type="Script" id=1]
 [ext_resource path="res://slide/body/Margin.gd" type="Script" id=2]
-[ext_resource path="res://slide/body/text_theme.tres" type="Theme" id=3]
-[ext_resource path="res://slide/body/BodyText.gd" type="Script" id=4]
-[ext_resource path="res://slide/body/Video.gd" type="Script" id=5]
-[ext_resource path="res://content/img/multiplatform-editor.jpg" type="Texture" id=6]
-[ext_resource path="res://slide/body/Picture.gd" type="Script" id=7]
-[ext_resource path="res://slide/body/Demo.gd" type="Script" id=8]
+[ext_resource path="res://slide/body/BodyText.gd" type="Script" id=3]
+[ext_resource path="res://slide/body/Video.gd" type="Script" id=4]
+[ext_resource path="res://content/img/multiplatform-editor.jpg" type="Texture" id=5]
+[ext_resource path="res://slide/body/Picture.gd" type="Script" id=6]
+[ext_resource path="res://slide/body/Demo.gd" type="Script" id=7]
 
-[node name="Body" type="Container"]
+[node name="Body" type="ColorRect"]
 
 anchor_left = 0.0
 anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 214.0
-margin_right = 1920.0
-margin_bottom = 936.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 rect_min_size = Vector2( 1920, 210 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -25,6 +21,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+color = Color( 0.937255, 0.945098, 0.960784, 1 )
 script = ExtResource( 1 )
 _sections_unfolded = [ "Pause", "Size Flags", "Theme" ]
 center = true
@@ -43,6 +40,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color( 0.937255, 0.945098, 0.960784, 1 )
+_sections_unfolded = [ "Rect" ]
 
 [node name="Margin" type="MarginContainer" parent="." index="1"]
 
@@ -72,7 +70,7 @@ anchor_bottom = 0.0
 margin_left = 80.0
 margin_top = 24.0
 margin_right = 1840.0
-margin_bottom = 698.0
+margin_bottom = 1056.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -85,19 +83,19 @@ _sections_unfolded = [ "custom_constants" ]
 
 [node name="Text" type="RichTextLabel" parent="Margin/Rows" index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 566.0
-margin_bottom = 674.0
+margin_bottom = 1032.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-theme = ExtResource( 3 )
 bbcode_enabled = true
 bbcode_text = "Un seul exécutable de [color=#26BFE3]20mo[/color]:
 
@@ -121,7 +119,7 @@ scroll_active = false
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-script = ExtResource( 4 )
+script = ExtResource( 3 )
 _sections_unfolded = [ "BBCode", "Theme", "custom_fonts", "custom_styles" ]
 center = false
 
@@ -142,7 +140,6 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-theme = ExtResource( 3 )
 bbcode_enabled = true
 bbcode_text = "Un seul exécutable de [color=#26BFE3]20mo[/color]:
 
@@ -166,7 +163,7 @@ scroll_active = false
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-script = ExtResource( 4 )
+script = ExtResource( 3 )
 _sections_unfolded = [ "Rect" ]
 center = false
 
@@ -195,7 +192,7 @@ paused = false
 expand = true
 buffering_msec = 500
 bus = "Master"
-script = ExtResource( 5 )
+script = ExtResource( 4 )
 BASE_PATH = "res://content/video/"
 
 [node name="Picture" type="TextureRect" parent="Margin/Rows" index="2"]
@@ -206,7 +203,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 626.0
 margin_right = 1760.0
-margin_bottom = 674.0
+margin_bottom = 1032.0
 rect_min_size = Vector2( 600, 600 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -215,16 +212,16 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
-texture = ExtResource( 6 )
+texture = ExtResource( 5 )
 expand = true
 stretch_mode = 6
-script = ExtResource( 7 )
+script = ExtResource( 6 )
 _sections_unfolded = [ "Margin", "Size Flags" ]
 BASE_PATH = "res://content/img/"
 
 [node name="Demo" type="Node2D" parent="." index="2"]
 
-script = ExtResource( 8 )
+script = ExtResource( 7 )
 BASE_PATH = "res://content/demos/"
 
 

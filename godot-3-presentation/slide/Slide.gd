@@ -1,4 +1,4 @@
-extends Container
+extends Control
 
 signal content_updated(data)
 

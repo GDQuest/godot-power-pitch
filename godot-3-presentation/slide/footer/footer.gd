@@ -1,4 +1,4 @@
-extends Container
+extends Control
 
 func _on_Slide_content_updated(data):
 	var string = data['footer']
