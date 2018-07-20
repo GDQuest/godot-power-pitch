@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://touch_controls/touch_controls.gd" type="Script" id=1]
+[ext_resource path="res://touch_controls/TouchControls.gd" type="Script" id=1]
 [ext_resource path="res://touch_controls/touch_button/TouchButtonLeft.tscn" type="PackedScene" id=2]
 [ext_resource path="res://touch_controls/touch_button/TouchButtonRight.tscn" type="PackedScene" id=3]
+
 
 [node name="TouchControls" type="Control"]
 

@@ -1,11 +1,6 @@
 extends Container
 
-var text = '' setget set_text
-
-func set_text(value):
-	text = value
-
-	$Text.text = value
-	$Text.visible = not value == ''
-
-	visible = not value == ''
+func _on_Slide_content_updated(data):
+	var string = data['footer']
+	visible = not string == ""
+	$Text.text = string

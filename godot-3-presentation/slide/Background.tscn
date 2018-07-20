@@ -4,7 +4,6 @@
 [ext_resource path="res://content/img/shared/particles/fairy.png" type="Texture" id=2]
 [ext_resource path="res://content/img/shared/particles/fairy_big.png" type="Texture" id=3]
 
-
 [sub_resource type="Gradient" id=1]
 
 offsets = PoolRealArray( 0, 0.224852, 0.662722, 0.982249 )
@@ -117,7 +116,7 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Animation", "Color", "Damping", "Gravity", "Hue Variation", "Initial Velocity", "Scale" ]
 
-[node name="Background" type="Control"]
+[node name="Background" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -132,7 +131,6 @@ size_flags_vertical = 1
 
 [node name="TextureRect" type="TextureRect" parent="." index="0"]
 
-visible = false
 show_behind_parent = true
 anchor_left = 0.0
 anchor_top = 0.0

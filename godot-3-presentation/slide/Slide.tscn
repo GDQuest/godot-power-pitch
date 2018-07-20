@@ -18,7 +18,7 @@ length = 2.6
 loop = false
 step = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath("VBoxContainer/Body/Margin/Rows/Text:modulate")
+tracks/0/path = NodePath("Column/Body/Margin/Rows/Text:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -30,7 +30,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("VBoxContainer/Header/Title:modulate")
+tracks/1/path = NodePath("Column/Header/Title:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -48,7 +48,7 @@ length = 1.4
 loop = true
 step = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath("VBoxContainer/Header/Title:rect_position")
+tracks/0/path = NodePath("Column/Header/Title:rect_position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -60,7 +60,7 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, -27 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("VBoxContainer/Header/Title:rect_size")
+tracks/1/path = NodePath("Column/Header/Title:rect_size")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -88,9 +88,6 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
 _sections_unfolded = [ "Rect" ]
-BASE_PATH_PICTURES = "res://content/img/"
-BASE_PATH_VIDEO = "res://content/video/"
-BASE_PATH_DEMO = "res://content/demos/"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
 
@@ -104,7 +101,7 @@ anims/appear = SubResource( 2 )
 anims/test = SubResource( 3 )
 blend_times = [  ]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." index="1"]
+[node name="Column" type="VBoxContainer" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -118,10 +115,16 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
 
-[node name="Header" parent="VBoxContainer" index="0" instance=ExtResource( 2 )]
+[node name="Header" parent="Column" index="0" instance=ExtResource( 2 )]
 
-[node name="Body" parent="VBoxContainer" index="1" instance=ExtResource( 3 )]
+[node name="Body" parent="Column" index="1" instance=ExtResource( 3 )]
 
-[node name="Footer" parent="VBoxContainer" index="2" instance=ExtResource( 4 )]
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 4 )]
+
+[connection signal="content_updated" from="." to="Column/Body" method="_on_Slide_content_updated"]
+
+[connection signal="content_updated" from="." to="Column/Header" method="_on_Slide_content_updated"]
+
+[connection signal="content_updated" from="." to="Column/Footer" method="_on_Slide_content_updated"]
 
 
