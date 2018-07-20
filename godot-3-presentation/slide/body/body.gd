@@ -15,4 +15,3 @@ func _on_Slide_content_updated(data):
 
 	var use_margins = data['title'] != "" or data['footer'] != ""
 	$Margin.use_margins(use_margins)
-

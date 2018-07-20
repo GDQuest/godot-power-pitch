@@ -71,15 +71,14 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Animation", "Color", "Damping", "Gravity", "Hue Variation", "Initial Velocity", "Scale" ]
 
-[node name="Presentation" type="Node"]
+[node name="Presentation" type="Node" index="0"]
 
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ],
 "_edit_vertical_guides_": [  ]
 }
-ADD_TEXT_SHADOW = true
-slides_path = "res://content/ichi-pixel.gd"
+SLIDES_PATH = "res://content/en.gd"
 
 [node name="Slide" parent="." index="0" instance=ExtResource( 2 )]
 
