@@ -7,7 +7,7 @@ onready var margins = {
 	'bottom' : get('custom_constants/margin_bottom'),
 }
 
-func set_use_margins(value):
+func use_margins(value):
 	if value:
 		set('custom_constants/margin_right', margins['right'])
 		set('custom_constants/margin_top', margins['top'])

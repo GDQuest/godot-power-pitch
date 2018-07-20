@@ -1,21 +1,14 @@
 extends Container
 
-var title = "" setget set_title
-var subtitle = "" setget set_subtitle
+func _on_Slide_content_updated(data):
+	var title = data['title']
+	var subtitle = data['subtitle']
+	
+	visible = not title == ""
 
-func set_title(value):
-	title = value
+	$Title.text = title
+	$Title/Shadow.text = title
 
-	$Title.text = value
-	$Title/Shadow.text = value
-	$Title.visible = not value == ""
-
-	visible = not value == ''
-
-
-func set_subtitle(value):
-	subtitle = value
-
-	$Subtitle.text = value
-	$Subtitle/Shadow.text = value
-	$Subtitle.visible = not value == ""
+	$Subtitle.text = subtitle
+	$Subtitle/Shadow.text = subtitle
+	$Subtitle.visible = not subtitle == ""

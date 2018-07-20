@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Presentation.gd" type="Script" id=1]
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=2]
-[ext_resource path="res://slide/Background.tscn" type="PackedScene" id=3]
-[ext_resource path="res://content/img/shared/particles/fairy_big.png" type="Texture" id=4]
+[ext_resource path="res://content/img/shared/particles/fairy_big.png" type="Texture" id=3]
+[ext_resource path="res://slide/Background.tscn" type="PackedScene" id=4]
 [ext_resource path="res://touch_controls/TouchControls.tscn" type="PackedScene" id=5]
 
 [sub_resource type="Gradient" id=1]
@@ -71,26 +71,26 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Animation", "Color", "Damping", "Gravity", "Hue Variation", "Initial Velocity", "Scale" ]
 
-[node name="Presentation" type="Node" index="0"]
+[node name="Presentation" type="Node"]
 
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ],
 "_edit_vertical_guides_": [  ]
 }
-add_text_shadow = true
+ADD_TEXT_SHADOW = true
 slides_path = "res://content/ichi-pixel.gd"
 
 [node name="Slide" parent="." index="0" instance=ExtResource( 2 )]
 
-[node name="Background" parent="." index="1" instance=ExtResource( 3 )]
-
-margin_top = 1.0
-margin_bottom = 1.0
-
-[node name="Foreground" type="Node" parent="." index="2"]
+[node name="Foreground" type="CanvasLayer" parent="." index="1"]
 
 editor/display_folded = true
+layer = 100
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 
 [node name="Particles" type="Node2D" parent="Foreground" index="0"]
 
@@ -99,7 +99,6 @@ _sections_unfolded = [ "Visibility" ]
 
 [node name="Snow" type="Particles2D" parent="Foreground/Particles" index="0"]
 
-visible = false
 modulate = Color( 1, 1, 1, 0.430941 )
 position = Vector2( 467.072, 288.19 )
 emitting = false
@@ -116,13 +115,30 @@ visibility_rect = Rect2( 0, 0, 0, 0 )
 local_coords = false
 draw_order = 0
 process_material = SubResource( 5 )
-texture = ExtResource( 4 )
+texture = ExtResource( 3 )
 normal_map = null
 h_frames = 1
 v_frames = 1
 _sections_unfolded = [ "Material", "Process Material", "Textures", "Time", "Visibility" ]
 
+[node name="Background" type="CanvasLayer" parent="." index="2"]
+
+editor/display_folded = true
+layer = -100
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+
+[node name="Background" parent="Background" index="0" instance=ExtResource( 4 )]
+
+visible = false
+margin_top = 1.0
+margin_bottom = 1.0
+
 [node name="TouchControls" parent="." index="3" instance=ExtResource( 5 )]
+
+visible = false
 
 [connection signal="new_slide_requested" from="." to="Slide" method="_on_Presentation_new_slide_requested"]
 
