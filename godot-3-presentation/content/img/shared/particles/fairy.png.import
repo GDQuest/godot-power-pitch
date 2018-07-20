@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fairy.png-cf40f92b6a4fc57e462cc8e3f8b5a0d2.stex"
+path="res://.import/fairy.png-45aca6ed1e75ffda005dba0053824cea.stex"
 
 [deps]
 
-source_md5="cc6e3992c9e7e25c0cd9945e68d23d97"
+source_file="res://content/img/shared/particles/fairy.png"
+dest_files=[ "res://.import/fairy.png-45aca6ed1e75ffda005dba0053824cea.stex" ]
 
 [params]
 

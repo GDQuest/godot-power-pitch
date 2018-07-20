@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/github-pulse-october.png-762112c90c9bdb0afe9c829070b09ca3.stex"
+path="res://.import/github-pulse-october.png-d3833ec20e04be6d3b42af15374fd51a.stex"
 
 [deps]
 
-source_md5="094cfae76c59838dbd6acdc995668b54"
+source_file="res://content/img/github-pulse-october.png"
+dest_files=[ "res://.import/github-pulse-october.png-d3833ec20e04be6d3b42af15374fd51a.stex" ]
 
 [params]
 

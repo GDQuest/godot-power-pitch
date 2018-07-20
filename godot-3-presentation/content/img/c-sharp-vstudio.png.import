@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/c-sharp-vstudio.png-bfb6cc9250e09b73114f9a41b0557712.stex"
+path="res://.import/c-sharp-vstudio.png-abdc32a70bc492c9dc5a0b260c4ce106.stex"
 
 [deps]
 
-source_md5="e44ca743aea50f6e62a4d2b5617f5971"
+source_file="res://content/img/c-sharp-vstudio.png"
+dest_files=[ "res://.import/c-sharp-vstudio.png-abdc32a70bc492c9dc5a0b260c4ce106.stex" ]
 
 [params]
 

@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/img.png-36b639c775a7ba36800d55390f2bddc8.stex"
+path="res://.import/img.png-259d2904bd681995ddb44b617e911d2e.stex"
 
 [deps]
 
-source_md5="36913f1b6f651ca521f9a094b131c7e8"
+source_file="res://content/demos/new-in-godot-3/img.png"
+dest_files=[ "res://.import/img.png-259d2904bd681995ddb44b617e911d2e.stex" ]
 
 [params]
 

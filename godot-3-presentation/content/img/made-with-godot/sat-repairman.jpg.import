@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sat-repairman.jpg-a8774f4006b1e82f1759ee6234ee1d85.stex"
+path="res://.import/sat-repairman.jpg-884c3f001121281e704d5a786b48d716.stex"
 
 [deps]
 
-source_md5="9ee8632c9f29052624fedd2c39717305"
+source_file="res://content/img/made-with-godot/sat-repairman.jpg"
+dest_files=[ "res://.import/sat-repairman.jpg-884c3f001121281e704d5a786b48d716.stex" ]
 
 [params]
 

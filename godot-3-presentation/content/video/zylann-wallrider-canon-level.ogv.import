@@ -7,10 +7,7 @@ path="res://.import/zylann-wallrider-canon-level.ogv-a0140542acfcbcbc96e524ed0fc
 [deps]
 
 source_file="res://content/video/zylann-wallrider-canon-level.ogv"
-source_md5="175a98d871b39e08380b0724b7d7b529"
-
 dest_files=[ "res://.import/zylann-wallrider-canon-level.ogv-a0140542acfcbcbc96e524ed0fcf8f45.ogvstr" ]
-dest_md5="4d03baea98e0cf70ebacfc4adf4200d5"
 
 [params]
 

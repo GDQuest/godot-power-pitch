@@ -7,10 +7,7 @@ path="res://.import/andreas-esau-brave-bran.ogv-d3d67450b7d6b08c734e8cece9c7f403
 [deps]
 
 source_file="res://content/video/andreas-esau-brave-bran.ogv"
-source_md5="5ffaf44a3c3e1565df5812aab56d2f12"
-
 dest_files=[ "res://.import/andreas-esau-brave-bran.ogv-d3d67450b7d6b08c734e8cece9c7f403.ogvstr" ]
-dest_md5="357a5e716bc481d43c8badb6d93671a9"
 
 [params]
 

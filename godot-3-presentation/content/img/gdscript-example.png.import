@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gdscript-example.png-5bcb94f9c6094c3efdcd4f9475229d44.stex"
+path="res://.import/gdscript-example.png-16b007143fc4ba7d6969c53514cc6efb.stex"
 
 [deps]
 
-source_md5="513d50b27c46a9a500695c64d9452d2e"
+source_file="res://content/img/gdscript-example.png"
+dest_files=[ "res://.import/gdscript-example.png-16b007143fc4ba7d6969c53514cc6efb.stex" ]
 
 [params]
 

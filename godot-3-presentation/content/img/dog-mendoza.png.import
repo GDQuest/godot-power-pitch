@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dog-mendoza.png-46bb1c8ca944258bbeaa4cce6033eff7.stex"
+path="res://.import/dog-mendoza.png-563486d7335b8bc610d320915e26fe7f.stex"
 
 [deps]
 
-source_md5="408cc26eeee879e2c7f5258749fd485a"
+source_file="res://content/img/dog-mendoza.png"
+dest_files=[ "res://.import/dog-mendoza.png-563486d7335b8bc610d320915e26fe7f.stex" ]
 
 [params]
 

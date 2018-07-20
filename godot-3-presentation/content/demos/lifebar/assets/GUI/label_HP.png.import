@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/label_HP.png-7108f9af63e3a014529a7c1d114b2383.stex"
+path="res://.import/label_HP.png-a31fd24c69a6c1bea13fb446968897cb.stex"
 
 [deps]
 
-source_md5="9b7cddef7a75639903850a0c2cef9077"
+source_file="res://content/demos/lifebar/assets/GUI/label_HP.png"
+dest_files=[ "res://.import/label_HP.png-a31fd24c69a6c1bea13fb446968897cb.stex" ]
 
 [params]
 

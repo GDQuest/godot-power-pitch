@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/foe_pink.png-3c7b9f4c8b9f0720d4d834d46b6a0e44.stex"
+path="res://.import/foe_pink.png-cd8134e39f2634d2d36c8e5133ae127f.stex"
 
 [deps]
 
-source_md5="85d40644aed8ab53d54f84879f8a4c21"
+source_file="res://content/demos/characters_and_weapons/characters/enemy/foe_pink.png"
+dest_files=[ "res://.import/foe_pink.png-cd8134e39f2634d2d36c8e5133ae127f.stex" ]
 
 [params]
 

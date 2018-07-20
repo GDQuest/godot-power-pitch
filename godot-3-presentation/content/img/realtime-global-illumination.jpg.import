@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/realtime-global-illumination.jpg-4d458fd04500030d15897ab8eb5d76ff.stex"
+path="res://.import/realtime-global-illumination.jpg-af7c87608b385b94c8712324989fd6c3.stex"
 
 [deps]
 
-source_md5="f2a4cee90cbbb2165b73d24eb0dd8d79"
+source_file="res://content/img/realtime-global-illumination.jpg"
+dest_files=[ "res://.import/realtime-global-illumination.jpg-af7c87608b385b94c8712324989fd6c3.stex" ]
 
 [params]
 

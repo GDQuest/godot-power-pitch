@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spear_enemy.png-57e5bace782a1abb47ac1e2343f791ab.stex"
+path="res://.import/spear_enemy.png-48af8424aafdb84da81c3a7398dc868c.stex"
 
 [deps]
 
-source_md5="9b39af5ef065619f63ff3fbe54f9b572"
+source_file="res://content/demos/characters_and_weapons/characters/weapons/spear/spear_enemy.png"
+dest_files=[ "res://.import/spear_enemy.png-48af8424aafdb84da81c3a7398dc868c.stex" ]
 
 [params]
 

@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/arrow.png-fa5427e75ef9dd2607c2011fd8234010.stex"
+path="res://.import/arrow_left.png-b7b72d5a977be9c938c1f9e2e0c4d12c.stex"
 
 [deps]
 
-source_md5="ab037bc7d617cbe5f692275c5b8462a3"
+source_file="res://touch_controls/touch_button/arrow_left.png"
+dest_files=[ "res://.import/arrow_left.png-b7b72d5a977be9c938c1f9e2e0c4d12c.stex" ]
 
 [params]
 

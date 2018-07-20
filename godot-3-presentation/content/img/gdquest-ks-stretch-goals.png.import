@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gdquest-ks-stretch-goals.png-7d5434b4a663b568c4a7149bb9b8ea7f.stex"
+path="res://.import/gdquest-ks-stretch-goals.png-8fec39ed0160a0dfd5e93715994d59b9.stex"
 
 [deps]
 
-source_md5="46a9f7aecb72de0e184b66f70f933f04"
+source_file="res://content/img/gdquest-ks-stretch-goals.png"
+dest_files=[ "res://.import/gdquest-ks-stretch-goals.png-8fec39ed0160a0dfd5e93715994d59b9.stex" ]
 
 [params]
 

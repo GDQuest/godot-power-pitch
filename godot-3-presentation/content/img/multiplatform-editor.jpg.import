@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/multiplatform-editor.jpg-f3d4b024f1239c22914b04e29689062a.stex"
+path="res://.import/multiplatform-editor.jpg-7023c4811e81b6e4a988f0734455d58b.stex"
 
 [deps]
 
-source_md5="ed5d2eaede85b3a9bffaef5adedfac2a"
+source_file="res://content/img/multiplatform-editor.jpg"
+dest_files=[ "res://.import/multiplatform-editor.jpg-7023c4811e81b6e4a988f0734455d58b.stex" ]
 
 [params]
 

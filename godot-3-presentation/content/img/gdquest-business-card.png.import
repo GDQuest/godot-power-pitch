@@ -7,10 +7,7 @@ path="res://.import/gdquest-business-card.png-102b9a486748385d3741cf5d158477db.s
 [deps]
 
 source_file="res://content/img/gdquest-business-card.png"
-source_md5="840bc30f040747964f16baf9b78ab1c4"
-
 dest_files=[ "res://.import/gdquest-business-card.png-102b9a486748385d3741cf5d158477db.stex" ]
-dest_md5="ad47ca3f6d2d0e494afd560435680c2d"
 
 [params]
 

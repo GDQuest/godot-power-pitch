@@ -7,10 +7,7 @@ path="res://.import/guaranapps-level-editor.ogv-f904a239dbd818075283fd3cd2ad33a9
 [deps]
 
 source_file="res://content/video/guaranapps-level-editor.ogv"
-source_md5="5b9a5608f6c7d4e12391b5c8fb0c7a3c"
-
 dest_files=[ "res://.import/guaranapps-level-editor.ogv-f904a239dbd818075283fd3cd2ad33a9.ogvstr" ]
-dest_md5="3d3348bb8774df61b41da79186c14097"
 
 [params]
 

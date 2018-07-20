@@ -7,10 +7,7 @@ path="res://.import/shadow.png-56a9a0de2b8662d8cdc5a8527eeb2a48.stex"
 [deps]
 
 source_file="res://content/demos/attacks/characters/shadow.png"
-source_md5="ba1c3f4ef3a93dcd980bc4d020c4a22c"
-
 dest_files=[ "res://.import/shadow.png-56a9a0de2b8662d8cdc5a8527eeb2a48.stex" ]
-dest_md5="7dd3fb33b53c00ce76edd77833bce15d"
 
 [params]
 
