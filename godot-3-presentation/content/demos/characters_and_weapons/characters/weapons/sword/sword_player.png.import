@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sword_player.png-186c4567df2d1dd30fdab5b251ead281.stex"
+path="res://.import/sword_player.png-e187f4e1210c27bd6850fbd85a396def.stex"
 
 [deps]
 
-source_md5="c827d092ff003572108564b0ebc053df"
+source_file="res://content/demos/characters_and_weapons/characters/weapons/sword/sword_player.png"
+dest_files=[ "res://.import/sword_player.png-e187f4e1210c27bd6850fbd85a396def.stex" ]
 
 [params]
 

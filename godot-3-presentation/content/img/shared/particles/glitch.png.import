@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/glitch.png-4e0d924e8ae3985d32cf2f91791456a5.stex"
+path="res://.import/glitch.png-d74ee7dc40d340994f0b4f7ba95ba5a3.stex"
 
 [deps]
 
-source_md5="a3eb2d1d95d519b55ade4d105dc681c1"
+source_file="res://content/img/shared/particles/glitch.png"
+dest_files=[ "res://.import/glitch.png-d74ee7dc40d340994f0b4f7ba95ba5a3.stex" ]
 
 [params]
 

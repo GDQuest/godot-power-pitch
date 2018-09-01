@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shadow.png-ddcba278a35c14b8fb1cc78606a40289.stex"
+path="res://.import/shadow.png-1ce98383c92e13c3b4a12c2459a13011.stex"
 
 [deps]
 
-source_md5="0facacfa0c986efaab7f994133771a4e"
+source_file="res://content/demos/characters_and_weapons/characters/shared/shadow.png"
+dest_files=[ "res://.import/shadow.png-1ce98383c92e13c3b4a12c2459a13011.stex" ]
 
 [params]
 

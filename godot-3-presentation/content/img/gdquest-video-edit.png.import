@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gdquest-video-edit.png-e89e03ea2463ac4f8d64cd9bf2568932.stex"
+path="res://.import/gdquest-video-edit.png-47ab825918bccb126330d3925cff51fe.stex"
 
 [deps]
 
-source_md5="ea99067a305178e6f482837bd489000d"
+source_file="res://content/img/gdquest-video-edit.png"
+dest_files=[ "res://.import/gdquest-video-edit.png-47ab825918bccb126330d3925cff51fe.stex" ]
 
 [params]
 

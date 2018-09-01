@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/node-tree-2.png-b046e5f6ea39b6672080908eafa9f0a7.stex"
+path="res://.import/node-tree-2.png-45acc6bc8ce8040af0000a3a3b624d50.stex"
 
 [deps]
 
-source_md5="62f88148deadef9227ae1d614fe1ce93"
+source_file="res://content/img/node-tree-2.png"
+dest_files=[ "res://.import/node-tree-2.png-45acc6bc8ce8040af0000a3a3b624d50.stex" ]
 
 [params]
 

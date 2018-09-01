@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/advanced-materials.jpg-9086228c7bff955a07df4bea7533ab9c.stex"
+path="res://.import/advanced-materials.jpg-c0a7c875222af079f68d189491a2e6eb.stex"
 
 [deps]
 
-source_md5="f52461fa40646048750c849454da7ca3"
+source_file="res://content/img/advanced-materials.jpg"
+dest_files=[ "res://.import/advanced-materials.jpg-c0a7c875222af079f68d189491a2e6eb.stex" ]
 
 [params]
 

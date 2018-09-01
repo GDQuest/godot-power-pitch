@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/docs-integrated-help.png-3427e4d52dba8af10aa2bbeca6d76cd3.stex"
+path="res://.import/docs-integrated-help.png-ae4fde61d9858e354a96d0df8bb3a13b.stex"
 
 [deps]
 
-source_md5="834b5751c260277d5553be1e217b070c"
+source_file="res://content/img/docs-integrated-help.png"
+dest_files=[ "res://.import/docs-integrated-help.png-ae4fde61d9858e354a96d0df8bb3a13b.stex" ]
 
 [params]
 

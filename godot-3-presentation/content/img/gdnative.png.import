@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gdnative.png-f10b8c6e7ac1eecbfdf200871a3ce465.stex"
+path="res://.import/gdnative.png-491f40c678f5714e133bc2b94254a10c.stex"
 
 [deps]
 
-source_md5="fb2fcaaf5f129acc4a76b2e4eef2a7e2"
+source_file="res://content/img/gdnative.png"
+dest_files=[ "res://.import/gdnative.png-491f40c678f5714e133bc2b94254a10c.stex" ]
 
 [params]
 

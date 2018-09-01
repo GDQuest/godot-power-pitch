@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sponza-2.jpg-73b66a0bf502275f27f87850b8b0c6c2.stex"
+path="res://.import/sponza-2.jpg-a5e4ac02347ec71fce6c8e985e62d61b.stex"
 
 [deps]
 
-source_md5="1afa214c65aa5bcefad832fe57c80e1b"
+source_file="res://content/img/sponza-2.jpg"
+dest_files=[ "res://.import/sponza-2.jpg-a5e4ac02347ec71fce6c8e985e62d61b.stex" ]
 
 [params]
 

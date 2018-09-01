@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/deponia-ps4-game.png-c09100553274c81f98331e5b56cad346.stex"
+path="res://.import/deponia-ps4-game.png-60db0b5c67e6c873f0a085a965ee360b.stex"
 
 [deps]
 
-source_md5="996cebbb5e00a7e5a0f491ec31522367"
+source_file="res://content/img/deponia-ps4-game.png"
+dest_files=[ "res://.import/deponia-ps4-game.png-60db0b5c67e6c873f0a085a965ee360b.stex" ]
 
 [params]
 

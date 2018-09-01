@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2d-viewport-2.x.png-decb18407708239483baa170526cfc34.stex"
+path="res://.import/2d-viewport-2.x.png-f0d5e47a7e4fa098d1aaaac6aa2125da.stex"
 
 [deps]
 
-source_md5="11767e171dbe963895242e08b2cf431b"
+source_file="res://content/img/2d-viewport-2.x.png"
+dest_files=[ "res://.import/2d-viewport-2.x.png-f0d5e47a7e4fa098d1aaaac6aa2125da.stex" ]
 
 [params]
 

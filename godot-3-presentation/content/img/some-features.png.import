@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/some-features.png-7c2003f03c78f8fe19b627f0ee65637e.stex"
+path="res://.import/some-features.png-e9e510cab85226a8046778843bb3f2aa.stex"
 
 [deps]
 
-source_md5="44e292f8f82557f07cbd06c2c966c39b"
+source_file="res://content/img/some-features.png"
+dest_files=[ "res://.import/some-features.png-e9e510cab85226a8046778843bb3f2aa.stex" ]
 
 [params]
 

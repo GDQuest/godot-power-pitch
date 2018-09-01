@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rpg-in-a-box-graph.png-c28741be08aa42f773238ef6e378307a.stex"
+path="res://.import/rpg-in-a-box-graph.png-152271d5ba54277d1db9940e871470b8.stex"
 
 [deps]
 
-source_md5="d34835b19db7642f66f8efc83575e22f"
+source_file="res://content/img/rpg-in-a-box-graph.png"
+dest_files=[ "res://.import/rpg-in-a-box-graph.png-152271d5ba54277d1db9940e871470b8.stex" ]
 
 [params]
 

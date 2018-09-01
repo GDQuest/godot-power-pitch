@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/arkit-1280x720.jpg-aff708387e0e7482060d32f0e076fe29.stex"
+path="res://.import/arkit-1280x720.jpg-ade11111dd452d55abe458a30f838688.stex"
 
 [deps]
 
-source_md5="ef837fdba44e894a1108824aa739e68b"
+source_file="res://content/img/arkit-1280x720.jpg"
+dest_files=[ "res://.import/arkit-1280x720.jpg-ade11111dd452d55abe458a30f838688.stex" ]
 
 [params]
 

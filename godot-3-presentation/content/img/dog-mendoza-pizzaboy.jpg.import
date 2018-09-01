@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dog-mendoza-pizzaboy.jpg-cf459a146634ee75e8c8a6cb973c6332.stex"
+path="res://.import/dog-mendoza-pizzaboy.jpg-12833e394cb9a6ab5d348b9dba3b9b4a.stex"
 
 [deps]
 
-source_md5="8b807718fb99440fbb7157787a07516f"
+source_file="res://content/img/dog-mendoza-pizzaboy.jpg"
+dest_files=[ "res://.import/dog-mendoza-pizzaboy.jpg-12833e394cb9a6ab5d348b9dba3b9b4a.stex" ]
 
 [params]
 
