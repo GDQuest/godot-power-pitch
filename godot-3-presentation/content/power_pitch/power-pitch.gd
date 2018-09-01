@@ -2,7 +2,7 @@ extends '../properties.gd'
 
 
 func _init():
-	for array in [intro, features, market]:
+	for array in [intro, features, market, project]:
 		for val in array:
 			data.push_back(val)
 
@@ -122,7 +122,7 @@ var project = [
 		- A [color=%s]built-in reference[/color], available inside the editor
 		- Open source demos
 		""" % [BLUE, BLUE, GREEN, GREEN, PINK],
-		'picture': 'docs-community-websites.png',
+		'picture': '../img/docs-community-websites.png',
 		"footer": "Most resources are in English now!"
 	},
 	{
@@ -144,6 +144,6 @@ var project = [
 
 		This presentation is Open Source on [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]
 		""" % [BLUE, ORANGE],
-		'picture': 'gdquest-business-card.png',
+		'picture': '../img/gdquest-business-card.png',
 	}
 ]
