@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/godot-skeleton-1280x720.png-4b5b3f7149b9af9811c845fa8c56f9f2.stex"
+path="res://.import/godot-skeleton-1280x720.png-450d92ef44f9b2b25d2e4b961a462c39.stex"
 
 [deps]
 
-source_md5="d0bcf3d5aea6bcf0ee22806ddd19e36c"
+source_file="res://content/img/godot-skeleton-1280x720.png"
+dest_files=[ "res://.import/godot-skeleton-1280x720.png-450d92ef44f9b2b25d2e4b961a462c39.stex" ]
 
 [params]
 

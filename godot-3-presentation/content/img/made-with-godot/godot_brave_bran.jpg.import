@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/godot_brave_bran.jpg-27feb1acdb5acb882b251d5a645c6c07.stex"
+path="res://.import/godot_brave_bran.jpg-56db61db2ec141f3a5d46a99a35f0304.stex"
 
 [deps]
 
-source_md5="f024c599d3caf2fbf82efabad502c049"
+source_file="res://content/img/made-with-godot/godot_brave_bran.jpg"
+dest_files=[ "res://.import/godot_brave_bran.jpg-56db61db2ec141f3a5d46a99a35f0304.stex" ]
 
 [params]
 

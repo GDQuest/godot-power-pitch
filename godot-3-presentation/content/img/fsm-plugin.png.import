@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fsm-plugin.png-949558d5996fbf6d1f1c0a18915adbb8.stex"
+path="res://.import/fsm-plugin.png-39424b09cf7d7ab47ec5a98471b00189.stex"
 
 [deps]
 
-source_md5="8a961281d7c891611901f5173ad5f99c"
+source_file="res://content/img/fsm-plugin.png"
+dest_files=[ "res://.import/fsm-plugin.png-39424b09cf7d7ab47ec5a98471b00189.stex" ]
 
 [params]
 

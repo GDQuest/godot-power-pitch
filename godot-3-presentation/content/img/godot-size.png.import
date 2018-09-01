@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/godot-size.png-a127b8cb908b621048f9dd7f9b965c64.stex"
+path="res://.import/godot-size.png-8543604bd6082f9c4b8dd085a76344a5.stex"
 
 [deps]
 
-source_md5="bb38c97aba52b4d7d62764317aabf0c3"
+source_file="res://content/img/godot-size.png"
+dest_files=[ "res://.import/godot-size.png-8543604bd6082f9c4b8dd085a76344a5.stex" ]
 
 [params]
 

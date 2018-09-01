@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gdquest-semaine-type.png-cc0b25da8a3d06cc146cff578c196b20.stex"
+path="res://.import/gdquest-semaine-type.png-c1b823249d595fb26e21aa55ef48f112.stex"
 
 [deps]
 
-source_md5="0c363885003bf2d5658372d58905ca11"
+source_file="res://content/img/gdquest-semaine-type.png"
+dest_files=[ "res://.import/gdquest-semaine-type.png-c1b823249d595fb26e21aa55ef48f112.stex" ]
 
 [params]
 

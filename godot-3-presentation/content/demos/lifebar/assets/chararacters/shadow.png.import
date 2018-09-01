@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shadow.png-1a716c398dbf85c593c30e10f0d36787.stex"
+path="res://.import/shadow.png-a76a004f809109b0c787056d105df09d.stex"
 
 [deps]
 
-source_md5="c6091db6083623c4c6ab6465e0ebd062"
+source_file="res://content/demos/lifebar/assets/chararacters/shadow.png"
+dest_files=[ "res://.import/shadow.png-a76a004f809109b0c787056d105df09d.stex" ]
 
 [params]
 

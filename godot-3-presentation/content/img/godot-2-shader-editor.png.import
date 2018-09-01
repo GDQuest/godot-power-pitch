@@ -2,11 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/godot-2-shader-editor.png-f939903a32cbfe200476c0095e40fbdb.stex"
+path="res://.import/godot-2-shader-editor.png-dea687fd48e3d7d7d61bbaff73697207.stex"
 
 [deps]
 
-source_md5="766c005873dc45d1f04ecf48ff7a1bb5"
+source_file="res://content/img/godot-2-shader-editor.png"
+dest_files=[ "res://.import/godot-2-shader-editor.png-dea687fd48e3d7d7d61bbaff73697207.stex" ]
 
 [params]
 
