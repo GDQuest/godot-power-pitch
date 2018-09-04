@@ -1,8 +1,10 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://content/img/shared/bg.png" type="Texture" id=1]
-[ext_resource path="res://content/img/shared/particles/fairy.png" type="Texture" id=2]
-[ext_resource path="res://content/img/shared/particles/fairy_big.png" type="Texture" id=3]
+[ext_resource path="res://content/shared/bg.png" type="Texture" id=1]
+[ext_resource path="res://content/shared/particles/fairy.png" type="Texture" id=2]
+[ext_resource path="res://content/shared/particles/fairy_big.png" type="Texture" id=3]
+
+
 
 [sub_resource type="Gradient" id=1]
 

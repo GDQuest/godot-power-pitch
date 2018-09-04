@@ -1,5 +1,9 @@
-extends '../properties.gd'
+const BLUE = '#26BFE3'
+const GREEN = '#02E180'
+const ORANGE = '#F2971A'
+const PINK = '#E3266F'
 
+var data = []
 
 func _init():
 	for array in [intro, features, market, project]:
@@ -9,7 +13,7 @@ func _init():
 
 var intro = [
 	{
-		"picture": "../img/title-screen.png"
+		"picture": "title-screen.png"
 	},
 	{
 		"title": "A free, modern engine",
@@ -20,7 +24,7 @@ var intro = [
 
 			Runs on Windows, Mac, Linux
 			Exports to PC, mobile, web""" % [BLUE, PINK, ORANGE],
-		'picture': '../img/car-3d.jpg',
+		'picture': 'car-3d.jpg',
 		"footer": "*And PS4, XboxOne, Switch, PS Vita..."
 	},
 	{
@@ -57,7 +61,7 @@ var features = [
 	},
 	{
 		"title": "Bleeding edge 3D", #maybe change this title?
-		'picture': '../img/modern-engine.jpg',
+		'picture': 'modern-engine.jpg',
 		"footer": "Designed to work well with Blender Eevee"
 	},
 	{
@@ -90,7 +94,7 @@ var market = [
 			- [color=%s]Schools[/color]: School4Games, KidsCanCode...
 			- [color=%s]Content creators[/color]: Heartbeast, [i]GDQuest[/i]...
 			""" % [PINK, BLUE, GREEN],
-		'picture': '../img/teddy-game.jpg',
+		'picture': 'teddy-game.jpg',
 	},
 	{
 		'title': 'Made with Godot...',
@@ -122,7 +126,7 @@ var project = [
 		- A [color=%s]built-in reference[/color], available inside the editor
 		- Open source demos
 		""" % [BLUE, BLUE, GREEN, GREEN, PINK],
-		'picture': '../img/docs-community-websites.png',
+		'picture': 'docs-community-websites.png',
 		"footer": "Most resources are in English now!"
 	},
 	{
@@ -144,6 +148,6 @@ var project = [
 
 		This presentation is Open Source on [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]
 		""" % [BLUE, ORANGE],
-		'picture': '../img/gdquest-business-card.png',
+		'picture': 'gdquest-business-card.png',
 	}
 ]
