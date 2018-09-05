@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://slide/header/Header.gd" type="Script" id=1]
-[ext_resource path="res://assets/fonts/montserrat/montserrat-black.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://assets/fonts/montserrat/montserrat-extrabold.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://theme/godot.theme" type="Theme" id=1]
+[ext_resource path="res://slide/header/Header.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/montserrat/montserrat-black.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/fonts/montserrat/montserrat-extrabold.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -10,7 +11,7 @@ size = 88
 use_mipmaps = false
 use_filter = true
 extra_spacing_top = 20
-font_data = ExtResource( 2 )
+font_data = ExtResource( 3 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=2]
@@ -18,7 +19,7 @@ _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 size = 40
 use_mipmaps = false
 use_filter = true
-font_data = ExtResource( 3 )
+font_data = ExtResource( 4 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
 [node name="Header" type="ColorRect" index="0"]
@@ -34,9 +35,10 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
+theme = ExtResource( 1 )
 color = Color( 0.2, 0.247059, 0.403922, 1 )
-script = ExtResource( 1 )
-_sections_unfolded = [ "Rect" ]
+script = ExtResource( 2 )
+_sections_unfolded = [ "Rect", "Theme" ]
 
 [node name="Title" type="Label" parent="." index="0"]
 
@@ -59,7 +61,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "BBCode", "custom_fonts" ]
+_sections_unfolded = [ "BBCode", "Theme" ]
 
 [node name="Subtitle" type="Label" parent="." index="1"]
 

@@ -89,6 +89,9 @@ SLIDES_PATH = "res://content/power_pitch/power-pitch.gd"
 
 [node name="Slide" parent="." index="0" instance=ExtResource( 2 )]
 
+margin_top = 0.0
+margin_bottom = 0.0
+
 [node name="Foreground" type="CanvasLayer" parent="." index="1"]
 
 editor/display_folded = true

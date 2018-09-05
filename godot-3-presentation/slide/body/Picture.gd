@@ -10,7 +10,6 @@ func display(relative_path):
 	
 	var path_tester = File.new()
 	var picture_path = BASE_PATH + relative_path
-	print(picture_path)
 	if not path_tester.file_exists(picture_path):
 		picture_path = LEGACY_PATH + relative_path
 	texture = load(picture_path)
