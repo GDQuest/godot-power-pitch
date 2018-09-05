@@ -2,7 +2,7 @@ extends Control
 
 export(bool) var center = true
 
-onready var body_text = $Margin/Rows/Text
+onready var body_text = $Margin/Rows/TextBox
 onready var picture = $Margin/Rows/Picture
 onready var video = $Margin/Rows/Video
 onready var demo = $Demo

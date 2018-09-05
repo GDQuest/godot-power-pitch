@@ -22,7 +22,6 @@ GlobalConstants="*res://content/demos/attacks/global-constants.gd"
 
 window/size/width=1920
 window/size/height=1080
-window/size/resizable=false
 window/size/test_width=1280
 window/size/test_height=720
 window/energy_saving/keep_screen_on=false

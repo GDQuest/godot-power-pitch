@@ -1,4 +1,4 @@
-extends RichTextLabel
+extends Control
 
 export(bool) var center = false
 
@@ -8,8 +8,8 @@ func display(string):
 	string = string.replace('\t', '')
 	if center:
 		string = center_text(string)
-	bbcode_text = string.replace('\t', '')
-	$Shadow.bbcode_text = string
+	$Text.bbcode_text = string.replace('\t', '')
+	$Text/Shadow.bbcode_text = string
 
 func center_text(string):
 	var bbcode = ""

@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://slide/body/Body.gd" type="Script" id=1]
-[ext_resource path="res://slide/body/Margin.gd" type="Script" id=2]
-[ext_resource path="res://slide/body/BodyText.gd" type="Script" id=3]
-[ext_resource path="res://slide/body/Video.gd" type="Script" id=4]
-[ext_resource path="res://content/_old_presentation/img/multiplatform-editor.jpg" type="Texture" id=5]
-[ext_resource path="res://slide/body/Picture.gd" type="Script" id=6]
-[ext_resource path="res://slide/body/Demo.gd" type="Script" id=7]
+[ext_resource path="res://theme/godot.theme" type="Theme" id=1]
+[ext_resource path="res://slide/body/Body.gd" type="Script" id=2]
+[ext_resource path="res://slide/body/Margin.gd" type="Script" id=3]
+[ext_resource path="res://slide/body/BodyTextBox.gd" type="Script" id=4]
+[ext_resource path="res://slide/body/Video.gd" type="Script" id=5]
+[ext_resource path="res://content/_old_presentation/img/multiplatform-editor.jpg" type="Texture" id=6]
+[ext_resource path="res://slide/body/Picture.gd" type="Script" id=7]
+[ext_resource path="res://slide/body/Demo.gd" type="Script" id=8]
 
 [node name="Body" type="ColorRect" index="0"]
 
@@ -21,8 +22,9 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = ExtResource( 1 )
 color = Color( 0.937255, 0.945098, 0.960784, 1 )
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 _sections_unfolded = [ "Pause", "Size Flags", "Theme" ]
 center = true
 
@@ -55,10 +57,8 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_constants/margin_right = 80
-custom_constants/margin_top = 24
 custom_constants/margin_left = 80
-custom_constants/margin_bottom = 24
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 _sections_unfolded = [ "custom_constants" ]
 
 [node name="Rows" type="HBoxContainer" parent="Margin" index="0"]
@@ -68,33 +68,51 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 80.0
-margin_top = 24.0
 margin_right = 1840.0
-margin_bottom = 1056.0
+margin_bottom = 1080.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 60
 alignment = 1
-_sections_unfolded = [ "custom_constants" ]
 
-[node name="Text" type="RichTextLabel" parent="Margin/Rows" index="0"]
+[node name="TextBox" type="MarginContainer" parent="Margin/Rows" index="0"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 566.0
-margin_bottom = 1032.0
+margin_right = 585.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_constants/margin_top = 32
+custom_constants/margin_bottom = 32
+script = ExtResource( 4 )
+_sections_unfolded = [ "Size Flags" ]
+center = false
+
+[node name="Text" type="RichTextLabel" parent="Margin/Rows/TextBox" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 8.0
+margin_top = 32.0
+margin_right = 585.0
+margin_bottom = 1048.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
 mouse_filter = 0
 mouse_default_cursor_shape = 0
-size_flags_horizontal = 3
+size_flags_horizontal = 1
 size_flags_vertical = 1
 bbcode_enabled = true
 bbcode_text = "Un seul exécutable de [color=#26BFE3]20mo[/color]:
@@ -119,11 +137,9 @@ scroll_active = false
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-script = ExtResource( 3 )
-_sections_unfolded = [ "BBCode", "Theme", "custom_fonts", "custom_styles" ]
-center = false
+_sections_unfolded = [ "BBCode", "Margin", "Theme", "custom_fonts", "custom_styles" ]
 
-[node name="Shadow" type="RichTextLabel" parent="Margin/Rows/Text" index="1"]
+[node name="Shadow" type="RichTextLabel" parent="Margin/Rows/TextBox/Text" index="1"]
 
 visible = false
 show_behind_parent = true
@@ -163,7 +179,7 @@ scroll_active = false
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 _sections_unfolded = [ "Rect" ]
 center = false
 
@@ -174,16 +190,18 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 60.0
-margin_right = 1340.0
-margin_bottom = 720.0
+margin_left = 12.0
+margin_top = 180.0
+margin_right = 1292.0
+margin_bottom = 900.0
 rect_min_size = Vector2( 1280, 720 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
-size_flags_horizontal = 4
+size_flags_horizontal = 6
 size_flags_vertical = 4
+size_flags_stretch_ratio = 2.0
 audio_track = 0
 stream = null
 volume_db = 0.0
@@ -192,7 +210,8 @@ paused = false
 expand = true
 buffering_msec = 500
 bus = "Master"
-script = ExtResource( 4 )
+script = ExtResource( 5 )
+_sections_unfolded = [ "Size Flags" ]
 BASE_PATH = "res://content/video/"
 
 [node name="Picture" type="TextureRect" parent="Margin/Rows" index="2"]
@@ -201,9 +220,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 626.0
+margin_left = 589.0
 margin_right = 1760.0
-margin_bottom = 1032.0
+margin_bottom = 1080.0
 rect_min_size = Vector2( 600, 600 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -212,17 +231,17 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 expand = true
 stretch_mode = 6
-script = ExtResource( 6 )
+script = ExtResource( 7 )
 _sections_unfolded = [ "Margin", "Size Flags" ]
 LEGACY_PATH = "res://content/_old_presentation/img/"
 BASE_PATH = "res://content/power_pitch/img/"
 
 [node name="Demo" type="Node2D" parent="." index="2"]
 
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 BASE_PATH = "res://content/demos/"
 
 
