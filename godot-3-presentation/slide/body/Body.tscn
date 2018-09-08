@@ -9,7 +9,7 @@
 [ext_resource path="res://slide/body/Picture.gd" type="Script" id=7]
 [ext_resource path="res://slide/body/Demo.gd" type="Script" id=8]
 
-[node name="Body" type="ColorRect" index="0"]
+[node name="Body" type="ColorRect"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -17,7 +17,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 rect_min_size = Vector2( 1920, 210 )
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
+rect_clip_content = true
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
@@ -25,7 +25,7 @@ size_flags_vertical = 3
 theme = ExtResource( 1 )
 color = Color( 0.937255, 0.945098, 0.960784, 1 )
 script = ExtResource( 2 )
-_sections_unfolded = [ "Pause", "Size Flags", "Theme" ]
+_sections_unfolded = [ "Pause", "Rect", "Size Flags", "Theme" ]
 center = true
 
 [node name="ColorRect" type="ColorRect" parent="." index="0"]
@@ -59,7 +59,7 @@ size_flags_vertical = 1
 custom_constants/margin_right = 80
 custom_constants/margin_left = 80
 script = ExtResource( 3 )
-_sections_unfolded = [ "custom_constants" ]
+_sections_unfolded = [ "Rect" ]
 
 [node name="Rows" type="HBoxContainer" parent="Margin" index="0"]
 
@@ -188,19 +188,18 @@ center = false
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 margin_left = 12.0
 margin_top = 180.0
-margin_right = 1292.0
-margin_bottom = 900.0
-rect_min_size = Vector2( 1280, 720 )
+margin_right = -1348.0
+margin_bottom = -500.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 6
-size_flags_vertical = 4
+size_flags_vertical = 6
 size_flags_stretch_ratio = 2.0
 audio_track = 0
 stream = null
@@ -211,7 +210,7 @@ expand = true
 buffering_msec = 500
 bus = "Master"
 script = ExtResource( 5 )
-_sections_unfolded = [ "Size Flags" ]
+_sections_unfolded = [ "Anchor", "Margin", "Rect" ]
 BASE_PATH = "res://content/video/"
 
 [node name="Picture" type="TextureRect" parent="Margin/Rows" index="2"]
@@ -239,8 +238,18 @@ _sections_unfolded = [ "Margin", "Size Flags" ]
 LEGACY_PATH = "res://content/_old_presentation/img/"
 BASE_PATH = "res://content/power_pitch/img/"
 
-[node name="Demo" type="Node2D" parent="." index="2"]
+[node name="Demo" type="Control" parent="." index="2"]
 
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 script = ExtResource( 8 )
 BASE_PATH = "res://content/demos/"
 

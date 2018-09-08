@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 export(String) var BASE_PATH = 'res://content/demos/'
 

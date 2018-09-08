@@ -1,44 +1,122 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://content/demos/attacks/characters/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://content/demos/attacks/characters/monster/Dummy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://theme/godot.theme" type="Theme" id=3]
 
-[node name="Demo" type="Node"]
+[node name="Demo" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
-position = Vector2( 918.68, 657.075 )
+position = Vector2( 1398.68, 397.075 )
 
 [node name="Dummy" parent="." index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 1116, 654 )
+position = Vector2( 1596, 394 )
 
 [node name="Dummy2" parent="." index="2" instance=ExtResource( 2 )]
 
-position = Vector2( 1068, 510 )
+position = Vector2( 1548, 250 )
 
 [node name="Dummy3" parent="." index="3" instance=ExtResource( 2 )]
 
-position = Vector2( 924, 462 )
+position = Vector2( 1404, 202 )
 
 [node name="Dummy4" parent="." index="4" instance=ExtResource( 2 )]
 
-position = Vector2( 780, 510 )
+position = Vector2( 1260, 250 )
 
 [node name="Dummy5" parent="." index="5" instance=ExtResource( 2 )]
 
-position = Vector2( 732, 654 )
+position = Vector2( 1212, 394 )
 
 [node name="Dummy6" parent="." index="6" instance=ExtResource( 2 )]
 
-position = Vector2( 780, 798 )
+position = Vector2( 1260, 538 )
 
 [node name="Dummy7" parent="." index="7" instance=ExtResource( 2 )]
 
-position = Vector2( 924, 846 )
+position = Vector2( 1404, 586 )
 
 [node name="Dummy8" parent="." index="8" instance=ExtResource( 2 )]
 
-position = Vector2( 1068, 798 )
+position = Vector2( 1548, 538 )
+
+[node name="TextEdit" type="TextEdit" parent="." index="9"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+margin_right = 6.0
+rect_min_size = Vector2( 900, 0 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 3
+theme = ExtResource( 3 )
+text = "func _change_state(new_state):
+	match state:
+		ATTACK:
+			hit_objects = []
+			attack_input_state = IDLE
+			ready_for_next_attack = false
+
+	match new_state:
+		IDLE:
+			combo_count = 0
+			$AnimationPlayer.play('idle')
+			monitoring = false
+		ATTACK:
+			attack_current = combo[combo_count -1]
+			$AnimationPlayer.play(attack_current['animation'])
+			monitoring = true
+	state = new_state
+
+func _input(event):
+	if not state == ATTACK:
+		return
+	if attack_input_state != LISTENING:
+		return
+	if event.is_action_pressed('attack'):
+		attack_input_state = REGISTERED
+
+func _physics_process(delta):
+	if attack_input_state == REGISTERED and ready_for_next_attack:
+		attack()
+
+func attack():
+	combo_count += 1
+	_change_state(ATTACK)"
+readonly = false
+highlight_current_line = false
+syntax_highlighting = true
+show_line_numbers = true
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+_sections_unfolded = [ "Rect", "Size Flags" ]
 
 
