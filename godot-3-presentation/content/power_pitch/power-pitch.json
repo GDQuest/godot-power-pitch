@@ -1,0 +1,69 @@
+[{
+    "picture": "title-screen.png"
+},
+{
+    "body": "Separate [color=#26BFE3]2d[/color] and [color=#E3266F]3d[/color] renderers\nComplete [color=#F2971A]game editor[/color]\n\nCreate projects with Windows, Mac, Linux\nBuild games for PC, mobile, web*",
+    "footer": "*And PS4, XboxOne, Switch, PS Vita...",
+    "picture": "car-3d.jpg",
+    "title": "A Free modern engine"
+},
+{
+    "body": "- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion\n- [color=#26BFE3]Animation[/color] editor with 2d rigging\n- [color=#F2971A]Tilemap editor[/color] with autotiles\n- [color=#02E180]Shader[/color] editor, visual and code\n- [color=#02E180]UI theme editor[/color]\n\nIf it misses anything essential, we add it!\n",
+    "footer": "2d IK available, meshes and skinning coming soon!",
+    "picture": "mesh2d_bones.png",
+    "title": "All-in-one package"
+},
+{
+    "footer": "You can extend the editor with plugins or use it to design User Interface!",
+    "picture": "godot-editor.png",
+    "subtitle": "Design and code, all in the same place",
+    "title": "Meet the editor"
+},
+{
+    "footer": "Designed to work well with Blender 2.8's Eevee realtime engine",
+    "picture": "modern-engine.jpg",
+    "title": "State of the art 3d engine"
+},
+{
+    "body": "Powered by Steam VR\nSupports all common hardware like:\n- Occulus Rift\n- Gear VR\n- Leap Motion\n- ...\n",
+    "config": {
+        "video_size": {
+            "x": 756,
+            "y": 840
+        }
+    },
+    "footer": "Powered by Steam VR",
+    "title": "Virtual and Augmented Reality",
+    "video": "vr-capture.ogv"
+},
+{
+    "body": "- [color=#E3266F]Game studios[/color]: Gamblify, GuaranApps, Kivano...\n- [color=#26BFE3]Schools[/color]: School4Games, KidsCanCode...\n- [color=#02E180]Content creators[/color]: Heartbeast, [i]GDQuest[/i]...\n",
+    "picture": "teddy-game.jpg",
+    "title": "Professionals use Godot"
+},
+{
+    "title": "Made with Godot...",
+    "video": "shooter-game.ogv"
+},
+{
+    "body": "Godot is Free Software. Hundreds of people worked on it already, and it's growing faster over time:\n\n- [color=#02E180]680+[/color] contributors\n- 16 000+ commits\n- 16 000+ stars\n- Well-organized project\n\n[color=#02E180]$9000+[/color] a month on Patreon. Sponsored by Mozilla and even Microsoft for C# support.\n",
+    "picture": "repo-health.png",
+    "title": "Godot is in great shape"
+},
+{
+    "body": "- Start with the [color=#02E180]official guide[/color] and [color=#02E180]open source demos[/color]!\n- Watch free video tutorials on Youtube\n- Join the [b]very[/b] active [color=#26BFE3]community[/color]. Social networks, forum, IRC, Discord...\n- There's a [color=#26BFE3]Questions/Answers[/color] website\n- Use the [color=#E3266F]built-in reference[/color], inside the editor\n",
+    "footer": "Most resources are in English now!",
+    "picture": "docs-community-websites.png",
+    "title": "How do I get started?"
+},
+{
+    "demo": "attacks/Demo.tscn",
+    "footer": "Both official and 3rd-party",
+    "title": "Learn from simple Free demos"
+},
+{
+    "body": "SNS:\n[color=#26BFE3]@NathanGDquest[/color]\n[color=#F2971A]youtube.com/c/gdquest[/color]\n\nCredits:\n- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] by GuaranApps\n- [url=http://www.rpginabox.com/]RPG in a Box[/url] by Justin\n\nThis presentation is an Open Source Godot project!\nFind it on [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]. It's available in multiple languages.\n",
+    "picture": "gdquest-business-card.png",
+    "subtitle": "Questions?",
+    "title": "Thank you!"
+}]
