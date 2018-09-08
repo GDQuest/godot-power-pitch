@@ -1,0 +1,245 @@
+[{
+    "footer": "Siehe Becketts 'Waiting for Godot'",
+    "picture": "realtime-global-illumination.jpg",
+    "subtitle": "Leistungsstark, Frei, Open Source",
+    "title": "Die Engine auf die du gewartet hast"
+},
+{
+    "body": "[b]Die[b] Unity-ähnliche freie Engine kennzeichnet :\r\n\r\n\t\t\t- Zwei eigenständige [color=#26BFE3]2d[/color] und [color=#E3266F]3d[/color] Engines\r\n\t\t\t- Ein kompletter Editor um deine Levels zu erstellen\r\n\t\t\t- Multiplattform: PC, Mac, Linux\r\n\t\t\t- Exporter verfügbar für PC, Mobile, Web*",
+    "footer": "*und Konsolen für Unternehmen",
+    "picture": "2d-viewport-2.x.png",
+    "title": "Was ist Godot?"
+},
+{
+    "picture": "deponia-ps4-game.png",
+    "subtitles": "Deponia's PS4 Version",
+    "title": "Eine Godot Konsolenumsetzung"
+},
+{
+    "body": "Wir fügen es hinzu, wenn etwas wesentliches fehlt !\r\n\r\n\t\t\t- Code-Editor mit Dokumentation und Autovervollständigung eingeschlossen\r\n\t\t\t- [color=#26BFE3]Animation[/color]s Editor mit 2d Rigging\r\n\t\t\t- Visual-Programming für Designer\r\n\t\t\t- [color=#02E180]Shader[/color] Editoren, Text- und Graph-basierend*\r\n\t\t\t",
+    "footer": "*Noch nicht in 3.0 verfügbar, Umsetzung in Arbeit und Fertigstellung für 3.1 geplant",
+    "picture": "godot-2-shader-editor.png",
+    "title": "Die Philosophie: All-in-one"
+},
+{
+    "body": "Programmiere schneller mit:\r\n\r\n\t\t\t- [color=#E3266F]GDScript[/color], inspiriert durch Python und Lua, designt für Spiele\r\n\t\t\t- [color=#26BFE3]VisualScript[/color], für Künstler und Designer in deinem Team\r\n\t\t\t- [color=#02E180]ShaderScript[/color], um Materialerstellung zu vereinfachen\r\n\t\t\t",
+    "picture": "visual-script.png",
+    "subtitle": "Um dein Leben zu erleichtern",
+    "title": "Drei Programmiersprachen"
+},
+{
+    "picture": "gdscript-example.png",
+    "title": "GDScript Beispiel"
+},
+{
+    "body": "Ein [color=#26BFE3]20mb[/color] Programm:\r\n\r\n\t\t\t- Ladet es [color=#26BFE3]in ein paar Sekunden[/color] herunter\r\n\t\t\t- [color=#26BFE3]Keine Installation[/color]\r\n\r\n\t\t\tAlles was mehr Speicherplatz verbraucht ist optional: Mobile Export-Templates, Mono und C#...\r\n\t\t\t",
+    "footer": "Diese kleine Datei beinhaltet die gesamte Engine, UI-Werkzeuge und alles was du braucht, um ein komplettes Spiel zu erstellen",
+    "picture": "multiplatform-editor.jpg",
+    "subtitle": "Zwanzig Megabyte reiner Freude",
+    "title": "Größe spielt keine Rolle"
+},
+{
+    "footer": "Alles was du nun zu sehen bekommst, hat nur ein gutes Jahr an Entwicklung benötigt",
+    "picture": "gltf-damaged-helmet.jpg",
+    "subtitle": "Jetzt schnall dich an",
+    "title": "Neu in Godot 3"
+},
+{
+    "demo": "new-in-godot-3/img.tscn"
+},
+{
+    "body": "Ein Open-Source Projekt [color=#02E180]in herausragender Verfassung[/color]:\r\n\r\n\t\t\t- [color=#02E180]450+[/color] Mitwirkende\r\n\t\t\t- 10 000+ Commits\r\n\t\t\t- 11 000+ Sterne\r\n\r\n\t\t\t[color=#02E180]6000$[/color] pro Monat über Patreon. Gesponsert von Mozilla und selbst Microsoft für C# Unterstützung.\r\n\t\t\t",
+    "footer": "Juan, der Hauptentwickler hat bereits Stellenangebote für andere Engines abgelehnt",
+    "picture": "github-pulse-october.png",
+    "subtitle": "Der Kuchen ist eine Lüge!",
+    "title": "Nein, Größe spielt eine Rolle"
+},
+{
+    "body": "Diese Profis benutzen bereits Godot 2.0:\r\n\r\n\t\t\t- [color=#E3266F]Spielsudios[/color]: Gamblify, Guaranapps, Kivano...\r\n\t\t\t- [color=#26BFE3]Schulen[/color]: School4Games, KidsCanCode...\r\n\t\t\t- [color=#02E180]Ersteller von Inhalten[/color]: Heartbeast, [i]GDQuest[/i]...\r\n\t\t\t",
+    "footer": "Mache dich nach der Godot 3.0 Veröffentlichung für mehr bereit",
+    "picture": "gamblify-monsters-5.jpg",
+    "subtitle": "",
+    "title": "Godot zieht Profis an"
+},
+{
+    "body": "Jede Spiele-Engine ist anders. Godot unterscheidet sich von den meisten in 2 Dingen:\r\n\r\n\t\t\t- Integration jedes [color=#26BFE3]Werkzeugs[/color] für die Erstellung deines Spiels:\r\n\t\t\t[color=#26BFE3]Leveleditor[/color], [color=#26BFE3]Animationseditor[/color], usw.\r\n\r\n\t\t\t- Keine erzwungenen Programmiermuster wie [color=#02E180]MVC[/color]* oder [color=#02E180]ECS[/color]*\r\n\r\n\t\t\tGodot benutzt stattdessen simplere [color=#02E180]Nodetrees[/color].\r\n\t\t\t",
+    "footer": "*Model-View-Controller und Entity-Component System",
+    "picture": "node-tree.png",
+    "subtitle": "Die Design Entscheidungen die es einzigartig machen",
+    "title": "Godots Kernprinzipien"
+},
+{
+    "body": "Jeder Spielbildschirm ist ein [color=#02E180]Nodetree[/color].\r\n\r\n\t\t\tJede Node-Gruppe kann als Szene gespeichert werden: Diese wird zu einen [color=#26BFE3]Branch[/color].\r\n\r\n\t\t\tJeder Node [color=#E3266F]erbt[/color] von Basis-Nodes: Alle Nodes arbeiten mehr oder weniger gleich.\r\n\t\t\t",
+    "footer": "*Eingekapselt wenn wir es von einer objektorientierten Perspektive sehen.\nDieses Design hilft dir deine Szenen so zu strukturieren, dass sie deinen Spieldesign wiederspiegeln",
+    "picture": "node-tree-2.png",
+    "subtitle": "Vererbung, strenge Hierachien und Freiheit",
+    "title": "Ein Objektorientierter Editor"
+},
+{
+    "body": "Godots eigene UI Nodes versorgen [color=#02E180]das Interface des Editors[/color].\r\n\r\n\t\t\tSie sind nicht nur leistungsstark: Du kannst [color=#02E180]Plugins[/color] mit den selben Code wie in deinen Spiel erstellen.\r\n\t\t\t",
+    "footer": "Godot kommt auch mit einen eingebauten Assetstore. Mit einen Aber: Alles ist kostenlos",
+    "picture": "fsm-plugin.png",
+    "subtitle": "Der Editor beruht auf der Spieleengine",
+    "title": "Godot ist ein 'Godot Spiel'"
+},
+{
+    "body": "Jede Spieleengine [color=#26BFE3]beantwortet verschiedene Anforderungen.[/color]\r\n\r\n\t\t\t[i]Unity, Unreal, Godot, Game Maker, Phaser, LibGDX...[/i] All diese sind berechtigte Möglichkeiten, abhängig vom Projekt.\r\n\r\n\t\t\tHeutzutage erfüllt [color=#26BFE3]Godot[/color] die Anforderungen von [color=#26BFE3]indies[/color] ziemlich gut.\r\n\t\t\t",
+    "footer": "Es gibt keine 'beste' Engine: Nur Technologie, angepasst an bestimmte Anforderungen.\nWie entscheidet man sich für das richtige Tool? Mit Erfahrung und Prototypen",
+    "picture": "engine-logos.png",
+    "subtitle": "TL;DR: vergiss 'die Beste'",
+    "title": "Unity, Godot, welche ist die Beste?"
+},
+{
+    "body": "Spieleengines sind so [color=#E3266F]komplex[/color], dass es schwer ist alles herauszufinden, was sie können.\r\n\r\n\t\t\tEs gibt jede Menge neuer Werkzeuge in Godot 3, aber auch tonnenweise interessante Werkzeuge vergangener Veröffentlichungen.\r\n\r\n\t\t\tHier sind ein paar Hauptfeatures, die die Engine ausmachen.\r\n\t\t\t",
+    "footer": "Lasst uns mit den Dingen starten, die die Entwickler glücklich machen",
+    "picture": "some-features.png",
+    "subtitle": "...unter vielen",
+    "title": "Ein paar Features..."
+},
+{
+    "body": "[color=#F2971A]C#[/color] ist offiziell beginnend mit Version 3.0 unterstützt\r\n\r\n\t\t\tBasiert auf den neusten Mono Compiler.\r\n\t\t\tProgrammiere mit XamarinStudio, VSCode, und Visual Studio.\r\n\r\n\t\t\tEs ist eine der drei offiziell unterstützten Gameplay Programmiersprachen, zusammen mit GDScript und VisualScript\r\n\t\t\t",
+    "footer": "Arbeit abgeschlossen von Ignacio R. Etcheverry, gesponsert von Microsoft",
+    "picture": "c-sharp-vstudio.png",
+    "subtitle": "Für C# Entwickler und Leute die von Unity kommen",
+    "title": "Programmiere mit C#"
+},
+{
+    "body": "Benutze jede Bibliothek [color=#02E180]dynamisch[/color] mit beinahe nativer Performance.\r\n\r\n\t\t\tGDnative überbrückt Godot mit externen Bibliotheken.\r\n\r\n\t\t\tUnterstützt derzeitig folgende Sprachen: [color=#F2971A]C[/color], [color=#F2971A]C++[/color], [color=#E3266F]Rust[/color], [color=#02E180]Python[/color], und [color=#02E180]D[/color], Dank an die Community\r\n\t\t\t",
+    "footer": "Ja, C and C++ ohne die Engine neu zu kompilieren! Dank geht an Karroffel und Bojidar",
+    "picture": "gdnative.png",
+    "subtitle": "Native Performance ohne zu kompilieren",
+    "title": "GDNative"
+},
+{
+    "body": "Signale sind Observer auf Steroiden. [color=#26BFE3]Verbinde[/color] Nodes miteinander via Code oder im Editor. Lasse sie kommunizieren, ohne die gesamten Klassen sichtbar zu machen.\r\n\r\n\t\t\tDefiniere deine eigenen Signale oder nutze die vielen bereits integrierten. Binde Variablen und sende Werte mit den Signalen mit.\r\n\t\t\t",
+    "footer": "Zum Beispiel, um die Lebensanzeige eines Charakters zu aktualisieren, wenn dieser getroffen wird",
+    "picture": "signals.png",
+    "subtitle": "Sende Nachrichten zwischen deinen Nodes ohne sie zu zusammen zu binden",
+    "title": "Signale oder Godots Observer"
+},
+{
+    "demo": "lifebar/LevelMockup.tscn",
+    "title": "Beispiel: Signale"
+},
+{
+    "body": "Du kannst [b]jede[/b] Property von [b]jedem[/b] Node animieren.\r\n\r\n\t\t\t[color=#26BFE3]Größe[/color], [color=#26BFE3]Position[/color], aktivieren/deaktivieren [color=#02E180]Kollisionen[/color], [color=#02E180]Booleans[/color]...\r\n\r\n\t\t\tRufe Funktionen über den Animationseditor auf!\r\n\t\t\t",
+    "footer": "GoBot von Andreas Esau",
+    "picture": "godot-skeleton-1280x720.png",
+    "subtitle": "...oder alles!",
+    "title": "Animier etwas..."
+},
+{
+    "demo": "characters_and_weapons/Game.tscn",
+    "footer": "Ist es nicht atemberaubend?",
+    "title": "Animation-basierende Kampfmechaniken"
+},
+{
+    "picture": "isometric-tilemap.png",
+    "subtitle": "Top-down und Isometrisch",
+    "title": "Tilemap-Editor"
+},
+{
+    "body": "Escoria gibt dir eine natürliche Sprache zum schreiben von Adventurespielen in die Hand, ähnlich wie RenPy und andere Visual Novel Engines:\r\n\r\n\t\t\t[color=#E3266F]:talk[/color]\r\n\t\t\t[color=#F2971A]say[/color] [color=#26BFE3]player[/color] \"Was für ein seltsames Lebewesen…\" [color=#F2971A]default[/color] avatar_panda\r\n\t\t\t[color=#F2971A]say[/color] [color=#26BFE3]chameleon[/color] \"Du weißt das ich dich hören kann, nicht wahr?\" [color=#F2971A]default[/color] avatar_chameleon\r\n\t\t\t",
+    "picture": "dog-mendoza.png",
+    "subtitle": "Point & Click, Dialogbäume...",
+    "title": "Escoria für Adventurespiele"
+},
+{
+    "footer": "Designt um gut mit Blender Eevee zu arbeiten",
+    "picture": "sponza-2.jpg",
+    "title": "Eine moderne 3d Engine"
+},
+{
+    "body": "\r\n\r\n\r\n\t\t[center][color=#E3266F]Piuuu[/color] [color=#E3266F]Piuuu[/color][/center]\r\n\r\n\t\t[center][color=#F2971A]Boom[/color][/center]\r\n\r\n\t\t[center][color=#02E180]Ratatatatata[/color][/center]\r\n\t\t",
+    "demo": "many-particles/Sparkles.tscn",
+    "footer": "Neue Engine = Viel mehr Partikel",
+    "title": "Lasst uns über Partikel reden"
+},
+{
+    "body": "Erstelle Spiele für [color=#E3266F]Occulus Rift[/color], [color=#E3266F]Gear VR[/color] und viele andere in Godot 3, angetrieben durch Valve's OpenVR.\r\n\r\n\t\t\t[color=#02E180]Augmented reality[/color] ist ebenfalls unterstützt, mit dem ARKit.\r\n\t\t\t",
+    "footer": "Arbeit von Bastiaan Olij, mit Hilfe von Karroffel und Hinsbart",
+    "picture": "arkit-1280x720.jpg",
+    "title": "Augmented und Virtual Reality"
+},
+{
+    "footer": "Bastiaan ist kein Künstler, aber es funktioniert tadellos!",
+    "title": "Augmented Reality",
+    "video": "godot-arkit.ogv"
+},
+{
+    "config": {
+        "video_size": {
+            "x": 756,
+            "y": 840
+        }
+    },
+    "title": "Virtual Reality",
+    "video": "vr-capture.ogv"
+},
+{
+    "body": "[color=#02E180]Container[/color] system, tabs, margins, [color=#02E180]anchors[/color], node graphs...\r\n\r\n\t\t\tGodot wird mit einen eigenen, sehr robusten UI Design und Programmierwerkzeugen ausgeliefert. Automatisierte UI Layouts, Photoshop-ähnliches Smartsnapping, Grid und Guides...\r\n\r\n\t\t\tDu kannst alle Benutzerinterfaces deines Spiels und deiner Plugins innerhalb des Editors designen.\r\n\t\t\t",
+    "footer": "RPG in a Box: Ein RPG Editor in Godot erstellt",
+    "picture": "rpg-in-a-box-graph.png",
+    "subtitle": "...so einfach wie möglich",
+    "title": "Komplexe Benutzerinterfaces..."
+},
+{
+    "body": "Teste dein Spiel. Editier ein Skript, eine Szene, ein Level: Die Änderungen erscheinen direkt [color=#26BFE3]im Spiel, in Echtzeit[/color].\r\n\r\n\t\t\tDas funktioniert ebenso mit Smartphones und externe Geräte.\r\n\r\n\t\t\tDie Änderungen werden [color=#26BFE3]gespeichert[/color], selbst nachdem du das Spiel geschlossen hast.\r\n\t\t\t",
+    "footer": "Jotsway Canyon, taktisches RPG von Johnny Goss",
+    "picture": "jotsway-canyon-screen.png",
+    "title": "Synchronisiere Skripte/Szenen"
+},
+{
+    "title": "Skript sync von Jotsway Canyon",
+    "video": "jotsway-canyon-live-scripting.ogv"
+},
+{
+    "body": "Füge [color=#F2971A]tool[/color] als Schlüsselwort zum Anfang deines Skripts hinzu: Der Code läuft im Editor!\r\n\r\n\t\t\tBenutze [color=#F2971A]tool[/color] um den Patrouillengang  vom IA zu visualisieren, probiere prozedurale Generierung aus, verbessere den Leveleditor...\r\n\t\t\t",
+    "footer": "",
+    "picture": "teddy-game.jpg",
+    "title": "Werkzeugmodus: Godot-ception"
+},
+{
+    "title": "Asset dropper von Andreas Esau",
+    "video": "andreas-godot-asset-drop.ogv"
+},
+{
+    "title": "Get Teddy von Guaranapps",
+    "video": "guaranapps-level-editor.ogv"
+},
+{
+    "title": "Wallrider, von Zylann",
+    "video": "zylann-wallrider-canon-level.ogv"
+},
+{
+    "title": "Tool mode in Wallrider",
+    "video": "zylann-wallrider-canon-tool.ogv"
+},
+{
+    "body": "Godot bietet:\r\n\r\n\t\t- Eine [b]sehr[/b] aktive [color=#26BFE3]Community[/color]. Soziale Netzwerke, Foren, IRC, Discord...\r\n\t\t- Eine [color=#26BFE3]Frage/Antwort[/color] Webseite\r\n\t\t- Offizielle [color=#02E180]Tutorials[/color] und ein [color=#02E180]Online-Handbuch[/color]\r\n\t\t- Eine [color=#E3266F]eingebaute Referenz[/color], verfügbar innerhalb des Editors\r\n\t\t- Open Source Demos\r\n\t\t",
+    "footer": "Die breite Masse an Ressourcen ist in Englisch. Eine gute Gelegenheit um es zu üben.",
+    "picture": "docs-community-websites.png",
+    "subtitle": "Die Ressourcen, welche verwendet werden sollten",
+    "title": "Wie lernt man Godot?"
+},
+{
+    "body": "Wähle einen Text im Skripteditor aus und drücke [color=#E3266F]Umschalt F1[/color]:\r\n\r\n\t\tA list of dazugehörigen Nodes, Variablen und Funktionen erscheinen schlagartig.\r\n\r\n\t\tDie Code Dokumentation öffnet sich [color=#E3266F]direkt im Skripteditor[/color].\r\n\t\t",
+    "footer": "Drücke F4 um mit einer leeren Suchleiste zu starten",
+    "picture": "docs-integrated-help.png",
+    "subtitle": "Kein Grund zu deinen Browser zu wechseln",
+    "title": "Eingebaute Referenz"
+},
+{
+    "body": "Es gibt einige gute und kostenlose Video-Tutorialserien für Godot. Drei empfehlenswerte Kanäle:\r\n\r\n\t\t- [color=#F2971A]KidsCanCode[/color], komplette Serie für Anfänger\r\n\t\t- [color=#E3266F]Angega Studios[/color], komplette Serie für Anfänger\r\n\t\t- [color=#26BFE3]GDQuest[/color], für fortgeschrittene Benutzer\r\n\t\t",
+    "footer": "Du kannst zudem Heartbeast und Ivan Skodje folgen",
+    "picture": "",
+    "subtitle": "Ein paar Empfehlungen zum starten",
+    "title": "Ersteller von Inhalten"
+},
+{
+    "body": "Die Präsentation ist Open Source, erhalte sie auf [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]\r\n\r\n\t\tCredits:\r\n\r\n\t\tFurry Defenders von [url=http://www.kivano.games/]Kivano[/url]\r\n\t\t[url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] von Guaranapps\r\n\t\t[url=https://jaggygames.itch.io/jotswaycanyon]Jotsway Canyon[/url] von JaggyGames\r\n\t\t[url=http://www.rpginabox.com/]RPG in a Box[/url] von Justin\r\n\t\t[url=https://www.youtube.com/user/ndee85]Andreas Esau[/url]\r\n\t\tWallrider von [url=https://www.youtube.com/user/ZylannMP3/videos]Zylann Productions[/url]\r\n\t\t",
+    "footer": "",
+    "picture": "gdquest-business-card.png",
+    "subtitle": "Fragen?",
+    "title": "Dankeschön!"
+}]
