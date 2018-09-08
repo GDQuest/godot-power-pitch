@@ -66,7 +66,6 @@ func _change_state(new_state):
 			monitoring = true
 	state = new_state
 
-
 func _input(event):
 	if not state == ATTACK:
 		return
@@ -75,11 +74,9 @@ func _input(event):
 	if event.is_action_pressed('attack'):
 		attack_input_state = REGISTERED
 
-
 func _physics_process(delta):
 	if attack_input_state == REGISTERED and ready_for_next_attack:
 		attack()
-
 
 func attack():
 	combo_count += 1

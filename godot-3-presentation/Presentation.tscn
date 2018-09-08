@@ -71,7 +71,7 @@ anim_offset_random = 0.0
 anim_loop = false
 _sections_unfolded = [ "Angle", "Animation", "Color", "Damping", "Gravity", "Hue Variation", "Initial Velocity", "Scale" ]
 
-[node name="Presentation" type="Control" index="0"]
+[node name="Presentation" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
