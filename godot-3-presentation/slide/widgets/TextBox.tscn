@@ -1,6 +1,45 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://slide/body/BodyTextBox.gd" type="Script" id=1]
+[sub_resource type="GDScript" id=1]
+
+script/source = "tool
+extends Control
+
+export(String, MULTILINE) var text = \"\" setget set_text
+export(bool) var center = false setget set_center
+
+onready var _text = $Text
+var _text_processed = \"\"
+
+func _ready():
+	update_text()
+
+func set_text(string):
+	text = string
+	if not _text:
+		return
+	update_text()
+
+func set_center(value):
+	center = value
+	if not _text:
+		return
+	update_text()
+
+func update_text():
+	if center:
+		_text_processed = center_text(text)
+	else:
+		_text_processed = text
+	$Text.bbcode_text = _text_processed
+
+func center_text(string):
+	var bbcode = \"\"
+	for line in string.split(\"\\n\"):
+		line = \"%s%s%s\" % [\"[center]\", line, \"[/center]\"]
+		bbcode += line + \"\\n\"
+	return bbcode
+"
 
 [node name="TextBox" type="MarginContainer"]
 
@@ -8,18 +47,19 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 636.0
+margin_right = 638.0
 margin_bottom = 1080.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
-size_flags_vertical = 1
+size_flags_vertical = 3
 custom_constants/margin_top = 32
 custom_constants/margin_bottom = 32
-script = ExtResource( 1 )
+script = SubResource( 1 )
 _sections_unfolded = [ "Size Flags" ]
+text = ""
 center = false
 
 [node name="Text" type="RichTextLabel" parent="." index="0"]
@@ -30,7 +70,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 8.0
 margin_top = 32.0
-margin_right = 636.0
+margin_right = 638.0
 margin_bottom = 1048.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
@@ -103,8 +143,6 @@ scroll_active = false
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-script = ExtResource( 1 )
 _sections_unfolded = [ "Rect" ]
-center = false
 
 
