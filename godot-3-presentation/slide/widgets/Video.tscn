@@ -26,16 +26,12 @@ func display(file_name, config={}):
 	paused = false
 "
 
-[node name="Video" type="VideoPlayer"]
+[node name="Video" type="VideoPlayer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 12.0
-margin_top = 180.0
-margin_right = -1348.0
-margin_bottom = -500.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -52,7 +48,7 @@ expand = true
 buffering_msec = 500
 bus = "Master"
 script = SubResource( 1 )
-_sections_unfolded = [ "Anchor", "Margin", "Rect" ]
+_sections_unfolded = [ "Anchor", "Margin", "Rect", "Size Flags" ]
 BASE_PATH = "res://content/video/"
 
 

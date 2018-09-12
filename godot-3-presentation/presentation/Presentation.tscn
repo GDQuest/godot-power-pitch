@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://presentation/Presentation.gd" type="Script" id=1]
 [ext_resource path="res://presentation/Slides.gd" type="Script" id=2]
 [ext_resource path="res://content/power_pitch/TheBestEngine.tscn" type="PackedScene" id=3]
-[ext_resource path="res://presentation/Background.tscn" type="PackedScene" id=4]
-[ext_resource path="res://touch_controls/TouchControls.tscn" type="PackedScene" id=5]
+[ext_resource path="res://content/power_pitch/AnotherSlide.tscn" type="PackedScene" id=4]
+[ext_resource path="res://content/power_pitch/HelloWorld.tscn" type="PackedScene" id=5]
+[ext_resource path="res://touch_controls/TouchControls.tscn" type="PackedScene" id=6]
 
 [node name="Presentation" type="Node" index="0"]
 
@@ -17,23 +18,15 @@ script = ExtResource( 2 )
 
 [node name="TheBestEngine" parent="Slides" index="0" instance=ExtResource( 3 )]
 
-[node name="Background" type="CanvasLayer" parent="." index="1"]
-
-layer = -100
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-
-[node name="Background" parent="Background" index="0" instance=ExtResource( 4 )]
+[node name="WhoAmI?" parent="Slides" index="1" instance=ExtResource( 4 )]
 
 visible = false
-margin_top = 1.0
-margin_bottom = 1.0
 
-[node name="TouchControls" parent="." index="2" instance=ExtResource( 5 )]
+[node name="HelloWorld" parent="Slides" index="2" instance=ExtResource( 5 )]
 
 visible = false
+
+[node name="TouchControls" parent="." index="1" instance=ExtResource( 6 )]
 
 [connection signal="slide_change_requested" from="TouchControls" to="." method="_on_TouchControls_slide_change_requested"]
 
