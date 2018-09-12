@@ -6,7 +6,10 @@ script/source = "extends Control
 
 export(String, FILE, \"*.tscn, *.scn\") var demo_path = 'res://content/demos/'
 
-func display():
+func play():
+	display(demo_path)
+
+func display(scene_path):
 	if get_child_count() > 0:
 		for node in get_children():
 			node.queue_free()
@@ -24,9 +27,10 @@ rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = SubResource( 1 )
+_sections_unfolded = [ "Size Flags" ]
 demo_path = "res://content/demos/"
 
 

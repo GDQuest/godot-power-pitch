@@ -21,13 +21,14 @@ func _ready():
 
 func set_title(string):
 	title = string
+
 	if not _title:
 		return
 	_title.text = string
 
 func set_subtitle(string):
 	subtitle = string
-	
+
 	if not _subtitle:
 		return
 	_subtitle.visible = string != \"\"
@@ -47,7 +48,7 @@ extra_spacing_bottom = -14
 font_data = ExtResource( 2 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
-[node name="Header" type="ColorRect"]
+[node name="Header" type="ColorRect" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
