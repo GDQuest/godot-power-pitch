@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+
+script/source = "extends Control
+
+export(String, FILE, \"*.tscn, *.scn\") var demo_path = 'res://content/demos/'
+
+func display():
+	if get_child_count() > 0:
+		for node in get_children():
+			node.queue_free()
+	add_child(load(demo_path).instance())
+"
+_sections_unfolded = [ "Resource" ]
+
+[node name="Demo" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = SubResource( 1 )
+demo_path = "res://content/demos/"
+
+

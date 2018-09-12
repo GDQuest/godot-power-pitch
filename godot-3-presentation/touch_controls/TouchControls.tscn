@@ -4,8 +4,7 @@
 [ext_resource path="res://touch_controls/touch_button/TouchButtonLeft.tscn" type="PackedScene" id=2]
 [ext_resource path="res://touch_controls/touch_button/TouchButtonRight.tscn" type="PackedScene" id=3]
 
-
-[node name="TouchControls" type="Control"]
+[node name="TouchControls" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
