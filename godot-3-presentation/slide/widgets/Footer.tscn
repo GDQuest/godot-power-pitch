@@ -7,23 +7,24 @@
 script/source = "tool
 extends Control
 
-export(String) var text = \"Footer text\" setget set_text
+export(String) var text = \"\" setget set_text
 
 onready var _text = $Text
 
-func _ready():
-	self.text = text
+func initialize():
+	_text = $Text
 
 func set_text(string):
 	text = string
-	visible = string != \"\"
+	visible = text != \"\"
 	if not _text:
 		return
-	$Text.text = string
+	_text.text = text
 "
 
 [node name="Footer" type="ColorRect"]
 
+visible = false
 show_behind_parent = true
 anchor_left = 0.0
 anchor_top = 1.0
@@ -41,7 +42,7 @@ theme = ExtResource( 1 )
 color = Color( 0.2, 0.247059, 0.403922, 1 )
 script = SubResource( 1 )
 _sections_unfolded = [ "Material", "Rect", "Theme", "Visibility" ]
-text = "Footer text"
+text = ""
 
 [node name="Text" type="Label" parent="." index="0"]
 
@@ -55,7 +56,6 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-text = "Footer text"
 align = 1
 valign = 1
 autowrap = true

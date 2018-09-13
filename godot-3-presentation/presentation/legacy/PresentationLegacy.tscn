@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://presentation/Presentation.gd" type="Script" id=1]
-[ext_resource path="res://presentation/Slides.gd" type="Script" id=2]
+[ext_resource path="res://presentation/legacy/LegacySlidesLoader.gd" type="Script" id=2]
 [ext_resource path="res://touch_controls/TouchControls.tscn" type="PackedScene" id=3]
 
-[node name="Presentation" type="Node" index="0"]
+[node name="PresentationLegacy" type="Node"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Theme" ]
@@ -12,8 +12,11 @@ _sections_unfolded = [ "Theme" ]
 [node name="Slides" type="Node" parent="." index="0"]
 
 script = ExtResource( 2 )
+presentation_path = "res://content/power_pitch/power-pitch.json"
 
 [node name="TouchControls" parent="." index="1" instance=ExtResource( 3 )]
+
+visible = false
 
 [connection signal="slide_change_requested" from="TouchControls" to="." method="_on_TouchControls_slide_change_requested"]
 
