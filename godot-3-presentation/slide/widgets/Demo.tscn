@@ -4,20 +4,29 @@
 
 script/source = "extends Control
 
-export(String, FILE, \"*.tscn, *.scn\") var demo_path = 'res://content/demos/'
+export(String, FILE, \"*.tscn, *.scn\") var demo_path = \"\"
+const DEMOS_FOLDER = \"res://content/demos/\"
 
 func play():
-	display(demo_path)
-
-func display(scene_path):
-	if get_child_count() > 0:
-		for node in get_children():
-			node.queue_free()
+	if not demo_path.begins_with(\"res://\"):
+		demo_path = DEMOS_FOLDER + demo_path
 	add_child(load(demo_path).instance())
+	show()
+
+func unload():
+	for node in get_children():
+		node.queue_free()
+
+func _on_LegacySlide_shown():
+	if demo_path:
+		play()
+
+func _on_LegacySlide_hidden():
+	unload()
 "
 _sections_unfolded = [ "Resource" ]
 
-[node name="Demo" type="Control" index="0"]
+[node name="Demo" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -31,6 +40,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 script = SubResource( 1 )
 _sections_unfolded = [ "Size Flags" ]
-demo_path = "res://content/demos/"
+demo_path = ""
 
 

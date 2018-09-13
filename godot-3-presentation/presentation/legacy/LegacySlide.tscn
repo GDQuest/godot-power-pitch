@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
 [ext_resource path="res://presentation/legacy/LegacySlide.gd" type="Script" id=2]
@@ -9,11 +9,12 @@
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=7]
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=8]
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=9]
-[ext_resource path="res://slide/widgets/Demo.tscn" type="PackedScene" id=10]
-[ext_resource path="res://slide/widgets/Video.tscn" type="PackedScene" id=11]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=12]
+[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=10]
+[ext_resource path="res://slide/widgets/Demo.tscn" type="PackedScene" id=11]
+[ext_resource path="res://slide/widgets/Video.tscn" type="PackedScene" id=12]
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=13]
 
-[node name="Legacy" index="0" instance=ExtResource( 1 )]
+[node name="LegacySlide" index="0" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
 
@@ -36,7 +37,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 214.0
 margin_right = 1920.0
-margin_bottom = 936.0
+margin_bottom = 1080.0
 script = ExtResource( 6 )
 center = true
 
@@ -44,7 +45,9 @@ center = true
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 8 )]
 
-margin_bottom = 722.0
+margin_bottom = 866.0
+custom_constants/margin_left = 32
+_sections_unfolded = [ "Size Flags", "custom_constants" ]
 
 [node name="Picture" parent="Column/Body/Row" index="1" instance=ExtResource( 9 )]
 
@@ -52,10 +55,11 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 642.0
 margin_right = 1920.0
-margin_bottom = 722.0
-size_flags_stretch_ratio = 2.0
+margin_bottom = 866.0
+texture = null
+script = ExtResource( 10 )
 
-[node name="Demo" parent="Column/Body/Row" index="2" instance=ExtResource( 10 )]
+[node name="Demo" parent="Column/Body/Row" index="2" instance=ExtResource( 11 )]
 
 visible = false
 anchor_right = 0.0
@@ -63,8 +67,9 @@ anchor_bottom = 0.0
 margin_left = 1919.0
 margin_right = 1919.0
 margin_bottom = 722.0
+demo_path = ""
 
-[node name="Video" parent="Column/Body/Row" index="3" instance=ExtResource( 11 )]
+[node name="Video" parent="Column/Body/Row" index="3" instance=ExtResource( 12 )]
 
 visible = false
 anchor_right = 0.0
@@ -74,7 +79,7 @@ margin_top = 361.0
 margin_right = 1443.0
 margin_bottom = 361.0
 
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 12 )]
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 13 )]
 
 anchor_top = 0.0
 anchor_right = 0.0
@@ -82,5 +87,9 @@ anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1920.0
 margin_bottom = 1080.0
+
+[connection signal="hidden" from="." to="Column/Body/Row/Demo" method="_on_LegacySlide_hidden"]
+
+[connection signal="shown" from="." to="Column/Body/Row/Demo" method="_on_LegacySlide_shown"]
 
 

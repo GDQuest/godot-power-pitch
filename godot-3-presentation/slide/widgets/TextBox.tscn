@@ -79,24 +79,12 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 bbcode_enabled = true
-bbcode_text = "Un seul exécutable de [color=#26BFE3]20mo[/color]:
-
-- Téléchargez le [color=#26BFE3]en quelques secondes[/color]
-- [color=#26BFE3]Pas d'installation[/color]
-
-Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#...
-"
+bbcode_text = ""
 visible_characters = -1
 percent_visible = 1.0
 meta_underlined = true
 tab_size = 4
-text = "Un seul exécutable de 20mo:
-
-- Téléchargez le en quelques secondes
-- Pas d'installation
-
-Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#...
-"
+text = ""
 scroll_active = false
 scroll_following = false
 selection_enabled = false

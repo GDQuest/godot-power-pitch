@@ -3,7 +3,7 @@ extends Node
 onready var slides = $Slides
 
 func _ready():
-	slides.display(slides.CURRENT)
+	slides.initialize()
 
 func _input(event):
 	if event.is_action_pressed('ui_next'):

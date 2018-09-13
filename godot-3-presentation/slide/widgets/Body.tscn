@@ -2,7 +2,7 @@
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 
-[node name="Body" type="ColorRect" index="0"]
+[node name="Body" type="ColorRect"]
 
 anchor_left = 0.0
 anchor_top = 0.0
