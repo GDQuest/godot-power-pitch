@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://presentation/Presentation.gd" type="Script" id=1]
 [ext_resource path="res://presentation/Slides.gd" type="Script" id=2]
-[ext_resource path="res://touch_controls/TouchControls.tscn" type="PackedScene" id=3]
+[ext_resource path="res://touch_controls/swipe_detector/SwipeDetector.tscn" type="PackedScene" id=3]
+[ext_resource path="res://touch_controls/TouchControls.tscn" type="PackedScene" id=4]
 
-[node name="Presentation" type="Node" index="0"]
+[node name="Presentation" type="Node"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Theme" ]
@@ -13,7 +14,11 @@ _sections_unfolded = [ "Theme" ]
 
 script = ExtResource( 2 )
 
-[node name="TouchControls" parent="." index="1" instance=ExtResource( 3 )]
+[node name="SwipeDetector" parent="." index="1" instance=ExtResource( 3 )]
+
+[node name="TouchControls" parent="." index="2" instance=ExtResource( 4 )]
+
+[connection signal="swiped" from="SwipeDetector" to="." method="_on_SwipeDetector_swiped"]
 
 [connection signal="slide_change_requested" from="TouchControls" to="." method="_on_TouchControls_slide_change_requested"]
 
