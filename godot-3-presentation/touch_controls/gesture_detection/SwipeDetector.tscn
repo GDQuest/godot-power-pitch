@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://touch_controls/gesture_detection/SwipeDetector.gd" type="Script" id=1]
+
+[node name="SwipeDetector" type="Node" index="0"]
+
+script = ExtResource( 1 )
+MAX_DIAGONAL_SLOPE = 1.3
+
+[node name="SwipeTimeout" type="Timer" parent="." index="0"]
+
+process_mode = 1
+wait_time = 0.5
+one_shot = true
+autostart = false
+
+[connection signal="timeout" from="SwipeTimeout" to="." method="_on_Timer_timeout"]
+
+
