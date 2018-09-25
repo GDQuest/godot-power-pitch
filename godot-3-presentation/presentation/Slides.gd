@@ -3,7 +3,7 @@ extends Node
 
 enum DIRECTIONS {PREVIOUS = -1, CURRENT = 0, NEXT = 1}
 
-onready var slide_current = get_child(0)
+var slide_current
 
 func initialize():
 	for slide in get_children():

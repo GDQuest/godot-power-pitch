@@ -1,0 +1,258 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://theme/godot.theme" type="Theme" id=1]
+[ext_resource path="res://presentation/legacy/LegacySlide.gd" type="Script" id=2]
+[ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=3]
+[ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=4]
+[ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=5]
+[ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=6]
+[ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=7]
+[ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=8]
+[ext_resource path="res://content/power_pitch/img/mesh2d_bones.png" type="Texture" id=9]
+[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=10]
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=11]
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "SETUP"
+length = 0.01
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource_name = "fade_in"
+length = 0.3
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 0.482298, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+
+resource_name = "fade_out"
+length = 0.3
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 0.482298 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="GDScript" id=4]
+
+script/source = "tool
+extends Control
+
+export(String) var title = \"Title\" setget set_title
+export(String) var subtitle = \"\" setget set_subtitle
+
+onready var _title = $Column/Title
+onready var _subtitle = $Column/Subtitle
+
+func _ready():
+	self.title = title
+	self.subtitle = subtitle
+
+func set_title(string):
+	title = string
+
+	if not _title:
+		return
+	_title.text = string
+
+func set_subtitle(string):
+	subtitle = string
+
+	if not _subtitle:
+		return
+	_subtitle.visible = string != \"\"
+	if string != \"\":
+		_title.valign = Label.VALIGN_BOTTOM
+	else:
+		_title.valign = Label.VALIGN_CENTER
+	_subtitle.text = string
+"
+
+[sub_resource type="GDScript" id=5]
+
+script/source = "tool
+extends Control
+
+export(String, MULTILINE) var text = \"\" setget set_text
+export(bool) var center = false setget set_center
+
+onready var _text = $Text
+var _text_processed = \"\"
+
+func _ready():
+	update_text()
+
+func set_text(string):
+	text = string
+	if not _text:
+		return
+	update_text()
+
+func set_center(value):
+	center = value
+	if not _text:
+		return
+	update_text()
+
+func update_text():
+	if center:
+		_text_processed = center_text(text)
+	else:
+		_text_processed = text
+	$Text.bbcode_text = _text_processed
+
+func center_text(string):
+	var bbcode = \"\"
+	for line in string.split(\"\\n\"):
+		line = \"%s%s%s\" % [\"[center]\", line, \"[/center]\"]
+		bbcode += line + \"\\n\"
+	return bbcode
+"
+
+[sub_resource type="GDScript" id=6]
+
+script/source = "tool
+extends Control
+
+export(String) var text = \"\" setget set_text
+
+onready var _text = $Text
+
+func initialize():
+	_text = $Text
+
+func set_text(string):
+	text = string
+	visible = text != \"\"
+	if not _text:
+		return
+	_text.text = text
+"
+
+[node name="All_in_one_package" type="VBoxContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+theme = ExtResource( 1 )
+alignment = 0
+script = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
+
+root_node = NodePath("..")
+autoplay = "SETUP"
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/SETUP = SubResource( 1 )
+anims/fade_in = SubResource( 2 )
+anims/fade_out = SubResource( 3 )
+blend_times = [  ]
+
+[node name="Column" parent="." index="1" instance=ExtResource( 3 )]
+
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+
+[node name="Header" parent="Column" index="0" instance=ExtResource( 4 )]
+
+anchor_right = 0.0
+margin_right = 1920.0
+margin_bottom = 210.0
+script = SubResource( 4 )
+title = "All-in-one package"
+
+[node name="Body" parent="Column" index="1" instance=ExtResource( 5 )]
+
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 214.0
+margin_right = 1920.0
+margin_bottom = 936.0
+
+[node name="Row" parent="Column/Body" index="0" instance=ExtResource( 6 )]
+
+[node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 7 )]
+
+margin_bottom = 722.0
+custom_constants/margin_left = 32
+script = SubResource( 5 )
+_sections_unfolded = [ "Size Flags", "custom_constants" ]
+text = "- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion
+- [color=#26BFE3]Animation[/color] editor with 2d rigging
+- [color=#F2971A]Tilemap editor[/color] with autotiles
+- [color=#02E180]Shader[/color] editor, visual and code
+- [color=#02E180]UI theme editor[/color]
+
+If it misses anything essential, we add it!
+"
+
+[node name="Picture" parent="Column/Body/Row" index="1" instance=ExtResource( 8 )]
+
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 642.0
+margin_right = 1920.0
+margin_bottom = 722.0
+texture = ExtResource( 9 )
+script = ExtResource( 10 )
+
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 11 )]
+
+visible = true
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 940.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+script = SubResource( 6 )
+text = "2d IK available, meshes and skinning coming soon!"
+
+
