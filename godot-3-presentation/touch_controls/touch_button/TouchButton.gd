@@ -20,3 +20,4 @@ func _on_mouse_exited():
 
 func _on_pressed():
 	emit_signal("touched", self)
+	get_tree().set_input_as_handled()

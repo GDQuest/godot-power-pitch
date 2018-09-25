@@ -67,7 +67,6 @@ anchor_bottom = 0.0
 margin_left = 1919.0
 margin_right = 1919.0
 margin_bottom = 722.0
-demo_path = ""
 
 [node name="Video" parent="Column/Body/Row" index="3" instance=ExtResource( 12 )]
 

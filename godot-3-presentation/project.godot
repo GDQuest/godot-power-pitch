@@ -10,7 +10,7 @@ config_version=3
 
 [application]
 
-config/name="Create your own games with Godot 3"
+config/name="Create your own games with Godot"
 run/main_scene="res://presentation/legacy/PresentationLegacy.tscn"
 config/icon="res://icon.png"
 
