@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -66,41 +66,6 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="GDScript" id=4]
-
-script/source = "tool
-extends Control
-
-export(String) var title = \"Title\" setget set_title
-export(String) var subtitle = \"\" setget set_subtitle
-
-onready var _title = $Column/Title
-onready var _subtitle = $Column/Subtitle
-
-func _ready():
-	self.title = title
-	self.subtitle = subtitle
-
-func set_title(string):
-	title = string
-
-	if not _title:
-		return
-	_title.text = string
-
-func set_subtitle(string):
-	subtitle = string
-
-	if not _subtitle:
-		return
-	_subtitle.visible = string != \"\"
-	if string != \"\":
-		_title.valign = Label.VALIGN_BOTTOM
-	else:
-		_title.valign = Label.VALIGN_CENTER
-	_subtitle.text = string
-"
-
 [sub_resource type="GDScript" id=5]
 
 script/source = "extends VideoPlayer
@@ -161,21 +126,20 @@ anchor_bottom = 0.0
 margin_right = 1920.0
 margin_bottom = 1080.0
 
-[node name="Header" parent="Column" index="0" instance=ExtResource( 3 )]
+[node name="Header2" parent="Column" index="0" instance=ExtResource( 3 )]
 
 anchor_right = 0.0
 margin_right = 1920.0
 margin_bottom = 210.0
-script = SubResource( 4 )
 title = "Made with Godot"
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 214.0
+margin_top = 210.0
 margin_right = 1920.0
-margin_bottom = 936.0
+margin_bottom = 940.0
 
 [node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
@@ -184,16 +148,16 @@ margin_bottom = 936.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 320.0
-margin_top = 1.0
+margin_top = 5.0
 margin_right = 1600.0
-margin_bottom = 721.0
+margin_bottom = 725.0
 rect_min_size = Vector2( 1280, 720 )
 stream = ExtResource( 7 )
 autoplay = true
 expand = false
 script = SubResource( 5 )
 
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 8 )]
+[node name="Footer2" parent="Column" index="2" instance=ExtResource( 8 )]
 
 visible = true
 anchor_top = 0.0
