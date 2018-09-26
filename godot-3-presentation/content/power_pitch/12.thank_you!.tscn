@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -9,7 +9,6 @@
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=7]
 [ext_resource path="res://content/_old_presentation/img/gdquest-business-card.png" type="Texture" id=8]
 [ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=9]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 
@@ -144,26 +143,6 @@ func center_text(string):
 	return bbcode
 "
 
-[sub_resource type="GDScript" id=6]
-
-script/source = "tool
-extends Control
-
-export(String) var text = \"\" setget set_text
-
-onready var _text = $Text
-
-func initialize():
-	_text = $Text
-
-func set_text(string):
-	text = string
-	visible = text != \"\"
-	if not _text:
-		return
-	_text.text = text
-"
-
 [node name="Thank_you" type="VBoxContainer" index="0"]
 
 anchor_left = 0.0
@@ -244,15 +223,5 @@ margin_right = 1920.0
 margin_bottom = 866.0
 texture = ExtResource( 8 )
 script = ExtResource( 9 )
-
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 10 )]
-
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 940.0
-margin_right = 1920.0
-margin_bottom = 1080.0
-script = SubResource( 6 )
 
 

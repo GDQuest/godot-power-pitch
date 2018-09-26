@@ -2,7 +2,7 @@
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=2]
-[ext_resource path="res://content/_old_presentation/img/title-screen.png" type="Texture" id=3]
+[ext_resource path="res://content/power_pitch/img/godot-pres-intro.png" type="Texture" id=3]
 [ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=4]
 
 [sub_resource type="Animation" id=1]
