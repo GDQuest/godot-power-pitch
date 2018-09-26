@@ -22,3 +22,6 @@ func _ready():
 	file.close()
 	for k in keywords["list"]:
 		add_keyword_color(k, keyword_color)
+
+func _gui_input(event):
+	get_tree().set_input_as_handled()

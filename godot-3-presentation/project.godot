@@ -11,8 +11,9 @@ config_version=3
 [application]
 
 config/name="Create your own games with Godot"
-run/main_scene="res://presentation/legacy/PresentationLegacy.tscn"
+run/main_scene="res://content/power_pitch/PowerPitch.tscn"
 config/icon="res://icon.png"
+config/version="0.9.0"
 
 [autoload]
 

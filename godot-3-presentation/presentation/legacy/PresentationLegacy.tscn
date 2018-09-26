@@ -4,7 +4,7 @@
 [ext_resource path="res://presentation/legacy/LegacySlidesLoader.gd" type="Script" id=2]
 [ext_resource path="res://touch_controls/TouchControls.tscn" type="PackedScene" id=3]
 
-[node name="PresentationLegacy" type="Node" index="0"]
+[node name="PresentationLegacy" type="Node"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Theme" ]
