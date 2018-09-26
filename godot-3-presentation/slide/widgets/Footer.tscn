@@ -9,10 +9,11 @@ extends Control
 
 export(String) var text = \"\" setget set_text
 
-onready var _text = $Text
+var _text
 
-func initialize():
+func _ready():
 	_text = $Text
+	_text.text = text
 
 func set_text(string):
 	text = string
@@ -20,9 +21,14 @@ func set_text(string):
 	if not _text:
 		return
 	_text.text = text
+
+func get_translation_data():
+	return {'text': text}
 "
 
-[node name="Footer" type="ColorRect"]
+[node name="Footer" type="ColorRect" groups=[
+"translate",
+]]
 
 visible = false
 show_behind_parent = true
@@ -41,7 +47,6 @@ size_flags_vertical = 1
 theme = ExtResource( 1 )
 color = Color( 0.2, 0.247059, 0.403922, 1 )
 script = SubResource( 1 )
-_sections_unfolded = [ "Material", "Rect", "Theme", "Visibility" ]
 text = ""
 
 [node name="Text" type="Label" parent="." index="0"]
