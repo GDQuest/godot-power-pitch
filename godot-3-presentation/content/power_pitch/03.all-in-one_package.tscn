@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -68,83 +68,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="GDScript" id=4]
-
-script/source = "tool
-extends Control
-
-export(String) var title = \"Title\" setget set_title
-export(String) var subtitle = \"\" setget set_subtitle
-
-onready var _title = $Column/Title
-onready var _subtitle = $Column/Subtitle
-
-func _ready():
-	self.title = title
-	self.subtitle = subtitle
-
-func set_title(string):
-	title = string
-
-	if not _title:
-		return
-	_title.text = string
-
-func set_subtitle(string):
-	subtitle = string
-
-	if not _subtitle:
-		return
-	_subtitle.visible = string != \"\"
-	if string != \"\":
-		_title.valign = Label.VALIGN_BOTTOM
-	else:
-		_title.valign = Label.VALIGN_CENTER
-	_subtitle.text = string
-"
-
-[sub_resource type="GDScript" id=5]
-
-script/source = "tool
-extends Control
-
-export(String, MULTILINE) var text = \"\" setget set_text
-export(bool) var center = false setget set_center
-
-onready var _text = $Text
-var _text_processed = \"\"
-
-func _ready():
-	update_text()
-
-func set_text(string):
-	text = string
-	if not _text:
-		return
-	update_text()
-
-func set_center(value):
-	center = value
-	if not _text:
-		return
-	update_text()
-
-func update_text():
-	if center:
-		_text_processed = center_text(text)
-	else:
-		_text_processed = text
-	$Text.bbcode_text = _text_processed
-
-func center_text(string):
-	var bbcode = \"\"
-	for line in string.split(\"\\n\"):
-		line = \"%s%s%s\" % [\"[center]\", line, \"[/center]\"]
-		bbcode += line + \"\\n\"
-	return bbcode
-"
-
-[node name="All_in_one_package" type="VBoxContainer" index="0"]
+[node name="AllInOnePackage" type="VBoxContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -183,25 +107,21 @@ margin_bottom = 1080.0
 anchor_right = 0.0
 margin_right = 1920.0
 margin_bottom = 210.0
-script = SubResource( 4 )
 title = "All-in-one package"
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 214.0
+margin_top = 210.0
 margin_right = 1920.0
-margin_bottom = 936.0
+margin_bottom = 940.0
 
 [node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
-margin_bottom = 722.0
-custom_constants/margin_left = 32
-script = SubResource( 5 )
-_sections_unfolded = [ "Size Flags", "custom_constants" ]
+margin_bottom = 730.0
 text = "- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion
 - [color=#26BFE3]Animation[/color] editor with 2d rigging
 - [color=#F2971A]Tilemap editor[/color] with autotiles
@@ -216,7 +136,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 642.0
 margin_right = 1920.0
-margin_bottom = 722.0
+margin_bottom = 730.0
 texture = ExtResource( 8 )
 script = ExtResource( 9 )
 

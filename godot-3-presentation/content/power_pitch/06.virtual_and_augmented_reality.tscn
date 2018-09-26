@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=6]
 [ext_resource path="res://slide/widgets/Video.tscn" type="PackedScene" id=7]
 [ext_resource path="res://content/video/vr-capture.ogv" type="VideoStream" id=8]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Animation" id=1]
 
@@ -67,82 +66,6 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="GDScript" id=4]
-
-script/source = "tool
-extends Control
-
-export(String) var title = \"Title\" setget set_title
-export(String) var subtitle = \"\" setget set_subtitle
-
-onready var _title = $Column/Title
-onready var _subtitle = $Column/Subtitle
-
-func _ready():
-	self.title = title
-	self.subtitle = subtitle
-
-func set_title(string):
-	title = string
-
-	if not _title:
-		return
-	_title.text = string
-
-func set_subtitle(string):
-	subtitle = string
-
-	if not _subtitle:
-		return
-	_subtitle.visible = string != \"\"
-	if string != \"\":
-		_title.valign = Label.VALIGN_BOTTOM
-	else:
-		_title.valign = Label.VALIGN_CENTER
-	_subtitle.text = string
-"
-
-[sub_resource type="GDScript" id=5]
-
-script/source = "tool
-extends Control
-
-export(String, MULTILINE) var text = \"\" setget set_text
-export(bool) var center = false setget set_center
-
-onready var _text = $Text
-var _text_processed = \"\"
-
-func _ready():
-	update_text()
-
-func set_text(string):
-	text = string
-	if not _text:
-		return
-	update_text()
-
-func set_center(value):
-	center = value
-	if not _text:
-		return
-	update_text()
-
-func update_text():
-	if center:
-		_text_processed = center_text(text)
-	else:
-		_text_processed = text
-	$Text.bbcode_text = _text_processed
-
-func center_text(string):
-	var bbcode = \"\"
-	for line in string.split(\"\\n\"):
-		line = \"%s%s%s\" % [\"[center]\", line, \"[/center]\"]
-		bbcode += line + \"\\n\"
-	return bbcode
-"
-
 [node name="Virtual_and_augmented_reality" type="VBoxContainer" index="0"]
 
 anchor_left = 0.0
@@ -177,21 +100,20 @@ anchor_bottom = 0.0
 margin_right = 1920.0
 margin_bottom = 1080.0
 
-[node name="Header" parent="Column" index="0" instance=ExtResource( 3 )]
+[node name="Header2" parent="Column" index="0" instance=ExtResource( 3 )]
 
 anchor_right = 0.0
 margin_right = 1920.0
 margin_bottom = 210.0
-script = SubResource( 4 )
 title = "Virtual and Augmented Reality"
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 214.0
+margin_top = 210.0
 margin_right = 1920.0
-margin_bottom = 936.0
+margin_bottom = 1080.0
 
 [node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
@@ -199,10 +121,7 @@ _sections_unfolded = [ "Size Flags" ]
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
-margin_bottom = 848.0
-custom_constants/margin_left = 32
-script = SubResource( 5 )
-_sections_unfolded = [ "Size Flags", "custom_constants" ]
+margin_bottom = 870.0
 text = "Powered by [color=#E3266F]OpenVR[/color]
 Supports all common hardware: Occulus Rift, Gear VR, Leap Motion...
 
@@ -215,22 +134,11 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 897.0
 margin_right = 1665.0
-margin_bottom = 848.0
+margin_bottom = 870.0
 rect_min_size = Vector2( 720, 0 )
-size_flags_vertical = 1
+size_flags_vertical = 7
 stream = ExtResource( 8 )
 autoplay = true
 expand = false
-
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 9 )]
-
-visible = true
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 940.0
-margin_right = 1920.0
-margin_bottom = 1080.0
-text = "Powered by Steam VR"
 
 

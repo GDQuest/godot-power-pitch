@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -68,41 +68,6 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="GDScript" id=4]
-
-script/source = "tool
-extends Control
-
-export(String) var title = \"Title\" setget set_title
-export(String) var subtitle = \"\" setget set_subtitle
-
-onready var _title = $Column/Title
-onready var _subtitle = $Column/Subtitle
-
-func _ready():
-	self.title = title
-	self.subtitle = subtitle
-
-func set_title(string):
-	title = string
-
-	if not _title:
-		return
-	_title.text = string
-
-func set_subtitle(string):
-	subtitle = string
-
-	if not _subtitle:
-		return
-	_subtitle.visible = string != \"\"
-	if string != \"\":
-		_title.valign = Label.VALIGN_BOTTOM
-	else:
-		_title.valign = Label.VALIGN_CENTER
-	_subtitle.text = string
-"
-
 [node name="State_of_the_art_3d_engine" type="VBoxContainer" index="0"]
 
 anchor_left = 0.0
@@ -142,25 +107,22 @@ margin_bottom = 1080.0
 anchor_right = 0.0
 margin_right = 1920.0
 margin_bottom = 210.0
-script = SubResource( 4 )
 title = "State of the art 3d engine"
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 214.0
+margin_top = 210.0
 margin_right = 1920.0
-margin_bottom = 936.0
+margin_bottom = 940.0
 
 [node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
 margin_right = 684.0
-margin_bottom = 722.0
-custom_constants/margin_left = 32
-_sections_unfolded = [ "custom_constants" ]
+margin_bottom = 730.0
 text = "[color=#E3266F]Physically-based rendering[/color] with full MSAA support
 [color=#02E180]Full principled BSDF[/color] with Subsurface Scattering, reflection, refraction, clearcoat...
 [color=#26BFE3]Global illumination[/color] for gorgeous real-time graphics
@@ -172,7 +134,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 688.0
 margin_right = 1920.0
-margin_bottom = 722.0
+margin_bottom = 730.0
 size_flags_stretch_ratio = 1.8
 texture = ExtResource( 8 )
 stretch_mode = 7

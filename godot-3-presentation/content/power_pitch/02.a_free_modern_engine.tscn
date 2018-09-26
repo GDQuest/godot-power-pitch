@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -101,50 +101,15 @@ func set_subtitle(string):
 	else:
 		_title.valign = Label.VALIGN_CENTER
 	_subtitle.text = string
+
+func get_translation_data():
+	return {
+		'title': title,
+		'subtitle': subtitle,
+	}
 "
 
-[sub_resource type="GDScript" id=5]
-
-script/source = "tool
-extends Control
-
-export(String, MULTILINE) var text = \"\" setget set_text
-export(bool) var center = false setget set_center
-
-onready var _text = $Text
-var _text_processed = \"\"
-
-func _ready():
-	update_text()
-
-func set_text(string):
-	text = string
-	if not _text:
-		return
-	update_text()
-
-func set_center(value):
-	center = value
-	if not _text:
-		return
-	update_text()
-
-func update_text():
-	if center:
-		_text_processed = center_text(text)
-	else:
-		_text_processed = text
-	$Text.bbcode_text = _text_processed
-
-func center_text(string):
-	var bbcode = \"\"
-	for line in string.split(\"\\n\"):
-		line = \"%s%s%s\" % [\"[center]\", line, \"[/center]\"]
-		bbcode += line + \"\\n\"
-	return bbcode
-"
-
-[node name="A_free_modern_engine" type="VBoxContainer" index="0"]
+[node name="FreeModernEngine" type="VBoxContainer"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -190,18 +155,15 @@ title = "A Free modern engine"
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 214.0
+margin_top = 210.0
 margin_right = 1920.0
-margin_bottom = 936.0
+margin_bottom = 940.0
 
 [node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
-margin_bottom = 722.0
-custom_constants/margin_left = 32
-script = SubResource( 5 )
-_sections_unfolded = [ "Size Flags", "custom_constants" ]
+margin_bottom = 730.0
 text = "Separate [color=#26BFE3]2d[/color] and [color=#E3266F]3d[/color] renderers
 Complete [color=#F2971A]game editor[/color]
 
@@ -214,7 +176,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 642.0
 margin_right = 1920.0
-margin_bottom = 722.0
+margin_bottom = 730.0
 texture = ExtResource( 8 )
 script = ExtResource( 9 )
 

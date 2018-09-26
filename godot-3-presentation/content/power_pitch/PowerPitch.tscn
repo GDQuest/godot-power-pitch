@@ -9,10 +9,14 @@
 [ext_resource path="res://content/power_pitch/CodeFreely.tscn" type="PackedScene" id=7]
 [ext_resource path="res://content/power_pitch/06.virtual_and_augmented_reality.tscn" type="PackedScene" id=8]
 [ext_resource path="res://content/power_pitch/07.professionals_use_godot.tscn" type="PackedScene" id=9]
-[ext_resource path="res://content/power_pitch/08.made_with_godot....tscn" type="PackedScene" id=10]
+[ext_resource path="res://content/power_pitch/08.made_with_godot.tscn" type="PackedScene" id=10]
 [ext_resource path="res://content/power_pitch/09.godot_is_in_great_shape.tscn" type="PackedScene" id=11]
 [ext_resource path="res://content/power_pitch/11.learn_from_simple_free_demos.tscn" type="PackedScene" id=12]
-[ext_resource path="res://content/power_pitch/12.thank_you!.tscn" type="PackedScene" id=13]
+[ext_resource path="res://content/power_pitch/12.thank_you.tscn" type="PackedScene" id=13]
+
+
+
+
 
 [node name="PowerPitch" instance=ExtResource( 1 )]
 
@@ -29,8 +33,6 @@ visible = false
 visible = false
 
 [node name="All_in_one_package" parent="Slides" index="3" instance=ExtResource( 5 )]
-
-visible = false
 
 [node name="CreateAnything" parent="Slides" index="4" instance=ExtResource( 6 )]
 
