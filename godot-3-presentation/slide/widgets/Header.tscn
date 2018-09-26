@@ -37,6 +37,12 @@ func set_subtitle(string):
 	else:
 		_title.valign = Label.VALIGN_CENTER
 	_subtitle.text = string
+
+func get_translation_data():
+	var data = { 'title': title }
+	if subtitle:
+		data['subtitle'] = subtitle
+	return data
 "
 
 [sub_resource type="DynamicFont" id=2]
@@ -48,7 +54,9 @@ extra_spacing_bottom = -14
 font_data = ExtResource( 2 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
-[node name="Header" type="ColorRect" index="0"]
+[node name="Header" type="ColorRect" groups=[
+"translate",
+]]
 
 anchor_left = 0.0
 anchor_top = 0.0

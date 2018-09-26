@@ -75,6 +75,7 @@ size_flags_vertical = 1
 theme = ExtResource( 1 )
 alignment = 0
 script = ExtResource( 2 )
+_sections_unfolded = [ "Theme" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
 

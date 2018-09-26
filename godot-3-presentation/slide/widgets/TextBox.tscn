@@ -43,7 +43,7 @@ func center_text(string):
 	return bbcode
 
 func get_translation_data():
-	return {'text': text}
+	return { 'text': text }
 "
 
 [node name="TextBox" type="MarginContainer" index="0" groups=[
@@ -76,9 +76,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 8.0
+margin_left = 32.0
 margin_top = 32.0
-margin_right = 638.0
+margin_right = 606.0
 margin_bottom = 1048.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
