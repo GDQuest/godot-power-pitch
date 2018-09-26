@@ -1,0 +1,89 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+
+script/source = "extends Control
+
+export(float, 0.0, 4.0) var DISPLAY_DURATION = 2.0
+export(float, 0.0, 0.5) var TRANSITION_DURATION = 0.3
+
+const COLOR_OPAQUE = Color(\"#ffffffff\")
+const COLOR_TRANSPARENT = Color(\"#00ffffff\")
+
+onready var tween = $Tween
+onready var timer = $Timer
+
+var pictures = []
+var index = 0
+var picture_active
+
+func _ready():
+	for node in get_children():
+		if not node is TextureRect:
+			continue
+		pictures.append(node)
+
+	for picture in pictures:
+		picture.modulate = COLOR_TRANSPARENT
+		picture.hide()
+
+	picture_active = pictures[index]
+	picture_active.modulate = COLOR_OPAQUE
+	picture_active.show()
+	timer.wait_time = DISPLAY_DURATION
+	timer.start()
+
+func _on_Timer_timeout():
+	display_next()
+
+func display_next():
+	var picture_previous = picture_active
+	index = (index + 1) % pictures.size()
+	picture_active = get_child(index)
+	picture_active.show()
+	
+	tween.interpolate_property(picture_previous, 'modulate', COLOR_OPAQUE, COLOR_TRANSPARENT, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
+	tween.interpolate_property(picture_active, 'modulate', COLOR_TRANSPARENT, COLOR_OPAQUE, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
+	tween.start()
+	yield(tween, \"tween_completed\")
+	picture_previous.hide()
+	timer.start()
+"
+
+[node name="PictureSlideshow" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+script = SubResource( 1 )
+_sections_unfolded = [ "Size Flags" ]
+DISPLAY_DURATION = 2.0
+TRANSITION_DURATION = 0.3
+
+[node name="Tween" type="Tween" parent="." index="0"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[node name="Timer" type="Timer" parent="." index="1"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+
