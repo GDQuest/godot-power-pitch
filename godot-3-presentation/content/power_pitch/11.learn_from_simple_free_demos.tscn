@@ -1,12 +1,11 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
 [ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=3]
 [ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=4]
-[ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
-[ext_resource path="res://content/demos/attacks/Demo.tscn" type="PackedScene" id=6]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=7]
+[ext_resource path="res://content/demos/attacks/AttackDummies.tscn" type="PackedScene" id=5]
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=6]
 
 [sub_resource type="Animation" id=1]
 
@@ -100,26 +99,6 @@ func set_subtitle(string):
 	_subtitle.text = string
 "
 
-[sub_resource type="GDScript" id=5]
-
-script/source = "tool
-extends Control
-
-export(String) var text = \"\" setget set_text
-
-onready var _text = $Text
-
-func initialize():
-	_text = $Text
-
-func set_text(string):
-	text = string
-	visible = text != \"\"
-	if not _text:
-		return
-	_text.text = text
-"
-
 [node name="Learn_from_simple_free_demos" type="VBoxContainer" index="0"]
 
 anchor_left = 0.0
@@ -170,15 +149,9 @@ margin_top = 214.0
 margin_right = 1920.0
 margin_bottom = 936.0
 
-[node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
+[node name="AttackDummies" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
-[node name="Demo" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
-
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_bottom = 722.0
-
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 7 )]
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 6 )]
 
 visible = true
 anchor_top = 0.0
@@ -187,7 +160,6 @@ anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1920.0
 margin_bottom = 1080.0
-script = SubResource( 5 )
 text = "Both official and 3rd-party"
 
 

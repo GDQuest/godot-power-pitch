@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=7]
 [ext_resource path="res://content/power_pitch/img/repo-health.png" type="Texture" id=8]
 [ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=9]
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 
@@ -191,25 +192,24 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 214.0
 margin_right = 1920.0
-margin_bottom = 1080.0
+margin_bottom = 936.0
 
 [node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
-margin_bottom = 866.0
+margin_bottom = 722.0
 custom_constants/margin_left = 32
 script = SubResource( 5 )
 _sections_unfolded = [ "Size Flags", "custom_constants" ]
-text = "Godot is Free Software. Hundreds of people worked on it already, and it's growing faster over time:
+text = "Godot is [color=#26BFE3]Free Software[/color] built by [color=#26BFE3]hundreds of people[/color]. It's growing faster over time:
 
 - [color=#02E180]680+[/color] contributors
 - 16 000+ commits
 - 16 000+ stars
 - Well-organized project
 
-[color=#02E180]$9000+[/color] a month on Patreon. Sponsored by Mozilla and even Microsoft for C# support.
-"
+The project gets [color=#02E180]$9000+[/color] a month on Patreon."
 
 [node name="Picture" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
 
@@ -217,8 +217,19 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 642.0
 margin_right = 1920.0
-margin_bottom = 866.0
+margin_bottom = 722.0
 texture = ExtResource( 8 )
 script = ExtResource( 9 )
+
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 10 )]
+
+visible = true
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 940.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+text = "Some features are sponsored by companies: WebGL export by Mozilla, C# support by Microsoft..."
 
 

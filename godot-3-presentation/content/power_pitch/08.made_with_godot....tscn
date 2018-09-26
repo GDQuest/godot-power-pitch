@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -127,26 +127,6 @@ func display(file_name, config={}):
 	paused = false
 "
 
-[sub_resource type="GDScript" id=6]
-
-script/source = "tool
-extends Control
-
-export(String) var text = \"\" setget set_text
-
-onready var _text = $Text
-
-func initialize():
-	_text = $Text
-
-func set_text(string):
-	text = string
-	visible = text != \"\"
-	if not _text:
-		return
-	_text.text = text
-"
-
 [node name="Made_with_godot" type="VBoxContainer" index="0"]
 
 anchor_left = 0.0
@@ -187,7 +167,7 @@ anchor_right = 0.0
 margin_right = 1920.0
 margin_bottom = 210.0
 script = SubResource( 4 )
-title = "Made with Godot..."
+title = "Made with Godot"
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
 
@@ -195,7 +175,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 214.0
 margin_right = 1920.0
-margin_bottom = 1080.0
+margin_bottom = 936.0
 
 [node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
@@ -204,21 +184,24 @@ margin_bottom = 1080.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 320.0
-margin_top = 73.0
+margin_top = 1.0
 margin_right = 1600.0
-margin_bottom = 793.0
+margin_bottom = 721.0
 rect_min_size = Vector2( 1280, 720 )
 stream = ExtResource( 7 )
+autoplay = true
+expand = false
 script = SubResource( 5 )
 
 [node name="Footer" parent="Column" index="2" instance=ExtResource( 8 )]
 
+visible = true
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1920.0
 margin_bottom = 1080.0
-script = SubResource( 6 )
+text = "Galactic Bulwark Strike, by Josep G. Camarasa"
 
 

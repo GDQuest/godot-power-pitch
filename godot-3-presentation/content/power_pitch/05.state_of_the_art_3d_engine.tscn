@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -9,9 +9,7 @@
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=7]
 [ext_resource path="res://content/power_pitch/img/modern-engine.jpg" type="Texture" id=8]
 [ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=9]
-[ext_resource path="res://slide/widgets/Demo.tscn" type="PackedScene" id=10]
-[ext_resource path="res://slide/widgets/Video.tscn" type="PackedScene" id=11]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=12]
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 
@@ -105,119 +103,6 @@ func set_subtitle(string):
 	_subtitle.text = string
 "
 
-[sub_resource type="GDScript" id=5]
-
-script/source = "tool
-extends Control
-
-export(String, MULTILINE) var text = \"\" setget set_text
-export(bool) var center = false setget set_center
-
-onready var _text = $Text
-var _text_processed = \"\"
-
-func _ready():
-	update_text()
-
-func set_text(string):
-	text = string
-	if not _text:
-		return
-	update_text()
-
-func set_center(value):
-	center = value
-	if not _text:
-		return
-	update_text()
-
-func update_text():
-	if center:
-		_text_processed = center_text(text)
-	else:
-		_text_processed = text
-	$Text.bbcode_text = _text_processed
-
-func center_text(string):
-	var bbcode = \"\"
-	for line in string.split(\"\\n\"):
-		line = \"%s%s%s\" % [\"[center]\", line, \"[/center]\"]
-		bbcode += line + \"\\n\"
-	return bbcode
-"
-
-[sub_resource type="GDScript" id=6]
-
-script/source = "extends Control
-
-export(String, FILE, \"*.tscn, *.scn\") var demo_path = \"\"
-const DEMOS_FOLDER = \"res://content/demos/\"
-
-func play():
-	if not demo_path.begins_with(\"res://\"):
-		demo_path = DEMOS_FOLDER + demo_path
-	add_child(load(demo_path).instance())
-	show()
-
-func unload():
-	for node in get_children():
-		node.queue_free()
-
-func _on_LegacySlide_shown():
-	if demo_path:
-		play()
-
-func _on_LegacySlide_hidden():
-	unload()
-"
-_sections_unfolded = [ "Resource" ]
-
-[sub_resource type="GDScript" id=7]
-
-script/source = "extends VideoPlayer
-
-export(String) var BASE_PATH = 'res://content/video/'
-
-func _input(event):
-	if event.is_action_pressed(\"toggle_pause\"):
-		paused = not paused
-
-func display(file_name, config={}):
-	rect_min_size = Vector2(1280, 720)
-	if 'video_size' in config.keys():
-		var video_size = config['video_size']
-		rect_min_size = Vector2(video_size['x'], video_size['y'])
-
-	visible = not file_name == \"\"
-	if file_name == \"\":
-		stream = null
-		return
-	var video_path = BASE_PATH + file_name
-	stream = load(video_path)
-	play()
-	paused = false
-"
-
-[sub_resource type="GDScript" id=8]
-
-script/source = "tool
-extends Control
-
-export(String) var text = \"\" setget set_text
-
-onready var _text = $Text
-
-func initialize():
-	_text = $Text
-
-func set_text(string):
-	text = string
-	visible = text != \"\"
-	if not _text:
-		return
-	_text.text = text
-"
-
 [node name="State_of_the_art_3d_engine" type="VBoxContainer" index="0"]
 
 anchor_left = 0.0
@@ -272,44 +157,28 @@ margin_bottom = 936.0
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
-visible = false
-margin_bottom = 866.0
+margin_right = 684.0
+margin_bottom = 722.0
 custom_constants/margin_left = 32
-script = SubResource( 5 )
-_sections_unfolded = [ "Size Flags", "custom_constants" ]
+_sections_unfolded = [ "custom_constants" ]
+text = "[color=#E3266F]Physically-based rendering[/color] with full MSAA support
+[color=#02E180]Full principled BSDF[/color] with Subsurface Scattering, reflection, refraction, clearcoat...
+[color=#26BFE3]Global illumination[/color] for gorgeous real-time graphics
+[color=#F2971A]Mid and Post processing effects[/color] including curves and auto exposure, screen-space reflections, fog, bloom, depth of field..."
 
 [node name="Picture" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
 
 anchor_right = 0.0
 anchor_bottom = 0.0
+margin_left = 688.0
 margin_right = 1920.0
 margin_bottom = 722.0
+size_flags_stretch_ratio = 1.8
 texture = ExtResource( 8 )
+stretch_mode = 7
 script = ExtResource( 9 )
 
-[node name="Demo" parent="Column/Body/Row" index="2" instance=ExtResource( 10 )]
-
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 1919.0
-margin_right = 1919.0
-margin_bottom = 722.0
-script = SubResource( 6 )
-
-[node name="Video" parent="Column/Body/Row" index="3" instance=ExtResource( 11 )]
-
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 1443.0
-margin_top = 361.0
-margin_right = 1443.0
-margin_bottom = 361.0
-rect_min_size = Vector2( 1280, 720 )
-script = SubResource( 7 )
-
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 12 )]
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 10 )]
 
 visible = true
 anchor_top = 0.0
@@ -318,7 +187,6 @@ anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1920.0
 margin_bottom = 1080.0
-script = SubResource( 8 )
 text = "Designed to work well with Blender 2.8's Eevee realtime engine"
 
 

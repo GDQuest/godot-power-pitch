@@ -1,15 +1,14 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
-[ext_resource path="res://presentation/legacy/LegacySlide.gd" type="Script" id=2]
-[ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=3]
-[ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=4]
-[ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=5]
-[ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=6]
-[ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=7]
-[ext_resource path="res://slide/widgets/Video.tscn" type="PackedScene" id=8]
-[ext_resource path="res://content/video/vr-capture.ogv" type="VideoStream" id=9]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=10]
+[ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
+[ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=3]
+[ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=4]
+[ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
+[ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=6]
+[ext_resource path="res://slide/widgets/Video.tscn" type="PackedScene" id=7]
+[ext_resource path="res://content/video/vr-capture.ogv" type="VideoStream" id=8]
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Animation" id=1]
 
@@ -144,52 +143,6 @@ func center_text(string):
 	return bbcode
 "
 
-[sub_resource type="GDScript" id=6]
-
-script/source = "extends VideoPlayer
-
-export(String) var BASE_PATH = 'res://content/video/'
-
-func _input(event):
-	if event.is_action_pressed(\"toggle_pause\"):
-		paused = not paused
-
-func display(file_name, config={}):
-	rect_min_size = Vector2(1280, 720)
-	if 'video_size' in config.keys():
-		var video_size = config['video_size']
-		rect_min_size = Vector2(video_size['x'], video_size['y'])
-
-	visible = not file_name == \"\"
-	if file_name == \"\":
-		stream = null
-		return
-	var video_path = BASE_PATH + file_name
-	stream = load(video_path)
-	play()
-	paused = false
-"
-
-[sub_resource type="GDScript" id=7]
-
-script/source = "tool
-extends Control
-
-export(String) var text = \"\" setget set_text
-
-onready var _text = $Text
-
-func initialize():
-	_text = $Text
-
-func set_text(string):
-	text = string
-	visible = text != \"\"
-	if not _text:
-		return
-	_text.text = text
-"
-
 [node name="Virtual_and_augmented_reality" type="VBoxContainer" index="0"]
 
 anchor_left = 0.0
@@ -204,7 +157,6 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 theme = ExtResource( 1 )
 alignment = 0
-script = ExtResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
 
@@ -218,14 +170,14 @@ anims/fade_in = SubResource( 2 )
 anims/fade_out = SubResource( 3 )
 blend_times = [  ]
 
-[node name="Column" parent="." index="1" instance=ExtResource( 3 )]
+[node name="Column" parent="." index="1" instance=ExtResource( 2 )]
 
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 1920.0
 margin_bottom = 1080.0
 
-[node name="Header" parent="Column" index="0" instance=ExtResource( 4 )]
+[node name="Header" parent="Column" index="0" instance=ExtResource( 3 )]
 
 anchor_right = 0.0
 margin_right = 1920.0
@@ -233,7 +185,7 @@ margin_bottom = 210.0
 script = SubResource( 4 )
 title = "Virtual and Augmented Reality"
 
-[node name="Body" parent="Column" index="1" instance=ExtResource( 5 )]
+[node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
 
 anchor_right = 0.0
 anchor_bottom = 0.0
@@ -241,36 +193,36 @@ margin_top = 214.0
 margin_right = 1920.0
 margin_bottom = 936.0
 
-[node name="Row" parent="Column/Body" index="0" instance=ExtResource( 6 )]
+[node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
-margin_bottom = 118.0
+_sections_unfolded = [ "Size Flags" ]
 
-[node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 7 )]
+[node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
-margin_bottom = 840.0
+margin_bottom = 848.0
 custom_constants/margin_left = 32
 script = SubResource( 5 )
 _sections_unfolded = [ "Size Flags", "custom_constants" ]
-text = "Powered by Steam VR
-Supports all common hardware like:
-- Occulus Rift
-- Gear VR
-- Leap Motion
-- ...
+text = "Powered by [color=#E3266F]OpenVR[/color]
+Supports all common hardware: Occulus Rift, Gear VR, Leap Motion...
+
+Augmented Reality powered by the [color=#26BFE3]ARKit[/color]
 "
 
-[node name="Video" parent="Column/Body/Row" index="1" instance=ExtResource( 8 )]
+[node name="Video" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 903.0
-margin_right = 1659.0
-margin_bottom = 840.0
-rect_min_size = Vector2( 756, 840 )
-stream = ExtResource( 9 )
-script = SubResource( 6 )
+margin_left = 897.0
+margin_right = 1665.0
+margin_bottom = 848.0
+rect_min_size = Vector2( 720, 0 )
+size_flags_vertical = 1
+stream = ExtResource( 8 )
+autoplay = true
+expand = false
 
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 10 )]
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 9 )]
 
 visible = true
 anchor_top = 0.0
@@ -279,7 +231,6 @@ anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1920.0
 margin_bottom = 1080.0
-script = SubResource( 7 )
 text = "Powered by Steam VR"
 
 
