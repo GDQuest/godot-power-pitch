@@ -1,0 +1,16 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+
+[deps]
+
+files=[ "res://content/power_pitch/PowerPitch.en.translation" ]
+
+source_file="res://content/power_pitch/PowerPitch.csv"
+dest_files=[ "res://content/power_pitch/PowerPitch.en.translation" ]
+
+[params]
+
+compress=true
+delimiter=0

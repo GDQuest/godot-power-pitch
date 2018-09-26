@@ -1,0 +1,77 @@
+id,en
+A_free_modern_engine_Column_Header_title,A Free modern engine
+A_free_modern_engine_Column_Header_subtitle,
+A_free_modern_engine_Column_Body_Row_TextBox_text,"Separate [color=#26BFE3]2d[/color] and [color=#E3266F]3d[/color] renderers
+Complete [color=#F2971A]game editor[/color]
+
+Create projects with Windows, Mac, Linux
+Build games for PC, mobile, web*"
+A_free_modern_engine_Column_Footer_text,"*And PS4, XboxOne, Switch, PS Vita..."
+State_of_the_art_3d_engine_Column_Header_title,State of the art 3d engine
+State_of_the_art_3d_engine_Column_Body_Row_TextBox_text,"[color=#E3266F]Physically-based rendering[/color] with full MSAA support
+[color=#02E180]Full principled BSDF[/color] with Subsurface Scattering, reflection, refraction, clearcoat...
+[color=#26BFE3]Global illumination[/color] for gorgeous real-time graphics
+[color=#F2971A]Mid and Post processing effects[/color] including curves and auto exposure, screen-space reflections, fog, bloom, depth of field..."
+State_of_the_art_3d_engine_Column_Footer_text,Designed to work well with Blender 2.8's Eevee realtime engine
+All_in_one_package_Column_Header_title,All-in-one package
+All_in_one_package_Column_Body_Row_TextBox_text,"- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion
+- [color=#26BFE3]Animation[/color] editor with 2d rigging
+- [color=#F2971A]Tilemap editor[/color] with autotiles
+- [color=#02E180]Shader[/color] editor, visual and code
+- [color=#02E180]UI theme editor[/color]
+
+New tools get in with each version!"
+All_in_one_package_Column_Footer_text,"2d IK available, meshes and skinning coming soon"
+CreateAnything_Column_Header_title,Create Anything
+CreateAnything_Column_Header_subtitle,"2d and 3d Games, tools, or applications"
+CreateAnything_Column_Body_Row_TextBox_text,"Projects:
+
+- [color=#F2971A]Ex Zodiac[/color], by Ben Hickling
+- [color=#02E180]RPG in a Box[/color], by Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], by Bastiaan Olij"
+CreateAnything_Column_Footer_text,"*Open source, available on GitHub"
+CodeFreely_Header_title,Code freely
+CodeFreely_Body_Row_TextBox_text,"[color=#02E180]GDScript[/color] Python-like scripting language, designed for gameplay developers
+[color=#F2971A]C# 7.0[/color] support using Mono
+Full [color=#E3266F]C[/color] and [color=#E3266F]C++[/color] support without having to recompile the engine
+[color=#26BFE3]Visual scripting[/color] using a graph of blocks
+"
+CodeFreely_Footer_text,"Community-supported languages: Python, Nim, D, Rust..."
+Virtual_and_augmented_reality_Column_Header2_title,Virtual and Augmented Reality
+Virtual_and_augmented_reality_Column_Body_Row_TextBox_text,"Powered by [color=#E3266F]OpenVR[/color]
+Supports all common hardware: Occulus Rift, Gear VR, Leap Motion...
+
+Augmented Reality powered by the [color=#26BFE3]ARKit[/color]
+"
+Professionals_use_godot_Column_Header_title,Professionals use Godot
+Professionals_use_godot_Column_Body_Row_TextBox_text,"[color=#E3266F]Game studios[/color] like Gamblify, GuaranApps, Kivano...
+[color=#26BFE3]Schools[/color] including School4Games Berlin, KidsCanCode...
+[color=#02E180]Content creators[/color] like Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+"
+Made_with_godot_Column_Header2_title,Made with Godot
+Made_with_godot_Column_Footer2_text,"Galactic Bulwark Strike, by Josep G. Camarasa"
+Godot_is_in_great_shape_Column_Header2_title,Godot is in great shape
+Godot_is_in_great_shape_Column_Body_Row_TextBox2_text,"Godot is [color=#26BFE3]Free Software[/color] built by [color=#26BFE3]hundreds of people[/color]. It's growing faster over time:
+
+- [color=#02E180]680+[/color] contributors
+- 16 000+ commits
+- 16 000+ stars
+- Well-organized project
+
+The project gets [color=#02E180]$9000+[/color] a month on Patreon."
+Godot_is_in_great_shape_Column_Footer2_text,"Some features are sponsored by companies: WebGL export by Mozilla, C# support by Microsoft..."
+Learn_from_simple_free_demos_Column_Header2_title,Learn from simple Free demos
+Learn_from_simple_free_demos_Column_Footer2_text,Both official and 3rd-party
+Thank_you_Column_Header2_title,Thank you!
+Thank_you_Column_Header2_subtitle,Any question?
+Thank_you_Column_Body_Row_TextBox2_text,"SNS:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Credits:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] by GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] by Justin
+
+This presentation is an Open Source Godot project!
+Find it on [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]. It's available in multiple languages.
+"
