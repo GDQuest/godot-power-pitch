@@ -2,6 +2,8 @@ extends Node
 
 onready var slides = $Slides
 
+var languages = ['en', 'ja']
+
 func _ready():
 	slides.initialize()
 #	save_as_csv(get_translatable_strings()) # Use this to save the presentation as CSV
@@ -11,6 +13,11 @@ func _input(event):
 		slides.display(slides.NEXT)
 	if event.is_action_pressed('ui_previous'):
 		slides.display(slides.PREVIOUS)
+	if event.is_action_pressed('change_language'):
+		if TranslationServer.get_locale() == 'en':
+			translate_slides('ja')
+		else:
+			translate_slides('en')
 
 func _on_SwipeDetector_swiped(direction):
 	if direction.x == 1:
@@ -71,6 +78,8 @@ func translate_slides(locale):
 		for key in translatable_properties:
 			var string_uid = node_uid + "_" + key
 			node.set(key, tr(string_uid))
+		if node.has_method('translate'):
+			node.translate(locale)
 
 func get_translation_uid(node):
 	return node.owner.name + "_" + str(node.owner.get_path_to(node)).replace("/", "_")

@@ -1,19 +1,28 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
-[ext_resource path="res://assets/fonts/montserrat/montserrat-black.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://slide/subtitle_font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://theme/fonts/title_montserrat.tres" type="DynamicFont" id=2]
+[ext_resource path="res://theme/fonts/subtitle_montserrat.tres" type="DynamicFont" id=3]
 
 [sub_resource type="GDScript" id=1]
 
 script/source = "tool
 extends Control
 
-export(String) var title = \"Title\" setget set_title
+export(String) var title = \"\" setget set_title
 export(String) var subtitle = \"\" setget set_subtitle
 
-onready var _title = $Column/Title
-onready var _subtitle = $Column/Subtitle
+var FONTS_DEFAULT = {
+	'title': preload(\"res://theme/fonts/title_montserrat.tres\"),
+	'subtitle': preload(\"res://theme/fonts/subtitle_montserrat.tres\"),
+}
+var FONTS_CJK = {
+	'title': preload(\"res://theme/fonts/title_noto.tres\"),
+	'subtitle': preload(\"res://theme/fonts/subtitle_noto.tres\"),
+}
+
+onready var title_node = $Column/Title
+onready var subtitle_node = $Column/Subtitle
 
 func _ready():
 	self.title = title
@@ -21,22 +30,27 @@ func _ready():
 
 func set_title(string):
 	title = string
-
-	if not _title:
+	if not title_node:
 		return
-	_title.text = string
+	title_node.text = string
 
 func set_subtitle(string):
 	subtitle = string
-
-	if not _subtitle:
+	if not subtitle_node:
 		return
-	_subtitle.visible = string != \"\"
+	subtitle_node.visible = string != \"\"
 	if string != \"\":
-		_title.valign = Label.VALIGN_BOTTOM
+		title_node.valign = Label.VALIGN_BOTTOM
 	else:
-		_title.valign = Label.VALIGN_CENTER
-	_subtitle.text = string
+		title_node.valign = Label.VALIGN_CENTER
+	subtitle_node.text = string
+
+func translate(locale):
+	var fonts = FONTS_DEFAULT
+	if locale in ['ja', 'ko', 'zh']:
+			fonts = FONTS_CJK
+	title_node.set('custom_fonts/font', fonts['title'])
+	subtitle_node.set('custom_fonts/font', fonts['subtitle'])
 
 func get_translation_data():
 	var data = { 'title': title }
@@ -45,16 +59,7 @@ func get_translation_data():
 	return data
 "
 
-[sub_resource type="DynamicFont" id=2]
-
-size = 88
-use_mipmaps = false
-use_filter = true
-extra_spacing_bottom = -14
-font_data = ExtResource( 2 )
-_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
-
-[node name="Header" type="ColorRect" groups=[
+[node name="Header" type="ColorRect" index="0" groups=[
 "translate",
 ]]
 
@@ -105,7 +110,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.2
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = ExtResource( 2 )
 text = "Title"
 align = 1
 valign = 1
