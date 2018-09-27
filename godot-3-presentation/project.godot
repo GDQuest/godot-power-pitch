@@ -65,10 +65,13 @@ jump=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","
  ]
 run=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777237,"unicode":0,"echo":false,"script":null)
  ]
+change_language=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":76,"unicode":0,"echo":false,"script":null)
+ ]
 
 [locale]
 
 locale_filter=[ 0, [ "de", "en", "es", "fr", "hi", "it", "ja", "pt", "ru", "zh" ] ]
+translations=PoolStringArray( "res://content/power_pitch/PowerPitch.en.translation", "res://content/power_pitch/PowerPitch.ja.translation" )
 
 [rendering]
 

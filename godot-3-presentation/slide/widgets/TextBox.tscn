@@ -46,7 +46,7 @@ func get_translation_data():
 	return { 'text': text }
 "
 
-[node name="TextBox" type="MarginContainer" index="0" groups=[
+[node name="TextBox" type="MarginContainer" groups=[
 "translate",
 ]]
 
