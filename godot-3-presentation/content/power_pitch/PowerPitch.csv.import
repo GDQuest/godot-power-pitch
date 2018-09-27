@@ -5,10 +5,10 @@ type="Translation"
 
 [deps]
 
-files=[ "res://content/power_pitch/PowerPitch.en.translation" ]
+files=[ "res://content/power_pitch/PowerPitch.en.translation", "res://content/power_pitch/PowerPitch.ja.translation" ]
 
 source_file="res://content/power_pitch/PowerPitch.csv"
-dest_files=[ "res://content/power_pitch/PowerPitch.en.translation" ]
+dest_files=[ "res://content/power_pitch/PowerPitch.en.translation", "res://content/power_pitch/PowerPitch.ja.translation" ]
 
 [params]
 
