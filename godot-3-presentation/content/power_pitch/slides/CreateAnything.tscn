@@ -9,12 +9,10 @@
 [ext_resource path="res://slide/widgets/PictureSlideshow.tscn" type="PackedScene" id=7]
 [ext_resource path="res://content/power_pitch/img/create-anything/Ex-Zodiac.png" type="Texture" id=8]
 [ext_resource path="res://content/power_pitch/img/create-anything/rpg-in-a-box-02-small.jpg" type="Texture" id=9]
-[ext_resource path="res://content/power_pitch/img/create-anything/procedural-mesh-tool-bastiaan-.jpg" type="Texture" id=10]
+[ext_resource path="res://content/power_pitch/img/create-anything/procedural-mesh-tool-bastiaan-2-1280x720.jpg" type="Texture" id=10]
 [ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=11]
 
 [node name="CreateAnything" index="0" instance=ExtResource( 1 )]
-
-visible = false
 
 [node name="Column" parent="." index="1" instance=ExtResource( 2 )]
 
@@ -43,6 +41,7 @@ margin_bottom = 940.0
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
+margin_right = 618.0
 margin_bottom = 730.0
 text = "Projects:
 
@@ -54,9 +53,10 @@ text = "Projects:
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 642.0
+margin_left = 622.0
 margin_right = 1920.0
 margin_bottom = 730.0
+size_flags_stretch_ratio = 2.1
 
 [node name="Ex-Zodiac" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="2"]
 
@@ -93,7 +93,6 @@ stretch_mode = 6
 
 [node name="procedural-mesh-tool-bastiaan-" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="4"]
 
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
