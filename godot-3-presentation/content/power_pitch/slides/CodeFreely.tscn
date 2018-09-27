@@ -1,11 +1,15 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=2]
 [ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=3]
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=4]
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=5]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=6]
+[ext_resource path="res://slide/widgets/PictureSlideshow.tscn" type="PackedScene" id=6]
+[ext_resource path="res://content/power_pitch/img/code-gdscript-visualscript.png" type="Texture" id=7]
+[ext_resource path="res://content/power_pitch/img/gdscript-editor-3.1.jpg" type="Texture" id=8]
+[ext_resource path="res://content/power_pitch/img/csharp.png" type="Texture" id=9]
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=10]
 
 [node name="CodeFreely" index="0" instance=ExtResource( 1 )]
 
@@ -20,25 +24,85 @@ title = "Code freely"
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 214.0
+margin_top = 210.0
 margin_right = 1920.0
-margin_bottom = 936.0
+margin_bottom = 940.0
 
 [node name="Row" parent="Body" index="0" instance=ExtResource( 4 )]
 
 [node name="TextBox" parent="Body/Row" index="0" instance=ExtResource( 5 )]
 
-margin_right = 1920.0
-margin_bottom = 722.0
-custom_constants/margin_left = 32
-_sections_unfolded = [ "Size Flags", "custom_constants" ]
-text = "[color=#02E180]GDScript[/color] Python-like scripting language, designed for gameplay developers
+margin_right = 618.0
+margin_bottom = 730.0
+custom_constants/margin_right = 20
+_sections_unfolded = [ "custom_constants" ]
+text = "Godot lets you use many programming languages:
+
+[color=#02E180]GDScript[/color] Python-like scripting language, designed for gameplay developers
 [color=#F2971A]C# 7.0[/color] support using Mono
 Full [color=#E3266F]C[/color] and [color=#E3266F]C++[/color] support without having to recompile the engine
-[color=#26BFE3]Visual scripting[/color] using a graph of blocks
-"
+[color=#26BFE3]Visual scripting[/color] using a graph of blocks"
 
-[node name="Footer" parent="." index="3" instance=ExtResource( 6 )]
+[node name="PictureSlideshow" parent="Body/Row" index="1" instance=ExtResource( 6 )]
+
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 622.0
+margin_right = 1920.0
+margin_bottom = 730.0
+size_flags_stretch_ratio = 2.1
+
+[node name="code-gdscript-visualscript" type="TextureRect" parent="Body/Row/PictureSlideshow" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 6
+
+[node name="gdscript-editor-3.1" type="TextureRect" parent="Body/Row/PictureSlideshow" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 11
+size_flags_vertical = 11
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+_sections_unfolded = [ "Hint", "Size Flags" ]
+
+[node name="csharp" type="TextureRect" parent="Body/Row/PictureSlideshow" index="4"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 6
+
+[node name="Footer" parent="." index="3" instance=ExtResource( 10 )]
 
 visible = true
 anchor_top = 0.0

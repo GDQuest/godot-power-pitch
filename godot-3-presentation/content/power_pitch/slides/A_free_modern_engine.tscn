@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -68,47 +68,6 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="GDScript" id=4]
-
-script/source = "tool
-extends Control
-
-export(String) var title = \"Title\" setget set_title
-export(String) var subtitle = \"\" setget set_subtitle
-
-onready var _title = $Column/Title
-onready var _subtitle = $Column/Subtitle
-
-func _ready():
-	self.title = title
-	self.subtitle = subtitle
-
-func set_title(string):
-	title = string
-
-	if not _title:
-		return
-	_title.text = string
-
-func set_subtitle(string):
-	subtitle = string
-
-	if not _subtitle:
-		return
-	_subtitle.visible = string != \"\"
-	if string != \"\":
-		_title.valign = Label.VALIGN_BOTTOM
-	else:
-		_title.valign = Label.VALIGN_CENTER
-	_subtitle.text = string
-
-func get_translation_data():
-	return {
-		'title': title,
-		'subtitle': subtitle,
-	}
-"
-
 [node name="FreeModernEngine" type="VBoxContainer"]
 
 anchor_left = 0.0
@@ -148,7 +107,6 @@ margin_bottom = 1080.0
 anchor_right = 0.0
 margin_right = 1920.0
 margin_bottom = 210.0
-script = SubResource( 4 )
 title = "A Free modern engine"
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
