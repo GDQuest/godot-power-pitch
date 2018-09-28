@@ -15,9 +15,9 @@ Build games for PC, mobile, web*","両方[color=#26BFE3]２D[/color]と[color=#E
 [color=#02E180]Full principled BSDF[/color] with Subsurface Scattering, reflection, refraction, clearcoat...
 [color=#26BFE3]Global illumination[/color] for gorgeous real-time graphics
 [color=#F2971A]Mid and Post processing effects[/color] including curves and auto exposure, screen-space reflections, fog, bloom, depth of field...","MSAAをサポートする[color=#E3266F]物理ベースレンダリング[/color]
-[color=#02E180]BSDFマテリアル[/color]：皮下拡散（Subsurface Scattering）とか, 反射率とか, 空間屈折（Refraction）などサポートします
+[color=#02E180]BSDFマテリアル[/color]：皮下拡散（Subsurface Scattering）とか, 反射率とか, 空間屈折（Refraction）など使用可能です
 [color=#26BFE3]間接光・放射[/color]（Global Illumination)
-[color=#F2971A]後処理[/color]：自動露光しSSRし被写界深度などあります"
+[color=#F2971A]後処理[/color]：自動露光しSSRし被写界深度などがあります"
 "State_of_the_art_3d_engine_Column_Footer_text","Designed to work well with Blender 2.8's Eevee realtime engine","Blender3d 2.8のEeveeリアルタイムレンダリングエンジンと互換します"
 "All_in_one_package_Column_Header_title","All-in-one package","必要とするツールは全て含まれています"
 "All_in_one_package_Column_Body_Row_TextBox_text","- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion
@@ -27,7 +27,7 @@ Build games for PC, mobile, web*","両方[color=#26BFE3]２D[/color]と[color=#E
 - [color=#02E180]UI theme editor[/color]
 
 New tools get in with each version!","- 便覧が含まれている[color=#E3266F]開発環境[/color]
-- IKでリギングできる[color=#26BFE3]アニメーションエディタ[/color]
+- IKとリギングできる[color=#26BFE3]アニメーションエディタ[/color]
 - [color=#F2971A]タイルセットとタイルマップエディタ[/color]
 - [color=#02E180]シェーダーエディタ[/color]、表か書かれたコードでプログラミングできます
 - [color=#02E180]ジーユーアイテーマエディタ[/color]
@@ -97,6 +97,17 @@ The project gets [color=#02E180]$9000+[/color] a month on Patreon.","Godot は[c
 このプロジェクトは毎月[color=#02E180]九千ドル[/color]以上Patreonでもらいます"
 "Godot_is_in_great_shape_Column_Footer2_text","Some features are sponsored by companies: WebGL export by Mozilla, C# support by Microsoft...","いろんな機能は大きい組織主催です：WebGL（Mozilla)、C#（Microsoft)"
 "Learn_from_simple_free_demos_Column_Header2_title","Learn from simple Free demos","読みやすいデモで勉強できます"
+"How_to_get_started_Header_title","How to get started","どうやって始められますか？ "
+"How_to_get_started_Body_Row_TextBox_text","The [color=#26BFE3]community[/color] is [b]very[/b] active. Social networks, forum, IRC, Discord…
+There's a [color=#26BFE3]Questions/Answers[/color] website
+You'll find plenty of official [color=#02E180]tutorials[/color] in the [color=#02E180]online manual[/color]
+There's [color=#E3266F]built-in code reference[/color] inside the game editor
+Use the [color=#F2971A]open source demos[/color]","[color=#26BFE3]コミュニティ[/color]は[b]とても[/b]にぎやかです。SNSしIRCしDiscordしでGodotのユーザーと会えます
+[color=#26BFE3]質問と答え[/color]のウェブサイトもあります
+[color=#02E180]便覧[/colorに]公式の[color=#02E180]学習用[/color]が多いです
+開発環境に[color=#E3266F]コードの便覧[/color]が含まれます
+[color=#F2971A]オプンソースのデモ[/color]も多いです"
+"How_to_get_started_Footer_text","Most of the resources are in English though... a good way to practice?","大体情報は英語ですが良い練習になれるでしょうね？;)"
 "Learn_from_simple_free_demos_Column_Footer2_text","Both official and 3rd-party","公式プロジェクトもコミュニティのもあります"
 "Thank_you_Column_Header2_title","Thank you!","ありがとうございました！"
 "Thank_you_Column_Header2_subtitle","Any question?","質問がありますか？"

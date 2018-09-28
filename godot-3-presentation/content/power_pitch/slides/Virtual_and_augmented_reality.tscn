@@ -1,13 +1,14 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
-[ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
+[ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
 [ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=3]
 [ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=4]
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=6]
 [ext_resource path="res://slide/widgets/Video.tscn" type="PackedScene" id=7]
 [ext_resource path="res://content/video/vr-capture.ogv" type="VideoStream" id=8]
+
 
 [sub_resource type="Animation" id=1]
 

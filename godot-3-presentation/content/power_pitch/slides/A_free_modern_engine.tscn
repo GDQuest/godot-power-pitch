@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
-[ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
+[ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
 [ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=3]
 [ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=4]
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
@@ -109,6 +109,7 @@ margin_bottom = 1080.0
 anchor_right = 0.0
 margin_right = 1920.0
 margin_bottom = 210.0
+stretch_mode = 0
 title = "A Free modern engine"
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
@@ -164,13 +165,13 @@ script = ExtResource( 11 )
 
 [node name="Footer" parent="Column" index="2" instance=ExtResource( 12 )]
 
-visible = true
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1920.0
 margin_bottom = 1080.0
+stretch_mode = 0
 text = "*And PS4, XboxOne, Switch, PS Vita..."
 
 
