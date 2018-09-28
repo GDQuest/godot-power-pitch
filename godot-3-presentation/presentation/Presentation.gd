@@ -1,5 +1,7 @@
 extends Node
 
+signal language_changed()
+
 onready var slides = $Slides
 
 var languages = ['en', 'ja']
@@ -11,13 +13,32 @@ func _ready():
 func _input(event):
 	if event.is_action_pressed('ui_next'):
 		slides.display(slides.NEXT)
+		update_translations()
 	if event.is_action_pressed('ui_previous'):
 		slides.display(slides.PREVIOUS)
+		update_translations()
 	if event.is_action_pressed('change_language'):
 		if TranslationServer.get_locale() == 'en':
-			translate_slides('ja')
+			change_language('ja')
 		else:
-			translate_slides('en')
+			change_language('en')
+
+func change_language(locale):
+	TranslationServer.set_locale(locale)
+	update_translations()
+
+func update_translations():
+	for node in get_tree().get_nodes_in_group("translate"):
+		var node_uid = get_translation_uid(node)
+		var translatable_properties = node.get_translation_data()
+		for key in translatable_properties:
+			var string_uid = node_uid + "_" + key
+			node.set(key, tr(string_uid))
+		if node.has_method('translate'):
+			node.translate()
+
+func get_translation_uid(node):
+	return node.owner.name + "_" + str(node.owner.get_path_to(node)).replace("/", "_")
 
 func _on_SwipeDetector_swiped(direction):
 	if direction.x == 1:
@@ -69,17 +90,3 @@ func save_as_csv(translation_data):
 	for line in csv_list:
 		file.store_line(line)
 	file.close()
-
-func translate_slides(locale):
-	TranslationServer.set_locale(locale)
-	for node in get_tree().get_nodes_in_group("translate"):
-		var node_uid = get_translation_uid(node)
-		var translatable_properties = node.get_translation_data()
-		for key in translatable_properties:
-			var string_uid = node_uid + "_" + key
-			node.set(key, tr(string_uid))
-		if node.has_method('translate'):
-			node.translate(locale)
-
-func get_translation_uid(node):
-	return node.owner.name + "_" + str(node.owner.get_path_to(node)).replace("/", "_")
