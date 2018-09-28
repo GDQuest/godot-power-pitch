@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
+[ext_resource path="res://theme/sprites/footer_dusk.png" type="Texture" id=2]
 
 [sub_resource type="GDScript" id=1]
 
@@ -9,28 +10,38 @@ extends Control
 
 export(String) var text = \"\" setget set_text
 
-var _text
+var text_node
 
 func _ready():
-	_text = $Text
-	_text.text = text
+	text_node = $Text
+	self.text = text
 
 func set_text(string):
 	text = string
 	visible = text != \"\"
-	if not _text:
+	if not text_node:
 		return
-	_text.text = text
+	text_node.display(string)
 
 func get_translation_data():
 	return {'text': text}
 "
 
-[node name="Footer" type="ColorRect" groups=[
+[sub_resource type="GDScript" id=2]
+
+script/source = "extends Label
+
+onready var shadow_node = $Shadow
+
+func display(string):
+	text = string
+	shadow_node.text = string
+"
+
+[node name="Footer" type="TextureRect" groups=[
 "translate",
 ]]
 
-visible = false
 show_behind_parent = true
 anchor_left = 0.0
 anchor_top = 1.0
@@ -40,12 +51,13 @@ margin_top = -140.0
 rect_min_size = Vector2( 0, 140 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
-mouse_filter = 0
+mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
 theme = ExtResource( 1 )
-color = Color( 0.2, 0.247059, 0.403922, 1 )
+texture = ExtResource( 2 )
+expand = true
 script = SubResource( 1 )
 text = ""
 
@@ -61,6 +73,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+text = "Test"
 align = 1
 valign = 1
 autowrap = true
@@ -68,6 +81,33 @@ clip_text = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+script = SubResource( 2 )
 _sections_unfolded = [ "BBCode", "Material", "Theme" ]
+
+[node name="Shadow" type="Label" parent="Text" index="0"]
+
+modulate = Color( 0.34902, 0, 0.701961, 0.486275 )
+show_behind_parent = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 3.0
+margin_bottom = 3.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+text = "Test"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "Material", "Theme", "Visibility" ]
 
 
