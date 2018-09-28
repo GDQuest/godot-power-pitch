@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
-[ext_resource path="res://theme/fonts/title_montserrat.tres" type="DynamicFont" id=2]
-[ext_resource path="res://theme/fonts/subtitle_montserrat.tres" type="DynamicFont" id=3]
+[ext_resource path="res://theme/sprites/header_dusk.png" type="Texture" id=2]
+[ext_resource path="res://theme/fonts/title_montserrat.tres" type="DynamicFont" id=3]
+[ext_resource path="res://theme/fonts/subtitle_montserrat.tres" type="DynamicFont" id=4]
 
 [sub_resource type="GDScript" id=1]
 
@@ -22,7 +23,9 @@ var FONTS_CJK = {
 }
 
 onready var title_node = $Column/Title
+onready var title_shadow_node = $Column/Title/Shadow
 onready var subtitle_node = $Column/Subtitle
+onready var subtitle_shadow_node = $Column/Subtitle/Shadow
 
 func _ready():
 	self.title = title
@@ -32,25 +35,24 @@ func set_title(string):
 	title = string
 	if not title_node:
 		return
-	title_node.text = string
+	title_node.display(string)
 
 func set_subtitle(string):
 	subtitle = string
 	if not subtitle_node:
 		return
-	subtitle_node.visible = string != \"\"
-	if string != \"\":
-		title_node.valign = Label.VALIGN_BOTTOM
-	else:
-		title_node.valign = Label.VALIGN_CENTER
-	subtitle_node.text = string
+	subtitle_node.display(string)
 
-func translate(locale):
+func translate():
+	var locale = TranslationServer.get_locale()
 	var fonts = FONTS_DEFAULT
 	if locale in ['ja', 'ko', 'zh']:
 			fonts = FONTS_CJK
+
 	title_node.set('custom_fonts/font', fonts['title'])
+	title_shadow_node.set('custom_fonts/font', fonts['title'])
 	subtitle_node.set('custom_fonts/font', fonts['subtitle'])
+	subtitle_shadow_node.set('custom_fonts/font', fonts['subtitle'])
 
 func get_translation_data():
 	var data = { 'title': title }
@@ -59,7 +61,48 @@ func get_translation_data():
 	return data
 "
 
-[node name="Header" type="ColorRect" index="0" groups=[
+[sub_resource type="GDScript" id=2]
+
+script/source = "extends Label
+
+onready var shadow_node = $Shadow
+
+func display(string):
+	text = string
+	shadow_node.text = string
+
+func _on_Subtitle_visibility_updated(visible):
+	if visible:
+		valign = Label.VALIGN_BOTTOM
+		shadow_node.valign = Label.VALIGN_BOTTOM
+	else:
+		valign = Label.VALIGN_CENTER
+		shadow_node.valign = Label.VALIGN_CENTER
+"
+
+[sub_resource type="GDScript" id=3]
+
+script/source = "extends Label
+
+signal visibility_updated(visible)
+
+var shadow_node
+
+func _ready():
+	shadow_node = $Shadow
+
+func display(string):
+	visible = string != \"\"
+	if not visible:
+		return
+	text = string
+	shadow_node.text = string
+
+func _on_visibility_changed():
+	emit_signal(\"visibility_updated\", visible)
+"
+
+[node name="Header" type="TextureRect" index="0" groups=[
 "translate",
 ]]
 
@@ -70,12 +113,13 @@ anchor_bottom = 0.0
 rect_min_size = Vector2( 1920, 210 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
-mouse_filter = 0
+mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
 theme = ExtResource( 1 )
-color = Color( 0.2, 0.247059, 0.403922, 1 )
+texture = ExtResource( 2 )
+expand = true
 script = SubResource( 1 )
 _sections_unfolded = [ "Rect", "Theme" ]
 title = "Title"
@@ -102,7 +146,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 1920.0
-margin_bottom = 210.0
+margin_bottom = 144.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -110,7 +154,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.2
-custom_fonts/font = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
 text = "Title"
 align = 1
 valign = 1
@@ -119,16 +163,44 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+script = SubResource( 2 )
 _sections_unfolded = [ "BBCode", "Size Flags", "Theme", "custom_fonts" ]
+
+[node name="Shadow" type="Label" parent="Column/Title" index="0"]
+
+modulate = Color( 0.351563, 0, 0.703125, 0.487922 )
+show_behind_parent = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 6.0
+margin_bottom = 6.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.2
+custom_fonts/font = ExtResource( 3 )
+text = "Title"
+align = 1
+valign = 1
+clip_text = true
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "Material", "Size Flags", "Theme", "Visibility", "custom_fonts" ]
 
 [node name="Subtitle" type="Label" parent="Column" index="1"]
 
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 145.0
+margin_top = 144.0
 margin_right = 1920.0
 margin_bottom = 210.0
 rect_pivot_offset = Vector2( 0, 0 )
@@ -137,12 +209,44 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = ExtResource( 4 )
+text = "Test"
 align = 1
 clip_text = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "BBCode", "custom_fonts" ]
+script = SubResource( 3 )
+_sections_unfolded = [ "BBCode", "Theme", "custom_fonts" ]
+
+[node name="Shadow" type="Label" parent="Column/Subtitle" index="0"]
+
+modulate = Color( 0.34902, 0, 0.701961, 0.486275 )
+show_behind_parent = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 4.0
+margin_bottom = 4.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 4 )
+text = "Test"
+align = 1
+clip_text = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script = SubResource( 3 )
+_sections_unfolded = [ "BBCode", "Material", "Size Flags", "Theme", "Visibility", "custom_fonts" ]
+
+[connection signal="visibility_changed" from="Column/Subtitle" to="Column/Subtitle" method="_on_visibility_changed"]
+
+[connection signal="visibility_updated" from="Column/Subtitle" to="Column/Title" method="_on_Subtitle_visibility_updated"]
 
 
