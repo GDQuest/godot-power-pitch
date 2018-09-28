@@ -66,7 +66,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="GDScript" id=5]
+[sub_resource type="GDScript" id=4]
 
 script/source = "extends VideoPlayer
 
@@ -148,14 +148,12 @@ margin_bottom = 940.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 320.0
-margin_top = 5.0
 margin_right = 1600.0
-margin_bottom = 725.0
+margin_bottom = 730.0
 rect_min_size = Vector2( 1280, 720 )
 stream = ExtResource( 7 )
 autoplay = true
-expand = false
-script = SubResource( 5 )
+script = SubResource( 4 )
 
 [node name="Footer2" parent="Column" index="2" instance=ExtResource( 8 )]
 

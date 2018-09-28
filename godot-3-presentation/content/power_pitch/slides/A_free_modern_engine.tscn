@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -6,10 +6,12 @@
 [ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=4]
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=6]
-[ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=7]
-[ext_resource path="res://content/_old_presentation/img/car-3d.jpg" type="Texture" id=8]
-[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=9]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=10]
+[ext_resource path="res://slide/widgets/PictureSlideshow.tscn" type="PackedScene" id=7]
+[ext_resource path="res://content/power_pitch/img/daisy-dangerous-game-securas-1280x720.jpg" type="Texture" id=8]
+[ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=9]
+[ext_resource path="res://content/_old_presentation/img/car-3d.jpg" type="Texture" id=10]
+[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=11]
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=12]
 
 [sub_resource type="Animation" id=1]
 
@@ -121,6 +123,7 @@ margin_bottom = 940.0
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
+margin_right = 618.0
 margin_bottom = 730.0
 text = "Separate [color=#26BFE3]2d[/color] and [color=#E3266F]3d[/color] renderers
 Complete [color=#F2971A]game editor[/color]
@@ -128,17 +131,38 @@ Complete [color=#F2971A]game editor[/color]
 Create projects with Windows, Mac, Linux
 Build games for PC, mobile, web*"
 
-[node name="Picture" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
+[node name="PictureSlideshow" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 642.0
+margin_left = 622.0
 margin_right = 1920.0
 margin_bottom = 730.0
-texture = ExtResource( 8 )
-script = ExtResource( 9 )
+size_flags_stretch_ratio = 2.1
 
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 10 )]
+[node name="daisy-dangerous-game-securas-1280x720" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 2.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="3d-view" parent="Column/Body/Row/PictureSlideshow" index="3" instance=ExtResource( 9 )]
+
+texture = ExtResource( 10 )
+script = ExtResource( 11 )
+
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 12 )]
 
 visible = true
 anchor_top = 0.0
