@@ -28,4 +28,5 @@ func display(direction=CURRENT):
 	new_slide.show()
 #	yield(new_slide.play("fade_in"), "completed")
 	previous_slide.hide()
+	remove_child(previous_slide)
 	slide_current = new_slide
