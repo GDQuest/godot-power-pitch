@@ -2,7 +2,7 @@
 
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
 [ext_resource path="res://presentation/legacy/LegacySlide.gd" type="Script" id=2]
-[ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=3]
+[ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=3]
 [ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=4]
 [ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=5]
 [ext_resource path="res://presentation/legacy/LegacyBody.gd" type="Script" id=6]
@@ -13,6 +13,7 @@
 [ext_resource path="res://slide/widgets/Demo.tscn" type="PackedScene" id=11]
 [ext_resource path="res://slide/widgets/Video.tscn" type="PackedScene" id=12]
 [ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=13]
+
 
 [node name="LegacySlide" index="0" instance=ExtResource( 1 )]
 

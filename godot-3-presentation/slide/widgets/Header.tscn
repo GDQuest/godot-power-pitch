@@ -63,7 +63,8 @@ func get_translation_data():
 
 [sub_resource type="GDScript" id=2]
 
-script/source = "extends Label
+script/source = "tool
+extends Label
 
 onready var shadow_node = $Shadow
 
@@ -82,21 +83,17 @@ func _on_Subtitle_visibility_updated(visible):
 
 [sub_resource type="GDScript" id=3]
 
-script/source = "extends Label
+script/source = "tool
+extends Label
 
 signal visibility_updated(visible)
-
-var shadow_node
-
-func _ready():
-	shadow_node = $Shadow
 
 func display(string):
 	visible = string != \"\"
 	if not visible:
 		return
 	text = string
-	shadow_node.text = string
+	$Shadow.text = string
 
 func _on_visibility_changed():
 	emit_signal(\"visibility_updated\", visible)
@@ -120,6 +117,7 @@ size_flags_vertical = 1
 theme = ExtResource( 1 )
 texture = ExtResource( 2 )
 expand = true
+stretch_mode = 0
 script = SubResource( 1 )
 _sections_unfolded = [ "Rect", "Theme" ]
 title = "Title"
@@ -146,7 +144,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 1920.0
-margin_bottom = 144.0
+margin_bottom = 210.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -196,6 +194,7 @@ _sections_unfolded = [ "BBCode", "Material", "Size Flags", "Theme", "Visibility"
 
 [node name="Subtitle" type="Label" parent="Column" index="1"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
