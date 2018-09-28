@@ -1,7 +1,7 @@
 [gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
-[ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
+[ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
 [ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=3]
 [ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=4]
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
@@ -17,6 +17,7 @@
 [ext_resource path="res://content/power_pitch/img/user-interface/ui-theme-editor.png" type="Texture" id=15]
 [ext_resource path="res://content/power_pitch/img/user-interface/ui-result.png" type="Texture" id=16]
 [ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=17]
+
 
 [sub_resource type="Animation" id=1]
 

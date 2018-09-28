@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://presentation/Presentation.tscn" type="PackedScene" id=1]
 [ext_resource path="res://content/power_pitch/slides/Title.tscn" type="PackedScene" id=2]
@@ -12,7 +12,8 @@
 [ext_resource path="res://content/power_pitch/slides/Made_with_godot.tscn" type="PackedScene" id=10]
 [ext_resource path="res://content/power_pitch/slides/Godot_is_in_great_shape.tscn" type="PackedScene" id=11]
 [ext_resource path="res://content/power_pitch/slides/Learn_from_simple_free_demos.tscn" type="PackedScene" id=12]
-[ext_resource path="res://content/power_pitch/slides/Thank_you.tscn" type="PackedScene" id=13]
+[ext_resource path="res://content/power_pitch/slides/How_to_get_started.tscn" type="PackedScene" id=13]
+[ext_resource path="res://content/power_pitch/slides/Thank_you.tscn" type="PackedScene" id=14]
 
 [node name="PowerPitch" instance=ExtResource( 1 )]
 
@@ -58,7 +59,9 @@ visible = false
 
 visible = false
 
-[node name="Thank_you" parent="Slides" index="11" instance=ExtResource( 13 )]
+[node name="How_to_get_started" parent="Slides" index="11" instance=ExtResource( 13 )]
+
+[node name="Thank_you" parent="Slides" index="12" instance=ExtResource( 14 )]
 
 visible = false
 
