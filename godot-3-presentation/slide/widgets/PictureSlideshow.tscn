@@ -13,17 +13,17 @@ const COLOR_TRANSPARENT = Color(\"#00ffffff\")
 onready var tween = $Tween
 onready var timer = $Timer
 
-var pictures = []
+var slides = []
 var index = 0
 var picture_active
 
 func _ready():
 	for node in get_children():
-		if not node is TextureRect:
+		if not node is Control:
 			continue
-		pictures.append(node)
+		slides.append(node)
 	
-	for picture in pictures:
+	for picture in slides:
 		picture.modulate = COLOR_TRANSPARENT
 		picture.hide()
 
@@ -32,8 +32,8 @@ func _on_Timer_timeout():
 
 func display_next():
 	var picture_previous = picture_active
-	index = (index + 1) % pictures.size()
-	picture_active = pictures[index]
+	index = (index + 1) % slides.size()
+	picture_active = slides[index]
 	picture_active.show()
 	
 	tween.interpolate_property(picture_previous, 'modulate', COLOR_OPAQUE, COLOR_TRANSPARENT, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
@@ -51,14 +51,14 @@ func _on_visibility_changed():
 
 func start():
 	index = 0
-	picture_active = pictures[index]
+	picture_active = slides[index]
 	picture_active.modulate = COLOR_OPAQUE
 	picture_active.show()
 	timer.wait_time = DISPLAY_DURATION
 	timer.start()
 
 func stop():
-	for picture in pictures:
+	for picture in slides:
 		picture.hide()
 	tween.stop_all()
 	timer.stop()
