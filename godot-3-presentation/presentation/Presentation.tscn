@@ -5,7 +5,7 @@
 [ext_resource path="res://touch_controls/swipe_detector/SwipeDetector.tscn" type="PackedScene" id=3]
 [ext_resource path="res://touch_controls/TouchControls.tscn" type="PackedScene" id=4]
 
-[node name="Presentation" type="Node"]
+[node name="Presentation" type="Node" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Theme" ]
