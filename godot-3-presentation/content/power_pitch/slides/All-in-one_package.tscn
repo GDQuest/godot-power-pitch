@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://slide/layout/Column.tscn" type="PackedScene" id=2]
@@ -6,10 +6,17 @@
 [ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=4]
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=6]
-[ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=7]
-[ext_resource path="res://content/power_pitch/img/mesh2d_bones.png" type="Texture" id=8]
-[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=9]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=10]
+[ext_resource path="res://slide/widgets/PictureSlideshow.tscn" type="PackedScene" id=7]
+[ext_resource path="res://content/power_pitch/img/gdscript-editor-3.1.jpg" type="Texture" id=8]
+[ext_resource path="res://content/power_pitch/img/animation/animation-editor-3.png" type="Texture" id=9]
+[ext_resource path="res://content/power_pitch/img/animation/animation-state-machine-2.png" type="Texture" id=10]
+[ext_resource path="res://content/power_pitch/img/animation/anim-editor-03.png" type="Texture" id=11]
+[ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=12]
+[ext_resource path="res://content/power_pitch/img/mesh2d_bones.png" type="Texture" id=13]
+[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=14]
+[ext_resource path="res://content/power_pitch/img/user-interface/ui-theme-editor.png" type="Texture" id=15]
+[ext_resource path="res://content/power_pitch/img/user-interface/ui-result.png" type="Texture" id=16]
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=17]
 
 [sub_resource type="Animation" id=1]
 
@@ -68,7 +75,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[node name="AllInOnePackage" type="VBoxContainer" index="0"]
+[node name="AllInOnePackage" type="VBoxContainer"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -121,6 +128,7 @@ margin_bottom = 940.0
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
+margin_right = 618.0
 margin_bottom = 730.0
 text = "- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion
 - [color=#26BFE3]Animation[/color] editor with 2d rigging
@@ -130,17 +138,140 @@ text = "- [color=#E3266F]Code editor[/color] with embedded docs and autocompleti
 
 New tools get in with each version!"
 
-[node name="Picture" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
+[node name="PictureSlideshow" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 642.0
+margin_left = 622.0
 margin_right = 1920.0
 margin_bottom = 730.0
-texture = ExtResource( 8 )
-script = ExtResource( 9 )
+size_flags_stretch_ratio = 2.1
 
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 10 )]
+[node name="gdscript-editor-3.1" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="2"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 6
+
+[node name="animation-editor-1" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="3"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_right = 1299.0
+margin_bottom = 730.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 6
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="Column" parent="Column/Body/Row/PictureSlideshow" index="4" instance=ExtResource( 2 )]
+
+editor/display_folded = true
+visible = false
+margin_left = 1.0
+margin_right = 1.0
+
+[node name="animation-state-machine-2" type="TextureRect" parent="Column/Body/Row/PictureSlideshow/Column" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1298.0
+margin_bottom = 365.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 3
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 7
+_sections_unfolded = [ "Size Flags", "Theme" ]
+
+[node name="anim-editor-03" type="TextureRect" parent="Column/Body/Row/PictureSlideshow/Column" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 365.0
+margin_right = 1298.0
+margin_bottom = 730.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 7
+
+[node name="skinning-editor" parent="Column/Body/Row/PictureSlideshow" index="5" instance=ExtResource( 12 )]
+
+visible = false
+texture = ExtResource( 13 )
+script = ExtResource( 14 )
+
+[node name="ui-theme-editor" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 15 )
+expand = true
+stretch_mode = 6
+
+[node name="ui-result" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="7"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 16 )
+expand = true
+stretch_mode = 6
+
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 17 )]
 
 visible = true
 anchor_top = 0.0
