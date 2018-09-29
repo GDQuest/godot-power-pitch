@@ -12,12 +12,6 @@ func _ready():
 #	save_as_csv(get_translatable_strings()) # Use this to save the presentation as CSV
 
 func _input(event):
-	if event.is_action_pressed('ui_next'):
-		slides.display(slides.NEXT)
-		update_translations()
-	if event.is_action_pressed('ui_previous'):
-		slides.display(slides.PREVIOUS)
-		update_translations()
 	if LANGUAGE_MAIN == LANGUAGE_SECOND:
 		return
 	if event.is_action_pressed('change_language'):
@@ -28,20 +22,7 @@ func _input(event):
 
 func change_language(locale):
 	TranslationServer.set_locale(locale)
-	update_translations()
-
-func update_translations():
-	for node in get_tree().get_nodes_in_group("translate"):
-		var node_uid = get_translation_uid(node)
-		var translatable_properties = node.get_translation_data()
-		for key in translatable_properties:
-			var string_uid = node_uid + "_" + key
-			node.set(key, tr(string_uid))
-		if node.has_method('translate'):
-			node.translate()
-
-func get_translation_uid(node):
-	return node.owner.name + "_" + str(node.owner.get_path_to(node)).replace("/", "_")
+	slides.update_translations()
 
 func _on_SwipeDetector_swiped(direction):
 	if direction.x == 1:
