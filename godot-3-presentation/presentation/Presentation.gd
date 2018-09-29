@@ -7,7 +7,7 @@ export(String, 'en', 'ja') var LANGUAGE_MAIN = 'en'
 export(String, 'en', 'ja') var LANGUAGE_SECOND = 'en'
 
 func _ready():
-	TranslationServer.set_locale(LANGUAGE)
+	TranslationServer.set_locale(LANGUAGE_MAIN)
 	slides.initialize()
 #	save_as_csv(get_translatable_strings()) # Use this to save the presentation as CSV
 
