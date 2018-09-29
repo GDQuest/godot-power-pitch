@@ -35,7 +35,7 @@ margin_bottom = 940.0
 margin_right = 618.0
 margin_bottom = 730.0
 custom_constants/margin_right = 20
-_sections_unfolded = [ "custom_constants" ]
+_sections_unfolded = [ "Size Flags", "Theme", "custom_constants" ]
 text = "Godot lets you use many programming languages:
 
 [color=#02E180]GDScript[/color] Python-like scripting language, designed for gameplay developers
@@ -104,13 +104,13 @@ stretch_mode = 6
 
 [node name="Footer" parent="." index="3" instance=ExtResource( 10 )]
 
-visible = true
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1920.0
 margin_bottom = 1080.0
+stretch_mode = 0
 text = "Community-supported languages: Python, Nim, D, Rust..."
 
 

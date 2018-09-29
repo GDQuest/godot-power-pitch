@@ -1,82 +1,280 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=25 format=2]
 
-[ext_resource path="res://theme/godot.theme" type="Theme" id=1]
+[ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
 [ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=3]
-[ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=4]
-[ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
-[ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=6]
-[ext_resource path="res://slide/widgets/PictureSlideshow.tscn" type="PackedScene" id=7]
-[ext_resource path="res://content/power_pitch/img/gdscript-editor-3.1.jpg" type="Texture" id=8]
-[ext_resource path="res://content/power_pitch/img/animation/animation-editor-3.png" type="Texture" id=9]
-[ext_resource path="res://content/power_pitch/img/animation/animation-state-machine-2.png" type="Texture" id=10]
-[ext_resource path="res://content/power_pitch/img/animation/anim-editor-03.png" type="Texture" id=11]
-[ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=12]
-[ext_resource path="res://content/power_pitch/img/mesh2d_bones.png" type="Texture" id=13]
-[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=14]
-[ext_resource path="res://content/power_pitch/img/user-interface/ui-theme-editor.png" type="Texture" id=15]
-[ext_resource path="res://content/power_pitch/img/user-interface/ui-result.png" type="Texture" id=16]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=17]
+[ext_resource path="res://theme/godot.theme" type="Theme" id=4]
+[ext_resource path="res://theme/sprites/header_dusk.png" type="Texture" id=5]
+[ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=6]
+[ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=7]
+[ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=8]
+[ext_resource path="res://slide/widgets/PictureSlideshow.tscn" type="PackedScene" id=9]
+[ext_resource path="res://content/power_pitch/img/gdscript-editor-3.1.jpg" type="Texture" id=10]
+[ext_resource path="res://content/power_pitch/img/animation/animation-editor-3.png" type="Texture" id=11]
+[ext_resource path="res://content/power_pitch/img/animation/animation-state-machine-2.png" type="Texture" id=12]
+[ext_resource path="res://content/power_pitch/img/animation/anim-editor-03.png" type="Texture" id=13]
+[ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=14]
+[ext_resource path="res://content/power_pitch/img/mesh2d_bones.png" type="Texture" id=15]
+[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=16]
+[ext_resource path="res://content/power_pitch/img/user-interface/ui-theme-editor.png" type="Texture" id=17]
+[ext_resource path="res://content/power_pitch/img/user-interface/ui-result.png" type="Texture" id=18]
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=19]
+[ext_resource path="res://theme/sprites/footer_dusk.png" type="Texture" id=20]
 
+[sub_resource type="GDScript" id=1]
 
-[sub_resource type="Animation" id=1]
+script/source = "tool
+extends Control
 
-resource_name = "SETUP"
-length = 0.01
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 1 ) ]
+export(String) var title = \"\" setget set_title
+export(String) var subtitle = \"\" setget set_subtitle
+
+var FONTS_DEFAULT = {
+	'title': preload(\"res://theme/fonts/title_montserrat.tres\"),
+	'subtitle': preload(\"res://theme/fonts/subtitle_montserrat.tres\"),
+}
+var FONTS_CJK = {
+	'title': preload(\"res://theme/fonts/title_noto.tres\"),
+	'subtitle': preload(\"res://theme/fonts/subtitle_noto.tres\"),
 }
 
-[sub_resource type="Animation" id=2]
+onready var title_node = $Column/Title
+onready var title_shadow_node = $Column/Title/Shadow
+onready var subtitle_node = $Column/Subtitle
+onready var subtitle_shadow_node = $Column/Subtitle/Shadow
 
-resource_name = "fade_in"
-length = 0.3
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
-"transitions": PoolRealArray( 0.482298, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
-}
+func _ready():
+	self.title = title
+	self.subtitle = subtitle
 
-[sub_resource type="Animation" id=3]
+func set_title(string):
+	title = string
+	if not title_node:
+		return
+	title_node.display(string)
 
-resource_name = "fade_out"
-length = 0.3
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
-"transitions": PoolRealArray( 1, 0.482298 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
-}
+func set_subtitle(string):
+	subtitle = string
+	if not subtitle_node:
+		return
+	subtitle_node.display(string)
 
-[node name="AllInOnePackage" type="VBoxContainer"]
+func translate():
+	var locale = TranslationServer.get_locale()
+	var fonts = FONTS_DEFAULT
+	if locale in ['ja', 'ko', 'zh']:
+			fonts = FONTS_CJK
+
+	title_node.set('custom_fonts/font', fonts['title'])
+	title_shadow_node.set('custom_fonts/font', fonts['title'])
+	subtitle_node.set('custom_fonts/font', fonts['subtitle'])
+	subtitle_shadow_node.set('custom_fonts/font', fonts['subtitle'])
+
+func get_translation_data():
+	var data = { 'title': title }
+	if subtitle:
+		data['subtitle'] = subtitle
+	return data
+"
+
+[sub_resource type="GDScript" id=2]
+
+script/source = "tool
+extends Control
+
+export(String, MULTILINE) var text = \"\" setget set_text
+export(bool) var center = false setget set_center
+
+onready var _text = $Text
+var _text_processed = \"\"
+
+func _ready():
+	update_text()
+
+func set_text(string):
+	text = string
+	if not _text:
+		return
+	update_text()
+
+func set_center(value):
+	center = value
+	if not _text:
+		return
+	update_text()
+
+func update_text():
+	if center:
+		_text_processed = center_text(text)
+	else:
+		_text_processed = text
+	$Text.bbcode_text = _text_processed
+
+func center_text(string):
+	var bbcode = \"\"
+	for line in string.split(\"\\n\"):
+		line = \"%s%s%s\" % [\"[center]\", line, \"[/center]\"]
+		bbcode += line + \"\\n\"
+	return bbcode
+
+func get_translation_data():
+	return { 'text': text }
+"
+
+[sub_resource type="GDScript" id=3]
+
+script/source = "extends Control
+
+export(float, 0.0, 10.0) var DISPLAY_DURATION = 4.0
+export(float, 0.0, 1.0) var TRANSITION_DURATION = 0.4
+
+const COLOR_OPAQUE = Color(\"#ffffffff\")
+const COLOR_TRANSPARENT = Color(\"#00ffffff\")
+
+onready var tween = $Tween
+onready var timer = $Timer
+
+var slides = []
+var index = 0
+var picture_active
+
+func _ready():
+	for node in get_children():
+		if not node is Control:
+			continue
+		slides.append(node)
+	
+	for picture in slides:
+		picture.modulate = COLOR_TRANSPARENT
+		picture.hide()
+
+func _on_Timer_timeout():
+	display_next()
+
+func display_next():
+	var picture_previous = picture_active
+	index = (index + 1) % slides.size()
+	picture_active = slides[index]
+	picture_active.show()
+	
+	tween.interpolate_property(picture_previous, 'modulate', COLOR_OPAQUE, COLOR_TRANSPARENT, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
+	tween.interpolate_property(picture_active, 'modulate', COLOR_TRANSPARENT, COLOR_OPAQUE, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
+	tween.start()
+	yield(tween, \"tween_completed\")
+	picture_previous.hide()
+	timer.start()
+
+func _on_visibility_changed():
+	if owner.visible:
+		start()
+	else:
+		stop()
+
+func start():
+	index = 0
+	picture_active = slides[index]
+	picture_active.modulate = COLOR_OPAQUE
+	picture_active.show()
+	timer.wait_time = DISPLAY_DURATION
+	timer.start()
+
+func stop():
+	for picture in slides:
+		picture.hide()
+	tween.stop_all()
+	timer.stop()
+"
+
+[sub_resource type="GDScript" id=4]
+
+script/source = "tool
+extends Control
+
+export(String) var text = \"\" setget set_text
+
+var text_node
+
+func _ready():
+	text_node = $Text
+	self.text = text
+
+func set_text(string):
+	text = string
+	visible = text != \"\"
+	if not text_node:
+		return
+	text_node.display(string)
+
+func get_translation_data():
+	return {'text': text}
+"
+
+[node name="AllInOnePackage" index="0" instance=ExtResource( 1 )]
+
+[node name="Column" type="VBoxContainer" parent="." index="1" instance=ExtResource( 2 )]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 0
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="Header" type="TextureRect" parent="Column" index="0" groups=[
+"translate",
+] instance=ExtResource( 3 )]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1920.0
+margin_bottom = 210.0
+rect_min_size = Vector2( 1920, 210 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource( 4 )
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 0
+script = SubResource( 1 )
+_sections_unfolded = [ "Rect", "Theme" ]
+title = "All-in-one package"
+subtitle = ""
+
+[node name="Body" type="ColorRect" parent="Column" index="1" instance=ExtResource( 6 )]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 210.0
+margin_right = 1920.0
+margin_bottom = 940.0
+rect_min_size = Vector2( 1920, 210 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 4 )
+color = Color( 0.937255, 0.945098, 0.960784, 1 )
+_sections_unfolded = [ "Pause", "Rect", "Size Flags", "Theme" ]
+
+[node name="Row" type="HBoxContainer" parent="Column/Body" index="0" instance=ExtResource( 7 )]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -88,49 +286,29 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-theme = ExtResource( 1 )
 alignment = 0
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
+[node name="TextBox" type="MarginContainer" parent="Column/Body/Row" index="0" groups=[
+"translate",
+] instance=ExtResource( 8 )]
 
-root_node = NodePath("..")
-autoplay = "SETUP"
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
-anims/SETUP = SubResource( 1 )
-anims/fade_in = SubResource( 2 )
-anims/fade_out = SubResource( 3 )
-blend_times = [  ]
-
-[node name="Column" parent="." index="1" instance=ExtResource( 2 )]
-
+anchor_left = 0.0
+anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 1920.0
-margin_bottom = 1080.0
-
-[node name="Header" parent="Column" index="0" instance=ExtResource( 3 )]
-
-anchor_right = 0.0
-margin_right = 1920.0
-margin_bottom = 210.0
-title = "All-in-one package"
-
-[node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
-
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 210.0
-margin_right = 1920.0
-margin_bottom = 940.0
-
-[node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
-
-[node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
-
 margin_right = 618.0
 margin_bottom = 730.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 4 )
+custom_constants/margin_top = 32
+custom_constants/margin_bottom = 32
+script = SubResource( 2 )
+_sections_unfolded = [ "Size Flags", "Theme" ]
 text = "- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion
 - [color=#26BFE3]Animation[/color] editor with 2d rigging
 - [color=#F2971A]Tilemap editor[/color] with autotiles
@@ -138,15 +316,28 @@ text = "- [color=#E3266F]Code editor[/color] with embedded docs and autocompleti
 - [color=#02E180]UI theme editor[/color]
 
 New tools get in with each version!"
+center = false
 
-[node name="PictureSlideshow" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
+[node name="PictureSlideshow" type="Control" parent="Column/Body/Row" index="1" instance=ExtResource( 9 )]
 
+anchor_left = 0.0
+anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 622.0
 margin_right = 1920.0
 margin_bottom = 730.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 size_flags_stretch_ratio = 2.1
+script = SubResource( 3 )
+_sections_unfolded = [ "Size Flags" ]
+DISPLAY_DURATION = 4.0
+TRANSITION_DURATION = 0.4
 
 [node name="gdscript-editor-3.1" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="2"]
 
@@ -163,7 +354,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 8 )
+texture = ExtResource( 10 )
 expand = true
 stretch_mode = 6
 
@@ -183,17 +374,29 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 9 )
+texture = ExtResource( 11 )
 expand = true
 stretch_mode = 6
 _sections_unfolded = [ "Size Flags" ]
 
-[node name="Column" parent="Column/Body/Row/PictureSlideshow" index="4" instance=ExtResource( 2 )]
+[node name="Column" type="VBoxContainer" parent="Column/Body/Row/PictureSlideshow" index="4" instance=ExtResource( 2 )]
 
 editor/display_folded = true
 visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 margin_left = 1.0
 margin_right = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 0
+_sections_unfolded = [ "Size Flags" ]
 
 [node name="animation-state-machine-2" type="TextureRect" parent="Column/Body/Row/PictureSlideshow/Column" index="0"]
 
@@ -209,7 +412,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 3
-texture = ExtResource( 10 )
+texture = ExtResource( 12 )
 expand = true
 stretch_mode = 7
 _sections_unfolded = [ "Size Flags", "Theme" ]
@@ -229,15 +432,29 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 11 )
+texture = ExtResource( 13 )
 expand = true
 stretch_mode = 7
 
-[node name="skinning-editor" parent="Column/Body/Row/PictureSlideshow" index="5" instance=ExtResource( 12 )]
+[node name="skinning-editor" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="5" instance=ExtResource( 14 )]
 
 visible = false
-texture = ExtResource( 13 )
-script = ExtResource( 14 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+texture = ExtResource( 15 )
+expand = true
+stretch_mode = 6
+script = ExtResource( 16 )
+_sections_unfolded = [ "Size Flags" ]
 
 [node name="ui-theme-editor" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="6"]
 
@@ -251,7 +468,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 15 )
+texture = ExtResource( 17 )
 expand = true
 stretch_mode = 6
 
@@ -268,19 +485,36 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 16 )
+texture = ExtResource( 18 )
 expand = true
 stretch_mode = 6
 
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 17 )]
+[node name="Footer" type="TextureRect" parent="Column" index="2" groups=[
+"translate",
+] instance=ExtResource( 19 )]
 
-visible = true
+show_behind_parent = true
+anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1920.0
 margin_bottom = 1080.0
+rect_min_size = Vector2( 0, 140 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource( 4 )
+texture = ExtResource( 20 )
+expand = true
+stretch_mode = 0
+script = SubResource( 4 )
 text = "2d IK available, meshes and skinning coming soon"
+
+[connection signal="visibility_changed" from="Column/Body/Row/PictureSlideshow" to="Column/Body/Row/PictureSlideshow" method="_on_visibility_changed"]
 
 
