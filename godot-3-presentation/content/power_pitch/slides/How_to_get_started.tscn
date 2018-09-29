@@ -17,7 +17,6 @@
 anchor_right = 0.0
 margin_right = 1920.0
 margin_bottom = 210.0
-stretch_mode = 0
 title = "How to get started"
 
 [node name="Body" parent="." index="2" instance=ExtResource( 3 )]
