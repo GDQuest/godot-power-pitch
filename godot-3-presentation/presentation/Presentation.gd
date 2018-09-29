@@ -3,10 +3,11 @@ extends Node
 signal language_changed()
 
 onready var slides = $Slides
-
-var languages = ['en', 'ja']
+export(String, 'en', 'ja') var LANGUAGE_MAIN = 'en'
+export(String, 'en', 'ja') var LANGUAGE_SECOND = 'en'
 
 func _ready():
+	TranslationServer.set_locale(LANGUAGE)
 	slides.initialize()
 #	save_as_csv(get_translatable_strings()) # Use this to save the presentation as CSV
 
@@ -17,11 +18,13 @@ func _input(event):
 	if event.is_action_pressed('ui_previous'):
 		slides.display(slides.PREVIOUS)
 		update_translations()
+	if LANGUAGE_MAIN == LANGUAGE_SECOND:
+		return
 	if event.is_action_pressed('change_language'):
-		if TranslationServer.get_locale() == 'en':
-			change_language('ja')
+		if TranslationServer.get_locale() == LANGUAGE_MAIN:
+			change_language(LANGUAGE_SECOND)
 		else:
-			change_language('en')
+			change_language(LANGUAGE_MAIN)
 
 func change_language(locale):
 	TranslationServer.set_locale(locale)
