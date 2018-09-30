@@ -33,6 +33,7 @@ func display(direction=CURRENT):
 	var new_slide = slide_nodes[new_index]
 	add_child(new_slide)
 	new_slide.show()
+	update_translations()
 	
 #	var animation = "enter_from_right" if direction == NEXT else "enter_from_left"
 	var animation = "fade_in"
@@ -42,7 +43,6 @@ func display(direction=CURRENT):
 	remove_child(previous_slide)
 	slide_current = new_slide
 	
-	update_translations()
 	set_process_input(true)
 
 func update_translations():
