@@ -1,116 +1,158 @@
-"id","en","ja"
-"A_free_modern_engine_Column_Header_title","A Free modern engine","最新のオプンソースゲームエンジン"
+"id","en","fr","ja"
+"A_free_modern_engine_Column_Header_title","A Free modern engine","Un moteur moderne et gratuit","最新のオプンソースゲームエンジン"
 "A_free_modern_engine_Column_Body_Row_TextBox_text","Separate [color=#26BFE3]2d[/color] and [color=#E3266F]3d[/color] renderers
 Complete [color=#F2971A]game editor[/color]
 
 Create projects with Windows, Mac, Linux
-Build games for PC, mobile, web*","両方[color=#26BFE3]２D[/color]と[color=#E3266F]３D[/color] レンダリングエンジン
+Build games for PC, mobile, web*","Moteurs de rendu [color=#26BFE3]2d[/color] et [color=#E3266F]3d[/color] séparés
+[color=#F2971A] Éditeur de jeu[/color] complet
+
+Créez vos projets sur Windows, Mac, ou Linux
+Exportez vos jeux sur PC, mobile, web*","両方[color=#26BFE3]２D[/color]と[color=#E3266F]３D[/color] レンダリングエンジン
 全面的な[color=#F2971A]ゲームエディタ[/color]
 
 プロジェクトをWindowsかMacかLinuxで作られます
 ゲームをコンピューターとかモバイルとかインタネットなどエクスポートできます＊"
-"A_free_modern_engine_Column_Footer_text","*And PS4, XboxOne, Switch, PS Vita...","＊コンソールのためにも出力できます"
-"State_of_the_art_3d_engine_Column_Header_title","State of the art 3d engine","最先端の３Dエンジン"
+"A_free_modern_engine_Column_Footer_text","*And PS4, XboxOne, Switch, PS Vita...","*Et sur PS4, XboxOne, Switch, PS Vita ...","＊コンソールのためにも出力できます"
+"State_of_the_art_3d_engine_Column_Header_title","State of the art 3d engine","Moteur 3d dernier-cri","最先端の３Dエンジン"
 "State_of_the_art_3d_engine_Column_Body_Row_TextBox_text","[color=#E3266F]Physically-based rendering[/color] with full MSAA support
 [color=#02E180]Full principled BSDF[/color] with Subsurface Scattering, reflection, refraction, clearcoat...
 [color=#26BFE3]Global illumination[/color] for gorgeous real-time graphics
-[color=#F2971A]Mid and Post processing effects[/color] including curves and auto exposure, screen-space reflections, fog, bloom, depth of field...","MSAAをサポートする[color=#E3266F]物理ベースレンダリング[/color]
+[color=#F2971A]Mid and Post processing effects[/color] including curves and auto exposure, screen-space reflections, fog, bloom, depth of field...","[color=#E3266F]Rendu PBR (Physically-based rendering)[/color] avec anti-aliasing MSAA
+[color=#02E180]Matériau BSDF[/color] de Pixar avec support du Subsurface Scattering, réflexion, réfraction, clearcoat...
+[color=#26BFE3]Illumination globale[/color] en temps réel
+[color=#F2971A]Effets d'image mid et post-rendu[/color]: courbes et exposition automatique, reflets en espace-écran, brouillard, bloom, profondeur de champ...","MSAAをサポートする[color=#E3266F]物理ベースレンダリング[/color]
 [color=#02E180]BSDFマテリアル[/color]：皮下拡散（Subsurface Scattering）とか, 反射率とか, 空間屈折（Refraction）など使用可能です
 [color=#26BFE3]間接光・放射[/color]（Global Illumination)
 [color=#F2971A]後処理[/color]：自動露光しSSRし被写界深度などがあります"
-"State_of_the_art_3d_engine_Column_Footer_text","Designed to work well with Blender 2.8's Eevee realtime engine","Blender3d 2.8のEeveeリアルタイムレンダリングエンジンと互換します"
-"All_in_one_package_Column_Header_title","All-in-one package","必要とするツールは全て含まれています"
+"State_of_the_art_3d_engine_Column_Footer_text","Designed to work well with Blender 2.8's Eevee realtime engine","Compatible avec le moteur en temps réel Eevee de Blender 2.8","Blender3d 2.8のEeveeリアルタイムレンダリングエンジンと互換します"
+"All_in_one_package_Column_Header_title","All-in-one package","Un outil tout-en-un","必要とするツールは全て含まれています"
 "All_in_one_package_Column_Body_Row_TextBox_text","- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion
 - [color=#26BFE3]Animation[/color] editor with 2d rigging
 - [color=#F2971A]Tilemap editor[/color] with autotiles
 - [color=#02E180]Shader[/color] editor, visual and code
 - [color=#02E180]UI theme editor[/color]
 
-New tools get in with each version!","- 便覧が含まれている[color=#E3266F]開発環境[/color]
+New tools get in with each version!","- [color=#E3266F]Éditeur de code[/color] avec référence intégrée et autocomplétion
+- [color=#26BFE3]Éditeur d'animations[/color] avec skinning et rigging 2D
+- [color=#F2971A]Éditeur de tilesets et de tilemaps[/color], autotiles inclus
+- [color=#02E180]Éditeur de shader[/color]: sous forme de briques visuelles ou via un langage simplifié
+- [color=#02E180]Éditeur de thème de l'interface utilisateur[/color]
+
+De nouveaux outils sont ajoutés avec chaque version!","- 便覧が含まれている[color=#E3266F]開発環境[/color]
 - IKとリギングできる[color=#26BFE3]アニメーションエディタ[/color]
 - [color=#F2971A]タイルセットとタイルマップエディタ[/color]
 - [color=#02E180]シェーダーエディタ[/color]、表か書かれたコードでプログラミングできます
 - [color=#02E180]ジーユーアイテーマエディタ[/color]
 
 開発者たちはいつも新しいツールを作っています"
-"All_in_one_package_Column_Footer_text","2d IK available, meshes and skinning coming soon","２D　IKとメッシュスッキニングはもう入手可能"
-"CreateAnything_Column_Header_title","Create Anything","何でも作られます"
-"CreateAnything_Column_Header_subtitle","2d and 3d Games, tools, or applications","２Dと３Dゲームしツールしソフトウェアもできます"
+"All_in_one_package_Column_Footer_text","For instance Godot 3.1 ships with a new animation editor that supports cut-scenes","La version 3.1 apporte un éditeur de cinématiques avec le séquençage d'animations, par exemple","２D　IKとメッシュスッキニングはもう入手可能"
+"CreateAnything_Column_Header_title","Create Anything","Créez toutes sortes d'applications","何でも作られます"
+"CreateAnything_Column_Header_subtitle","2d and 3d Games, tools, or applications","Jeux 2d et 3d, outils ou programmes","２Dと３Dゲームしツールしソフトウェアもできます"
 "CreateAnything_Column_Body_Row_TextBox_text","Projects:
 
 - [color=#F2971A]Ex Zodiac[/color], by Ben Hickling
 - [color=#02E180]RPG in a Box[/color], by Justin Arnold
-- [color=#26BFE3]Procedural Mesh Generator[/color], by Bastiaan Olij","プロジェクト:
+- [color=#26BFE3]Procedural Mesh Generator[/color], by Bastiaan Olij","Projets:
+
+- [color=#F2971A]Ex Zodiac[/color], par Ben Hickling
+- [color=#02E180]RPG dans une boîte[/color], par Justin Arnold
+- [color=#26BFE3]Procedural mesh graph*[/color], outil de modélisation procédurale via un langage visuel, par Bastiaan Olij","プロジェクト:
 
 - ベン・ヒックリングの[color=#F2971A]Ex Zodiac[/color]
 - ジャスティン・アーノルドの[color=#02E180]RPG in a Box[/color]
 - バスティアン・オリェの[color=#26BFE3]Procedural Mesh Generator[/color]*"
-"CreateAnything_Column_Footer_text","*Open source, available on GitHub","＊GitHubでダウンロードできるオプンソースパラグイン"
-"CodeFreely_Header_title","Code freely","自由にプログラミングできます"
+"CreateAnything_Column_Footer_text","*Open source, available on GitHub","*Open Source, disponible sur GitHub","＊GitHubでダウンロードできるオプンソースパラグイン"
+"CodeFreely_Header_title","Code freely","Programmez librement
+","自由にプログラミングできます"
 "CodeFreely_Body_Row_TextBox_text","Godot lets you use many programming languages:
 
 [color=#02E180]GDScript[/color] Python-like scripting language, designed for gameplay developers
 [color=#F2971A]C# 7.0[/color] support using Mono
 Full [color=#E3266F]C[/color] and [color=#E3266F]C++[/color] support without having to recompile the engine
 [color=#26BFE3]Visual scripting[/color] using a graph of blocks
+","Godot vous donne le choix entre de nombreux langages de programmation:
+
+[color=#02E180]GDScript[/color], langage de scripting ressemblant à Python, conçu pour les programmeurs gameplay
+[color=#F2971A]C# 7.0[/color] avec le compileur Mono
+Support de [color=#E3266F]C[/color] et de [color=#E3266F]C ++[/color] sans avoir à recompiler le moteur
+[color=#26BFE3]VisualScript[/color], langage de programmation visuel
 ","Godotでいろんなコンピューター言語で書けます：
 
 Pythonのような[color=#02E180]GDScript[/color]と言うゲーム開発者用言語
 MicrosoftのMonoコンパイラで[color=#F2971A]C# 7.0[/color]サポート
 エンジンをコンパイル無しで全体の[color=#E3266F]C[/color]と[color=#E3266F]C++[/color]サポート
 表の[color=#26BFE3]VisualScript[/color]というのデザイナのための言語"
-"CodeFreely_Footer_text","Community-supported languages: Python, Nim, D, Rust...","コミュニティのおかげでPythonとかNimとかDなども使えます"
-"Virtual_and_augmented_reality_Column_Header2_title","Virtual and Augmented Reality","仮想現実（VR）と拡張現実（AR)"
+"CodeFreely_Footer_text","Community-supported languages: Python, Nim, D, Rust...","D'autres langages sont pris en charge grâce à la communauté: Python, Nim, D, Rust...","コミュニティのおかげでPythonとかNimとかDなども使えます"
+"Virtual_and_augmented_reality_Column_Header2_title","Virtual and Augmented Reality","Réalité Virtuelle et Augmentée","仮想現実（VR）と拡張現実（AR)"
 "Virtual_and_augmented_reality_Column_Body_Row_TextBox_text","Powered by [color=#E3266F]OpenVR[/color]
 Supports all common hardware: Occulus Rift, Gear VR, Leap Motion...
 
 Augmented Reality powered by the [color=#26BFE3]ARKit[/color]
+","Grâce à [color=#E3266F] OpenVR[/color]
+Support du matériel commun: Occulus Rift, Gear VR, Leap Motion...
+
+Support de la réalité augmentée via [color=#26BFE3]Arkit[/color]
 ","[color=#E3266F]OpenVR[/color]
 ふつうのハードウェアをサポートします：Occulus Rift, Gear VR, Leap Motion...
 
 拡張現実は[color=#26BFE3]ARKit[/color]のおかげで開発できます"
-"Professionals_use_godot_Column_Header_title","Professionals use Godot","Godotを使うプロがいます"
+"Professionals_use_godot_Column_Header_title","Professionals use Godot","Les pros utilisent Godot","Godotを使うプロがいます"
 "Professionals_use_godot_Column_Body_Row_TextBox_text","[color=#E3266F]Game studios[/color] like Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]Schools[/color] including School4Games Berlin, KidsCanCode...
 [color=#02E180]Content creators[/color] like Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+","Des [color=#E3266F]studios de jeux[/color] comme Gamblify, GuaranApps, Kivano...
+Des [color=#26BFE3]écoles[/color] telles que School4Games Berlin, KidsCanCode...
+Des [color=#02E180]vidéastes[/color] comme Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
 ","[color=#E3266F]ゲームスタジオ[/color]：Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]大学[/color]：School4Games ベルリン, KidsCanCode...
 [color=#02E180]学習用の製作者[/color]：Heartbeast, GamesFromScratch, [i]GDQuest[/i]...今はまだ日本語の動画は少ないでしょう"
-"Made_with_godot_Column_Header2_title","Made with Godot","Godotで作ったゲーム"
-"Made_with_godot_Column_Footer2_text","Galactic Bulwark Strike, by Josep G. Camarasa","Josep G. CamarasaのGalactic Bulwark Strike"
-"Godot_is_in_great_shape_Column_Header2_title","Godot is in great shape","Godotはうまくいっています"
+"Made_with_godot_Column_Header2_title","Made with Godot","Un jeu conçu avec Godot","Godotで作ったゲーム"
+"Made_with_godot_Column_Footer2_text","Galactic Bulwark Strike, by Josep G. Camarasa","Galactic Bulwark Strike, par Josep G. Camarasa","Josep G. CamarasaのGalactic Bulwark Strike"
+"Godot_is_in_great_shape_Column_Header2_title","Godot is in great shape","Un projet en grande forme","Godotはうまくいっています"
 "Godot_is_in_great_shape_Column_Body_Row_TextBox2_text","Godot is [color=#26BFE3]Free Software[/color] built by [color=#26BFE3]hundreds of people[/color]. It's growing faster over time:
 
-- [color=#02E180]680+[/color] contributors
+- [color=#02E180]700+[/color] contributors
 - 16 000+ commits
 - 16 000+ stars
 - Well-organized project
 
-The project gets [color=#02E180]$9000+[/color] a month on Patreon.","Godot は[color=#26BFE3]数百[/color]の人が開発しました[color=#26BFE3]フリーソフトウェア[/color]
+The project gets [color=#02E180]$9000+[/color] a month on Patreon.","Godot est un [color=#26BFE3]Logiciel Libre[/color] développé par [color=#26BFE3]des centaines de personnes[/color]. Son évolution accélère au fil du temps:
+
+- [color=#02E180]Plus de 700[/color] contributeurs
+- 16 000+ commits
+- 16 000+ étoiles sur GitHub
+- Le projet est bien organisé
+
+Godot génère plus de [color=#02E180]$9000[/color] de donations par mois sur Patreon.","Godot は[color=#26BFE3]数百[/color]の人が開発しました[color=#26BFE3]フリーソフトウェア[/color]
 段々早く成長しています:
 
-- [color=#02E180]680[/color]人以上の開発者
+- [color=#02E180]700[/color]人以上の開発者
 - 16 000+ commits
 - 16 000+ stars
 - 葬式的なコードベース
 
 このプロジェクトは毎月[color=#02E180]九千ドル[/color]以上Patreonでもらいます"
-"Godot_is_in_great_shape_Column_Footer2_text","Some features are sponsored by companies: WebGL export by Mozilla, C# support by Microsoft...","いろんな機能は大きい組織主催です：WebGL（Mozilla)、C#（Microsoft)"
-"Learn_from_simple_free_demos_Column_Header2_title","Learn from simple Free demos","読みやすいデモで勉強できます"
-"How_to_get_started_Header_title","How to get started","どうやって始められますか？ "
+"Godot_is_in_great_shape_Column_Footer2_text","Some features are sponsored by companies: WebGL export by Mozilla, C# support by Microsoft...","Certaines fonctionnalités sont parrainées par des entreprises: l'export WebGL par Mozilla, le support de C# par Microsoft ...","いろんな機能は大きい組織主催です：WebGL（Mozilla)、C#（Microsoft)"
+"How_to_get_started_Header_title","How to get started","Comment bien débuter","どうやって始められますか？ "
 "How_to_get_started_Body_Row_TextBox_text","The [color=#26BFE3]community[/color] is [b]very[/b] active. Social networks, forum, IRC, Discord…
 There's a [color=#26BFE3]Questions/Answers[/color] website
 You'll find plenty of official [color=#02E180]tutorials[/color] in the [color=#02E180]online manual[/color]
 There's [color=#E3266F]built-in code reference[/color] inside the game editor
-Use the [color=#F2971A]open source demos[/color]","[color=#26BFE3]コミュニティ[/color]は[b]とても[/b]にぎやかです。SNSしIRCしDiscordしでGodotのユーザーと会えます
+Use the [color=#F2971A]open source demos[/color]","La [color=#26BFE3]communauté[/color] est [b]très[/b] active. Vous trouverez du monde sur les réseaux sociaux, le forum, IRC, Discord...
+Il y a un site de [color=#26BFE3]Questions/Réponses[/color]
+Vous trouverez beaucoup de [color=#02E180]tutoriels officiels[/color] dans le [color=#02E180]manuel en ligne[/color]
+La [color=#E3266F]référence de code[/color] est intégrée dans l'éditeur
+Vous trouverez de nombreuses [color=#F2971A]démos open source[/color]!","[color=#26BFE3]コミュニティ[/color]は[b]とても[/b]にぎやかです。SNSしIRCしDiscordしでGodotのユーザーと会えます
 [color=#26BFE3]質問と答え[/color]のウェブサイトもあります
 [color=#02E180]便覧[/color]に公式の[color=#02E180]学習用[/color]が多いです
 開発環境に[color=#E3266F]コードの便覧[/color]が含まれます
 [color=#F2971A]オプンソースのデモ[/color]も多いです"
-"How_to_get_started_Footer_text","Most of the resources are in English though... a good way to practice?","大体情報は英語ですが良い練習になれるでしょうね？;)"
-"Learn_from_simple_free_demos_Column_Footer2_text","Both official and 3rd-party","公式プロジェクトもコミュニティのもあります"
-"Thank_you_Column_Header2_title","Thank you!","ありがとうございました！"
-"Thank_you_Column_Header2_subtitle","Any question?","質問がありますか？"
+"How_to_get_started_Footer_text","Most of the resources are in English though... a good way to practice?","L'éditeur est déjà traduit en français, ainsi qu'une part croissante des tutoriels officiels","大体情報は英語ですが良い練習になれるでしょうね？;)"
+"Learn_from_simple_free_demos_Column_Header2_title","Learn from simple Free demos","Démos libres","読みやすいデモで勉強できます"
+"Learn_from_simple_free_demos_Column_Footer2_text","Both official and 3rd-party","Il y en a beaucoup, officielles ou mises à disposition par la communauté","公式プロジェクトもコミュニティのもあります"
+"Thank_you_Column_Header2_title","Thank you!","Merci beaucoup!","ありがとうございました！"
+"Thank_you_Column_Header2_subtitle","Any question?","Des questions?","質問がありますか？"
 "Thank_you_Column_Body_Row_TextBox2_text","SNS:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
@@ -121,6 +163,15 @@ Credits:
 
 This presentation is an Open Source Godot project!
 Find it on [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]. It's available in multiple languages.
+","Réseaux sociaux:[color=#26BFE3] @NathanGDquest[/color]
+[color=#F2971A] youtube.com/c/gdquest[/color]
+
+Crédits:
+- [url=https://play.google.com/store/apps/detailsid=fr.guaranapps.games.get_teddy?]Get Teddy[/url] par GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] par Justin
+
+Cette présentation est un projet Godot Libre!
+Téléchargez-la et contribuez-y sur [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url]. Elle est traduite dans plusieurs langues.
 ","ツイタ：[color=#26BFE3]@NathanGDquest[/color]
 Youtube：[color=#F2971A]youtube.com/c/gdquest[/color]
 
