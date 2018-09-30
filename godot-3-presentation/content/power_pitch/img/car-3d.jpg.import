@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fairy_big.png-d1161bf18bf9992187bcfd112e781d5f.stex"
+path="res://.import/car-3d.jpg-3be9f19ad924f19b54ac70feb60ff5f2.stex"
 
 [deps]
 
-source_file="res://content/shared/particles/fairy_big.png"
-dest_files=[ "res://.import/fairy_big.png-d1161bf18bf9992187bcfd112e781d5f.stex" ]
+source_file="res://content/power_pitch/img/car-3d.jpg"
+dest_files=[ "res://.import/car-3d.jpg-3be9f19ad924f19b54ac70feb60ff5f2.stex" ]
 
 [params]
 

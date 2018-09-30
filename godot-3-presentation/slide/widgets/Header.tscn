@@ -162,7 +162,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 script = SubResource( 2 )
-_sections_unfolded = [ "BBCode", "Size Flags", "Theme", "custom_fonts" ]
+_sections_unfolded = [ "BBCode", "Material", "Size Flags", "Theme", "custom_fonts" ]
 
 [node name="Shadow" type="Label" parent="Column/Title" index="0"]
 

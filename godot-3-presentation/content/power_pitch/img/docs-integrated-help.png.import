@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/github-pulse-october.png-376c675b71da8648dc7537d9cebb2823.stex"
+path="res://.import/docs-integrated-help.png-ff8a1d66002ce0153ff520c1dfa36859.stex"
 
 [deps]
 
-source_file="res://content/_old_presentation/img/github-pulse-october.png"
-dest_files=[ "res://.import/github-pulse-october.png-376c675b71da8648dc7537d9cebb2823.stex" ]
+source_file="res://content/power_pitch/img/docs-integrated-help.png"
+dest_files=[ "res://.import/docs-integrated-help.png-ff8a1d66002ce0153ff520c1dfa36859.stex" ]
 
 [params]
 
