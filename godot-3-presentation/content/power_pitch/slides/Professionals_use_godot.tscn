@@ -7,8 +7,9 @@
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=6]
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=7]
-[ext_resource path="res://content/_old_presentation/img/teddy-game.jpg" type="Texture" id=8]
+[ext_resource path="res://content/power_pitch/img/teddy-game.jpg" type="Texture" id=8]
 [ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=9]
+
 
 [node name="Professionals_use_godot" index="0" instance=ExtResource( 1 )]
 

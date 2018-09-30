@@ -6,9 +6,10 @@
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=4]
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://slide/widgets/PictureSlideshow.tscn" type="PackedScene" id=6]
-[ext_resource path="res://content/_old_presentation/img/docs-community-websites.png" type="Texture" id=7]
-[ext_resource path="res://content/_old_presentation/img/docs-integrated-help.png" type="Texture" id=8]
+[ext_resource path="res://content/power_pitch/img/docs-community-websites.png" type="Texture" id=7]
+[ext_resource path="res://content/power_pitch/img/docs-integrated-help.png" type="Texture" id=8]
 [ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=9]
+
 
 [node name="How_to_get_started" index="0" instance=ExtResource( 1 )]
 

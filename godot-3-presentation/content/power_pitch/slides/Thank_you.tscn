@@ -9,8 +9,9 @@
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=7]
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=8]
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=9]
-[ext_resource path="res://content/_old_presentation/img/gdquest-business-card.png" type="Texture" id=10]
+[ext_resource path="res://content/power_pitch/img/gdquest-business-card.png" type="Texture" id=10]
 [ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=11]
+
 
 [sub_resource type="GDScript" id=1]
 

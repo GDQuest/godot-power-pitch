@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gdquest-semaine-type.png-fb0e1d08175f6697af88565cf862fa24.stex"
+path="res://.import/gdquest-business-card.png-9916bfa6e7ebdf8f67cfcf2102cdde21.stex"
 
 [deps]
 
-source_file="res://content/_old_presentation/img/gdquest-semaine-type.png"
-dest_files=[ "res://.import/gdquest-semaine-type.png-fb0e1d08175f6697af88565cf862fa24.stex" ]
+source_file="res://content/power_pitch/img/gdquest-business-card.png"
+dest_files=[ "res://.import/gdquest-business-card.png-9916bfa6e7ebdf8f67cfcf2102cdde21.stex" ]
 
 [params]
 

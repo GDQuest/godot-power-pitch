@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/anim-tools.jpg-c529fcfbed4a04432aa8a7e103b2f05e.stex"
+path="res://.import/teddy-game.jpg-62264f0ee0bcfcc46c4a95aaa9137524.stex"
 
 [deps]
 
-source_file="res://content/_old_presentation/img/anim-tools.jpg"
-dest_files=[ "res://.import/anim-tools.jpg-c529fcfbed4a04432aa8a7e103b2f05e.stex" ]
+source_file="res://content/power_pitch/img/teddy-game.jpg"
+dest_files=[ "res://.import/teddy-game.jpg-62264f0ee0bcfcc46c4a95aaa9137524.stex" ]
 
 [params]
 
