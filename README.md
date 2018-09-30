@@ -1,81 +1,44 @@
 <h1 align="center">
-  A Godot 3 presentation made in Godot
+Godot Slides 2.0</br>
+<small>Build beautiful and gamified presentations</small>
 </h1>
 
 <p align='center'>
   <img src="https://raw.githubusercontent.com/GDquest/godot-3-presentation/master/img/title-screen.png" alt="Clouds of words showing the new features in Godot 3.0" />
 </p>
 
+Godot Slides a tool to create elegant slideshows with the Godot game engine, using drag and drop UI widget. As it's a Godot game, you can:
 
-This presentation **runs inside Godot 3**. It's open source, available to the entire community to use all around the world. It comes with **40 slides** and enough content for a 1 hour long conference talk.
+- Run **games inside your slides**
+- **Translate your presentations** into many languages with only a spreadsheet editor
+- **Animate anything** with the animation editor or tweens, add particles and sounds
+- Or even be creative and display the slides inside of a game!
 
-It has one big advantage over any external program: you can run game demos inside your slides.
+Godot Slides comes with the Power Pitch, a 10 minutes presentation of the engine available in multiple languages. It'll save you hours of work if you want to introduce Godot at meetups and other gamedev events. And you can customize it to better suit your needs!
 
-**The code is under the MIT license terms**. The pictures and video files are under CC-By 4.0 (see below for the full credits). The repository contains the entire Godot project, the text and pictures, but not the videos (130mb).
-
-**To download the full package, see the [ releases ](https://github.com/GDquest/godot-3-presentation/releases)**.
+You can find a video recording of the original 40 minutes intro to Godot 3 on [GDquest's Youtube channel](https://www.youtube.com/watch?v=4v3qge-3CqQ) (*Thanks to Gabriel Marais for the English translation*).
 
 ## Controls
 
-Press <kbd>p</kbd> and <kbd>n</kbd> to jump to the **next** and the **previous** slide respectively. You may also use <kbd>,</kbd> and <kbd>.</kbd>, the <kbd><</kbd> and <kbd>></kbd> keys on QWERTY keyboards.
+You can change the slide with a swipe of your finger on a touchscreen, or by hovering and clicking on the arrows on the edges of the screen.
 
-They may seem weird but as you can have demos inside the slides, they work this way so they won't collide with other game examples.
+On a keyboard, press <kbd>n</kbd> and <kbd>p</kbd> to jump to the **next** and the **previous** slide respectively. You may also use <kbd>,</kbd> and <kbd>.</kbd>, the <kbd><</kbd> and <kbd>></kbd> keys on QWERTY keyboards. You can use the angle brackets to avoid colliding with the demos' input actions inside your slides.
 
+## Help us translate the slides!
 
-## Help translate the slides
+The Power Pitch ships with three languages in version 2.0:
 
-The presentation is available in:
+- English
+- French
+- Japanese
 
-1. English
-1. Spanish
-1. French
-1. Italian
-1. German
-1. Portuguese
+Let's translate it in as many languages as possible! This way people can pitch Godot all around the world, in local game creator meetups.
 
-Please help translate it so people can use it all around the world! To translate the slides: duplicate the `res://slides/fr.gd` file, and rename it to the language you're covering (en, es, pt, jp...) file and replace the text strings with translations.
+## Licenses
 
-The presentation was designed with French people in mind, with some light touches of humor. Feel free to adapt the content to your culture!
+**The code is under the MIT license terms**. The pictures and video files are under CC-By 4.0 (see below for the full credits).
 
-## How to customize the presentation
-
-The slides are defined in a GDscript file in the `slides` folder. The initial release only contains a presentation in French: `res://slides/fr.gd`.
-
-To change the slides file the presentation shows, open the `Presentation.tscn` scene. Select the `Presentation` node and set its `Slides Path` using a path to the slides.
-
-The repository contains all the pictures, but not the video files as they're a bit heavy.
-
-### The slides
-
-Each slide is a dictionary with six slots. They are all optional, so you only need to fill the ones you use:
-
-```python
-{
-  'title': 'The title',
-  'subtitle': 'Displays right below the title',
-  'body': """
-  The main body of text. If there's a picture, it take the left side of the screen. If there's no picture, it resizes to span over the screen's width.
-  If the body is empty, the picture or video will take all the space instead.
-  Supports bbcode.
-  """,
-  'picture': 'path/to/a/picture.png',
-    # Supports all image formats.
-    # Should support SVG too (automatically converted to bitmap by Godot).
-  'video': 'path/to/a/video.ogv',
-    # Currently if you use a video, you should not use a body and a picture
-    # Godot only supports .webm and .ogv formats (encoded with libtheora)
-  'demo': 'path/to/a/scene.tscn',
-    # Inserts the demo under the Demo node in the scene tree
-    # It's best to use it alone like videos
-    # It shows behind the text and pictures, so you may use it as an animated background
-  'footer': 'A one line message at the bottom, in italics'
-}
-
-```
-
-See `res://slides/fr.gd` in the Godot project for a presentation example.
-
-## Credits
+### Credits ###
 
 - Furry Defenders par [Kivano](http://www.kivano.games/)
 - [Get Teddy](https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy) par Guaranapps
@@ -84,9 +47,3 @@ See `res://slides/fr.gd` in the Godot project for a presentation example.
 - [Andreas Esau](https://www.youtube.com/user/ndee85)
 - Wallrider par [Zylann Productions](https://www.youtube.com/user/ZylannMP3/videos)
 - HTC Vive/Virtual Reality demo modelled by Clelio Rossi, Davide Romboli and Andrea Laghi, developed by Lamberto Tedaldi
-
-### Translations
-
-English: Gabriel Marais
-Spanish: Antonio Torres Moríñigo
-Italian: Enrico Monese
