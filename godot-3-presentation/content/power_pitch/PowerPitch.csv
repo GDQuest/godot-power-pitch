@@ -39,7 +39,7 @@ New tools get in with each version!","- [color=#E3266F]Éditeur de code[/color] 
 - [color=#02E180]Éditeur de shader[/color]: sous forme de briques visuelles ou via un langage simplifié
 - [color=#02E180]Éditeur de thème de l'interface utilisateur[/color]
 
-De nouveaux outils sont ajoutés avec chaque version!","- 便覧が含まれている[color=#E3266F]開発環境[/color]
+De nouveaux outils sont ajoutés avec chaque version!","- ドキュメントが含まれている[color=#E3266F]開発環境[/color]
 - IKとリギングできる[color=#26BFE3]アニメーションエディタ[/color]
 - [color=#F2971A]タイルセットとタイルマップエディタ[/color]
 - [color=#02E180]シェーダーエディタ[/color]、表か書かれたコードでプログラミングできます
@@ -145,8 +145,8 @@ Vous trouverez beaucoup de [color=#02E180]tutoriels officiels[/color] dans le [c
 La [color=#E3266F]référence de code[/color] est intégrée dans l'éditeur
 Vous trouverez de nombreuses [color=#F2971A]démos open source[/color]!","[color=#26BFE3]コミュニティ[/color]は[b]とても[/b]にぎやかです。SNSしIRCしDiscordしでGodotのユーザーと会えます
 [color=#26BFE3]質問と答え[/color]のウェブサイトもあります
-[color=#02E180]便覧[/color]に公式の[color=#02E180]学習用[/color]が多いです
-開発環境に[color=#E3266F]コードの便覧[/color]が含まれます
+[color=#02E180]ドキュメント[/color]に公式の[color=#02E180]学習用[/color]が多いです
+開発環境に[color=#E3266F]コードのドキュメント[/color]が含まれます
 [color=#F2971A]オプンソースのデモ[/color]も多いです"
 "How_to_get_started_Footer_text","Most of the resources are in English though... a good way to practice?","L'éditeur est déjà traduit en français, ainsi qu'une part croissante des tutoriels officiels","大体情報は英語ですが良い練習になれるでしょうね？;)"
 "Learn_from_simple_free_demos_Column_Header2_title","Learn from simple Free demos","Démos libres","読みやすいデモで勉強できます"
