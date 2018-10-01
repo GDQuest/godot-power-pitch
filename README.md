@@ -4,7 +4,7 @@ Godot Slides 2.0</br>
 </h1>
 
 <p align='center'>
-  <img src="https://raw.githubusercontent.com/GDquest/godot-3-presentation/master/img/title-screen.png" alt="Clouds of words showing the new features in Godot 3.0" />
+  <img src="https://i.imgur.com/bm30rQI.png" alt="Godot Slides logo" />
 </p>
 
 Godot Slides a tool to create elegant slideshows with the Godot game engine, using drag and drop UI widget. As it's a Godot game, you can:
