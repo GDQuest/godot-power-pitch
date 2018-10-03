@@ -41,7 +41,7 @@ func get_translatable_strings():
 	var data = []
 	for node in get_tree().get_nodes_in_group("translate"):
 		var src_data = node.get_translation_data()
-		var node_uid = get_translation_uid(node)
+		var node_uid = slides.get_translation_uid(node)
 		for key in src_data:
 			var string_uid = node_uid + "_" + key
 			data.append({ string_uid: src_data[key] })
