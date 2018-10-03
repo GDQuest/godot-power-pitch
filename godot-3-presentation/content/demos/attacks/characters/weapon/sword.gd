@@ -2,13 +2,12 @@ extends Area2D
 
 signal attack_finished
 
-enum STATES { IDLE, ATTACK }
 var state = null
 
 # Registering input before the attack ends
 # Also common in platform games or for jump mechanics.
 # You register the next jump before the character hits the ground
-enum ATTACK_INPUT_STATES { IDLE, LISTENING, REGISTERED }
+enum ATTACK_INPUT_STATES { IDLE, ATTACK, LISTENING, REGISTERED }
 var attack_input_state = IDLE
 var ready_for_next_attack = false
 # The combo is hard-coded in each weapon

@@ -74,3 +74,6 @@ func save_as_csv(translation_data):
 	for line in csv_list:
 		file.store_line(line)
 	file.close()
+	
+func get_translation_uid(node):
+	return node.owner.name + "_" + str(node.owner.get_path_to(node)).replace("/", "_")
