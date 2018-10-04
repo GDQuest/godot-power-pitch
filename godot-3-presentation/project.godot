@@ -10,7 +10,7 @@ config_version=3
 
 [application]
 
-config/name="Create your own games with Godot"
+config/name="Godot Slides 2.0"
 run/main_scene="res://content/power_pitch/PowerPitch.tscn"
 config/icon="res://icon.png"
 config/version="2.0.0"
