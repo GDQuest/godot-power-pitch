@@ -15,10 +15,10 @@
 [ext_resource path="res://content/power_pitch/slides/How_to_get_started.tscn" type="PackedScene" id=13]
 [ext_resource path="res://content/power_pitch/slides/Thank_you.tscn" type="PackedScene" id=14]
 
-[node name="PowerPitch" instance=ExtResource( 1 )]
+[node name="PowerPitch" index="0" instance=ExtResource( 1 )]
 
 LANGUAGE_MAIN = "en"
-LANGUAGE_SECOND = "ja"
+LANGUAGE_SECOND = "pt_BR"
 
 [node name="Title" parent="Slides" index="0" instance=ExtResource( 2 )]
 
