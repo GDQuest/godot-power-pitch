@@ -5,7 +5,7 @@
 [ext_resource path="res://theme/godot.theme" type="Theme" id=3]
 [ext_resource path="res://slide/widgets/text_edit/TextEdit.gd" type="Script" id=4]
 
-[node name="AttackDummies" type="Control" index="0"]
+[node name="AttackDummies" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
