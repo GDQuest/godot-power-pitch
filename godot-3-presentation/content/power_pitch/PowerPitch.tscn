@@ -18,7 +18,7 @@
 [node name="PowerPitch" index="0" instance=ExtResource( 1 )]
 
 LANGUAGE_MAIN = "en"
-LANGUAGE_SECOND = "pt_BR"
+LANGUAGE_SECOND = "ja"
 
 [node name="Title" parent="Slides" index="0" instance=ExtResource( 2 )]
 
