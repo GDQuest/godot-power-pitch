@@ -6,12 +6,15 @@ script/source = "extends Control
 
 export(float, 0.0, 10.0) var DISPLAY_DURATION = 4.0
 export(float, 0.0, 1.0) var TRANSITION_DURATION = 0.4
+export(Color) var COLOR_MODULATE_PAUSED = Color('#d9e2e5')
 
 const COLOR_OPAQUE = Color(\"#ffffffff\")
 const COLOR_TRANSPARENT = Color(\"#00ffffff\")
 
 onready var tween = $Tween
 onready var timer = $Timer
+
+var paused = false setget set_paused
 
 var slides = []
 var index = 0
@@ -23,48 +26,66 @@ func _ready():
 			continue
 		slides.append(node)
 	
-	for picture in slides:
-		picture.modulate = COLOR_TRANSPARENT
-		picture.hide()
+	for widget in slides:
+		widget.modulate = COLOR_TRANSPARENT
+		widget.hide()
+	start()
+
+# Pause and navigation
+func _input(event):
+	if event.is_action_pressed('ui_accept'):
+		self.paused = not paused
+
+	if event.is_action_pressed('ui_left'):
+		display(index - 1, false)
+	if event.is_action_pressed('ui_right'):
+		display(index + 1, false)
+
+func set_paused(value):
+	paused = value
+	timer.paused = value
+	if paused:
+		tween.stop_all()
+		modulate = COLOR_MODULATE_PAUSED
+	else:
+		tween.resume_all()
+		modulate = COLOR_OPAQUE
 
 func _on_Timer_timeout():
-	display_next()
+	display(index + 1)
 
-func display_next():
+func display(slide_index, animate=true):
 	var picture_previous = picture_active
-	index = (index + 1) % slides.size()
+	index = (slide_index + slides.size()) % slides.size()
 	picture_active = slides[index]
 	picture_active.show()
 	
-	tween.interpolate_property(picture_previous, 'modulate', COLOR_OPAQUE, COLOR_TRANSPARENT, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	tween.interpolate_property(picture_active, 'modulate', COLOR_TRANSPARENT, COLOR_OPAQUE, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	tween.start()
-	yield(tween, \"tween_completed\")
+	if animate:
+		tween.interpolate_property(picture_previous, 'modulate', COLOR_OPAQUE, COLOR_TRANSPARENT, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
+		tween.interpolate_property(picture_active, 'modulate', COLOR_TRANSPARENT, COLOR_OPAQUE, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
+		tween.start()
+		yield(tween, \"tween_completed\")
+		
+	picture_previous.modulate = COLOR_TRANSPARENT
+	picture_active.modulate = COLOR_OPAQUE
 	picture_previous.hide()
 	timer.start()
 
-func _on_visibility_changed():
-	if owner.visible:
-		start()
-	else:
-		stop()
+func _on_tree_entered():
+	start()
 
 func start():
 	index = 0
+	if not slides:
+		return
 	picture_active = slides[index]
 	picture_active.modulate = COLOR_OPAQUE
 	picture_active.show()
 	timer.wait_time = DISPLAY_DURATION
 	timer.start()
-
-func stop():
-	for picture in slides:
-		picture.hide()
-	tween.stop_all()
-	timer.stop()
 "
 
-[node name="PictureSlideshow" type="Control"]
+[node name="PictureSlideshow" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -78,9 +99,10 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
 script = SubResource( 1 )
-_sections_unfolded = [ "Size Flags" ]
+_sections_unfolded = [ "Material", "Size Flags", "Visibility" ]
 DISPLAY_DURATION = 4.0
 TRANSITION_DURATION = 0.4
+COLOR_MODULATE_PAUSED = Color( 0.85098, 0.886275, 0.898039, 1 )
 
 [node name="Tween" type="Tween" parent="." index="0"]
 
@@ -98,7 +120,7 @@ wait_time = 1.0
 one_shot = false
 autostart = false
 
-[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 

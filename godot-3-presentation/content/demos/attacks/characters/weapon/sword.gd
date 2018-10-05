@@ -8,8 +8,8 @@ var state = null
 # Registering input before the attack ends
 # Also common in platform games or for jump mechanics.
 # You register the next jump before the character hits the ground
-enum ATTACK_INPUT_STATES { IDLE, LISTENING, REGISTERED }
-var attack_input_state = IDLE
+enum ATTACK_INPUT_STATES { WAITING, LISTENING, REGISTERED }
+var attack_input_state = WAITING
 var ready_for_next_attack = false
 # The combo is hard-coded in each weapon
 # Unless the weapon has more than 2 or 3,
@@ -52,7 +52,7 @@ func _change_state(new_state):
 	match state:
 		ATTACK:
 			hit_objects = []
-			attack_input_state = IDLE
+			attack_input_state = WAITING
 			ready_for_next_attack = false
 
 	match new_state:
