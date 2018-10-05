@@ -71,7 +71,8 @@ change_language=[ Object(InputEventKey,"resource_local_to_scene":false,"resource
 [locale]
 
 locale_filter=[ 0, [ "de", "en", "es", "fr", "hi", "it", "ja", "pt", "ru", "zh" ] ]
-translations=PoolStringArray( "res://content/power_pitch/PowerPitch.en.translation", "res://content/power_pitch/PowerPitch.ja.translation", "res://content/power_pitch/PowerPitch.fr.translation", "res://content/power_pitch/PowerPitch.es.translation", "res://content/power_pitch/PowerPitch.pt_BR.translation" )
+translations=PoolStringArray( "res://content/power_pitch/PowerPitch.en.translation", "res://content/power_pitch/PowerPitch.ja.translation", "res://content/power_pitch/PowerPitch.fr.translation", "res://content/power_pitch/PowerPitch.es.translation", "res://content/power_pitch/PowerPitch.pt_BR.translation", "res://content/power_pitch/PowerPitch.de.translation" )
+
 
 [rendering]
 
