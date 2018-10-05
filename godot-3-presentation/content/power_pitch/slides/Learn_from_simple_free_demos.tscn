@@ -13,13 +13,13 @@
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 1920.0
+margin_right = 1921.0
 margin_bottom = 1080.0
 
 [node name="Header2" parent="Column" index="0" instance=ExtResource( 3 )]
 
 anchor_right = 0.0
-margin_right = 1920.0
+margin_right = 1921.0
 margin_bottom = 210.0
 title = "Learn from simple Free demos"
 
@@ -28,7 +28,7 @@ title = "Learn from simple Free demos"
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 210.0
-margin_right = 1920.0
+margin_right = 1921.0
 margin_bottom = 940.0
 
 [node name="AttackDummies" parent="Column/Body" index="0" instance=ExtResource( 5 )]
@@ -39,7 +39,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 940.0
-margin_right = 1920.0
+margin_right = 1921.0
 margin_bottom = 1080.0
 stretch_mode = 0
 text = "Both official and 3rd-party"

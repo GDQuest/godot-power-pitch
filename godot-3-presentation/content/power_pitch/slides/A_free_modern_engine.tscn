@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
@@ -115,70 +115,6 @@ func get_translation_data():
 
 [sub_resource type="GDScript" id=3]
 
-script/source = "extends Control
-
-export(float, 0.0, 10.0) var DISPLAY_DURATION = 4.0
-export(float, 0.0, 1.0) var TRANSITION_DURATION = 0.4
-
-const COLOR_OPAQUE = Color(\"#ffffffff\")
-const COLOR_TRANSPARENT = Color(\"#00ffffff\")
-
-onready var tween = $Tween
-onready var timer = $Timer
-
-var slides = []
-var index = 0
-var picture_active
-
-func _ready():
-	for node in get_children():
-		if not node is Control:
-			continue
-		slides.append(node)
-	
-	for picture in slides:
-		picture.modulate = COLOR_TRANSPARENT
-		picture.hide()
-
-func _on_Timer_timeout():
-	display_next()
-
-func display_next():
-	var picture_previous = picture_active
-	index = (index + 1) % slides.size()
-	picture_active = slides[index]
-	picture_active.show()
-	
-	tween.interpolate_property(picture_previous, 'modulate', COLOR_OPAQUE, COLOR_TRANSPARENT, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	tween.interpolate_property(picture_active, 'modulate', COLOR_TRANSPARENT, COLOR_OPAQUE, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	tween.start()
-	yield(tween, \"tween_completed\")
-	picture_previous.hide()
-	timer.start()
-
-func _on_visibility_changed():
-	if owner.visible:
-		start()
-	else:
-		stop()
-
-func start():
-	index = 0
-	picture_active = slides[index]
-	picture_active.modulate = COLOR_OPAQUE
-	picture_active.show()
-	timer.wait_time = DISPLAY_DURATION
-	timer.start()
-
-func stop():
-	for picture in slides:
-		picture.hide()
-	tween.stop_all()
-	timer.stop()
-"
-
-[sub_resource type="GDScript" id=4]
-
 script/source = "tool
 extends Control
 
@@ -230,7 +166,7 @@ margin_bottom = 940.0
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 
-margin_right = 618.0
+margin_right = 639.0
 margin_bottom = 730.0
 script = SubResource( 2 )
 text = "Separate [color=#26BFE3]2d[/color] and [color=#E3266F]3d[/color] renderers
@@ -243,19 +179,16 @@ Build games for PC, mobile, web*"
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 622.0
+margin_left = 643.0
 margin_right = 1921.0
 margin_bottom = 730.0
-size_flags_stretch_ratio = 2.1
-script = SubResource( 3 )
 
-[node name="daisy-dangerous-game-securas-1280x720" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="0"]
+[node name="daisy-dangerous-game-securas-1280x720" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 2.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -280,7 +213,7 @@ margin_top = 940.0
 margin_right = 1921.0
 margin_bottom = 1080.0
 stretch_mode = 0
-script = SubResource( 4 )
+script = SubResource( 3 )
 text = "*And PS4, XboxOne, Switch, PS Vita..."
 
 
