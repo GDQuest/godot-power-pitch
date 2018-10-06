@@ -28,6 +28,7 @@ func display(direction=CURRENT):
 	var previous_index = slide_nodes.find(slide_current)
 	var new_index = clamp(previous_index + direction, 0, slide_nodes.size() - 1)
 	if new_index == previous_index:
+		set_process_input(true)
 		return
 
 	var new_slide = slide_nodes[new_index]
