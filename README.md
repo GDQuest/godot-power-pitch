@@ -44,6 +44,26 @@ The Power Pitch ships with three languages in version 2.0:
 
 Let's translate it in as many languages as possible! This way people can pitch Godot all around the world, in local game creator meetups.
 
+## How to contribute translations
+
+First, open the translations file located at `godot-3-presentation/content/power-pitch/PowerPitch.csv` with your preferred text or spreadsheets editor.
+
+Then, you will see various language codes in the first row. Add to the next available column your language code according to [this list](https://godot.readthedocs.io/en/stable/tutorials/i18n/locales.html).
+
+In the followings rows, add your translation for each text, in the column you used to add your language. Remember to respect the BBCode!
+
+After that, open up the project in Godot. A `*.translation` file with your language code will be generated at `godot-3-presentation/content/power-pitch`. We will add this file to translations by going into `Project > Project Settings > Localization` and clicking the `Add` button.
+
+Finally, open the `godot-3-presentation/presentation/Presentation.gd` file. In the first lines, you will see an exported enumeration with different language codes. Add yours (the same that you added before).
+
+```
+export(String, 'en', 'ja', 'fr', 'es', 'pt_BR', 'de', 'it') var LANGUAGE_MAIN = 'en'
+export(String, 'en', 'ja', 'fr', 'es', 'pt_BR', 'de', 'it') var LANGUAGE_SECOND = 'ja'
+```
+
+Then you can set up your language in the `godot-3-presentation/presentation/Presentation.tscn` scene and run the presentation with your language.
+Thank you for your translation!
+
 ## Licenses
 
 **The code is under the MIT license terms**. The pictures and video files are under CC-By 4.0 (see below for the full credits).
