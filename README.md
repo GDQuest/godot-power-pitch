@@ -48,12 +48,12 @@ Let's translate it in as many languages as possible! This way people can pitch G
 
 **The code is under the MIT license terms**. The pictures and video files are under CC-By 4.0 (see below for the full credits).
 
-### Credits ###
+### Credits
 
-- Furry Defenders par [Kivano](http://www.kivano.games/)
-- [Get Teddy](https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy) par Guaranapps
-- [Jotsway Canyon](https://jaggygames.itch.io/jotswaycanyon) par JaggyGames
-- [RPG in a Box](http://www.rpginabox.com/) par Justin
+- Furry Defenders by [Kivano](http://www.kivano.games/)
+- [Slyway](https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy) by Guaranapps
+- [Jotsway Canyon](https://jaggygames.itch.io/jotswaycanyon) by JaggyGames
+- [RPG in a Box](http://www.rpginabox.com/) by Justin
 - [Andreas Esau](https://www.youtube.com/user/ndee85)
-- Wallrider par [Zylann Productions](https://www.youtube.com/user/ZylannMP3/videos)
+- Wallrider by [Zylann Productions](https://www.youtube.com/user/ZylannMP3/videos)
 - HTC Vive/Virtual Reality demo modelled by Clelio Rossi, Davide Romboli and Andrea Laghi, developed by Lamberto Tedaldi
