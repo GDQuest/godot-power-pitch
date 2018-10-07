@@ -32,7 +32,7 @@ On a keyboard, press <kbd>n</kbd> and <kbd>p</kbd> to jump to the **next** and t
 
 ## Help us translate the slides!
 
-The Power Pitch ships with three languages in version 2.0:
+The Power Pitch currently ships with these languages in version 2.0:
 
 - English
 - French
