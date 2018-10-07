@@ -16,7 +16,13 @@ Godot Slides a tool to create elegant slideshows with the Godot game engine, usi
 
 Godot Slides comes with the Power Pitch, a 10 minutes presentation of the engine available in multiple languages. It'll save you hours of work if you want to introduce Godot at meetups and other gamedev events. And you can customize it to better suit your needs!
 
-You can find a video recording of the original 40 minutes intro to Godot 3 on [GDquest's Youtube channel](https://www.youtube.com/watch?v=4v3qge-3CqQ) (*Thanks to Gabriel Marais for the English translation*).
+## Videos and articles
+
+1. [Discover Godot: the Free 2D and 3D game engine](https://youtu.be/qVl3BYY6zaQ) (Power Pitch)
+1. [How to Use Translations and Contribute New Languages](https://youtu.be/txCSyNgzvzw)
+1. [Godot slides 2.0: open source presentation tool in Godot](https://youtu.be/JO2TvlLGf8Q) (Project overview)
+
+You can also find a video recording of the original 40 minutes [Intro to Godot 3](https://www.youtube.com/watch?v=4v3qge-3CqQ) (*Thanks to Gabriel Marais for the English translation*).
 
 ## Controls
 
@@ -34,6 +40,7 @@ The Power Pitch ships with three languages in version 2.0:
 - Spanish
 - Portuguese (BR)
 - German
+- Italian
 
 Let's translate it in as many languages as possible! This way people can pitch Godot all around the world, in local game creator meetups.
 
