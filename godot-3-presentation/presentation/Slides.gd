@@ -9,8 +9,19 @@ var slide_nodes = []
 func _input(event):
 	if event.is_action_pressed('ui_next'):
 		display(NEXT)
+		get_tree().set_input_as_handled()
 	if event.is_action_pressed('ui_previous'):
 		display(PREVIOUS)
+		get_tree().set_input_as_handled()
+
+	if not event is InputEventMouseButton or not event.is_pressed():
+		return
+	match event.button_index:
+		BUTTON_LEFT:
+			display(NEXT)
+		BUTTON_RIGHT:
+			display(PREVIOUS)
+	get_tree().set_input_as_handled()
 
 func initialize():
 	for slide in get_children():
