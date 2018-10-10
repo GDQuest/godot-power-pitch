@@ -19,6 +19,8 @@ func _input(event):
 			change_language(LANGUAGE_SECOND)
 		else:
 			change_language(LANGUAGE_MAIN)
+	if event.is_action_pressed('toggle_fullscreen'):
+		OS.window_fullscreen = not OS.window_fullscreen
 
 func change_language(locale):
 	TranslationServer.set_locale(locale)
