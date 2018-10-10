@@ -28,7 +28,7 @@ You can also find a video recording of the original 40 minutes [Intro to Godot 3
 
 You can change the slide with a swipe of your finger on a touchscreen, or by hovering and clicking on the arrows on the edges of the screen. You can also navigate the slides with left and right mouse clicks: <kbd>LMB</kbd> and <kbd>RMB</kbd>.
 
-On a keyboard, press <kbd>n</kbd> and <kbd>p</kbd> to jump to the **next** and the **previous** slide respectively. You may also use <kbd>,</kbd> and <kbd>.</kbd>, the <kbd><</kbd> and <kbd>></kbd> keys on QWERTY keyboards. You can use the angle brackets to avoid colliding with the demos' input actions inside your slides.
+On a keyboard, press <kbd>n</kbd> and <kbd>p</kbd> to jump to the **next** and the **previous** slide respectively. You may also use <kbd>,</kbd> and <kbd>.</kbd>, the <kbd><</kbd> and <kbd>></kbd> keys on QWERTY keyboards. You can use the angle brackets to avoid colliding with the demos' input actions inside your slides. To toggle fullscreen, press <kbd>f</kbd>.
 
 ## Help us translate the slides!
 
