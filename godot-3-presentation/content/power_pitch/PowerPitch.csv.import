@@ -5,10 +5,10 @@ type="Translation"
 
 [deps]
 
-files=[ "res://content/power_pitch/PowerPitch.en.translation", "res://content/power_pitch/PowerPitch.fr.translation", "res://content/power_pitch/PowerPitch.ja.translation", "res://content/power_pitch/PowerPitch.es.translation", "res://content/power_pitch/PowerPitch.pt_BR.translation", "res://content/power_pitch/PowerPitch.de.translation", "res://content/power_pitch/PowerPitch.it.translation", "res://content/power_pitch/PowerPitch.zh.translation" ]
+files=[ "res://content/power_pitch/PowerPitch.en.translation", "res://content/power_pitch/PowerPitch.fr.translation", "res://content/power_pitch/PowerPitch.ja.translation", "res://content/power_pitch/PowerPitch.es.translation", "res://content/power_pitch/PowerPitch.pt_BR.translation", "res://content/power_pitch/PowerPitch.de.translation", "res://content/power_pitch/PowerPitch.it.translation", "res://content/power_pitch/PowerPitch.zh.translation", "res://content/power_pitch/PowerPitch.uk_UA.translation", "res://content/power_pitch/PowerPitch.ko.translation", "res://content/power_pitch/PowerPitch.sk.translation" ]
 
 source_file="res://content/power_pitch/PowerPitch.csv"
-dest_files=[ "res://content/power_pitch/PowerPitch.en.translation", "res://content/power_pitch/PowerPitch.fr.translation", "res://content/power_pitch/PowerPitch.ja.translation", "res://content/power_pitch/PowerPitch.es.translation", "res://content/power_pitch/PowerPitch.pt_BR.translation", "res://content/power_pitch/PowerPitch.de.translation", "res://content/power_pitch/PowerPitch.it.translation", "res://content/power_pitch/PowerPitch.zh.translation" ]
+dest_files=[ "res://content/power_pitch/PowerPitch.en.translation", "res://content/power_pitch/PowerPitch.fr.translation", "res://content/power_pitch/PowerPitch.ja.translation", "res://content/power_pitch/PowerPitch.es.translation", "res://content/power_pitch/PowerPitch.pt_BR.translation", "res://content/power_pitch/PowerPitch.de.translation", "res://content/power_pitch/PowerPitch.it.translation", "res://content/power_pitch/PowerPitch.zh.translation", "res://content/power_pitch/PowerPitch.uk_UA.translation", "res://content/power_pitch/PowerPitch.ko.translation", "res://content/power_pitch/PowerPitch.sk.translation" ]
 
 [params]
 
