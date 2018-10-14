@@ -3,8 +3,8 @@ extends Node
 signal language_changed()
 
 onready var slides = $Slides
-export(String, 'en', 'ja', 'fr', 'es', 'pt_BR', 'de', 'it', 'zh', 'uk_UA') var LANGUAGE_MAIN = 'en'
-export(String, 'en', 'ja', 'fr', 'es', 'pt_BR', 'de', 'it', 'zh', 'uk_UA') var LANGUAGE_SECOND = 'ja'
+export(String, 'en', 'ja', 'fr', 'es', 'pt_BR', 'de', 'it', 'zh', 'uk_UA', 'ko', 'sk') var LANGUAGE_MAIN = 'en'
+export(String, 'en', 'ja', 'fr', 'es', 'pt_BR', 'de', 'it', 'zh', 'uk_UA', 'ko', 'sk') var LANGUAGE_SECOND = 'ja'
 
 func _ready():
 	TranslationServer.set_locale(LANGUAGE_MAIN)
