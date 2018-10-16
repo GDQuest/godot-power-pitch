@@ -41,6 +41,11 @@ The Power Pitch currently ships with these languages in version 2.0:
 - Portuguese (BR)
 - German
 - Italian
+- Chinese
+- Korean
+- Ukrainian
+- Slovak
+- Polish
 
 Let's translate it in as many languages as possible! This way people can pitch Godot all around the world, in local game creator meetups.
 
