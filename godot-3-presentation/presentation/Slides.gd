@@ -32,7 +32,7 @@ func initialize():
 	add_child(slide_current)
 	slide_current.show()
 
-func display(direction=CURRENT):
+func display(direction=CURRENT, skip_animation=false):
 	set_process_input(false)
 	var previous_slide = slide_current
 	
@@ -48,8 +48,9 @@ func display(direction=CURRENT):
 	update_translations()
 	
 #	var animation = "enter_from_right" if direction == NEXT else "enter_from_left"
-	var animation = "fade_in"
-	yield(new_slide.play(animation), "completed")
+	if not skip_animation:
+		var animation = "fade_in"
+		yield(new_slide.play(animation), "completed")
 	
 	previous_slide.hide()
 	remove_child(previous_slide)
@@ -69,3 +70,21 @@ func update_translations():
 
 func get_translation_uid(node):
 	return node.owner.name + "_" + str(node.owner.get_path_to(node)).replace("/", "_")
+
+func save_as_png(output_folder):
+	get_tree().paused = true
+	get_viewport().set_clear_mode(Viewport.CLEAR_MODE_ONLY_NEXT_FRAME)
+	var id = 0
+	for slide in slide_nodes:
+		# Need to wait two frames to ensure the screen capture works
+		yield(get_tree(), "idle_frame")
+		yield(get_tree(), "idle_frame")
+	
+		var img = get_viewport().get_texture().get_data()
+		img.flip_y()
+		var path = output_folder.plus_file(str(id).pad_zeros(2) + '-' + slide.name + '.png')
+		img.save_png(path)
+		display(NEXT, true)
+		id += 1
+	get_viewport().set_clear_mode(Viewport.CLEAR_MODE_ALWAYS)
+	get_tree().paused = false
