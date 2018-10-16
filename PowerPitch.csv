@@ -1,0 +1,648 @@
+id,en,fr,ja,es,pt_BR,de,it,zh,uk_UA,ko,sk,pl
+A_free_modern_engine_Column_Header_title,A Free modern engine,Un moteur moderne et gratuit,最新のオプンソースゲームエンジン,Un motor libre y moderno,Livre e Moderno,Eine freie moderne Spiele-Engine,Un motore di gioco libero,一个现代化的免费引擎,Вілний та сучасний двигун,자유로운 현대적인 엔진,Moderný herný engine zadarmo,Darmowy współczesny silnik
+A_free_modern_engine_Column_Body_Row_TextBox_text,"Separate [color=#26BFE3]2d[/color] and [color=#E3266F]3d[/color] renderers
+Complete [color=#F2971A]game editor[/color]
+
+Create projects with Windows, Mac, Linux
+Build games for PC, mobile, web*","Moteurs de rendu [color=#26BFE3]2d[/color] et [color=#E3266F]3d[/color] séparés
+[color=#F2971A] Éditeur de jeu[/color] complet
+
+Créez vos projets sur Windows, Mac, ou Linux
+Exportez vos jeux sur PC, mobile, web*","両方[color=#26BFE3]２D[/color]と[color=#E3266F]３D[/color] レンダリングエンジン
+全面的な[color=#F2971A]ゲームエディタ[/color]
+
+プロジェクトをWindowsかMacかLinuxで作られます
+ゲームをコンピューターとかモバイルとかインタネットなどエクスポートできます＊","Renderers [color=#26BFE3]2D[/color] y [color=#E3266F]3D[/color] independientes
+[color=#F2971A]Editor de juegos[/color] completo
+
+Crea proyectos en Windows, Mac y Linux
+Exportalos a PC, móvil, web*","[color=#26BFE3]2d[/color] e [color=#E3266F]3d[/color] independentes
+Um [color=#F2971A]editor de jogos[/color] completo
+
+Crie projetos com Windows, Mac e Linux
+Crie jogos para PC, mobile e Web*","Getrennte [color=#26BFE3]2d[/color] und [color=#E3266F]3d[/color] Render-Engines
+Kompletter [color=#F2971A]Spiele Editor[/color]
+
+Bearbeite deine Projekte mit: Windows, Mac, Linux
+
+Erstelle Spiele für PC, Handy, Web*","Renderer [color=#26BFE3]2d[/color] e [color=#E3266F]3d[/color] moderni
+[color=#F2971A]Game editor[/color] completo
+
+Crea progetti con Windows, Mac, Linux
+Crea giochi per PC, mobile, web*","独立分开的 [color=#26BFE3]2d[/color] 和 [color=#E3266F]3d[/color] 渲染引擎
+全能的[color=#F2971A]游戏编辑器[/color]
+
+支持在 Windows, Mac, Linux 操作系统上创建项目
+最终发布到电脑,手机,网页平台上*","Окремі [color=#26BFE3]2d[/color] та [color=#E3266F]3d[/color] рендерери
+Довершений [color=#F2971A]ігровий редактор[/color]
+
+Створюйте свої проекти на Windows, Mac, Linux
+Експортуйте для PC, mobile, web*","[color=#26BFE3]2d[/color] 와 [color=#E3266F]3d[/color] 렌더러를 분리
+통합된 [color=#F2971A]게임 에디터[/color]
+
+윈도우, 맥, 리눅스에서 프로젝트를 제작합니다
+PC, 모바일, 웹*으로 게임을 출시할 수 있습니다","Oddelené [color=#26BFE3]2D[/color] a [color=#E3266F]3D[/color] renderery
+Kompletný [color=#F2971A]herný editor[/color]
+
+Tvorba projektov na Windows, Mac, Linux
+Zostavenie hier pre PC, mobily, web*","Osobne silniki renderujące [color=#26BFE3]2D[/color] i [color=#E3266F]3D[/color]
+Kompletny [color=#F2971A]edytor gier[/color]
+
+Twórz projekty na Windowsie, Macu, Linuksie
+Buduj gry na PC, urządzenia mobilne, przeglądarki*"
+A_free_modern_engine_Column_Footer_text,"*And PS4, XboxOne, Switch, PS Vita...","*Et sur PS4, XboxOne, Switch, PS Vita ...",＊コンソールのためにも出力できます,"*Y PS4, Xbox One, Switch, PS Vita...","*E também PS4, XboxOne, Switch, PS Vita...","*Und PS4, XboxOne, Switch, PS Vita...","*e per PS4, XboxOne, Switch, PS Vita...","*包括 PS4, XboxOne, Switch, PS Vita 等平台...","*Та PS4, XboxOne, Switch, PS Vita...","*그리고 PS4, XboxOne, Switch, PS Vita 등","*a PS4, XboxOne, Switch, PS Vita...","*A także PS4, XboxOne, Switch, PS Vita..."
+State_of_the_art_3d_engine_Column_Header_title,State of the art 3d engine,Moteur 3d dernier-cri,最先端の３Dエンジン,Motor 3D a la última,Um moderno motor 3D,Aktuelle 3d Engine,3D engine allo stato dell’arte,先进的3d引擎技术,Сучасний 3d двигун,3D 엔진의 기술 수준,3d engine na úrovni doby,Nowoczesny silnik 3d
+State_of_the_art_3d_engine_Column_Body_Row_TextBox_text,"[color=#E3266F]Physically-based rendering[/color] with full MSAA support
+[color=#02E180]Full principled BSDF[/color] with Subsurface Scattering, reflection, refraction, clearcoat...
+[color=#26BFE3]Global illumination[/color] for gorgeous real-time graphics
+[color=#F2971A]Mid and Post processing effects[/color] including curves and auto exposure, screen-space reflections, fog, bloom, depth of field...","[color=#E3266F]Rendu PBR (Physically-based rendering)[/color] avec anti-aliasing MSAA
+[color=#02E180]Matériau BSDF[/color] de Pixar avec support du Subsurface Scattering, réflexion, réfraction, clearcoat...
+[color=#26BFE3]Illumination globale[/color] en temps réel
+[color=#F2971A]Effets d'image mid et post-rendu[/color]: courbes et exposition automatique, reflets en espace-écran, brouillard, bloom, profondeur de champ...","MSAAをサポートする[color=#E3266F]物理ベースレンダリング[/color]
+[color=#02E180]BSDFマテリアル[/color]：皮下拡散（Subsurface Scattering）とか, 反射率とか, 空間屈折（Refraction）など使用可能です
+[color=#26BFE3]間接光・放射[/color]（Global Illumination)
+[color=#F2971A]後処理[/color]：自動露光しSSRし被写界深度などがあります","[color=#E3266F]Renderizado basado en físicas[/color] con soporte para MSAA
+[color=#02E180]Soporta BSDF[/color] con Subsurface Scattering, reflejos, refracción, clearcoat...
+[color=#26BFE3]Iluminación global[/color] para preciosos gráficos en tiempo real
+[color=#F2971A]Efectos de mid/pos-procesado[/color], incluyendo curvas y auto exposición, reflejos en screen-space, niebla, resplandores, profundidad de campo…","[color=#E3266F]Renderização Baseada em Física(PBR)[/color] com suporte completo para MSAA
+[color=#02E180]Materiais BSDF[/color] com Subsurface Scattering, reflexos, refração, clearcoat...
+[color=#26BFE3]Iluminação Global[/color] para lindos gráficos em tempo real
+[color=#F2971A]Efeitos de Mid e Pós processamento[/color] incluindo curvas e exposição automática, reflexos em screen-space, névoa, brilho (bloom), profundidade de campo…","[color=#E3266F]Physically-based rendering[/color] mit voller MSAA Unterstützung
+[color=#02E180]Full principled BSDF[/color] mit Subsurface Scattering, Reflektion, Lichtbrechung, Klarlack...
+[color=#26BFE3]Global Illumination[/color] für großartige Echtzeitgrafik
+[color=#F2971A]Mid und Post processing Effekte[/color] mit Kurven, automatische Belichtung, Screen-Space Reflektionen, Nebel, Bloom, Tiefenschärfe…","[color=#E3266F]Physically-based rendering[/color] con pieno supporto a MSAA
+[color=#02E180]Full principled BSDF[/color] con Subsurface Scattering, riflessi, rifrazioni, clearcoat...
+[color=#26BFE3]Global illumination[/color] per una stupenda grafica real-time
+[color=#F2971A]Effetti Mid and Post processing[/color] con curve e auto esposizione, riflessi screen-space, fog, bloom, depth of field...","[color=#E3266F]基于物理引擎渲染[/color]并且全面支持多重采样抗锯齿（MSAA）功能
+[color=#02E180]完全遵循双向散射分布函数（BSDF）规则[/color]以及细分表面散射, 反射, 折射, 透明涂层等等...
+[color=#26BFE3]支持全局光照功能[/color]以实现华丽而又真实的画面特效
+[color=#F2971A]支持中后期特效处理技术[/color]包括曲线式和自动式曝光, 屏幕空间反射, 雾气, 亮光, 以及景深设置等等…","[color=#E3266F]PBR рендерер[/color] з повною підтримкою MSAA
+[color=#02E180]Повна реалізація принципів BSDF[/color] із Підповерхневим розсіюванням, відбиттям, рефракцією, прозорістю тощо…
+[color=#26BFE3]Глобальне освітлення[/color] для отримання неперевершеної графіки в реальному часі
+[color=#F2971A]Mid та Post processing ефекти[/color] в тому числі криві, авто експозиція, screen-space відбиття, імла, світіння, глибина різкості тощо…","완전한 MSAA를 지원하는 [color=#E3266F]물리 기반 렌더링[/color]
+Subsurface Scattering, 반사, 굴절, Clearcoat 등으로 [color=#02E180]완전한 principled BSDF[/color]
+멋진 실시간 그래픽을 위한 [color=#26BFE3]글로벌 일루미네이션[/color]
+곡선 및 자동 노출, 스크린 영역 반사(SSR), 안개, 눈부심, 피사계심도 등이 포함된 [color=#F2971A]중간 및 포스트 프로세싱 효과[/color]","[color=#E3266F]Fyzikálne-založený rendering[/color] s plnou podporou MSAA
+[color=#02E180]Úplný 'Principled BSDF'[/color] s podpovrchovým rozptylom, odrazom, lomom svetla, bezfarebným lakom...
+[color=#26BFE3]Globálne osvetlenie[/color] pre úžasnú grafiku v reálnom čase
+[color=#F2971A]Mid a Post processing efekty[/color] vrátane kriviek a automatickej expozície, screen-space odrazov, hmly, presvetlenia, hĺbky ostrosti...","[color=#E3266F]Rendering bazujący na fizyce (PBR)[/color] z pełnym wsparciem dla MSAA
+[color=#02E180]Pełen „Principled BSDF”[/color] z rozpraszaniem powierzchniowym, odbiciami, załamaniem światła, clearcoat...
+[color=#26BFE3]Globalne oświetlenie[/color] dla pięknej grafiki w czasie rzeczywistym
+[color=#F2971A]Efekty mid- i post-processing[/color], w tym krzywe, auto-naświetlenie, technika SSR, mgła, efekt bloom, głębia ostrości (DOF)..."
+State_of_the_art_3d_engine_Column_Footer_text,Designed to work well with Blender 2.8's Eevee realtime engine,Compatible avec le moteur en temps réel Eevee de Blender 2.8,Blender3d 2.8のEeveeリアルタイムレンダリングエンジンと互換します,Diseñado para funcionar perfectamente junto al motor en tiempo real Eeevee de Blender 2.8,"Desenhado para uma excelente integração com o motor gráfico Eevee, disponível no Blender 2.8+","Entwickelt, um mit Eevee, Echtzeit-Engine von Blender 2.8, gut zu funktionieren",Progettato per integrarsi con Eevee il motore realtime di Blender 2.8,深度配合Blender 2.8版本中的Eevee实时渲染引擎,Призначений для роботи з Blender 2.8's Eevee realtime engine,Blender 2.8의 Eevee 실시간 엔진과도 잘 작동되도록 설계되었습니다,Navrhnutý pre dobrú spoluprácu s Eevee realtime engine z Blendera 2.8 ,Zaprojektowany dla dobrej współpracy z silnikiem Eevee Blendera 2.8
+All_in_one_package_Column_Header_title,All-in-one package,Un outil tout-en-un,必要とするツールは全て含まれています,Todo en uno,Tudo em um!,All-in-one Paket,Tutto in uno,一体化配置,Все в одному,일체형 패키지,Balík všetko v jednom,Wszystko w jednym
+All_in_one_package_Column_Body_Row_TextBox_text,"- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion
+- [color=#26BFE3]Animation[/color] editor with 2d rigging
+- [color=#F2971A]Tilemap editor[/color] with autotiles
+- [color=#02E180]Shader[/color] editor, visual and code
+- [color=#02E180]UI theme editor[/color]
+
+New tools get in with each version!","- [color=#E3266F]Éditeur de code[/color] avec référence intégrée et autocomplétion
+- [color=#26BFE3]Éditeur d'animations[/color] avec skinning et rigging 2D
+- [color=#F2971A]Éditeur de tilesets et de tilemaps[/color], autotiles inclus
+- [color=#02E180]Éditeur de shader[/color]: sous forme de briques visuelles ou via un langage simplifié
+- [color=#02E180]Éditeur de thème de l'interface utilisateur[/color]
+
+De nouveaux outils sont ajoutés avec chaque version!","- 便覧が含まれている[color=#E3266F]開発環境[/color]
+- IKとリギングできる[color=#26BFE3]アニメーションエディタ[/color]
+- [color=#F2971A]タイルセットとタイルマップエディタ[/color]
+- [color=#02E180]シェーダーエディタ[/color]、表か書かれたコードでプログラミングできます
+- [color=#02E180]ジーユーアイテーマエディタ[/color]
+
+開発者たちはいつも新しいツールを作っています","- [color=#E3266F]Editor de texto[/color] con autocompletado y documentación
+- Editor de [color=#26BFE3]animaciones[/color] con rigging 2D
+- [color=#F2971A]Editor de tilemaps[/color] con autotiles
+- Editor de [color=#02E180]shaders[/color], visual y en código
+- [color=#02E180]Editor de temas para UIs[/color]
+
+¡Nuevas herramientas en cada versión!","- [color=#E3266F]Editor de Texto[/color] com documentação e autocompletar embutidos
+- [color=#26BFE3]Editor de Animações[/color] com rigging 2D
+- [color=#F2971A]Editor de Tilemaps[/color] com autotiles
+- [color=#02E180]Editor de Shaders[/color] com programação visual e textual
+- [color=#02E180]Editor de Interface de Usuário[/color] para criar temas incríveis
+
+Novas ferramentas a cada versão!","- [color=#E3266F]Code Editor[/color] mit integrierter Dokumentation und Autovervollständigung
+- [color=#26BFE3]Animation[/color] Editor mit 2d Rigging
+- [color=#F2971A]Tilemap Editor[/color] mit Auto-Tiles
+- [color=#02E180]Shader[/color] Editor, Visuell- und Codebasiert
+- [color=#02E180]UI Theme-Editor[/color]
+
+Mit jeder Version kommen neue Tools hinzu! ","- [color=#E3266F]Code editor[/color] con documentazione integrata ed autocompletamento
+- [color=#26BFE3]Animation[/color] editor con 2d rigging
+- [color=#F2971A]Tilemap editor[/color] con autotiles
+- [color=#02E180]Shader[/color] editor, visuale e testuale
+- [color=#02E180]Editor di temi UI[/color]
+
+Nuovi tool in ogni nuova versione!","- 内嵌文档和自动补全功能的[color=#E3266F]代码编辑器[/color]
+- 支持2D骨骼绑定的[color=#26BFE3]动画[/color]编辑工具
+- 自动瓦片设定的[color=#F2971A]瓦片地图编辑器[/color]
+- 可视化代码编写功能的[color=#02E180]着色[/color]编辑器
+- 以及[color=#02E180]UI主题编辑器[/color]
+
+每个版本都有新的工具发布!","- [color=#E3266F]Редактор коду[/color] з вубдованою документацією та автодоповнюванням
+- [color=#26BFE3]Редактор анімацій[/color] із 2d ріґінґом
+- [color=#F2971A]Редактор тайлів[/color] з автотайлінгом
+- [color=#02E180]Редагування шейдерів[/color] як візуальне, так і за допомоги коду
+- [color=#02E180]Редактор тем інтерфейсу[/color]
+
+Із кожною версією додаються нові інструменти!","- 사전이 내장되어있고 자동완성을 지원하는 [color=#E3266F]코드 에디터[/color]
+- 2d 리깅을 지원하는 [color=#26BFE3]애니메이션[/color] 에디터
+- 오토타일을 지원하는 [color=#F2971A]타일맵 에디터[/color] 
+- [color=#02E180]셰이터[/color] 에디터, 시각적 코드 또는 문자 코드
+- [color=#02E180]UI 테마 에디터[/color]
+
+새로운 도구가 각 버전마다 도입됩니다!","- [color=#E3266F]Code editor[/color] so vstavanou dokumentáciou a autodopĺňaním
+- [color=#26BFE3]Animation[/color] editor s 2D riggingom
+- [color=#F2971A]Tilemap editor[/color] s autotiles
+- [color=#02E180]Shader[/color] editor, vizuálny a cez kód
+- [color=#02E180]UI theme editor[/color]
+
+Každá ďalšia verzia prináša nové nástroje!","- [color=#E3266F]Edytor kodu[/color] z wbudowaną dokumentacją i autouzupełnianiem
+- [color=#26BFE3]Edytor animacji[/color] z riggingiem 2d
+- [color=#F2971A]Edytor tilemap[/color] z autotile'ami
+- [color=#02E180]Edytor shaderów[/color] wizualny i kodowy
+- [color=#02E180]Edytor motywów UI[/color]
+
+Z nowymi narzędziami dodawanymi w każdej wersji!"
+All_in_one_package_Column_Footer_text,For instance Godot 3.1 ships with a new animation editor that supports cut-scenes,"La version 3.1 apporte un éditeur de cinématiques avec le séquençage d'animations, par exemple",２D　IKとメッシュスッキニングはもう入手可能,"Por ejemplo, Godot 3.1 trae un nuevo editor de animaciones con soporte para cinemáticas","Por exemplo, Godot 3.1 traz um editor de animações novo que facilita a criação de cut-scenes",Zum Beispiel Godot 3.1 kommt mit einem neuen Animation-Editor der Cut-Szenen unterstützt,Ad esempio Godot 3.1 è rilasciato con un nuovo editor di animazioni con supporto alle cut-scene,例如Godot 3.1版本中搭载了一个全新的支持场景剪裁功能的动画编辑器,"Наприклад, Godot 3.1 йде в комплекті з новим редактором анімацій, що підтримує катсцени",예를들어 Godot 3.1에서는 컷 씬을 지원하는 새로운 애니메이션 에디터가 도입됩니다,Napr. Godot 3.1 príde s novým editorom animácií s podporou cut-scenes,"Godot 3.1, na przykład, wydany został z nowym edytorem animacji wspierającym cutscenki"
+CreateAnything_Column_Header_title,Create Anything,Créez toutes sortes d'applications,何でも作られます,Creación sin límites,Crie qualquer coisa,Erstelle alles Mögliche,Crea qualsiasi cosa,创造任何你所想,Створюй Будь-що,무엇이든 만드십시오,Vytvorte čokoľvek,Twórz co zechcesz
+CreateAnything_Column_Header_subtitle,"2d and 3d Games, tools, or applications","Jeux 2d et 3d, outils ou programmes",２Dと３Dゲームしツールしソフトウェアもできます,"Juegos en 2D y 3D,  herramientas, aplicaciones…","Jogos 2D e 3D, ferramentas, aplicativos…","2d und 3d Spiele, Tools, oder Anwendungen","Giochi 2d e 3d, strumenti o applicazioni","2D和3D游戏,工具,应用软件等","2d чи 3d Ігри, інструменти чи додатки","2d 및 3d 게임, 도구, 혹은 응용 프로그램","2D a 3D hry, nástroje alebo aplikácie","Gry 2D i 3D, narzędzia, aplikacje..."
+CreateAnything_Column_Body_Row_TextBox_text,"Projects:
+
+- [color=#F2971A]Ex Zodiac[/color], by Ben Hickling
+- [color=#02E180]RPG in a Box[/color], by Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], by Bastiaan Olij","Projets:
+
+- [color=#F2971A]Ex Zodiac[/color], par Ben Hickling
+- [color=#02E180]RPG dans une boîte[/color], par Justin Arnold
+- [color=#26BFE3]Procedural mesh graph*[/color], outil de modélisation procédurale via un langage visuel, par Bastiaan Olij","プロジェクト:
+
+- ベン・ヒックリングの[color=#F2971A]Ex Zodiac[/color]
+- ジャスティン・アーノルドの[color=#02E180]RPG in a Box[/color]
+- バスティアン・オリェの[color=#26BFE3]Procedural Mesh Generator[/color]*","Proyectos:
+
+- [color=#F2971A]Ex Zodiac[/color], por Ben Hickling
+- [color=#02E180]RPG in a Box[/color], por Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], por Bastiaan Olij","Projetos:
+
+- [color=#F2971A]Ex Zodiac[/color], por Ben Hickling
+- [color=#02E180]RPG in a Box[/color], por Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], por Bastiaan Olij","Projekte*:
+
+- [color=#F2971A]Ex Zodiac[/color], von Ben Hickling
+- [color=#02E180]RPG in a Box[/color], von Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], von Bastiaan Olij","Progetti:
+
+- [color=#F2971A]Ex Zodiac[/color], di Ben Hickling
+- [color=#02E180]RPG in a Box[/color], di Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], di Bastiaan Olij","项目列表:
+
+- [color=#F2971A]Ex Zodiac[/color], 作者 Ben Hickling
+- [color=#02E180]RPG in a Box[/color], 作者 Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], 作者 Bastiaan Olij","Проекти:
+
+- [color=#F2971A]Ex Zodiac[/color], від Ben Hickling
+- [color=#02E180]RPG in a Box[/color], від Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], від Bastiaan Olij","프로젝트:
+
+- Ben Hickling이 만든 [color=#F2971A]Ex Zodiac[/color]
+- Justin Arnold가 만든 [color=#02E180]RPG in a Box[/color]
+- Bastiaan Olij가 만든 [color=#26BFE3]Procedural Mesh Generator[/color]","Projekty*:
+
+- [color=#F2971A]Ex Zodiac[/color], autor Ben Hickling
+- [color=#02E180]RPG in a Box[/color], autor Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], autor Bastiaan Olij","Projekty*:
+
+- [color=#F2971A]Ex Zodiac[/color], autor: Ben Hickling
+- [color=#02E180]RPG in a Box[/color], autor: Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], autor: Bastiaan Olij"
+CreateAnything_Column_Footer_text,"*Open source, available on GitHub","*Open Source, disponible sur GitHub",＊GitHubでダウンロードできるオプンソースパラグイン,"*Open source, disponible en GitHub","*Código aberto, disponível no GitHub","*Open source, verfügbar auf GitHub","*Open source, disponibile su GitHub",*开源在GitHub上,"*Відкритий код, доступний на GitHub","*오픈소스로, GitHub에서 사용하실 수 있습니다","*Open source, dostupné na GitHub-e","*Open source, dostępne na GitHubie"
+CodeFreely_Header_title,Code freely,"Programmez librement
+",自由にプログラミングできます,Programa a tu manera,Programe livremente,Freies Coden,Programma liberamente,自由代码编写,Програмуй вільно,자유로운 코딩,Slobodné kódovanie,Swobodne kodowanie
+CodeFreely_Body_Row_TextBox_text,"Godot lets you use many programming languages:
+
+[color=#02E180]GDScript[/color] Python-like scripting language, designed for gameplay developers
+[color=#F2971A]C# 7.0[/color] support using Mono
+Full [color=#E3266F]C[/color] and [color=#E3266F]C++[/color] support without having to recompile the engine
+[color=#26BFE3]Visual scripting[/color] using a graph of blocks
+","Godot vous donne le choix entre de nombreux langages de programmation:
+
+[color=#02E180]GDScript[/color], langage de scripting ressemblant à Python, conçu pour les programmeurs gameplay
+[color=#F2971A]C# 7.0[/color] avec le compileur Mono
+Support de [color=#E3266F]C[/color] et de [color=#E3266F]C ++[/color] sans avoir à recompiler le moteur
+[color=#26BFE3]VisualScript[/color], langage de programmation visuel
+","Godotでいろんなコンピューター言語で書けます：
+
+Pythonのような[color=#02E180]GDScript[/color]と言うゲーム開発者用言語
+MicrosoftのMonoコンパイラで[color=#F2971A]C# 7.0[/color]サポート
+エンジンをコンパイル無しで全体の[color=#E3266F]C[/color]と[color=#E3266F]C++[/color]サポート
+表の[color=#26BFE3]VisualScript[/color]というのデザイナのための言語","Godot te deja usar muchos lenguajes de programación:
+
+[color=#02E180]GDScript[/color] lenguaje similar a Python, diseñado para desarrolladores de gameplay
+[color=#F2971A]C# 7.0[/color] usando Mono
+Full [color=#E3266F]C[/color] y [color=#E3266F]C++[/color] sin necesidad de recompilar el motor
+[color=#26BFE3]Scripting visual[/color] usando grafos de bloques","Godot lhe permite usar várias linguagens de programação:
+
+[color=#02E180]GDScript[/color] uma linguagem de scripts muito parecida com Python, desenhada para desenvolvimento de gameplay
+
+[color=#F2971A]C# 7.0[/color] usando o compilador Mono
+
+Suporte completo para [color=#E3266F]C[/color] e [color=#E3266F]C++[/color] sem ter de recompilar
+
+[color=#26BFE3]Visual scripting[/color] usando editor gráfico e blocos de lógica
+","Godot kann man mit vielen Programmiersprachen nutzen:
+
+[color=#02E180]GDScript[/color] Python-ähnliche Skriptsprache, Entwickelt für Spieleentwickler
+[color=#F2971A]C# 7.0[/color] Unterstützung mit Mono
+Full [color=#E3266F]C[/color] und [color=#E3266F]C++[/color] Unterstützung, ohne die Engine neu kompilieren zu müssen
+[color=#26BFE3]Visuelles Skripting[/color] mit einem Graph von Blöcken","Godot ti permette di usare vari linguaggi di programmazione:
+
+[color=#02E180]GDScript[/color] un linguaggio di scripting Python-like, progettato per gameplay developer
+[color=#F2971A]C# 7.0[/color] supportato utilizzando Mono
+Pieno supporto [color=#E3266F]C[/color] and [color=#E3266F]C++[/color] senza bisogno di ricompilare l’engine
+[color=#26BFE3]Visual scripting[/color] utilizzando grafi e blocchi","Godot支持很多门编程语言:
+
+[color=#02E180]GDScript[/color]是一门类似Python的脚本语言, 为游戏开发者量身打造
+支持在Mono平台上使用[color=#F2971A]C# 7.0[/color]语言进行开发
+完全支持 [color=#E3266F]C[/color] 和 [color=#E3266F]C++[/color] 编程语言,无需重新编译
+使用图形化代码块的[color=#26BFE3]可视化脚本语言[/color]
+","Godot дозволяє користатися багатьма мовами програмування:
+
+[color=#02E180]GDScript[/color] Python-подібна скриптова мова, спроектована для розробників ігор
+[color=#F2971A]C# 7.0[/color] підтримується за дпомоги Mono
+Повна підтримка [color=#E3266F]C[/color] та [color=#E3266F]C++[/color] без необхідності рекомпіляції двигуна
+[color=#26BFE3]Візуальне програмування[/color] за допомги блочних графів","Godot에서는 많은 프로그래밍 언어를 사용하실 수 있습니다:
+
+Python과 유사한 스크립트 언어로, 게임플레이 개발자를 위해 설계된 [color=#02E180]GDScript[/color]
+Mono를 사용하여 지원하는 [color=#F2971A]C# 7.0[/color] 
+엔진을 리컴파일 할 필요 없이 완전한 [color=#E3266F]C[/color] 와 [color=#E3266F]C++[/color] 을 지원
+블록의 그래프로 이루어지는 [color=#26BFE3]Visual scripting[/color]
+","Godot umožňuje používať viacero programovacích jazykov:
+
+[color=#02E180]GDScript[/color] je skriptovací jazyk podobný Pythonu, navrhnutý pre vývojárov hier
+Podpora [color=#F2971A]C# 7.0[/color] cez Mono
+Úplná podpora [color=#E3266F]C[/color] a [color=#E3266F]C++[/color] bez nutnosti prekompilovať engine
+[color=#26BFE3]Visual scripting[/color] prostredníctvom grafu blokov
+","Godot umożliwia używanie różnych języków programowania:
+
+[color=#02E180]GDScript[/color] język skryptowy podobny do Pythona, zaprojektowany dla gameplay designerów
+Wsparcie dla [color=#F2971A]C# 7.0[/color] przy użyciu Mono
+Pełne wsparcie dla [color=#E3266F]C[/color] i [color=#E3266F]C++[/color] bez konieczności rekompilowania silnika
+[color=#26BFE3]Skrypt wizualny[/color] używający diagram z blokami
+"
+CodeFreely_Footer_text,"Community-supported languages: Python, Nim, D, Rust...","D'autres langages sont pris en charge grâce à la communauté: Python, Nim, D, Rust...",コミュニティのおかげでPythonとかNimとかDなども使えます,"Lenguajes con soporte comunitario: Python, Nim, D, Rust…","Linguagens com suporte da comunidade: Python, Nim, D, Rust...","Sprachen von der Community unterstützt: Python, Nim, D, Rust...","Linguaggi supportati grazie alla community: Python, Nim, D, Rust...","由社区推动支持的编程语言: Python, Nim, D, Rust等...","Мови програмування, що підтримуються спільнотою: Python, Nim, D, Rust...","커뮤니티가 지원하는 언어: Python, Nim, D, Rust 등","Komunitou podporované jazyky: Python, Nim, D, Rust...","Wsparcie dla języków rozwijane przez społeczność: Python, Nim, D, Rust..."
+Virtual_and_augmented_reality_Column_Header2_title,Virtual and Augmented Reality,Réalité Virtuelle et Augmentée,仮想現実（VR）と拡張現実（AR),Realidad Virtual y Aumentada,Realidade Virtual e Aumentada,Virtual and Augmented Reality,Virtual e Augmented Reality,虚拟现实和增强现实,Віртуальна та Розширена реальність,가상현실(VR)과 증강현실(AR),Virtuálna a Rozšírená realita,VR i rzeczywistość rozszerzona
+Virtual_and_augmented_reality_Column_Body_Row_TextBox_text,"Powered by [color=#E3266F]OpenVR[/color]
+Supports all common hardware: Occulus Rift, Gear VR, Leap Motion...
+
+Augmented Reality powered by the [color=#26BFE3]ARKit[/color]
+","Grâce à [color=#E3266F] OpenVR[/color]
+Support du matériel commun: Occulus Rift, Gear VR, Leap Motion...
+
+Support de la réalité augmentée via [color=#26BFE3]Arkit[/color]
+","[color=#E3266F]OpenVR[/color]
+ふつうのハードウェアをサポートします：Occulus Rift, Gear VR, Leap Motion...
+
+拡張現実は[color=#26BFE3]ARKit[/color]のおかげで開発できます","Usando [color=#E3266F]OpenVR[/color]
+Soporte para: Occulus Rift, Gear VR, Leap Motion...
+
+Realidad Aumentada usando [color=#26BFE3]ARKit[/color]
+","Realidade Virtual usando [color=#E3266F]OpenVR[/color]
+
+Suporta os hardware mais conhecidos do mercado: Occulus Rift, Gear VR, Leap Motion...
+
+Realidade Aumentada usando [color=#26BFE3]ARKit[/color]
+","Basiert auf [color=#E3266F]OpenVR[/color]
+Gängige Hardware wird unterstützt: Occulus Rift, Gear VR, Leap Motion...
+
+Augmented Reality basiert auf [color=#26BFE3]ARKit[/color]
+","Powered by [color=#E3266F]OpenVR[/color]
+Supporta tutti i dispositivi comuni: Oculus Rift, Gear VR, Leap Motion...
+
+Augmented Reality grazie a [color=#26BFE3]ARKit[/color]
+","由 [color=#E3266F]OpenVR[/color] 提供技术支持
+支持所有常见硬件设备: Occulus Rift, Gear VR, Leap Motion等...
+
+增强现实由 [color=#26BFE3]ARKit[/color] 提供技术支持
+","На базі [color=#E3266F]OpenVR[/color]
+Підтримка усіх видів поширених пристроїв: Occulus Rift, Gear VR, Leap Motion...
+
+Розширена реальність на базі [color=#26BFE3]ARKit[/color]
+","[color=#E3266F]OpenVR[/color] 기반
+모든 일반적인 하드웨어를 지원합니다: Occulus Rift, Gear VR, Leap Motion...
+
+[color=#26BFE3]ARKit[/color] 기반 증강현실
+","Založená na [color=#E3266F]OpenVR[/color]
+Podporuje všetok bežný hardware: Occulus Rift, Gear VR, Leap Motion...
+
+Rozšírená realita založená na [color=#26BFE3]ARKit[/color]
+","Wirtualna rzeczywistość napędzana przez [color=#E3266F]OpenVR[/color]
+Wspiera wszystkie typy osprzętu: Occulus Rift, Gear VR, Leap Motion...
+
+AR wspierane przez [color=#26BFE3]ARKit[/color]
+"
+Professionals_use_godot_Column_Header_title,Professionals use Godot,Les pros utilisent Godot,Godotを使うプロがいます,Usado en el entorno profesional,Profissionais usando Godot,Profis nutzen Godot,I professionisti usano Godot,专业人员使用Godot,Професіонали користуються Godot,Godot를 사용하는 전문가들,Godot používajú profesionáli,Godot używany profesjonalnie
+Professionals_use_godot_Column_Body_Row_TextBox_text,"[color=#E3266F]Game studios[/color] like Gamblify, GuaranApps, Kivano...
+[color=#26BFE3]Schools[/color] including School4Games Berlin, KidsCanCode...
+[color=#02E180]Content creators[/color] like Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+","Des [color=#E3266F]studios de jeux[/color] comme Gamblify, GuaranApps, Kivano...
+Des [color=#26BFE3]écoles[/color] telles que School4Games Berlin, KidsCanCode...
+Des [color=#02E180]vidéastes[/color] comme Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+","[color=#E3266F]ゲームスタジオ[/color]：Gamblify, GuaranApps, Kivano...
+[color=#26BFE3]大学[/color]：School4Games ベルリン, KidsCanCode...
+[color=#02E180]学習用の製作者[/color]：Heartbeast, GamesFromScratch, [i]GDQuest[/i]...今はまだ日本語の動画は少ないでしょう","[color=#E3266F]Estudios de videojuegos[/color] como Gamblify, GuaranApps, Kivano...
+[color=#26BFE3]Escuelas[/color] como School4Games Berlin, KidsCanCode...
+[color=#02E180]Creadores de contenido[/color] como Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+","[color=#E3266F]Estúdios de Jogos[/color] como Gamblify, GuaranApps, Kivano...
+
+[color=#26BFE3]Escolas[/color] incluindo School4Games Berlin, KidsCanCode...
+
+[color=#02E180]Criadores de conteúdo[/color] como Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+","[color=#E3266F]Spielestudios[/color] wie z.B. Gamblify, GuaranApps, Kivano...
+[color=#26BFE3]Schulen[/color], unter anderem School4Games Berlin, KidsCanCode...
+[color=#02E180]Inhaltsentwickler[/color] wie z.B. Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+","[color=#E3266F]Game studios[/color] come Gamblify, GuaranApps, Kivano...
+[color=#26BFE3]Scuole[/color] come School4Games Berlin, KidsCanCode...
+[color=#02E180]Content creator[/color] come Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+","[color=#E3266F]游戏开发工作室[/color]比如Gamblify, GuaranApps, Kivano等...
+[color=#26BFE3]学校[/color]包括School4Games Berlin, KidsCanCode等...
+[color=#02E180]内容创作者[/color]像Heartbeast, GamesFromScratch, [i]GDQuest[/i]等...
+","[color=#E3266F]Геймстудії[/color] такі, як Gamblify, GuaranApps, Kivano...
+[color=#26BFE3]Школи[/color] серед яких School4Games Berlin, KidsCanCode...
+[color=#02E180]Творці контенту[/color] серед яких Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+","[color=#E3266F]게임 스튜디오[/color] : Gamblify, GuaranApps, Kivano 등
+[color=#26BFE3]교육[/color] : School4Games Berlin, KidsCanCode 등
+[color=#02E180]콘텐츠 크리에이터[/color] : Heartbeast, GamesFromScratch, [i]GDQuest[/i] 등
+","[color=#E3266F]Herné štúdiá[/color] ako Gamblify, GuaranApps, Kivano...
+[color=#26BFE3]Školy[/color] ako School4Games Berlin, KidsCanCode...
+[color=#02E180]Tvorcovia obsahu[/color] ako Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+","[color=#E3266F]Producenci gier[/color] jak Gamblify, GuaranApps, Kivano...
+[color=#26BFE3]Szkoły[/color], w tym School4Games Berlin, KidsCanCode...
+[color=#02E180]Twórcy contentu w sieci[/color] jak Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+"
+Made_with_godot_Column_Header2_title,Made with Godot,Un jeu conçu avec Godot,Godotで作ったゲーム,Made with Godot,Feito com Godot,Made with Godot,Sviluppati con Godot,Godot制作开发,Створено за допомоги Godot,Godot로 만들었습니다,Made with Godot,Stworzone przy użyciu Godot
+Made_with_godot_Column_Footer2_text,"Galactic Bulwark Strike, by Josep G. Camarasa","Galactic Bulwark Strike, par Josep G. Camarasa",Josep G. CamarasaのGalactic Bulwark Strike,"Galactic Bulwark Strike, por Josep G. Camarasa","Galactic Bulwark Strike, por Josep G. Camarasa","Galactic Bulwark Strike, von Josep G. Camarasa","Galactic Bulwark Strike, di Josep G. Camarasa","Galactic Bulwark Strike, 由 Josep G. Camarasa 开发制作","Galactic Bulwark Strike, від Josep G. Camarasa",Josep G. Camarasa가 만든 Galactic Bulwark Strike ,"Galactic Bulwark Strike, autor Josep G. Camarasa","Galactic Bulwark Strike, autor: Josep G. Camarasa"
+Godot_is_in_great_shape_Column_Header2_title,Godot is in great shape,Un projet en grande forme,Godotはうまくいっています,Desarrollo muy activo,Godot está em ótima forma,Godot ist in super Zustand,Godot è in ottima forma,Godot发展已经成型,Godot є в чудовій формі,Godot는 좋은 환경입니다,Godot je vo výbornej kondícii,Godot ma się świetnie
+Godot_is_in_great_shape_Column_Body_Row_TextBox2_text,"Godot is [color=#26BFE3]Free Software[/color] built by [color=#26BFE3]hundreds of people[/color]. It's growing faster over time:
+
+- [color=#02E180]700+[/color] contributors
+- 16 000+ commits
+- 16 000+ stars
+- Well-organized project
+
+The project gets [color=#02E180]$9000+[/color] a month on Patreon.","Godot est un [color=#26BFE3]Logiciel Libre[/color] développé par [color=#26BFE3]des centaines de personnes[/color]. Son évolution accélère au fil du temps:
+
+- [color=#02E180]Plus de 700[/color] contributeurs
+- 16 000+ commits
+- 16 000+ étoiles sur GitHub
+- Le projet est bien organisé
+
+Godot génère plus de [color=#02E180]$9000[/color] de donations par mois sur Patreon.","Godot は[color=#26BFE3]数百[/color]の人が開発しました[color=#26BFE3]フリーソフトウェア[/color]
+段々早く成長しています:
+
+- [color=#02E180]700[/color]人以上の開発者
+- 16 000+ commits
+- 16 000+ stars
+- 葬式的なコードベース
+
+このプロジェクトは毎月[color=#02E180]九千ドル[/color]以上Patreonでもらいます","Godot es [color=#26BFE3]software libre[/color] hecho por [color=#26BFE3]cientos de personas[/color]. No para de crecer:
+
+- [color=#02E180]700+[/color] contribuidores
+- 16 000+ commits
+- 16 000+ estrellas
+- Proyecto bien organizado
+
+El proyecto obtiene [color=#02E180]$9000+[/color] al mes en Patreon.","Godot é um [color=#26BFE3]Software Livre[/color] criado por [color=#26BFE3]centenas de pessoas[/color]. E não para de crescer:
+
+- [color=#02E180]700+[/color] contribuidores
+- 16 000+ commits
+- 16 000+ estrelas
+- Tudo muito bem organizado
+
+O projeto arrecada mais de [color=#02E180]$9000+[/color] mensalmente pelo Patreon.","Godot ist [color=#26BFE3]Freie Software[/color], erstellt von [color=#26BFE3]hunderten von Leuten[/color]. Es wächst im laufe der Zeit immer schneller:
+
+- [color=#02E180]700+[/color] Mitwirkende
+- 16 000+ Commits
+- 16 000+ Sterne
+- Gut organisiertes Projekt
+
+Auf Patreon wird das Projekt mit [color=#02E180]mehr als $9000[/color] im Monat unterstützt.","Godot è un progetto [color=#26BFE3]Free Software[/color] sviluppato da [color=#26BFE3]centinaia di persone[/color] ed in continua crescita:
+
+- [color=#02E180]700+[/color] contributor
+- 16 000+ commit
+- 16 000+ star
+- Progetto ben organizzato
+
+Il progetto ottiene più di [color=#02E180]$9000[/color] al mese su Patreon.","Godot是一款由[color=#26BFE3]成千上万群众[/color]共同打造的[color=#26BFE3]免费软件[/color].它随着时间的发展而飞速发展:
+
+- [color=#02E180]超过700个[/color]贡献者参与
+- 16 000多次的提交
+- 16 000多个星星
+- 一个组织健全的项目
+
+Godot项目每个月能从老顾主那里得到高达[color=#02E180]9000多美元[/color]的赞助费.","Godot є [color=#26BFE3]Свобдним ПЗ[/color], що його будують [color=#26BFE3]сотні людей[/color]. Він зростає чим швидше із кожною хвилиною:
+
+- [color=#02E180]700+[/color] вкладників
+- 16 000+ комітів
+- 16 000+ зірочок
+- Добре організований проект 
+
+Проект отримує [color=#02E180]$9000+[/color] кожного місяця на Patreon.","Godot는 [color=#26BFE3]무료 소프트웨어로[/color] [color=#26BFE3]수백명의 사람들로[/color] 만들어졌습니다. 시간이 갈수록 빠른 성장을 보이고 있습니다:
+
+- [color=#02E180]700+[/color] 기여자들
+- 16 000+ commits
+- 16 000+ stars
+- 잘 조직화된 프로젝트
+
+프로젝트는 매달 Patreon으로 [color=#02E180]$9000+[/color] 을 받습니다.","Godot je [color=#26BFE3]Free Software[/color], ktorý tvoria [color=#26BFE3]stovky ľudí[/color]. A rastie s časom:
+
+- [color=#02E180]700+[/color] prispievateľov
+- 16 000+ príspevkov
+- 16 000+ hviezd
+- dobre zorganizovaný projekt
+
+Projekt dostáva mesačne viac ako [color=#02E180]$9000[/color] cez Patreon.","Godot to [color=#26BFE3]darmowe oprogramowanie[/color] tworzone przez [color=#26BFE3]setki ludzi[/color]. Z czasem rośnie coraz szybciej:
+
+- [color=#02E180]700+[/color] współautorów
+- 16 000+ commitów
+- 16 000+ gwiazdek
+- Dobrze zorganizowany projekt
+
+Projekt zbiera [color=#02E180]ponad $9000[/color] miesięcznie na Patreonie."
+Godot_is_in_great_shape_Column_Footer2_text,"Some features are sponsored by companies: WebGL export by Mozilla, C# support by Microsoft...","Certaines fonctionnalités sont parrainées par des entreprises: l'export WebGL par Mozilla, le support de C# par Microsoft ...",いろんな機能は大きい組織主催です：WebGL（Mozilla)、C#（Microsoft),"Algunas características están patrocinadas por compañías: exportar a WebGL por Mozilla, soporte de C# por Microsoft...","Algumas funcionalidades foram patrocinadas por grandes companhias: WebGL export pela Mozilla, suporte C# pela Microsoft…","Einige Features werden von namhaften Firmen gesponsort: WebGL Export von Mozilla, C# Unterstützung von Microsoft...","Alcune funzionalità sono sponsorizzate dalle compagnie: WebGL export da Mozilla, supporto C# da Microsoft...","一些功能由大型公司赞助: WebGL export 由Mozilla提供, C# 由Microsoft支持等...","Деякі функції профінансовані сторонніми компаніями: експорт до WebGL - Mozilla, підтримка C# - Microsoft...","일부 기능은 회사로부터 후원을 받았습니다: Mozilla의 WebGL, Microsoft의 C# 등","Niektoré funkcie sú sponzorované spoločnosťami: WebGL export od Mozilly, C# podpora od Microsoftu...","Niektóre funkcje są sponsorowane przez korporacje: eksport WebGL przez Mozillę, wsparcie dla C# przez Microsoft..."
+How_to_get_started_Header_title,How to get started,Comment bien débuter,どうやって始められますか？ ,Cómo empezar,Como começar,Wie fange ich an?,Come cominciare,如何迈开第一步？,З чого почати,시작하는 법,Ako začať?,Jak zacząć?
+How_to_get_started_Body_Row_TextBox_text,"The [color=#26BFE3]community[/color] is [b]very[/b] active. Social networks, forum, IRC, Discord…
+There's a [color=#26BFE3]Questions/Answers[/color] website
+You'll find plenty of official [color=#02E180]tutorials[/color] in the [color=#02E180]online manual[/color]
+There's [color=#E3266F]built-in code reference[/color] inside the game editor
+Use the [color=#F2971A]open source demos[/color]","La [color=#26BFE3]communauté[/color] est [b]très[/b] active. Vous trouverez du monde sur les réseaux sociaux, le forum, IRC, Discord...
+Il y a un site de [color=#26BFE3]Questions/Réponses[/color]
+Vous trouverez beaucoup de [color=#02E180]tutoriels officiels[/color] dans le [color=#02E180]manuel en ligne[/color]
+La [color=#E3266F]référence de code[/color] est intégrée dans l'éditeur
+Vous trouverez de nombreuses [color=#F2971A]démos open source[/color]!","[color=#26BFE3]コミュニティ[/color]は[b]とても[/b]にぎやかです。SNSしIRCしDiscordしでGodotのユーザーと会えます
+[color=#26BFE3]質問と答え[/color]のウェブサイトもあります
+[color=#02E180]便覧[/color]に公式の[color=#02E180]学習用[/color]が多いです
+開発環境に[color=#E3266F]コードの便覧[/color]が含まれます
+[color=#F2971A]オプンソースのデモ[/color]も多いです","La [color=#26BFE3]comunidad[/color] es [b]muy[/b] activa. Redes sociales, foro, IRC, Discord…
+Hay una página de [color=#26BFE3]Preguntas/Respuestas[/color]
+Encontrarás muchos [color=#02E180]tutorialess[/color] oficiales en el [color=#02E180]manual online[/color]
+Hay [color=#E3266F]documentación[/color] dentro del propio editor
+Usa [color=#F2971A]demos open source[/color]","A [color=#26BFE3]comunidade[/color] é [b]muito[/b] ativa. Redes sociais, fórum, IRC, Discord…
+
+Página de [color=#26BFE3]Perguntas&Respostas[/color]
+
+Você vai encontrar vários [color=#02E180]tutoriais[/color] oficiais no [color=#02E180]manual online[/color]
+
+O editor de textos possui[color=#E3266F]documentação integrada[/color]
+
+Use as [color=#F2971A]demos com código aberto[/color]","Die [color=#26BFE3]Community[/color] ist [b]sehr[/b] aktiv. Soziale Netzwerke, Forum, IRC, Discord…
+Es gibt eine [color=#26BFE3]Frage und Antwort[/color] Webseite
+Du findest viele offizielle [color=#02E180]Tutorials[/color] im [color=#02E180]online Handbuch[/color]
+Es gibt eine [color=#E3266F]eingebaute Code-Referenz[/color] im Spiele-Editor
+Erforsche die [color=#F2971A]Open Source Demos[/color]","La [color=#26BFE3]community[/color] è [b]molto[/b] attiva. Social network, forum, IRC, Discord…
+C’è un sito web con [color=#26BFE3]Questions/Answers[/color]
+Troverai tanti [color=#02E180]tutorial[/color] ufficiali nel [color=#02E180]manuale online[/color]
+C’è una [color=#E3266F]documentazione API integrata[/color] all’interno dell’editor di gioco
+Usa [color=#F2971A]le demo open source[/color]","我们的[color=#26BFE3]社区[/color][b]非常[/b]活跃. 包括社交网络, 论坛, 即时聊天平台, 在线聊天工具等…
+我们有一个在线的[color=#26BFE3]问/答[/color]网站
+你可以在[color=#02E180]在线手册[/color]里发现许多官方[color=#02E180]教程[/color]
+Godot游戏编辑器有一个[color=#E3266F]内置的代码参考工具[/color]可供使用
+可以使用[color=#F2971A]开源示例[/color]","[b]Дуже[/b] активна [color=#26BFE3]спільнота[/color]. Соціальні мережі, форум, IRC, Discord…
+Сайт у форматі [color=#26BFE3]Питання/Відповідь[/color]
+В [color=#02E180]онлайн мануалі[/color] можна знайти достатньо офіційних [color=#02E180]навчальних матеріалів[/color]
+Також існує [color=#E3266F]вбудована довідка до коду[/color] просто в ігровому редакторі
+Скористайтеся [color=#F2971A]демо проектами із відкритим кодом[/color]","[color=#26BFE3]커뮤니티[/color] 는 [b]매우[/b] 활발합니다. 소셜 네트워크, 포럼, IRC, Discord 등
+[color=#26BFE3]질의응답[/color] 웹사이트가 있습니다
+[color=#02E180]온라인 설명서[/color] 에서 많은 공식 [color=#02E180]튜토리얼[/color] 을 찾으실 수 있습니다
+게임 에디터 내에 [color=#E3266F]내장 코드 참조[/color] 가 있습니다
+[color=#F2971A]오픈 소스 데모[/color] 를 사용하십시오","[color=#26BFE3]Komunita[/color] je [b]veľmi[/b] aktívna. Sociálne siete, fórum, IRC, Discord…
+K dispozícii je webstránka [color=#26BFE3]otázok a odpovedí[/color]
+V [color=#02E180]online manuáli[/color] nájdete viacero oficiálnych [color=#02E180]tutoriálov[/color]
+Herný editor obsahuje [color=#E3266F]zabudované referencie kódu[/color]
+Využite [color=#F2971A]open source demá[/color]","[color=#26BFE3]Społeczność[/color] jest [b]bardzo[/b] aktywna. Serwisy społecznościowe, forum, IRC, Discord…
+Jest również dostępna strona [color=#26BFE3]Q&A[/color]
+Znajdziesz mnóstwo oficjalnych [color=#02E180]tutoriali[/color] w [color=#02E180]internetowym podręczniku[/color]
+W edytorze jest [color=#E3266F]wbudowana dokumentacja kodu[/color]
+Użyj [color=#F2971A]otwartoźródłowych dem[/color]"
+How_to_get_started_Footer_text,Most of the resources are in English though... a good way to practice?,"L'éditeur est déjà traduit en français, ainsi qu'une part croissante des tutoriels officiels",大体情報は英語ですが良い練習になれるでしょうね？,),La mayoría de los recursos están en inglés… ¿hora de aprender?,Porém boa parte das coisas estão em inglês...é até uma boa chance para praticar!,Ma molte risorse sono in Inglese... è una buona scusa per fare pratica?,Viele der Quellen sind in Englisch... eine gute Möglichkeit zu üben!,"Проте більшість ресурсів на англійській...тож гарна нагода попркатикуватися, чи не так?",비록 대부분의 자원은 영어입니다... 하지만 연습하기에 좋은 방식이지 않을까요?,Väčšina zdrojov je však v angličtine... dobrý spôsob na zdokonalenie sa?,Większość zasobów jest jednak po angielsku... dobra okazja na trening?
+Learn_from_simple_free_demos_Column_Header2_title,Learn from simple Free demos,Démos libres,読みやすいデモで勉強できます,Aprende de demos simples y libres,Aprenda através de demos simples e livres,"Einfache, freie Demos zum lernen",Impara dalle demo libere,从简单免费的示例开始入手学习,Навчайтеся за допомги простих та безкоштовних демопроектів,간단한 무료 데모를 통해 배워보기,Na učenie využite free demá,"Ucz się z prostych, darmowych dem"
+Learn_from_simple_free_demos_Column_Footer2_text,Both official and 3rd-party,"Il y en a beaucoup, officielles ou mises à disposition par la communauté",公式プロジェクトもコミュニティのもあります,Tanto oficiales como de terceros,Tanto oficiais quanto de terceiros,Sowohl Offizielle als auch Dirttanbieter,Sia ufficiali che 3rd party,官方的和第三方的都有,"Як офііцних, так і від третіх сторін",공식 프로젝트와 커뮤니티의 프로젝트가 있습니다,Či už oficiálne alebo od tretích strán,Zarówno oficjalnych jak i tworzonych przez społeczność
+Thank_you_Column_Header2_title,Thank you!,Merci beaucoup!,ありがとうございました！,¡Muchas gracias!,Muito obrigado!,Vielen Dank!,Grazie!,非常感谢!,Щіро дякую!,감사합니다!,Ďakujem za pozornosť!,Dzięki!
+Thank_you_Column_Header2_subtitle,Any question?,Des questions?,質問がありますか？,¿Alguna pregunta?,Dúvidas ou perguntas?,Noch Fragen?,Domande?,还有疑问吗?,Маєте запитання?,질문 있으신가요?,Otázky?,Masz pytania?
+Thank_you_Column_Body_Row_TextBox2_text,"SNS:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Credits:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] by GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] by Justin
+
+This presentation is an Open Source Godot project!
+Find it on [url=https://github.com/GDquest/godot-slides]GitHub[/url]. It's available in multiple languages.
+","Réseaux sociaux:[color=#26BFE3] @NathanGDquest[/color]
+[color=#F2971A] youtube.com/c/gdquest[/color]
+
+Crédits:
+- [url=https://play.google.com/store/apps/detailsid=fr.guaranapps.games.get_teddy?]Get Teddy[/url] par GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] par Justin
+
+Cette présentation est un projet Godot Libre!
+Téléchargez-la et contribuez-y sur [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Elle est traduite dans plusieurs langues.
+","ツイタ：[color=#26BFE3]@NathanGDquest[/color]
+Youtube：[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Credits:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] by GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] by Justin
+
+この発表はオプンソースのGodotのプロジェクトです：[url=https://github.com/GDquest/godot-slides]GitHub[/url]でダウンロードできます. 色んな言語で利用可能です。 ","SNS:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Créditos:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] por GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] por Justin
+
+¡Esta presentación es un proyecto open-source hecho en Godot!
+Está en [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Disponible en varios idiomas.
+","SNS:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Créditos:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] por GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] por Justin
+
+Essa apresentação é um projeto livre e de código aberto feito e rodando no Godot!
+Disponível em [url=https://github.com/GDquest/godot-slides]GitHub[/url] em vários idiomas.
+","SNS:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Credits:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] von GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] von Justin
+
+Diese Päsentation ist ein Open Source Godot Projekt!
+Es befindet sich auf [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url] und ist in mehreren Sprachen verfügbar.
+","SNS:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Credits:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] di GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] di Justin
+
+Questa presentazione è un progetto Godot Open Source!
+La puoi trovare su [url=https://github.com/Gdquest/godot-slides]GitHub[/url], disponibile in molti linguaggi.
+","社交网络:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+荣誉:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] 作者 GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] 作者 Justin
+
+本演示文稿是一个开源的Godot项目!
+可以在[url=https://github.com/GDquest/godot-slides]GitHub[/url]上找到它. 并且提供了多个语言版本.
+","SNS:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Подяки матеріали:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] від GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] від Justin
+
+Ця презентація є проектом Godot із відритим кодом!
+Його можна знайти на [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Він доступний на багатьох мовах.
+","SNS:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Credits:
+- GuaranApps에서 만든[url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url]
+- Justin이 만든 [url=http://www.rpginabox.com/]RPG in a Box[/url]
+
+이 프레젠테이션은 오픈 소스 Godot 프로젝트입니다!
+[url=https://github.com/GDquest/godot-slides]GitHub[/url] 에서 찾으실 수 있습니다. 다양한 언어로 이용하실 수 있습니다.
+","SNS:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Credits:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] od GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url] autor Justin
+
+Táto prezentácia je Open Source Godot projekt!
+Nájdete ju na [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Dostupná vo viacerých jazykoch
+","Media społecznościowe:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Źródła:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] od GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url], autor: Justin
+
+Ta prezentacja jest otwartoźródłowym projektem Godot!
+Link: [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Jest dostępna w wielu językach.
+"
