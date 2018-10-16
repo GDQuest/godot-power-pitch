@@ -1,5 +1,5 @@
-id,en,fr,ja,es,pt_BR,de,it,zh,uk_UA,ko,sk
-A_free_modern_engine_Column_Header_title,A Free modern engine,Un moteur moderne et gratuit,最新のオプンソースゲームエンジン,Un motor libre y moderno,Livre e Moderno,Eine freie moderne Spiele-Engine,Un motore di gioco libero,一个现代化的免费引擎,Вілний та сучасний двигун,자유로운 현대적인 엔진,Moderný herný engine zadarmo
+id,en,fr,ja,es,pt_BR,de,it,zh,uk_UA,ko,sk,pl
+A_free_modern_engine_Column_Header_title,A Free modern engine,Un moteur moderne et gratuit,最新のオプンソースゲームエンジン,Un motor libre y moderno,Livre e Moderno,Eine freie moderne Spiele-Engine,Un motore di gioco libero,一个现代化的免费引擎,Вілний та сучасний двигун,자유로운 현대적인 엔진,Moderný herný engine zadarmo,Darmowy współczesny silnik
 A_free_modern_engine_Column_Body_Row_TextBox_text,"Separate [color=#26BFE3]2d[/color] and [color=#E3266F]3d[/color] renderers
 Complete [color=#F2971A]game editor[/color]
 
@@ -45,9 +45,13 @@ PC, 모바일, 웹*으로 게임을 출시할 수 있습니다","Oddelené [colo
 Kompletný [color=#F2971A]herný editor[/color]
 
 Tvorba projektov na Windows, Mac, Linux
-Zostavenie hier pre PC, mobily, web*"
-A_free_modern_engine_Column_Footer_text,"*And PS4, XboxOne, Switch, PS Vita...","*Et sur PS4, XboxOne, Switch, PS Vita ...",＊コンソールのためにも出力できます,"*Y PS4, Xbox One, Switch, PS Vita...","*E também PS4, XboxOne, Switch, PS Vita...","*Und PS4, XboxOne, Switch, PS Vita...","*e per PS4, XboxOne, Switch, PS Vita...","*包括 PS4, XboxOne, Switch, PS Vita 等平台...","*Та PS4, XboxOne, Switch, PS Vita...","*그리고 PS4, XboxOne, Switch, PS Vita 등","*a PS4, XboxOne, Switch, PS Vita..."
-State_of_the_art_3d_engine_Column_Header_title,State of the art 3d engine,Moteur 3d dernier-cri,最先端の３Dエンジン,Motor 3D a la última,Um moderno motor 3D,Aktuelle 3d Engine,3D engine allo stato dell’arte,先进的3d引擎技术,Сучасний 3d двигун,3D 엔진의 기술 수준,3d engine na úrovni doby
+Zostavenie hier pre PC, mobily, web*","Osobne silniki renderujące [color=#26BFE3]2D[/color] i [color=#E3266F]3D[/color]
+Kompletny [color=#F2971A]edytor gier[/color]
+
+Twórz projekty na Windowsie, Macu, Linuksie
+Buduj gry na PC, urządzenia mobilne, przeglądarki*"
+A_free_modern_engine_Column_Footer_text,"*And PS4, XboxOne, Switch, PS Vita...","*Et sur PS4, XboxOne, Switch, PS Vita ...",＊コンソールのためにも出力できます,"*Y PS4, Xbox One, Switch, PS Vita...","*E também PS4, XboxOne, Switch, PS Vita...","*Und PS4, XboxOne, Switch, PS Vita...","*e per PS4, XboxOne, Switch, PS Vita...","*包括 PS4, XboxOne, Switch, PS Vita 等平台...","*Та PS4, XboxOne, Switch, PS Vita...","*그리고 PS4, XboxOne, Switch, PS Vita 등","*a PS4, XboxOne, Switch, PS Vita...","*A także PS4, XboxOne, Switch, PS Vita..."
+State_of_the_art_3d_engine_Column_Header_title,State of the art 3d engine,Moteur 3d dernier-cri,最先端の３Dエンジン,Motor 3D a la última,Um moderno motor 3D,Aktuelle 3d Engine,3D engine allo stato dell’arte,先进的3d引擎技术,Сучасний 3d двигун,3D 엔진의 기술 수준,3d engine na úrovni doby,Nowoczesny silnik 3d
 State_of_the_art_3d_engine_Column_Body_Row_TextBox_text,"[color=#E3266F]Physically-based rendering[/color] with full MSAA support
 [color=#02E180]Full principled BSDF[/color] with Subsurface Scattering, reflection, refraction, clearcoat...
 [color=#26BFE3]Global illumination[/color] for gorgeous real-time graphics
@@ -81,9 +85,12 @@ Subsurface Scattering, 반사, 굴절, Clearcoat 등으로 [color=#02E180]완전
 곡선 및 자동 노출, 스크린 영역 반사(SSR), 안개, 눈부심, 피사계심도 등이 포함된 [color=#F2971A]중간 및 포스트 프로세싱 효과[/color]","[color=#E3266F]Fyzikálne-založený rendering[/color] s plnou podporou MSAA
 [color=#02E180]Úplný 'Principled BSDF'[/color] s podpovrchovým rozptylom, odrazom, lomom svetla, bezfarebným lakom...
 [color=#26BFE3]Globálne osvetlenie[/color] pre úžasnú grafiku v reálnom čase
-[color=#F2971A]Mid a Post processing efekty[/color] vrátane kriviek a automatickej expozície, screen-space odrazov, hmly, presvetlenia, hĺbky ostrosti..."
-State_of_the_art_3d_engine_Column_Footer_text,Designed to work well with Blender 2.8's Eevee realtime engine,Compatible avec le moteur en temps réel Eevee de Blender 2.8,Blender3d 2.8のEeveeリアルタイムレンダリングエンジンと互換します,Diseñado para funcionar perfectamente junto al motor en tiempo real Eeevee de Blender 2.8,"Desenhado para uma excelente integração com o motor gráfico Eevee, disponível no Blender 2.8+","Entwickelt, um mit Eevee, Echtzeit-Engine von Blender 2.8, gut zu funktionieren",Progettato per integrarsi con Eevee il motore realtime di Blender 2.8,深度配合Blender 2.8版本中的Eevee实时渲染引擎,Призначений для роботи з Blender 2.8's Eevee realtime engine,Blender 2.8의 Eevee 실시간 엔진과도 잘 작동되도록 설계되었습니다,Navrhnutý pre dobrú spoluprácu s Eevee realtime engine z Blendera 2.8 
-All_in_one_package_Column_Header_title,All-in-one package,Un outil tout-en-un,必要とするツールは全て含まれています,Todo en uno,Tudo em um!,All-in-one Paket,Tutto in uno,一体化配置,Все в одному,일체형 패키지,Balík všetko v jednom
+[color=#F2971A]Mid a Post processing efekty[/color] vrátane kriviek a automatickej expozície, screen-space odrazov, hmly, presvetlenia, hĺbky ostrosti...","[color=#E3266F]Rendering bazujący na fizyce (PBR)[/color] z pełnym wsparciem dla MSAA
+[color=#02E180]Pełen „Principled BSDF”[/color] z rozpraszaniem powierzchniowym, odbiciami, załamaniem światła, clearcoat...
+[color=#26BFE3]Globalne oświetlenie[/color] dla pięknej grafiki w czasie rzeczywistym
+[color=#F2971A]Efekty mid- i post-processing[/color], w tym krzywe, auto-naświetlenie, technika SSR, mgła, efekt bloom, głębia ostrości (DOF)..."
+State_of_the_art_3d_engine_Column_Footer_text,Designed to work well with Blender 2.8's Eevee realtime engine,Compatible avec le moteur en temps réel Eevee de Blender 2.8,Blender3d 2.8のEeveeリアルタイムレンダリングエンジンと互換します,Diseñado para funcionar perfectamente junto al motor en tiempo real Eeevee de Blender 2.8,"Desenhado para uma excelente integração com o motor gráfico Eevee, disponível no Blender 2.8+","Entwickelt, um mit Eevee, Echtzeit-Engine von Blender 2.8, gut zu funktionieren",Progettato per integrarsi con Eevee il motore realtime di Blender 2.8,深度配合Blender 2.8版本中的Eevee实时渲染引擎,Призначений для роботи з Blender 2.8's Eevee realtime engine,Blender 2.8의 Eevee 실시간 엔진과도 잘 작동되도록 설계되었습니다,Navrhnutý pre dobrú spoluprácu s Eevee realtime engine z Blendera 2.8 ,Zaprojektowany dla dobrej współpracy z silnikiem Eevee Blendera 2.8
+All_in_one_package_Column_Header_title,All-in-one package,Un outil tout-en-un,必要とするツールは全て含まれています,Todo en uno,Tudo em um!,All-in-one Paket,Tutto in uno,一体化配置,Все в одному,일체형 패키지,Balík všetko v jednom,Wszystko w jednym
 All_in_one_package_Column_Body_Row_TextBox_text,"- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion
 - [color=#26BFE3]Animation[/color] editor with 2d rigging
 - [color=#F2971A]Tilemap editor[/color] with autotiles
@@ -150,10 +157,16 @@ Nuovi tool in ogni nuova versione!","- 内嵌文档和自动补全功能的[colo
 - [color=#02E180]Shader[/color] editor, vizuálny a cez kód
 - [color=#02E180]UI theme editor[/color]
 
-Každá ďalšia verzia prináša nové nástroje!"
-All_in_one_package_Column_Footer_text,For instance Godot 3.1 ships with a new animation editor that supports cut-scenes,"La version 3.1 apporte un éditeur de cinématiques avec le séquençage d'animations, par exemple",２D　IKとメッシュスッキニングはもう入手可能,"Por ejemplo, Godot 3.1 trae un nuevo editor de animaciones con soporte para cinemáticas","Por exemplo, Godot 3.1 traz um editor de animações novo que facilita a criação de cut-scenes",Zum Beispiel Godot 3.1 kommt mit einem neuen Animation-Editor der Cut-Szenen unterstützt,Ad esempio Godot 3.1 è rilasciato con un nuovo editor di animazioni con supporto alle cut-scene,例如Godot 3.1版本中搭载了一个全新的支持场景剪裁功能的动画编辑器,"Наприклад, Godot 3.1 йде в комплекті з новим редактором анімацій, що підтримує катсцени",예를들어 Godot 3.1에서는 컷 씬을 지원하는 새로운 애니메이션 에디터가 도입됩니다,Napr. Godot 3.1 príde s novým editorom animácií s podporou cut-scenes
-CreateAnything_Column_Header_title,Create Anything,Créez toutes sortes d'applications,何でも作られます,Creación sin límites,Crie qualquer coisa,Erstelle alles Mögliche,Crea qualsiasi cosa,创造任何你所想,Створюй Будь-що,무엇이든 만드십시오,Vytvorte čokoľvek
-CreateAnything_Column_Header_subtitle,"2d and 3d Games, tools, or applications","Jeux 2d et 3d, outils ou programmes",２Dと３Dゲームしツールしソフトウェアもできます,"Juegos en 2D y 3D,  herramientas, aplicaciones…","Jogos 2D e 3D, ferramentas, aplicativos…","2d und 3d Spiele, Tools, oder Anwendungen","Giochi 2d e 3d, strumenti o applicazioni","2D和3D游戏,工具,应用软件等","2d чи 3d Ігри, інструменти чи додатки","2d 및 3d 게임, 도구, 혹은 응용 프로그램","2D a 3D hry, nástroje alebo aplikácie"
+Každá ďalšia verzia prináša nové nástroje!","- [color=#E3266F]Edytor kodu[/color] z wbudowaną dokumentacją i autouzupełnianiem
+- [color=#26BFE3]Edytor animacji[/color] z riggingiem 2d
+- [color=#F2971A]Edytor tilemap[/color] z autotile'ami
+- [color=#02E180]Edytor shaderów[/color] wizualny i kodowy
+- [color=#02E180]Edytor motywów UI[/color]
+
+Z nowymi narzędziami dodawanymi w każdej wersji!"
+All_in_one_package_Column_Footer_text,For instance Godot 3.1 ships with a new animation editor that supports cut-scenes,"La version 3.1 apporte un éditeur de cinématiques avec le séquençage d'animations, par exemple",２D　IKとメッシュスッキニングはもう入手可能,"Por ejemplo, Godot 3.1 trae un nuevo editor de animaciones con soporte para cinemáticas","Por exemplo, Godot 3.1 traz um editor de animações novo que facilita a criação de cut-scenes",Zum Beispiel Godot 3.1 kommt mit einem neuen Animation-Editor der Cut-Szenen unterstützt,Ad esempio Godot 3.1 è rilasciato con un nuovo editor di animazioni con supporto alle cut-scene,例如Godot 3.1版本中搭载了一个全新的支持场景剪裁功能的动画编辑器,"Наприклад, Godot 3.1 йде в комплекті з новим редактором анімацій, що підтримує катсцени",예를들어 Godot 3.1에서는 컷 씬을 지원하는 새로운 애니메이션 에디터가 도입됩니다,Napr. Godot 3.1 príde s novým editorom animácií s podporou cut-scenes,"Godot 3.1, na przykład, wydany został z nowym edytorem animacji wspierającym cutscenki"
+CreateAnything_Column_Header_title,Create Anything,Créez toutes sortes d'applications,何でも作られます,Creación sin límites,Crie qualquer coisa,Erstelle alles Mögliche,Crea qualsiasi cosa,创造任何你所想,Створюй Будь-що,무엇이든 만드십시오,Vytvorte čokoľvek,Twórz co zechcesz
+CreateAnything_Column_Header_subtitle,"2d and 3d Games, tools, or applications","Jeux 2d et 3d, outils ou programmes",２Dと３Dゲームしツールしソフトウェアもできます,"Juegos en 2D y 3D,  herramientas, aplicaciones…","Jogos 2D e 3D, ferramentas, aplicativos…","2d und 3d Spiele, Tools, oder Anwendungen","Giochi 2d e 3d, strumenti o applicazioni","2D和3D游戏,工具,应用软件等","2d чи 3d Ігри, інструменти чи додатки","2d 및 3d 게임, 도구, 혹은 응용 프로그램","2D a 3D hry, nástroje alebo aplikácie","Gry 2D i 3D, narzędzia, aplikacje..."
 CreateAnything_Column_Body_Row_TextBox_text,"Projects:
 
 - [color=#F2971A]Ex Zodiac[/color], by Ben Hickling
@@ -198,10 +211,14 @@ CreateAnything_Column_Body_Row_TextBox_text,"Projects:
 
 - [color=#F2971A]Ex Zodiac[/color], autor Ben Hickling
 - [color=#02E180]RPG in a Box[/color], autor Justin Arnold
-- [color=#26BFE3]Procedural Mesh Generator[/color], autor Bastiaan Olij"
-CreateAnything_Column_Footer_text,"*Open source, available on GitHub","*Open Source, disponible sur GitHub",＊GitHubでダウンロードできるオプンソースパラグイン,"*Open source, disponible en GitHub","*Código aberto, disponível no GitHub","*Open source, verfügbar auf GitHub","*Open source, disponibile su GitHub",*开源在GitHub上,"*Відкритий код, доступний на GitHub","*오픈소스로, GitHub에서 사용하실 수 있습니다","*Open source, dostupné na GitHub-e"
+- [color=#26BFE3]Procedural Mesh Generator[/color], autor Bastiaan Olij","Projekty*:
+
+- [color=#F2971A]Ex Zodiac[/color], autor: Ben Hickling
+- [color=#02E180]RPG in a Box[/color], autor: Justin Arnold
+- [color=#26BFE3]Procedural Mesh Generator[/color], autor: Bastiaan Olij"
+CreateAnything_Column_Footer_text,"*Open source, available on GitHub","*Open Source, disponible sur GitHub",＊GitHubでダウンロードできるオプンソースパラグイン,"*Open source, disponible en GitHub","*Código aberto, disponível no GitHub","*Open source, verfügbar auf GitHub","*Open source, disponibile su GitHub",*开源在GitHub上,"*Відкритий код, доступний на GitHub","*오픈소스로, GitHub에서 사용하실 수 있습니다","*Open source, dostupné na GitHub-e","*Open source, dostępne na GitHubie"
 CodeFreely_Header_title,Code freely,"Programmez librement
-",自由にプログラミングできます,Programa a tu manera,Programe livremente,Freies Coden,Programma liberamente,自由代码编写,Програмуй вільно,자유로운 코딩,Slobodné kódovanie
+",自由にプログラミングできます,Programa a tu manera,Programe livremente,Freies Coden,Programma liberamente,自由代码编写,Програмуй вільно,자유로운 코딩,Slobodné kódovanie,Swobodne kodowanie
 CodeFreely_Body_Row_TextBox_text,"Godot lets you use many programming languages:
 
 [color=#02E180]GDScript[/color] Python-like scripting language, designed for gameplay developers
@@ -266,9 +283,15 @@ Mono를 사용하여 지원하는 [color=#F2971A]C# 7.0[/color]
 Podpora [color=#F2971A]C# 7.0[/color] cez Mono
 Úplná podpora [color=#E3266F]C[/color] a [color=#E3266F]C++[/color] bez nutnosti prekompilovať engine
 [color=#26BFE3]Visual scripting[/color] prostredníctvom grafu blokov
+","Godot umożliwia używanie różnych języków programowania:
+
+[color=#02E180]GDScript[/color] język skryptowy podobny do Pythona, zaprojektowany dla gameplay designerów
+Wsparcie dla [color=#F2971A]C# 7.0[/color] przy użyciu Mono
+Pełne wsparcie dla [color=#E3266F]C[/color] i [color=#E3266F]C++[/color] bez konieczności rekompilowania silnika
+[color=#26BFE3]Skrypt wizualny[/color] używający diagram z blokami
 "
-CodeFreely_Footer_text,"Community-supported languages: Python, Nim, D, Rust...","D'autres langages sont pris en charge grâce à la communauté: Python, Nim, D, Rust...",コミュニティのおかげでPythonとかNimとかDなども使えます,"Lenguajes con soporte comunitario: Python, Nim, D, Rust…","Linguagens com suporte da comunidade: Python, Nim, D, Rust...","Sprachen von der Community unterstützt: Python, Nim, D, Rust...","Linguaggi supportati grazie alla community: Python, Nim, D, Rust...","由社区推动支持的编程语言: Python, Nim, D, Rust等...","Мови програмування, що підтримуються спільнотою: Python, Nim, D, Rust...","커뮤니티가 지원하는 언어: Python, Nim, D, Rust 등","Komunitou podporované jazyky: Python, Nim, D, Rust..."
-Virtual_and_augmented_reality_Column_Header2_title,Virtual and Augmented Reality,Réalité Virtuelle et Augmentée,仮想現実（VR）と拡張現実（AR),Realidad Virtual y Aumentada,Realidade Virtual e Aumentada,Virtual and Augmented Reality,Virtual e Augmented Reality,虚拟现实和增强现实,Віртуальна та Розширена реальність,가상현실(VR)과 증강현실(AR),Virtuálna a Rozšírená realita
+CodeFreely_Footer_text,"Community-supported languages: Python, Nim, D, Rust...","D'autres langages sont pris en charge grâce à la communauté: Python, Nim, D, Rust...",コミュニティのおかげでPythonとかNimとかDなども使えます,"Lenguajes con soporte comunitario: Python, Nim, D, Rust…","Linguagens com suporte da comunidade: Python, Nim, D, Rust...","Sprachen von der Community unterstützt: Python, Nim, D, Rust...","Linguaggi supportati grazie alla community: Python, Nim, D, Rust...","由社区推动支持的编程语言: Python, Nim, D, Rust等...","Мови програмування, що підтримуються спільнотою: Python, Nim, D, Rust...","커뮤니티가 지원하는 언어: Python, Nim, D, Rust 등","Komunitou podporované jazyky: Python, Nim, D, Rust...","Wsparcie dla języków rozwijane przez społeczność: Python, Nim, D, Rust..."
+Virtual_and_augmented_reality_Column_Header2_title,Virtual and Augmented Reality,Réalité Virtuelle et Augmentée,仮想現実（VR）と拡張現実（AR),Realidad Virtual y Aumentada,Realidade Virtual e Aumentada,Virtual and Augmented Reality,Virtual e Augmented Reality,虚拟现实和增强现实,Віртуальна та Розширена реальність,가상현실(VR)과 증강현실(AR),Virtuálna a Rozšírená realita,VR i rzeczywistość rozszerzona
 Virtual_and_augmented_reality_Column_Body_Row_TextBox_text,"Powered by [color=#E3266F]OpenVR[/color]
 Supports all common hardware: Occulus Rift, Gear VR, Leap Motion...
 
@@ -313,8 +336,12 @@ Augmented Reality grazie a [color=#26BFE3]ARKit[/color]
 Podporuje všetok bežný hardware: Occulus Rift, Gear VR, Leap Motion...
 
 Rozšírená realita založená na [color=#26BFE3]ARKit[/color]
+","Wirtualna rzeczywistość napędzana przez [color=#E3266F]OpenVR[/color]
+Wspiera wszystkie typy osprzętu: Occulus Rift, Gear VR, Leap Motion...
+
+AR wspierane przez [color=#26BFE3]ARKit[/color]
 "
-Professionals_use_godot_Column_Header_title,Professionals use Godot,Les pros utilisent Godot,Godotを使うプロがいます,Usado en el entorno profesional,Profissionais usando Godot,Profis nutzen Godot,I professionisti usano Godot,专业人员使用Godot,Професіонали користуються Godot,Godot를 사용하는 전문가들,Godot používajú profesionáli
+Professionals_use_godot_Column_Header_title,Professionals use Godot,Les pros utilisent Godot,Godotを使うプロがいます,Usado en el entorno profesional,Profissionais usando Godot,Profis nutzen Godot,I professionisti usano Godot,专业人员使用Godot,Професіонали користуються Godot,Godot를 사용하는 전문가들,Godot používajú profesionáli,Godot używany profesjonalnie
 Professionals_use_godot_Column_Body_Row_TextBox_text,"[color=#E3266F]Game studios[/color] like Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]Schools[/color] including School4Games Berlin, KidsCanCode...
 [color=#02E180]Content creators[/color] like Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
@@ -349,10 +376,13 @@ Des [color=#02E180]vidéastes[/color] comme Heartbeast, GamesFromScratch, [i]GDQ
 ","[color=#E3266F]Herné štúdiá[/color] ako Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]Školy[/color] ako School4Games Berlin, KidsCanCode...
 [color=#02E180]Tvorcovia obsahu[/color] ako Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
+","[color=#E3266F]Producenci gier[/color] jak Gamblify, GuaranApps, Kivano...
+[color=#26BFE3]Szkoły[/color], w tym School4Games Berlin, KidsCanCode...
+[color=#02E180]Twórcy contentu w sieci[/color] jak Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
 "
-Made_with_godot_Column_Header2_title,Made with Godot,Un jeu conçu avec Godot,Godotで作ったゲーム,Made with Godot,Feito com Godot,Made with Godot,Sviluppati con Godot,Godot制作开发,Створено за допомоги Godot,Godot로 만들었습니다,Made with Godot
-Made_with_godot_Column_Footer2_text,"Galactic Bulwark Strike, by Josep G. Camarasa","Galactic Bulwark Strike, par Josep G. Camarasa",Josep G. CamarasaのGalactic Bulwark Strike,"Galactic Bulwark Strike, por Josep G. Camarasa","Galactic Bulwark Strike, por Josep G. Camarasa","Galactic Bulwark Strike, von Josep G. Camarasa","Galactic Bulwark Strike, di Josep G. Camarasa","Galactic Bulwark Strike, 由 Josep G. Camarasa 开发制作","Galactic Bulwark Strike, від Josep G. Camarasa",Josep G. Camarasa가 만든 Galactic Bulwark Strike ,"Galactic Bulwark Strike, autor Josep G. Camarasa"
-Godot_is_in_great_shape_Column_Header2_title,Godot is in great shape,Un projet en grande forme,Godotはうまくいっています,Desarrollo muy activo,Godot está em ótima forma,Godot ist in super Zustand,Godot è in ottima forma,Godot发展已经成型,Godot є в чудовій формі,Godot는 좋은 환경입니다,Godot je vo výbornej kondícii
+Made_with_godot_Column_Header2_title,Made with Godot,Un jeu conçu avec Godot,Godotで作ったゲーム,Made with Godot,Feito com Godot,Made with Godot,Sviluppati con Godot,Godot制作开发,Створено за допомоги Godot,Godot로 만들었습니다,Made with Godot,Stworzone przy użyciu Godot
+Made_with_godot_Column_Footer2_text,"Galactic Bulwark Strike, by Josep G. Camarasa","Galactic Bulwark Strike, par Josep G. Camarasa",Josep G. CamarasaのGalactic Bulwark Strike,"Galactic Bulwark Strike, por Josep G. Camarasa","Galactic Bulwark Strike, por Josep G. Camarasa","Galactic Bulwark Strike, von Josep G. Camarasa","Galactic Bulwark Strike, di Josep G. Camarasa","Galactic Bulwark Strike, 由 Josep G. Camarasa 开发制作","Galactic Bulwark Strike, від Josep G. Camarasa",Josep G. Camarasa가 만든 Galactic Bulwark Strike ,"Galactic Bulwark Strike, autor Josep G. Camarasa","Galactic Bulwark Strike, autor: Josep G. Camarasa"
+Godot_is_in_great_shape_Column_Header2_title,Godot is in great shape,Un projet en grande forme,Godotはうまくいっています,Desarrollo muy activo,Godot está em ótima forma,Godot ist in super Zustand,Godot è in ottima forma,Godot发展已经成型,Godot є в чудовій формі,Godot는 좋은 환경입니다,Godot je vo výbornej kondícii,Godot ma się świetnie
 Godot_is_in_great_shape_Column_Body_Row_TextBox2_text,"Godot is [color=#26BFE3]Free Software[/color] built by [color=#26BFE3]hundreds of people[/color]. It's growing faster over time:
 
 - [color=#02E180]700+[/color] contributors
@@ -431,9 +461,16 @@ Godot项目每个月能从老顾主那里得到高达[color=#02E180]9000多美�
 - 16 000+ hviezd
 - dobre zorganizovaný projekt
 
-Projekt dostáva mesačne viac ako [color=#02E180]$9000[/color] cez Patreon."
-Godot_is_in_great_shape_Column_Footer2_text,"Some features are sponsored by companies: WebGL export by Mozilla, C# support by Microsoft...","Certaines fonctionnalités sont parrainées par des entreprises: l'export WebGL par Mozilla, le support de C# par Microsoft ...",いろんな機能は大きい組織主催です：WebGL（Mozilla)、C#（Microsoft),"Algunas características están patrocinadas por compañías: exportar a WebGL por Mozilla, soporte de C# por Microsoft...","Algumas funcionalidades foram patrocinadas por grandes companhias: WebGL export pela Mozilla, suporte C# pela Microsoft…","Einige Features werden von namhaften Firmen gesponsort: WebGL Export von Mozilla, C# Unterstützung von Microsoft...","Alcune funzionalità sono sponsorizzate dalle compagnie: WebGL export da Mozilla, supporto C# da Microsoft...","一些功能由大型公司赞助: WebGL export 由Mozilla提供, C# 由Microsoft支持等...","Деякі функції профінансовані сторонніми компаніями: експорт до WebGL - Mozilla, підтримка C# - Microsoft...","일부 기능은 회사로부터 후원을 받았습니다: Mozilla의 WebGL, Microsoft의 C# 등","Niektoré funkcie sú sponzorované spoločnosťami: WebGL export od Mozilly, C# podpora od Microsoftu..."
-How_to_get_started_Header_title,How to get started,Comment bien débuter,どうやって始められますか？ ,Cómo empezar,Como começar,Wie fange ich an?,Come cominciare,如何迈开第一步？,З чого почати,시작하는 법,Ako začať?
+Projekt dostáva mesačne viac ako [color=#02E180]$9000[/color] cez Patreon.","Godot to [color=#26BFE3]darmowe oprogramowanie[/color] tworzone przez [color=#26BFE3]setki ludzi[/color]. Z czasem rośnie coraz szybciej:
+
+- [color=#02E180]700+[/color] współautorów
+- 16 000+ commitów
+- 16 000+ gwiazdek
+- Dobrze zorganizowany projekt
+
+Projekt zbiera [color=#02E180]ponad $9000[/color] miesięcznie na Patreonie."
+Godot_is_in_great_shape_Column_Footer2_text,"Some features are sponsored by companies: WebGL export by Mozilla, C# support by Microsoft...","Certaines fonctionnalités sont parrainées par des entreprises: l'export WebGL par Mozilla, le support de C# par Microsoft ...",いろんな機能は大きい組織主催です：WebGL（Mozilla)、C#（Microsoft),"Algunas características están patrocinadas por compañías: exportar a WebGL por Mozilla, soporte de C# por Microsoft...","Algumas funcionalidades foram patrocinadas por grandes companhias: WebGL export pela Mozilla, suporte C# pela Microsoft…","Einige Features werden von namhaften Firmen gesponsort: WebGL Export von Mozilla, C# Unterstützung von Microsoft...","Alcune funzionalità sono sponsorizzate dalle compagnie: WebGL export da Mozilla, supporto C# da Microsoft...","一些功能由大型公司赞助: WebGL export 由Mozilla提供, C# 由Microsoft支持等...","Деякі функції профінансовані сторонніми компаніями: експорт до WebGL - Mozilla, підтримка C# - Microsoft...","일부 기능은 회사로부터 후원을 받았습니다: Mozilla의 WebGL, Microsoft의 C# 등","Niektoré funkcie sú sponzorované spoločnosťami: WebGL export od Mozilly, C# podpora od Microsoftu...","Niektóre funkcje są sponsorowane przez korporacje: eksport WebGL przez Mozillę, wsparcie dla C# przez Microsoft..."
+How_to_get_started_Header_title,How to get started,Comment bien débuter,どうやって始められますか？ ,Cómo empezar,Como começar,Wie fange ich an?,Come cominciare,如何迈开第一步？,З чого почати,시작하는 법,Ako začať?,Jak zacząć?
 How_to_get_started_Body_Row_TextBox_text,"The [color=#26BFE3]community[/color] is [b]very[/b] active. Social networks, forum, IRC, Discord…
 There's a [color=#26BFE3]Questions/Answers[/color] website
 You'll find plenty of official [color=#02E180]tutorials[/color] in the [color=#02E180]online manual[/color]
@@ -482,12 +519,16 @@ Godot游戏编辑器有一个[color=#E3266F]内置的代码参考工具[/color]�
 K dispozícii je webstránka [color=#26BFE3]otázok a odpovedí[/color]
 V [color=#02E180]online manuáli[/color] nájdete viacero oficiálnych [color=#02E180]tutoriálov[/color]
 Herný editor obsahuje [color=#E3266F]zabudované referencie kódu[/color]
-Využite [color=#F2971A]open source demá[/color]"
-How_to_get_started_Footer_text,Most of the resources are in English though... a good way to practice?,"L'éditeur est déjà traduit en français, ainsi qu'une part croissante des tutoriels officiels",大体情報は英語ですが良い練習になれるでしょうね？,),La mayoría de los recursos están en inglés… ¿hora de aprender?,Porém boa parte das coisas estão em inglês...é até uma boa chance para praticar!,Ma molte risorse sono in Inglese... è una buona scusa per fare pratica?,Viele der Quellen sind in Englisch... eine gute Möglichkeit zu üben!,"Проте більшість ресурсів на англійській...тож гарна нагода попркатикуватися, чи не так?",비록 대부분의 자원은 영어입니다... 하지만 연습하기에 좋은 방식이지 않을까요?,Väčšina zdrojov je však v angličtine... dobrý spôsob na zdokonalenie sa?
-Learn_from_simple_free_demos_Column_Header2_title,Learn from simple Free demos,Démos libres,読みやすいデモで勉強できます,Aprende de demos simples y libres,Aprenda através de demos simples e livres,"Einfache, freie Demos zum lernen",Impara dalle demo libere,从简单免费的示例开始入手学习,Навчайтеся за допомги простих та безкоштовних демопроектів,간단한 무료 데모를 통해 배워보기,Na učenie využite free demá
-Learn_from_simple_free_demos_Column_Footer2_text,Both official and 3rd-party,"Il y en a beaucoup, officielles ou mises à disposition par la communauté",公式プロジェクトもコミュニティのもあります,Tanto oficiales como de terceros,Tanto oficiais quanto de terceiros,Sowohl Offizielle als auch Dirttanbieter,Sia ufficiali che 3rd party,官方的和第三方的都有,"Як офііцних, так і від третіх сторін",공식 프로젝트와 커뮤니티의 프로젝트가 있습니다,Či už oficiálne alebo od tretích strán
-Thank_you_Column_Header2_title,Thank you!,Merci beaucoup!,ありがとうございました！,¡Muchas gracias!,Muito obrigado!,Vielen Dank!,Grazie!,非常感谢!,Щіро дякую!,감사합니다!,Ďakujem za pozornosť!
-Thank_you_Column_Header2_subtitle,Any question?,Des questions?,質問がありますか？,¿Alguna pregunta?,Dúvidas ou perguntas?,Noch Fragen?,Domande?,还有疑问吗?,Маєте запитання?,질문 있으신가요?,Otázky?
+Využite [color=#F2971A]open source demá[/color]","[color=#26BFE3]Społeczność[/color] jest [b]bardzo[/b] aktywna. Serwisy społecznościowe, forum, IRC, Discord…
+Jest również dostępna strona [color=#26BFE3]Q&A[/color]
+Znajdziesz mnóstwo oficjalnych [color=#02E180]tutoriali[/color] w [color=#02E180]internetowym podręczniku[/color]
+W edytorze jest [color=#E3266F]wbudowana dokumentacja kodu[/color]
+Użyj [color=#F2971A]otwartoźródłowych dem[/color]"
+How_to_get_started_Footer_text,Most of the resources are in English though... a good way to practice?,"L'éditeur est déjà traduit en français, ainsi qu'une part croissante des tutoriels officiels",大体情報は英語ですが良い練習になれるでしょうね？,),La mayoría de los recursos están en inglés… ¿hora de aprender?,Porém boa parte das coisas estão em inglês...é até uma boa chance para praticar!,Ma molte risorse sono in Inglese... è una buona scusa per fare pratica?,Viele der Quellen sind in Englisch... eine gute Möglichkeit zu üben!,"Проте більшість ресурсів на англійській...тож гарна нагода попркатикуватися, чи не так?",비록 대부분의 자원은 영어입니다... 하지만 연습하기에 좋은 방식이지 않을까요?,Väčšina zdrojov je však v angličtine... dobrý spôsob na zdokonalenie sa?,Większość zasobów jest jednak po angielsku... dobra okazja na trening?
+Learn_from_simple_free_demos_Column_Header2_title,Learn from simple Free demos,Démos libres,読みやすいデモで勉強できます,Aprende de demos simples y libres,Aprenda através de demos simples e livres,"Einfache, freie Demos zum lernen",Impara dalle demo libere,从简单免费的示例开始入手学习,Навчайтеся за допомги простих та безкоштовних демопроектів,간단한 무료 데모를 통해 배워보기,Na učenie využite free demá,"Ucz się z prostych, darmowych dem"
+Learn_from_simple_free_demos_Column_Footer2_text,Both official and 3rd-party,"Il y en a beaucoup, officielles ou mises à disposition par la communauté",公式プロジェクトもコミュニティのもあります,Tanto oficiales como de terceros,Tanto oficiais quanto de terceiros,Sowohl Offizielle als auch Dirttanbieter,Sia ufficiali che 3rd party,官方的和第三方的都有,"Як офііцних, так і від третіх сторін",공식 프로젝트와 커뮤니티의 프로젝트가 있습니다,Či už oficiálne alebo od tretích strán,Zarówno oficjalnych jak i tworzonych przez społeczność
+Thank_you_Column_Header2_title,Thank you!,Merci beaucoup!,ありがとうございました！,¡Muchas gracias!,Muito obrigado!,Vielen Dank!,Grazie!,非常感谢!,Щіро дякую!,감사합니다!,Ďakujem za pozornosť!,Dzięki!
+Thank_you_Column_Header2_subtitle,Any question?,Des questions?,質問がありますか？,¿Alguna pregunta?,Dúvidas ou perguntas?,Noch Fragen?,Domande?,还有疑问吗?,Маєте запитання?,질문 있으신가요?,Otázky?,Masz pytania?
 Thank_you_Column_Body_Row_TextBox2_text,"SNS:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
@@ -594,4 +635,14 @@ Credits:
 
 Táto prezentácia je Open Source Godot projekt!
 Nájdete ju na [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Dostupná vo viacerých jazykoch
+","Media społecznościowe:
+[color=#26BFE3]@NathanGDquest[/color]
+[color=#F2971A]youtube.com/c/gdquest[/color]
+
+Źródła:
+- [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] od GuaranApps
+- [url=http://www.rpginabox.com/]RPG in a Box[/url], autor: Justin
+
+Ta prezentacja jest otwartoźródłowym projektem Godot!
+Link: [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Jest dostępna w wielu językach.
 "
