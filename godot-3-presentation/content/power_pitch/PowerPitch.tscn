@@ -17,6 +17,8 @@
 
 [node name="PowerPitch" index="0" instance=ExtResource( 1 )]
 
+LANGUAGE_MAIN = "en"
+
 [node name="Title" parent="Slides" index="0" instance=ExtResource( 2 )]
 
 [node name="A_free_modern_engine" parent="Slides" index="1" instance=ExtResource( 3 )]
