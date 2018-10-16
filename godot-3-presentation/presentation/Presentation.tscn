@@ -10,7 +10,7 @@
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Theme" ]
-LANGUAGE_MAIN = "en"
+LANGUAGE_MAIN = "pl"
 LANGUAGE_SECOND = "ja"
 
 [node name="Slides" type="Control" parent="." index="0"]
