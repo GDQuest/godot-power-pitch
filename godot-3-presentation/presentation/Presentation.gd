@@ -9,6 +9,7 @@ export(String, 'en', 'ja', 'fr', 'es', 'pt_BR', 'de', 'it', 'zh', 'uk_UA', 'ko',
 func _ready():
 	TranslationServer.set_locale(LANGUAGE_MAIN)
 	slides.initialize()
+#	slides.save_as_png("res://out")
 #	save_as_csv(get_translatable_strings()) # Use this to save the presentation as CSV
 
 func _input(event):
