@@ -1,6 +1,7 @@
-[gd_resource type="DynamicFont" load_steps=2 format=2]
+[gd_resource type="DynamicFont" load_steps=3 format=2]
 
-[ext_resource path="res://theme/fonts/CJK/NotoSansCJKjp-Medium.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://theme/fonts/arabic/NotoSansArabicUI-ExtraBold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://theme/fonts/CJK/NotoSansCJKjp-Medium.otf" type="DynamicFontData" id=2]
 
 [resource]
 
@@ -8,6 +9,7 @@ size = 92
 use_mipmaps = false
 use_filter = true
 extra_spacing_bottom = -12
-font_data = ExtResource( 1 )
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 1 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Font/fallback", "Settings" ]
 

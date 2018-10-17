@@ -46,7 +46,7 @@ func set_subtitle(string):
 func translate():
 	var locale = TranslationServer.get_locale()
 	var fonts = FONTS_DEFAULT
-	if locale in ['ja', 'ko', 'zh']:
+	if locale in ['ja', 'ko', 'zh', 'ar']:
 			fonts = FONTS_CJK
 
 	title_node.set('custom_fonts/font', fonts['title'])
