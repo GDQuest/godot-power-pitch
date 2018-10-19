@@ -1,5 +1,5 @@
 id,en,fr,ja,es,pt_BR,de,it,zh,uk_UA,ko,sk,pl
-A_free_modern_engine_Column_Header_title,A Free modern engine,Un moteur moderne et gratuit,最新のオプンソースゲームエンジン,Un motor libre y moderno,Livre e Moderno,Eine freie moderne Spiele-Engine,Un motore di gioco libero,一个现代化的免费引擎,Вілний та сучасний двигун,자유로운 현대적인 엔진,Moderný herný engine zadarmo,Darmowy współczesny silnik
+A_free_modern_engine_Column_Header_title,A Free modern engine,Un moteur moderne et gratuit,最新のオープンソースゲームエンジン,Un motor libre y moderno,Livre e Moderno,Eine freie moderne Spiele-Engine,Un motore di gioco libero,一个现代化的免费引擎,Вілний та сучасний двигун,자유로운 현대적인 엔진,Moderný herný engine zadarmo,Darmowy współczesny silnik
 A_free_modern_engine_Column_Body_Row_TextBox_text,"Separate [color=#26BFE3]2d[/color] and [color=#E3266F]3d[/color] renderers
 Complete [color=#F2971A]game editor[/color]
 
@@ -11,8 +11,8 @@ Créez vos projets sur Windows, Mac, ou Linux
 Exportez vos jeux sur PC, mobile, web*","両方[color=#26BFE3]２D[/color]と[color=#E3266F]３D[/color] レンダリングエンジン
 全面的な[color=#F2971A]ゲームエディタ[/color]
 
-プロジェクトをWindowsかMacかLinuxで作られます
-ゲームをコンピューターとかモバイルとかインタネットなどエクスポートできます＊","Renderers [color=#26BFE3]2D[/color] y [color=#E3266F]3D[/color] independientes
+プロジェクトは、WindowsかMacかLinuxで作ることができます。
+ゲームをコンピューターやモバイル、インターネットなどにエクスポートできます＊","Renderers [color=#26BFE3]2D[/color] y [color=#E3266F]3D[/color] independientes
 [color=#F2971A]Editor de juegos[/color] completo
 
 Crea proyectos en Windows, Mac y Linux
@@ -59,7 +59,7 @@ State_of_the_art_3d_engine_Column_Body_Row_TextBox_text,"[color=#E3266F]Physical
 [color=#02E180]Matériau BSDF[/color] de Pixar avec support du Subsurface Scattering, réflexion, réfraction, clearcoat...
 [color=#26BFE3]Illumination globale[/color] en temps réel
 [color=#F2971A]Effets d'image mid et post-rendu[/color]: courbes et exposition automatique, reflets en espace-écran, brouillard, bloom, profondeur de champ...","MSAAをサポートする[color=#E3266F]物理ベースレンダリング[/color]
-[color=#02E180]BSDFマテリアル[/color]：皮下拡散（Subsurface Scattering）とか, 反射率とか, 空間屈折（Refraction）など使用可能です
+[color=#02E180]BSDFマテリアル[/color]：皮下拡散（Subsurface Scattering）や反射率, 空間屈折（Refraction）などに使用可能です
 [color=#26BFE3]間接光・放射[/color]（Global Illumination)
 [color=#F2971A]後処理[/color]：自動露光しSSRし被写界深度などがあります","[color=#E3266F]Renderizado basado en físicas[/color] con soporte para MSAA
 [color=#02E180]Soporta BSDF[/color] con Subsurface Scattering, reflejos, refracción, clearcoat...
@@ -89,7 +89,7 @@ Subsurface Scattering, 반사, 굴절, Clearcoat 등으로 [color=#02E180]완전
 [color=#02E180]Pełen „Principled BSDF”[/color] z rozpraszaniem powierzchniowym, odbiciami, załamaniem światła, clearcoat...
 [color=#26BFE3]Globalne oświetlenie[/color] dla pięknej grafiki w czasie rzeczywistym
 [color=#F2971A]Efekty mid- i post-processing[/color], w tym krzywe, auto-naświetlenie, technika SSR, mgła, efekt bloom, głębia ostrości (DOF)..."
-State_of_the_art_3d_engine_Column_Footer_text,Designed to work well with Blender 2.8's Eevee realtime engine,Compatible avec le moteur en temps réel Eevee de Blender 2.8,Blender3d 2.8のEeveeリアルタイムレンダリングエンジンと互換します,Diseñado para funcionar perfectamente junto al motor en tiempo real Eeevee de Blender 2.8,"Desenhado para uma excelente integração com o motor gráfico Eevee, disponível no Blender 2.8+","Entwickelt, um mit Eevee, Echtzeit-Engine von Blender 2.8, gut zu funktionieren",Progettato per integrarsi con Eevee il motore realtime di Blender 2.8,深度配合Blender 2.8版本中的Eevee实时渲染引擎,Призначений для роботи з Blender 2.8's Eevee realtime engine,Blender 2.8의 Eevee 실시간 엔진과도 잘 작동되도록 설계되었습니다,Navrhnutý pre dobrú spoluprácu s Eevee realtime engine z Blendera 2.8 ,Zaprojektowany dla dobrej współpracy z silnikiem Eevee Blendera 2.8
+State_of_the_art_3d_engine_Column_Footer_text,Designed to work well with Blender 2.8's Eevee realtime engine,Compatible avec le moteur en temps réel Eevee de Blender 2.8,Blender3d 2.8のEeveeリアルタイムレンダリングエンジンと互換します,Diseñado para funcionar perfectamente junto al motor en tiempo real Eeevee de Blender 2.8,"Desenhado para uma excelente integração com o motor gráfico Eevee, disponível no Blender 2.8+","Entwickelt, um mit Eevee, Echtzeit-Engine von Blender 2.8, gut zu funktionieren",Progettato per integrarsi con Eevee il motore realtime di Blender 2.8,深度配合Blender 2.8版本中的Eevee实时渲染引擎,Призначений для роботи з Blender 2.8's Eevee realtime engine,Blender 2.8의 Eevee 실시간 엔진과도 잘 작동되도록 설계되었습니다,Navrhnutý pre dobrú spoluprácu s Eevee realtime engine z Blendera 2.8,Zaprojektowany dla dobrej współpracy z silnikiem Eevee Blendera 2.8
 All_in_one_package_Column_Header_title,All-in-one package,Un outil tout-en-un,必要とするツールは全て含まれています,Todo en uno,Tudo em um!,All-in-one Paket,Tutto in uno,一体化配置,Все в одному,일체형 패키지,Balík všetko v jednom,Wszystko w jednym
 All_in_one_package_Column_Body_Row_TextBox_text,"- [color=#E3266F]Code editor[/color] with embedded docs and autocompletion
 - [color=#26BFE3]Animation[/color] editor with 2d rigging
@@ -127,7 +127,7 @@ Novas ferramentas a cada versão!","- [color=#E3266F]Code Editor[/color] mit int
 - [color=#02E180]Shader[/color] Editor, Visuell- und Codebasiert
 - [color=#02E180]UI Theme-Editor[/color]
 
-Mit jeder Version kommen neue Tools hinzu! ","- [color=#E3266F]Code editor[/color] con documentazione integrata ed autocompletamento
+Mit jeder Version kommen neue Tools hinzu!","- [color=#E3266F]Code editor[/color] con documentazione integrata ed autocompletamento
 - [color=#26BFE3]Animation[/color] editor con 2d rigging
 - [color=#F2971A]Tilemap editor[/color] con autotiles
 - [color=#02E180]Shader[/color] editor, visuale e testuale
@@ -224,14 +224,12 @@ CodeFreely_Body_Row_TextBox_text,"Godot lets you use many programming languages:
 [color=#02E180]GDScript[/color] Python-like scripting language, designed for gameplay developers
 [color=#F2971A]C# 7.0[/color] support using Mono
 Full [color=#E3266F]C[/color] and [color=#E3266F]C++[/color] support without having to recompile the engine
-[color=#26BFE3]Visual scripting[/color] using a graph of blocks
-","Godot vous donne le choix entre de nombreux langages de programmation:
+[color=#26BFE3]Visual scripting[/color] using a graph of blocks","Godot vous donne le choix entre de nombreux langages de programmation:
 
 [color=#02E180]GDScript[/color], langage de scripting ressemblant à Python, conçu pour les programmeurs gameplay
 [color=#F2971A]C# 7.0[/color] avec le compileur Mono
 Support de [color=#E3266F]C[/color] et de [color=#E3266F]C ++[/color] sans avoir à recompiler le moteur
-[color=#26BFE3]VisualScript[/color], langage de programmation visuel
-","Godotでいろんなコンピューター言語で書けます：
+[color=#26BFE3]VisualScript[/color], langage de programmation visuel","Godotでいろんなコンピューター言語で書けます：
 
 Pythonのような[color=#02E180]GDScript[/color]と言うゲーム開発者用言語
 MicrosoftのMonoコンパイラで[color=#F2971A]C# 7.0[/color]サポート
@@ -249,8 +247,7 @@ Full [color=#E3266F]C[/color] y [color=#E3266F]C++[/color] sin necesidad de reco
 
 Suporte completo para [color=#E3266F]C[/color] e [color=#E3266F]C++[/color] sem ter de recompilar
 
-[color=#26BFE3]Visual scripting[/color] usando editor gráfico e blocos de lógica
-","Godot kann man mit vielen Programmiersprachen nutzen:
+[color=#26BFE3]Visual scripting[/color] usando editor gráfico e blocos de lógica","Godot kann man mit vielen Programmiersprachen nutzen:
 
 [color=#02E180]GDScript[/color] Python-ähnliche Skriptsprache, Entwickelt für Spieleentwickler
 [color=#F2971A]C# 7.0[/color] Unterstützung mit Mono
@@ -265,8 +262,7 @@ Pieno supporto [color=#E3266F]C[/color] and [color=#E3266F]C++[/color] senza bis
 [color=#02E180]GDScript[/color]是一门类似Python的脚本语言, 为游戏开发者量身打造
 支持在Mono平台上使用[color=#F2971A]C# 7.0[/color]语言进行开发
 完全支持 [color=#E3266F]C[/color] 和 [color=#E3266F]C++[/color] 编程语言,无需重新编译
-使用图形化代码块的[color=#26BFE3]可视化脚本语言[/color]
-","Godot дозволяє користатися багатьма мовами програмування:
+使用图形化代码块的[color=#26BFE3]可视化脚本语言[/color]","Godot дозволяє користатися багатьма мовами програмування:
 
 [color=#02E180]GDScript[/color] Python-подібна скриптова мова, спроектована для розробників ігор
 [color=#F2971A]C# 7.0[/color] підтримується за дпомоги Mono
@@ -276,110 +272,85 @@ Pieno supporto [color=#E3266F]C[/color] and [color=#E3266F]C++[/color] senza bis
 Python과 유사한 스크립트 언어로, 게임플레이 개발자를 위해 설계된 [color=#02E180]GDScript[/color]
 Mono를 사용하여 지원하는 [color=#F2971A]C# 7.0[/color] 
 엔진을 리컴파일 할 필요 없이 완전한 [color=#E3266F]C[/color] 와 [color=#E3266F]C++[/color] 을 지원
-블록의 그래프로 이루어지는 [color=#26BFE3]Visual scripting[/color]
-","Godot umožňuje používať viacero programovacích jazykov:
+블록의 그래프로 이루어지는 [color=#26BFE3]Visual scripting[/color]","Godot umožňuje používať viacero programovacích jazykov:
 
 [color=#02E180]GDScript[/color] je skriptovací jazyk podobný Pythonu, navrhnutý pre vývojárov hier
 Podpora [color=#F2971A]C# 7.0[/color] cez Mono
 Úplná podpora [color=#E3266F]C[/color] a [color=#E3266F]C++[/color] bez nutnosti prekompilovať engine
-[color=#26BFE3]Visual scripting[/color] prostredníctvom grafu blokov
-","Godot umożliwia używanie różnych języków programowania:
+[color=#26BFE3]Visual scripting[/color] prostredníctvom grafu blokov","Godot umożliwia używanie różnych języków programowania:
 
 [color=#02E180]GDScript[/color] język skryptowy podobny do Pythona, zaprojektowany dla gameplay designerów
 Wsparcie dla [color=#F2971A]C# 7.0[/color] przy użyciu Mono
 Pełne wsparcie dla [color=#E3266F]C[/color] i [color=#E3266F]C++[/color] bez konieczności rekompilowania silnika
-[color=#26BFE3]Skrypt wizualny[/color] używający diagram z blokami
-"
+[color=#26BFE3]Skrypt wizualny[/color] używający diagram z blokami"
 CodeFreely_Footer_text,"Community-supported languages: Python, Nim, D, Rust...","D'autres langages sont pris en charge grâce à la communauté: Python, Nim, D, Rust...",コミュニティのおかげでPythonとかNimとかDなども使えます,"Lenguajes con soporte comunitario: Python, Nim, D, Rust…","Linguagens com suporte da comunidade: Python, Nim, D, Rust...","Sprachen von der Community unterstützt: Python, Nim, D, Rust...","Linguaggi supportati grazie alla community: Python, Nim, D, Rust...","由社区推动支持的编程语言: Python, Nim, D, Rust等...","Мови програмування, що підтримуються спільнотою: Python, Nim, D, Rust...","커뮤니티가 지원하는 언어: Python, Nim, D, Rust 등","Komunitou podporované jazyky: Python, Nim, D, Rust...","Wsparcie dla języków rozwijane przez społeczność: Python, Nim, D, Rust..."
 Virtual_and_augmented_reality_Column_Header2_title,Virtual and Augmented Reality,Réalité Virtuelle et Augmentée,仮想現実（VR）と拡張現実（AR),Realidad Virtual y Aumentada,Realidade Virtual e Aumentada,Virtual and Augmented Reality,Virtual e Augmented Reality,虚拟现实和增强现实,Віртуальна та Розширена реальність,가상현실(VR)과 증강현실(AR),Virtuálna a Rozšírená realita,VR i rzeczywistość rozszerzona
 Virtual_and_augmented_reality_Column_Body_Row_TextBox_text,"Powered by [color=#E3266F]OpenVR[/color]
 Supports all common hardware: Occulus Rift, Gear VR, Leap Motion...
 
-Augmented Reality powered by the [color=#26BFE3]ARKit[/color]
-","Grâce à [color=#E3266F] OpenVR[/color]
+Augmented Reality powered by the [color=#26BFE3]ARKit[/color]","Grâce à [color=#E3266F] OpenVR[/color]
 Support du matériel commun: Occulus Rift, Gear VR, Leap Motion...
 
-Support de la réalité augmentée via [color=#26BFE3]Arkit[/color]
-","[color=#E3266F]OpenVR[/color]
-ふつうのハードウェアをサポートします：Occulus Rift, Gear VR, Leap Motion...
+Support de la réalité augmentée via [color=#26BFE3]Arkit[/color]","[color=#E3266F]OpenVR[/color]
+通常のハードウェアをサポートします：Occulus Rift, Gear VR, Leap Motion...
 
 拡張現実は[color=#26BFE3]ARKit[/color]のおかげで開発できます","Usando [color=#E3266F]OpenVR[/color]
 Soporte para: Occulus Rift, Gear VR, Leap Motion...
 
-Realidad Aumentada usando [color=#26BFE3]ARKit[/color]
-","Realidade Virtual usando [color=#E3266F]OpenVR[/color]
+Realidad Aumentada usando [color=#26BFE3]ARKit[/color]","Realidade Virtual usando [color=#E3266F]OpenVR[/color]
 
 Suporta os hardware mais conhecidos do mercado: Occulus Rift, Gear VR, Leap Motion...
 
-Realidade Aumentada usando [color=#26BFE3]ARKit[/color]
-","Basiert auf [color=#E3266F]OpenVR[/color]
+Realidade Aumentada usando [color=#26BFE3]ARKit[/color]","Basiert auf [color=#E3266F]OpenVR[/color]
 Gängige Hardware wird unterstützt: Occulus Rift, Gear VR, Leap Motion...
 
-Augmented Reality basiert auf [color=#26BFE3]ARKit[/color]
-","Powered by [color=#E3266F]OpenVR[/color]
+Augmented Reality basiert auf [color=#26BFE3]ARKit[/color]","Powered by [color=#E3266F]OpenVR[/color]
 Supporta tutti i dispositivi comuni: Oculus Rift, Gear VR, Leap Motion...
 
-Augmented Reality grazie a [color=#26BFE3]ARKit[/color]
-","由 [color=#E3266F]OpenVR[/color] 提供技术支持
+Augmented Reality grazie a [color=#26BFE3]ARKit[/color]","由 [color=#E3266F]OpenVR[/color] 提供技术支持
 支持所有常见硬件设备: Occulus Rift, Gear VR, Leap Motion等...
 
-增强现实由 [color=#26BFE3]ARKit[/color] 提供技术支持
-","На базі [color=#E3266F]OpenVR[/color]
+增强现实由 [color=#26BFE3]ARKit[/color] 提供技术支持","На базі [color=#E3266F]OpenVR[/color]
 Підтримка усіх видів поширених пристроїв: Occulus Rift, Gear VR, Leap Motion...
 
-Розширена реальність на базі [color=#26BFE3]ARKit[/color]
-","[color=#E3266F]OpenVR[/color] 기반
+Розширена реальність на базі [color=#26BFE3]ARKit[/color]","[color=#E3266F]OpenVR[/color] 기반
 모든 일반적인 하드웨어를 지원합니다: Occulus Rift, Gear VR, Leap Motion...
 
-[color=#26BFE3]ARKit[/color] 기반 증강현실
-","Založená na [color=#E3266F]OpenVR[/color]
+[color=#26BFE3]ARKit[/color] 기반 증강현실","Založená na [color=#E3266F]OpenVR[/color]
 Podporuje všetok bežný hardware: Occulus Rift, Gear VR, Leap Motion...
 
-Rozšírená realita založená na [color=#26BFE3]ARKit[/color]
-","Wirtualna rzeczywistość napędzana przez [color=#E3266F]OpenVR[/color]
+Rozšírená realita založená na [color=#26BFE3]ARKit[/color]","Wirtualna rzeczywistość napędzana przez [color=#E3266F]OpenVR[/color]
 Wspiera wszystkie typy osprzętu: Occulus Rift, Gear VR, Leap Motion...
 
-AR wspierane przez [color=#26BFE3]ARKit[/color]
-"
+AR wspierane przez [color=#26BFE3]ARKit[/color]"
 Professionals_use_godot_Column_Header_title,Professionals use Godot,Les pros utilisent Godot,Godotを使うプロがいます,Usado en el entorno profesional,Profissionais usando Godot,Profis nutzen Godot,I professionisti usano Godot,专业人员使用Godot,Професіонали користуються Godot,Godot를 사용하는 전문가들,Godot používajú profesionáli,Godot używany profesjonalnie
 Professionals_use_godot_Column_Body_Row_TextBox_text,"[color=#E3266F]Game studios[/color] like Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]Schools[/color] including School4Games Berlin, KidsCanCode...
-[color=#02E180]Content creators[/color] like Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
-","Des [color=#E3266F]studios de jeux[/color] comme Gamblify, GuaranApps, Kivano...
+[color=#02E180]Content creators[/color] like Heartbeast, GamesFromScratch, [i]GDQuest[/i]...","Des [color=#E3266F]studios de jeux[/color] comme Gamblify, GuaranApps, Kivano...
 Des [color=#26BFE3]écoles[/color] telles que School4Games Berlin, KidsCanCode...
-Des [color=#02E180]vidéastes[/color] comme Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
-","[color=#E3266F]ゲームスタジオ[/color]：Gamblify, GuaranApps, Kivano...
+Des [color=#02E180]vidéastes[/color] comme Heartbeast, GamesFromScratch, [i]GDQuest[/i]...","[color=#E3266F]ゲームスタジオ[/color]：Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]大学[/color]：School4Games ベルリン, KidsCanCode...
 [color=#02E180]学習用の製作者[/color]：Heartbeast, GamesFromScratch, [i]GDQuest[/i]...今はまだ日本語の動画は少ないでしょう","[color=#E3266F]Estudios de videojuegos[/color] como Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]Escuelas[/color] como School4Games Berlin, KidsCanCode...
-[color=#02E180]Creadores de contenido[/color] como Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
-","[color=#E3266F]Estúdios de Jogos[/color] como Gamblify, GuaranApps, Kivano...
+[color=#02E180]Creadores de contenido[/color] como Heartbeast, GamesFromScratch, [i]GDQuest[/i]...","[color=#E3266F]Estúdios de Jogos[/color] como Gamblify, GuaranApps, Kivano...
 
 [color=#26BFE3]Escolas[/color] incluindo School4Games Berlin, KidsCanCode...
 
-[color=#02E180]Criadores de conteúdo[/color] como Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
-","[color=#E3266F]Spielestudios[/color] wie z.B. Gamblify, GuaranApps, Kivano...
+[color=#02E180]Criadores de conteúdo[/color] como Heartbeast, GamesFromScratch, [i]GDQuest[/i]...","[color=#E3266F]Spielestudios[/color] wie z.B. Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]Schulen[/color], unter anderem School4Games Berlin, KidsCanCode...
-[color=#02E180]Inhaltsentwickler[/color] wie z.B. Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
-","[color=#E3266F]Game studios[/color] come Gamblify, GuaranApps, Kivano...
+[color=#02E180]Inhaltsentwickler[/color] wie z.B. Heartbeast, GamesFromScratch, [i]GDQuest[/i]...","[color=#E3266F]Game studios[/color] come Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]Scuole[/color] come School4Games Berlin, KidsCanCode...
-[color=#02E180]Content creator[/color] come Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
-","[color=#E3266F]游戏开发工作室[/color]比如Gamblify, GuaranApps, Kivano等...
+[color=#02E180]Content creator[/color] come Heartbeast, GamesFromScratch, [i]GDQuest[/i]...","[color=#E3266F]游戏开发工作室[/color]比如Gamblify, GuaranApps, Kivano等...
 [color=#26BFE3]学校[/color]包括School4Games Berlin, KidsCanCode等...
-[color=#02E180]内容创作者[/color]像Heartbeast, GamesFromScratch, [i]GDQuest[/i]等...
-","[color=#E3266F]Геймстудії[/color] такі, як Gamblify, GuaranApps, Kivano...
+[color=#02E180]内容创作者[/color]像Heartbeast, GamesFromScratch, [i]GDQuest[/i]等...","[color=#E3266F]Геймстудії[/color] такі, як Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]Школи[/color] серед яких School4Games Berlin, KidsCanCode...
-[color=#02E180]Творці контенту[/color] серед яких Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
-","[color=#E3266F]게임 스튜디오[/color] : Gamblify, GuaranApps, Kivano 등
+[color=#02E180]Творці контенту[/color] серед яких Heartbeast, GamesFromScratch, [i]GDQuest[/i]...","[color=#E3266F]게임 스튜디오[/color] : Gamblify, GuaranApps, Kivano 등
 [color=#26BFE3]교육[/color] : School4Games Berlin, KidsCanCode 등
-[color=#02E180]콘텐츠 크리에이터[/color] : Heartbeast, GamesFromScratch, [i]GDQuest[/i] 등
-","[color=#E3266F]Herné štúdiá[/color] ako Gamblify, GuaranApps, Kivano...
+[color=#02E180]콘텐츠 크리에이터[/color] : Heartbeast, GamesFromScratch, [i]GDQuest[/i] 등","[color=#E3266F]Herné štúdiá[/color] ako Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]Školy[/color] ako School4Games Berlin, KidsCanCode...
-[color=#02E180]Tvorcovia obsahu[/color] ako Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
-","[color=#E3266F]Producenci gier[/color] jak Gamblify, GuaranApps, Kivano...
+[color=#02E180]Tvorcovia obsahu[/color] ako Heartbeast, GamesFromScratch, [i]GDQuest[/i]...","[color=#E3266F]Producenci gier[/color] jak Gamblify, GuaranApps, Kivano...
 [color=#26BFE3]Szkoły[/color], w tym School4Games Berlin, KidsCanCode...
-[color=#02E180]Twórcy contentu w sieci[/color] jak Heartbeast, GamesFromScratch, [i]GDQuest[/i]...
-"
+[color=#02E180]Twórcy contentu w sieci[/color] jak Heartbeast, GamesFromScratch, [i]GDQuest[/i]..."
 Made_with_godot_Column_Header2_title,Made with Godot,Un jeu conçu avec Godot,Godotで作ったゲーム,Made with Godot,Feito com Godot,Made with Godot,Sviluppati con Godot,Godot制作开发,Створено за допомоги Godot,Godot로 만들었습니다,Made with Godot,Stworzone przy użyciu Godot
 Made_with_godot_Column_Footer2_text,"Galactic Bulwark Strike, by Josep G. Camarasa","Galactic Bulwark Strike, par Josep G. Camarasa",Josep G. CamarasaのGalactic Bulwark Strike,"Galactic Bulwark Strike, por Josep G. Camarasa","Galactic Bulwark Strike, por Josep G. Camarasa","Galactic Bulwark Strike, von Josep G. Camarasa","Galactic Bulwark Strike, di Josep G. Camarasa","Galactic Bulwark Strike, 由 Josep G. Camarasa 开发制作","Galactic Bulwark Strike, від Josep G. Camarasa",Josep G. Camarasa가 만든 Galactic Bulwark Strike ,"Galactic Bulwark Strike, autor Josep G. Camarasa","Galactic Bulwark Strike, autor: Josep G. Camarasa"
 Godot_is_in_great_shape_Column_Header2_title,Godot is in great shape,Un projet en grande forme,Godotはうまくいっています,Desarrollo muy activo,Godot está em ótima forma,Godot ist in super Zustand,Godot è in ottima forma,Godot发展已经成型,Godot є в чудовій формі,Godot는 좋은 환경입니다,Godot je vo výbornej kondícii,Godot ma się świetnie
@@ -481,9 +452,9 @@ Vous trouverez beaucoup de [color=#02E180]tutoriels officiels[/color] dans le [c
 La [color=#E3266F]référence de code[/color] est intégrée dans l'éditeur
 Vous trouverez de nombreuses [color=#F2971A]démos open source[/color]!","[color=#26BFE3]コミュニティ[/color]は[b]とても[/b]にぎやかです。SNSしIRCしDiscordしでGodotのユーザーと会えます
 [color=#26BFE3]質問と答え[/color]のウェブサイトもあります
-[color=#02E180]便覧[/color]に公式の[color=#02E180]学習用[/color]が多いです
+[color=#02E180]リファレンス[/color]に公式の[color=#02E180]学習用[/color]が多いです
 開発環境に[color=#E3266F]コードの便覧[/color]が含まれます
-[color=#F2971A]オプンソースのデモ[/color]も多いです","La [color=#26BFE3]comunidad[/color] es [b]muy[/b] activa. Redes sociales, foro, IRC, Discord…
+[color=#F2971A]オープンソースのデモ[/color]も多いです","La [color=#26BFE3]comunidad[/color] es [b]muy[/b] activa. Redes sociales, foro, IRC, Discord…
 Hay una página de [color=#26BFE3]Preguntas/Respuestas[/color]
 Encontrarás muchos [color=#02E180]tutorialess[/color] oficiales en el [color=#02E180]manual online[/color]
 Hay [color=#E3266F]documentación[/color] dentro del propio editor
@@ -524,7 +495,7 @@ Jest również dostępna strona [color=#26BFE3]Q&A[/color]
 Znajdziesz mnóstwo oficjalnych [color=#02E180]tutoriali[/color] w [color=#02E180]internetowym podręczniku[/color]
 W edytorze jest [color=#E3266F]wbudowana dokumentacja kodu[/color]
 Użyj [color=#F2971A]otwartoźródłowych dem[/color]"
-How_to_get_started_Footer_text,Most of the resources are in English though... a good way to practice?,"L'éditeur est déjà traduit en français, ainsi qu'une part croissante des tutoriels officiels",大体情報は英語ですが良い練習になれるでしょうね？,),La mayoría de los recursos están en inglés… ¿hora de aprender?,Porém boa parte das coisas estão em inglês...é até uma boa chance para praticar!,Ma molte risorse sono in Inglese... è una buona scusa per fare pratica?,Viele der Quellen sind in Englisch... eine gute Möglichkeit zu üben!,"Проте більшість ресурсів на англійській...тож гарна нагода попркатикуватися, чи не так?",비록 대부분의 자원은 영어입니다... 하지만 연습하기에 좋은 방식이지 않을까요?,Väčšina zdrojov je však v angličtine... dobrý spôsob na zdokonalenie sa?,Większość zasobów jest jednak po angielsku... dobra okazja na trening?
+How_to_get_started_Footer_text,Most of the resources are in English though... a good way to practice?,"L'éditeur est déjà traduit en français, ainsi qu'une part croissante des tutoriels officiels",大体情報は英語ですが、良い練習になるでしょうね？,),La mayoría de los recursos están en inglés… ¿hora de aprender?,Porém boa parte das coisas estão em inglês...é até uma boa chance para praticar!,Ma molte risorse sono in Inglese... è una buona scusa per fare pratica?,Viele der Quellen sind in Englisch... eine gute Möglichkeit zu üben!,"Проте більшість ресурсів на англійській...тож гарна нагода попркатикуватися, чи не так?",비록 대부분의 자원은 영어입니다... 하지만 연습하기에 좋은 방식이지 않을까요?,Väčšina zdrojov je však v angličtine... dobrý spôsob na zdokonalenie sa?,Większość zasobów jest jednak po angielsku... dobra okazja na trening?
 Learn_from_simple_free_demos_Column_Header2_title,Learn from simple Free demos,Démos libres,読みやすいデモで勉強できます,Aprende de demos simples y libres,Aprenda através de demos simples e livres,"Einfache, freie Demos zum lernen",Impara dalle demo libere,从简单免费的示例开始入手学习,Навчайтеся за допомги простих та безкоштовних демопроектів,간단한 무료 데모를 통해 배워보기,Na učenie využite free demá,"Ucz się z prostych, darmowych dem"
 Learn_from_simple_free_demos_Column_Footer2_text,Both official and 3rd-party,"Il y en a beaucoup, officielles ou mises à disposition par la communauté",公式プロジェクトもコミュニティのもあります,Tanto oficiales como de terceros,Tanto oficiais quanto de terceiros,Sowohl Offizielle als auch Dirttanbieter,Sia ufficiali che 3rd party,官方的和第三方的都有,"Як офііцних, так і від третіх сторін",공식 프로젝트와 커뮤니티의 프로젝트가 있습니다,Či už oficiálne alebo od tretích strán,Zarówno oficjalnych jak i tworzonych przez społeczność
 Thank_you_Column_Header2_title,Thank you!,Merci beaucoup!,ありがとうございました！,¡Muchas gracias!,Muito obrigado!,Vielen Dank!,Grazie!,非常感谢!,Щіро дякую!,감사합니다!,Ďakujem za pozornosť!,Dzięki!
@@ -538,8 +509,7 @@ Credits:
 - [url=http://www.rpginabox.com/]RPG in a Box[/url] by Justin
 
 This presentation is an Open Source Godot project!
-Find it on [url=https://github.com/GDquest/godot-slides]GitHub[/url]. It's available in multiple languages.
-","Réseaux sociaux:[color=#26BFE3] @NathanGDquest[/color]
+Find it on [url=https://github.com/GDquest/godot-slides]GitHub[/url]. It's available in multiple languages.","Réseaux sociaux:[color=#26BFE3] @NathanGDquest[/color]
 [color=#F2971A] youtube.com/c/gdquest[/color]
 
 Crédits:
@@ -547,15 +517,14 @@ Crédits:
 - [url=http://www.rpginabox.com/]RPG in a Box[/url] par Justin
 
 Cette présentation est un projet Godot Libre!
-Téléchargez-la et contribuez-y sur [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Elle est traduite dans plusieurs langues.
-","ツイタ：[color=#26BFE3]@NathanGDquest[/color]
+Téléchargez-la et contribuez-y sur [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Elle est traduite dans plusieurs langues.","ツイタ：[color=#26BFE3]@NathanGDquest[/color]
 Youtube：[color=#F2971A]youtube.com/c/gdquest[/color]
 
 Credits:
 - [url=https://play.google.com/store/apps/details?id=fr.guaranapps.games.get_teddy]Get Teddy[/url] by GuaranApps
 - [url=http://www.rpginabox.com/]RPG in a Box[/url] by Justin
 
-この発表はオプンソースのGodotのプロジェクトです：[url=https://github.com/GDquest/godot-slides]GitHub[/url]でダウンロードできます. 色んな言語で利用可能です。 ","SNS:
+この発表はオープンソースのGodotのプロジェクトです：[url=https://github.com/GDquest/godot-slides]GitHub[/url]でダウンロードできます. 色々な言語で利用可能です。","SNS:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
 
@@ -564,8 +533,7 @@ Créditos:
 - [url=http://www.rpginabox.com/]RPG in a Box[/url] por Justin
 
 ¡Esta presentación es un proyecto open-source hecho en Godot!
-Está en [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Disponible en varios idiomas.
-","SNS:
+Está en [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Disponible en varios idiomas.","SNS:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
 
@@ -574,8 +542,7 @@ Créditos:
 - [url=http://www.rpginabox.com/]RPG in a Box[/url] por Justin
 
 Essa apresentação é um projeto livre e de código aberto feito e rodando no Godot!
-Disponível em [url=https://github.com/GDquest/godot-slides]GitHub[/url] em vários idiomas.
-","SNS:
+Disponível em [url=https://github.com/GDquest/godot-slides]GitHub[/url] em vários idiomas.","SNS:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
 
@@ -584,8 +551,7 @@ Credits:
 - [url=http://www.rpginabox.com/]RPG in a Box[/url] von Justin
 
 Diese Päsentation ist ein Open Source Godot Projekt!
-Es befindet sich auf [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url] und ist in mehreren Sprachen verfügbar.
-","SNS:
+Es befindet sich auf [url=https://github.com/GDquest/godot-3-presentation]GitHub[/url] und ist in mehreren Sprachen verfügbar.","SNS:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
 
@@ -594,8 +560,7 @@ Credits:
 - [url=http://www.rpginabox.com/]RPG in a Box[/url] di Justin
 
 Questa presentazione è un progetto Godot Open Source!
-La puoi trovare su [url=https://github.com/Gdquest/godot-slides]GitHub[/url], disponibile in molti linguaggi.
-","社交网络:
+La puoi trovare su [url=https://github.com/Gdquest/godot-slides]GitHub[/url], disponibile in molti linguaggi.","社交网络:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
 
@@ -604,8 +569,7 @@ La puoi trovare su [url=https://github.com/Gdquest/godot-slides]GitHub[/url], di
 - [url=http://www.rpginabox.com/]RPG in a Box[/url] 作者 Justin
 
 本演示文稿是一个开源的Godot项目!
-可以在[url=https://github.com/GDquest/godot-slides]GitHub[/url]上找到它. 并且提供了多个语言版本.
-","SNS:
+可以在[url=https://github.com/GDquest/godot-slides]GitHub[/url]上找到它. 并且提供了多个语言版本.","SNS:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
 
@@ -614,8 +578,7 @@ La puoi trovare su [url=https://github.com/Gdquest/godot-slides]GitHub[/url], di
 - [url=http://www.rpginabox.com/]RPG in a Box[/url] від Justin
 
 Ця презентація є проектом Godot із відритим кодом!
-Його можна знайти на [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Він доступний на багатьох мовах.
-","SNS:
+Його можна знайти на [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Він доступний на багатьох мовах.","SNS:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
 
@@ -624,8 +587,7 @@ Credits:
 - Justin이 만든 [url=http://www.rpginabox.com/]RPG in a Box[/url]
 
 이 프레젠테이션은 오픈 소스 Godot 프로젝트입니다!
-[url=https://github.com/GDquest/godot-slides]GitHub[/url] 에서 찾으실 수 있습니다. 다양한 언어로 이용하실 수 있습니다.
-","SNS:
+[url=https://github.com/GDquest/godot-slides]GitHub[/url] 에서 찾으실 수 있습니다. 다양한 언어로 이용하실 수 있습니다.","SNS:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
 
@@ -634,8 +596,7 @@ Credits:
 - [url=http://www.rpginabox.com/]RPG in a Box[/url] autor Justin
 
 Táto prezentácia je Open Source Godot projekt!
-Nájdete ju na [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Dostupná vo viacerých jazykoch
-","Media społecznościowe:
+Nájdete ju na [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Dostupná vo viacerých jazykoch","Media społecznościowe:
 [color=#26BFE3]@NathanGDquest[/color]
 [color=#F2971A]youtube.com/c/gdquest[/color]
 
@@ -644,5 +605,4 @@ Nájdete ju na [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Dostup
 - [url=http://www.rpginabox.com/]RPG in a Box[/url], autor: Justin
 
 Ta prezentacja jest otwartoźródłowym projektem Godot!
-Link: [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Jest dostępna w wielu językach.
-"
+Link: [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Jest dostępna w wielu językach."
