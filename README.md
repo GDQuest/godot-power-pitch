@@ -16,6 +16,8 @@ Godot Slides a tool to create elegant slideshows with the Godot game engine, usi
 
 Godot Slides comes with the Power Pitch, a 10 minutes presentation of the engine available in multiple languages. It'll save you hours of work if you want to introduce Godot at meetups and other gamedev events. And you can customize it to better suit your needs!
 
+⚠ 2018/10/20: the git history got a full rewrite to make the repository and the project 4 times lighter. If you cloned it before and want to contribute, please delete your working copy and re-download it.
+
 ## Videos and articles
 
 1. [Discover Godot: the Free 2D and 3D game engine](https://youtu.be/qVl3BYY6zaQ) (Power Pitch)
