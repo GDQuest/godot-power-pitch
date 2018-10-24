@@ -42,6 +42,7 @@ The Power Pitch currently ships with these languages in version 2.0:
 - Spanish
 - Portuguese (BR)
 - German
+- Indonesian
 - Italian
 - Chinese
 - Korean
