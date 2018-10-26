@@ -8,7 +8,7 @@ Build games for PC, mobile, web*","Moteurs de rendu [color=#26BFE3]2d[/color] et
 [color=#F2971A] Éditeur de jeu[/color] complet
 
 Créez vos projets sur Windows, Mac, ou Linux
-Exportez vos jeux sur PC, mobile, web*","両方[color=#26BFE3]２D[/color]と[color=#E3266F]３D[/color] レンダリングエンジン
+Exportez vos jeux sur PC, mobile, web*","[color=#26BFE3]２D[/color]と[color=#E3266F]３D[/color] 両方のレンダリングエンジン
 全面的な[color=#F2971A]ゲームエディタ[/color]
 
 プロジェクトは、WindowsかMacかLinuxで作ることができます。
@@ -251,7 +251,7 @@ Support de [color=#E3266F]C[/color] et de [color=#E3266F]C ++[/color] sans avoir
 Pythonのような[color=#02E180]GDScript[/color]と言うゲーム開発者用言語
 MicrosoftのMonoコンパイラで[color=#F2971A]C# 7.0[/color]サポート
 エンジンをコンパイル無しで全体の[color=#E3266F]C[/color]と[color=#E3266F]C++[/color]サポート
-表の[color=#26BFE3]VisualScript[/color]というのデザイナのための言語","Godot te deja usar muchos lenguajes de programación:
+表の[color=#26BFE3]VisualScript[/color]というのデザイナーのための言語","Godot te deja usar muchos lenguajes de programación:
 
 [color=#02E180]GDScript[/color] lenguaje similar a Python, diseñado para desarrolladores de gameplay
 [color=#F2971A]C# 7.0[/color] usando Mono
@@ -316,7 +316,7 @@ Support du matériel commun: Occulus Rift, Gear VR, Leap Motion...
 Support de la réalité augmentée via [color=#26BFE3]Arkit[/color]","[color=#E3266F]OpenVR[/color]
 通常のハードウェアをサポートします：Occulus Rift, Gear VR, Leap Motion...
 
-拡張現実は[color=#26BFE3]ARKit[/color]のおかげで開発できます","Usando [color=#E3266F]OpenVR[/color]
+拡張現実は[color=#26BFE3]ARKit[/color]を使って開発できます","Usando [color=#E3266F]OpenVR[/color]
 Soporte para: Occulus Rift, Gear VR, Leap Motion...
 
 Realidad Aumentada usando [color=#26BFE3]ARKit[/color]","Realidade Virtual usando [color=#E3266F]OpenVR[/color]
@@ -401,9 +401,9 @@ Godot génère plus de [color=#02E180]$9000[/color] de donations par mois sur Pa
 - [color=#02E180]700[/color]人以上の開発者
 - 16 000+ commits
 - 16 000+ stars
-- 葬式的なコードベース
+- 完全なコードベース
 
-このプロジェクトは毎月[color=#02E180]九千ドル[/color]以上Patreonでもらいます","Godot es [color=#26BFE3]software libre[/color] hecho por [color=#26BFE3]cientos de personas[/color]. No para de crecer:
+このプロジェクトは、Patreonで毎月[color=#02E180]九千ドル[/color]以上集まります","Godot es [color=#26BFE3]software libre[/color] hecho por [color=#26BFE3]cientos de personas[/color]. No para de crecer:
 
 - [color=#02E180]700+[/color] contribuidores
 - 16 000+ commits
