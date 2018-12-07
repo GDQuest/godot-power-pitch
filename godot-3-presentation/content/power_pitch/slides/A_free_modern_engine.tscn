@@ -7,9 +7,9 @@
 [ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=6]
 [ext_resource path="res://slide/widgets/PictureSlideshow.tscn" type="PackedScene" id=7]
-[ext_resource path="res://content/power_pitch/img/daisy-dangerous-game-securas-1280x720.jpg" type="Texture" id=8]
+[ext_resource path="res://content/power_pitch/img/godot-3.1-editor-2d-720p.jpg" type="Texture" id=8]
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=9]
-[ext_resource path="res://content/power_pitch/img/car-3d.jpg" type="Texture" id=10]
+[ext_resource path="res://content/power_pitch/img/godot-3.1-editor-tps-demo-720p.jpg" type="Texture" id=10]
 [ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=11]
 [ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=12]
 
@@ -182,8 +182,9 @@ anchor_bottom = 0.0
 margin_left = 643.0
 margin_right = 1921.0
 margin_bottom = 730.0
+DISPLAY_DURATION = 6.0
 
-[node name="daisy-dangerous-game-securas-1280x720" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="2"]
+[node name="godot_editor_2d" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -199,8 +200,9 @@ texture = ExtResource( 8 )
 expand = true
 stretch_mode = 6
 
-[node name="3d-view" parent="Column/Body/Row/PictureSlideshow" index="3" instance=ExtResource( 9 )]
+[node name="godot_editor_3d" parent="Column/Body/Row/PictureSlideshow" index="3" instance=ExtResource( 9 )]
 
+visible = false
 texture = ExtResource( 10 )
 script = ExtResource( 11 )
 
