@@ -12,6 +12,7 @@ extends Control
 
 export(String) var title = \"\" setget set_title
 export(String) var subtitle = \"\" setget set_subtitle
+export(Resource) var font_override = null
 
 var FONTS_DEFAULT = {
 	'title': preload(\"res://theme/fonts/title_montserrat.tres\"),
@@ -46,6 +47,11 @@ func set_subtitle(string):
 func translate():
 	var locale = TranslationServer.get_locale()
 	var fonts = FONTS_DEFAULT
+	if font_override:
+		title_node.set('custom_fonts/font', font_override)
+		title_shadow_node.set('custom_fonts/font', font_override)
+		return
+		
 	if locale in ['ja', 'ko', 'zh', 'ar']:
 			fonts = FONTS_CJK
 
@@ -99,7 +105,7 @@ func _on_visibility_changed():
 	emit_signal(\"visibility_updated\", visible)
 "
 
-[node name="Header" type="TextureRect" index="0" groups=[
+[node name="Header" type="TextureRect" groups=[
 "translate",
 ]]
 
@@ -122,6 +128,7 @@ script = SubResource( 1 )
 _sections_unfolded = [ "Rect", "Theme" ]
 title = "Title"
 subtitle = ""
+font_override = null
 
 [node name="Column" type="VBoxContainer" parent="." index="0"]
 

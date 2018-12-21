@@ -3,11 +3,14 @@ extends Node
 signal language_changed()
 
 onready var slides = $Slides
-export(String, 'en', 'ja', 'fr', 'es', 'pt_BR', 'de', 'id', 'it', 'zh', 'uk_UA', 'ko', 'sk', 'pl') var LANGUAGE_MAIN = 'en'
+export(String, 'en', 'ja', 'fr', 'es', 'pt_BR', 'de', 'id', 'it', 'zh', 'uk_UA', 'ko', 'sk', 'pl') var LANGUAGE_MAIN = 'en' setget set_language_main
 export(String, 'en', 'ja', 'fr', 'es', 'pt_BR', 'de', 'id', 'it', 'zh', 'uk_UA', 'ko', 'sk', 'pl') var LANGUAGE_SECOND = 'ja'
 
-func _ready():
+func set_language_main(locale):
+	LANGUAGE_MAIN = locale
 	TranslationServer.set_locale(LANGUAGE_MAIN)
+
+func _ready():
 	slides.initialize()
 #	slides.save_as_png("res://out")
 #	save_as_csv(get_translatable_strings()) # Use this to save the presentation as CSV
