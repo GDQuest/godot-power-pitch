@@ -31,7 +31,7 @@ margin_bottom = 940.0
 
 [node name="TextBox" parent="Body/Row" index="0" instance=ExtResource( 5 )]
 
-margin_right = 639.0
+margin_right = 871.0
 margin_bottom = 730.0
 text = "The [color=#26BFE3]community[/color] is [b]very[/b] active. Social networks, forum, IRC, Discord...
 There's a [color=#26BFE3]Questions/Answers[/color] website
@@ -43,9 +43,10 @@ Use the [color=#F2971A]open source demos[/color]"
 
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 643.0
+margin_left = 875.0
 margin_right = 1921.0
 margin_bottom = 730.0
+size_flags_stretch_ratio = 1.2
 
 [node name="docs-community-websites" type="TextureRect" parent="Body/Row/PictureSlideshow" index="2"]
 

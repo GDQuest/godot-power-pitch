@@ -14,9 +14,10 @@ Exportez vos jeux sur PC, mobile, web*","[color=#26BFE3]２D[/color]と[color=#E
 全面的な[color=#F2971A]ゲームエディタ[/color]
 
 プロジェクトは、WindowsかMacかLinuxで作ることができます。
-ゲームをコンピューターやモバイル、インターネットなどにエクスポートできます＊
+ゲームを[color=#02E180]コンピューター[/color]や[color=#02E180]モバイル[/color]、[color=#02E180]インターネット[/color]などにエクスポートできます＊
 
 ４年前にオプンソースになりましたが最初ゲーム会社のエンジンで10年まえからずっと開発されました。
+
 Godotは若い割に段々UnityやUnrealなどのように大きくなっています。","Renderers [color=#26BFE3]2D[/color] y [color=#E3266F]3D[/color] independientes
 [color=#F2971A]Editor de juegos[/color] completo
 
@@ -386,100 +387,101 @@ Des [color=#02E180]vidéastes[/color] comme Heartbeast, GamesFromScratch, [i]GDQ
 Made_with_godot_Column_Header2_title,Made with Godot,Un jeu conçu avec Godot,Godotで作ったゲーム,Made with Godot,Feito com Godot,Made with Godot,Sviluppati con Godot,Godot制作开发,Створено за допомоги Godot,Godot로 만들었습니다,Made with Godot,Stworzone przy użyciu Godot,Dibuat dengan Godot
 Made_with_godot_Column_Footer2_text,"Galactic Bulwark Strike, by Josep G. Camarasa","Galactic Bulwark Strike, par Josep G. Camarasa",Josep G. CamarasaのGalactic Bulwark Strike,"Galactic Bulwark Strike, por Josep G. Camarasa","Galactic Bulwark Strike, por Josep G. Camarasa","Galactic Bulwark Strike, von Josep G. Camarasa","Galactic Bulwark Strike, di Josep G. Camarasa","Galactic Bulwark Strike, 由 Josep G. Camarasa 开发制作","Galactic Bulwark Strike, від Josep G. Camarasa",Josep G. Camarasa가 만든 Galactic Bulwark Strike ,"Galactic Bulwark Strike, autor Josep G. Camarasa","Galactic Bulwark Strike, autor: Josep G. Camarasa","Galactic Bulwark Strike, oleh Josep G. Camarasa"
 Godot_is_in_great_shape_Column_Header2_title,Godot is in great shape,Un projet en grande forme,Godotはうまくいっています,Desarrollo muy activo,Godot está em ótima forma,Godot ist in super Zustand,Godot è in ottima forma,Godot发展已经成型,Godot є в чудовій формі,Godot는 좋은 환경입니다,Godot je vo výbornej kondícii,Godot ma się świetnie,Godot dalam kondisi luar biasa
-Godot_is_in_great_shape_Column_Body_Row_TextBox2_text,"Godot is [color=#26BFE3]Free Software[/color] built by [color=#26BFE3]hundreds of people[/color]. It's growing faster over time:
+Godot_is_in_great_shape_Column_Body_Row_TextBox2_text,"Godot is [color=#26BFE3]Free Software[/color] built by [color=#26BFE3]hundreds of people[/color]. It's the fastest-growing game technology on GitHub:
 
 - [color=#02E180]700+[/color] contributors
-- 16 000+ commits
-- 16 000+ stars
-- Well-organized project
+- 18 000+ commits
+- 18 000+ stars
 
-The project gets [color=#02E180]$9000+[/color] a month on Patreon.","Godot est un [color=#26BFE3]Logiciel Libre[/color] développé par [color=#26BFE3]des centaines de personnes[/color]. Son évolution accélère au fil du temps:
+It’s not only free to use: contrary to other engines, you will never have to pay royalties.
+It also brings sane competition to proprietary engines, pushing innovation.","Godot est un [color=#26BFE3]Logiciel Libre[/color] développé par [color=#26BFE3]des centaines de personnes[/color]. Son évolution accélère au fil du temps:
 
 - [color=#02E180]Plus de 700[/color] contributeurs
-- 16 000+ commits
-- 16 000+ étoiles sur GitHub
+- 18 000+ commits
+- 18 000+ étoiles sur GitHub
 - Le projet est bien organisé
 
-Godot génère plus de [color=#02E180]$9000[/color] de donations par mois sur Patreon.","Godot は[color=#26BFE3]数百[/color]の人が開発しました[color=#26BFE3]フリーソフトウェア[/color]
-段々早く成長しています:
-
-- [color=#02E180]700[/color]人以上の開発者
-- 16 000+ commits
-- 16 000+ stars
-- 完全なコードベース
-
-このプロジェクトは、Patreonで毎月[color=#02E180]九千ドル[/color]以上集まります","Godot es [color=#26BFE3]software libre[/color] hecho por [color=#26BFE3]cientos de personas[/color]. No para de crecer:
+Godot génère plus de [color=#02E180]$8000[/color] de donations par mois sur Patreon.","Godot は[color=#26BFE3]数百[/color]の人が開発しました[color=#26BFE3]フリーソフトウェア[/color]  
+段々早く成長しています:  
+  
+- [color=#02E180]700[/color]人以上の開発者  
+- 18 000+ commits  
+- 18 000+ stars  
+- 完全なコードベース  
+ 
+Godotで作ったプロジェクトとフォークはさすがいつまでも無料です。
+Godotの成長は、Unityのようなエンジンとの健全な競争をもたらし、革新を持続させる","Godot es [color=#26BFE3]software libre[/color] hecho por [color=#26BFE3]cientos de personas[/color]. No para de crecer:
 
 - [color=#02E180]700+[/color] contribuidores
-- 16 000+ commits
-- 16 000+ estrellas
+- 18 000+ commits
+- 18 000+ estrellas
 - Proyecto bien organizado
 
-El proyecto obtiene [color=#02E180]$9000+[/color] al mes en Patreon.","Godot é um [color=#26BFE3]Software Livre[/color] criado por [color=#26BFE3]centenas de pessoas[/color]. E não para de crescer:
+El proyecto obtiene [color=#02E180]$8000+[/color] al mes en Patreon.","Godot é um [color=#26BFE3]Software Livre[/color] criado por [color=#26BFE3]centenas de pessoas[/color]. E não para de crescer:
 
 - [color=#02E180]700+[/color] contribuidores
-- 16 000+ commits
-- 16 000+ estrelas
+- 18 000+ commits
+- 18 000+ estrelas
 - Tudo muito bem organizado
 
-O projeto arrecada mais de [color=#02E180]$9000+[/color] mensalmente pelo Patreon.","Godot ist [color=#26BFE3]Freie Software[/color], erstellt von [color=#26BFE3]hunderten von Leuten[/color]. Es wächst im laufe der Zeit immer schneller:
+O projeto arrecada mais de [color=#02E180]$8000+[/color] mensalmente pelo Patreon.","Godot ist [color=#26BFE3]Freie Software[/color], erstellt von [color=#26BFE3]hunderten von Leuten[/color]. Es wächst im laufe der Zeit immer schneller:
 
 - [color=#02E180]700+[/color] Mitwirkende
-- 16 000+ Commits
-- 16 000+ Sterne
+- 18 000+ Commits
+- 18 000+ Sterne
 - Gut organisiertes Projekt
 
-Auf Patreon wird das Projekt mit [color=#02E180]mehr als $9000[/color] im Monat unterstützt.","Godot è un progetto [color=#26BFE3]Free Software[/color] sviluppato da [color=#26BFE3]centinaia di persone[/color] ed in continua crescita:
+Auf Patreon wird das Projekt mit [color=#02E180]mehr als $8000[/color] im Monat unterstützt.","Godot è un progetto [color=#26BFE3]Free Software[/color] sviluppato da [color=#26BFE3]centinaia di persone[/color] ed in continua crescita:
 
 - [color=#02E180]700+[/color] contributor
-- 16 000+ commit
-- 16 000+ star
+- 18 000+ commit
+- 18 000+ star
 - Progetto ben organizzato
 
-Il progetto ottiene più di [color=#02E180]$9000[/color] al mese su Patreon.","Godot是一款由[color=#26BFE3]成千上万群众[/color]共同打造的[color=#26BFE3]免费软件[/color].它随着时间的发展而飞速发展:
+Il progetto ottiene più di [color=#02E180]$8000[/color] al mese su Patreon.","Godot是一款由[color=#26BFE3]成千上万群众[/color]共同打造的[color=#26BFE3]免费软件[/color].它随着时间的发展而飞速发展:
 
 - [color=#02E180]超过700个[/color]贡献者参与
-- 16 000多次的提交
-- 16 000多个星星
+- 18 000多次的提交
+- 18 000多个星星
 - 一个组织健全的项目
 
 Godot项目每个月能从老顾主那里得到高达[color=#02E180]9000多美元[/color]的赞助费.","Godot є [color=#26BFE3]Свобдним ПЗ[/color], що його будують [color=#26BFE3]сотні людей[/color]. Він зростає чим швидше із кожною хвилиною:
 
 - [color=#02E180]700+[/color] вкладників
-- 16 000+ комітів
-- 16 000+ зірочок
+- 18 000+ комітів
+- 18 000+ зірочок
 - Добре організований проект 
 
-Проект отримує [color=#02E180]$9000+[/color] кожного місяця на Patreon.","Godot는 [color=#26BFE3]무료 소프트웨어로[/color] [color=#26BFE3]수백명의 사람들로[/color] 만들어졌습니다. 시간이 갈수록 빠른 성장을 보이고 있습니다:
+Проект отримує [color=#02E180]$8000+[/color] кожного місяця на Patreon.","Godot는 [color=#26BFE3]무료 소프트웨어로[/color] [color=#26BFE3]수백명의 사람들로[/color] 만들어졌습니다. 시간이 갈수록 빠른 성장을 보이고 있습니다:
 
 - [color=#02E180]700+[/color] 기여자들
-- 16 000+ commits
-- 16 000+ stars
+- 18 000+ commits
+- 18 000+ stars
 - 잘 조직화된 프로젝트
 
-프로젝트는 매달 Patreon으로 [color=#02E180]$9000+[/color] 을 받습니다.","Godot je [color=#26BFE3]Free Software[/color], ktorý tvoria [color=#26BFE3]stovky ľudí[/color]. A rastie s časom:
+프로젝트는 매달 Patreon으로 [color=#02E180]$8000+[/color] 을 받습니다.","Godot je [color=#26BFE3]Free Software[/color], ktorý tvoria [color=#26BFE3]stovky ľudí[/color]. A rastie s časom:
 
 - [color=#02E180]700+[/color] prispievateľov
-- 16 000+ príspevkov
-- 16 000+ hviezd
+- 18 000+ príspevkov
+- 18 000+ hviezd
 - dobre zorganizovaný projekt
 
-Projekt dostáva mesačne viac ako [color=#02E180]$9000[/color] cez Patreon.","Godot to [color=#26BFE3]darmowe oprogramowanie[/color] tworzone przez [color=#26BFE3]setki ludzi[/color]. Z czasem rośnie coraz szybciej:
+Projekt dostáva mesačne viac ako [color=#02E180]$8000[/color] cez Patreon.","Godot to [color=#26BFE3]darmowe oprogramowanie[/color] tworzone przez [color=#26BFE3]setki ludzi[/color]. Z czasem rośnie coraz szybciej:
 
 - [color=#02E180]700+[/color] współautorów
-- 16 000+ commitów
-- 16 000+ gwiazdek
+- 18 000+ commitów
+- 18 000+ gwiazdek
 - Dobrze zorganizowany projekt
 
-Projekt zbiera [color=#02E180]ponad $9000[/color] miesięcznie na Patreonie.","Godot adalah [color=#26BFE3]Software Bebas[/color] yang dibangun oleh [color=#26BFE3]ratusan orang[/color] dan tumbuh cepat dari waktu ke waktu:
+Projekt zbiera [color=#02E180]ponad $8000[/color] miesięcznie na Patreonie.","Godot adalah [color=#26BFE3]Software Bebas[/color] yang dibangun oleh [color=#26BFE3]ratusan orang[/color] dan tumbuh cepat dari waktu ke waktu:
 
 - [color=#02E180]700+[/color] penyumbang
-- 16 000+ commits
-- 16 000+ bintang
+- 18 000+ commits
+- 18 000+ bintang
 - Proyek yang terorganisir
 
-Proyek ini mendapatkan [color=#02E180]$9000+[/color] setiap bulannya dari Patreon."
-Godot_is_in_great_shape_Column_Footer2_text,"Some features are sponsored by companies: WebGL export by Mozilla, C# support by Microsoft...","Certaines fonctionnalités sont parrainées par des entreprises: l'export WebGL par Mozilla, le support de C# par Microsoft ...",いろんな機能は大きい組織主催です：WebGL（Mozilla)、C#（Microsoft),"Algunas características están patrocinadas por compañías: exportar a WebGL por Mozilla, soporte de C# por Microsoft...","Algumas funcionalidades foram patrocinadas por grandes companhias: WebGL export pela Mozilla, suporte C# pela Microsoft…","Einige Features werden von namhaften Firmen gesponsort: WebGL Export von Mozilla, C# Unterstützung von Microsoft...","Alcune funzionalità sono sponsorizzate dalle compagnie: WebGL export da Mozilla, supporto C# da Microsoft...","一些功能由大型公司赞助: WebGL export 由Mozilla提供, C# 由Microsoft支持等...","Деякі функції профінансовані сторонніми компаніями: експорт до WebGL - Mozilla, підтримка C# - Microsoft...","일부 기능은 회사로부터 후원을 받았습니다: Mozilla의 WebGL, Microsoft의 C# 등","Niektoré funkcie sú sponzorované spoločnosťami: WebGL export od Mozilly, C# podpora od Microsoftu...","Niektóre funkcje są sponsorowane przez korporacje: eksport WebGL przez Mozillę, wsparcie dla C# przez Microsoft...","Beberapa fitur disponsori oleh perusahaan: ekspor WebGL oleh Mozilla, dukungan C# oleh Microsoft..."
+Proyek ini mendapatkan [color=#02E180]$8000+[/color] setiap bulannya dari Patreon."
+Godot_is_in_great_shape_Column_Footer2_text,"Godot is lead by full-time, experienced engineers: it gets [color=#02E180]$8000+[/color] a month on Patreon and is sponsored by organizations like Mozilla and Microsoft.","Certaines fonctionnalités sont parrainées par des entreprises: l'export WebGL par Mozilla, le support de C# par Microsoft ...",老練の技術者の常勤さんから主導していろんな機能は大きい組織主催です：WebGL（Mozilla)、C#（Microsoft),"Algunas características están patrocinadas por compañías: exportar a WebGL por Mozilla, soporte de C# por Microsoft...","Algumas funcionalidades foram patrocinadas por grandes companhias: WebGL export pela Mozilla, suporte C# pela Microsoft…","Einige Features werden von namhaften Firmen gesponsort: WebGL Export von Mozilla, C# Unterstützung von Microsoft...","Alcune funzionalità sono sponsorizzate dalle compagnie: WebGL export da Mozilla, supporto C# da Microsoft...","一些功能由大型公司赞助: WebGL export 由Mozilla提供, C# 由Microsoft支持等...","Деякі функції профінансовані сторонніми компаніями: експорт до WebGL - Mozilla, підтримка C# - Microsoft...","일부 기능은 회사로부터 후원을 받았습니다: Mozilla의 WebGL, Microsoft의 C# 등","Niektoré funkcie sú sponzorované spoločnosťami: WebGL export od Mozilly, C# podpora od Microsoftu...","Niektóre funkcje są sponsorowane przez korporacje: eksport WebGL przez Mozillę, wsparcie dla C# przez Microsoft...","Beberapa fitur disponsori oleh perusahaan: ekspor WebGL oleh Mozilla, dukungan C# oleh Microsoft..."
 How_to_get_started_Header_title,How to get started,Comment bien débuter,どうやって始められますか？ ,Cómo empezar,Como começar,Wie fange ich an?,Come cominciare,如何迈开第一步？,З чого почати,시작하는 법,Ako začať?,Jak zacząć?,Cara memulai
 How_to_get_started_Body_Row_TextBox_text,"The [color=#26BFE3]community[/color] is [b]very[/b] active. Social networks, forum, IRC, Discord…
 There's a [color=#26BFE3]Questions/Answers[/color] website
@@ -489,10 +491,14 @@ Use the [color=#F2971A]open source demos[/color]","La [color=#26BFE3]communauté
 Il y a un site de [color=#26BFE3]Questions/Réponses[/color]
 Vous trouverez beaucoup de [color=#02E180]tutoriels officiels[/color] dans le [color=#02E180]manuel en ligne[/color]
 La [color=#E3266F]référence de code[/color] est intégrée dans l'éditeur
-Vous trouverez de nombreuses [color=#F2971A]démos open source[/color]!","[color=#26BFE3]コミュニティ[/color]は[b]とても[/b]にぎやかです。SNSしIRCしDiscordしでGodotのユーザーと会えます
+Vous trouverez de nombreuses [color=#F2971A]démos open source[/color]!","[color=#26BFE3]コミュニティ[/color]は[b]とても[/b]にぎやかです。
+SNSしIRCしDiscordしでGodotのユーザーと会えます
 [color=#26BFE3]質問と答え[/color]のウェブサイトもあります
+
 [color=#02E180]リファレンス[/color]に公式の[color=#02E180]学習用[/color]が多いです
-開発環境に[color=#E3266F]コードの便覧[/color]が含まれます
+
+開発環境に[color=#E3266F]コードのドキュメント[/color]が含まれます
+
 [color=#F2971A]オープンソースのデモ[/color]も多いです","La [color=#26BFE3]comunidad[/color] es [b]muy[/b] activa. Redes sociales, foro, IRC, Discord…
 Hay una página de [color=#26BFE3]Preguntas/Respuestas[/color]
 Encontrarás muchos [color=#02E180]tutorialess[/color] oficiales en el [color=#02E180]manual online[/color]
@@ -658,3 +664,43 @@ Penghargaan:
 
 Presentasi ini adalah proyek sumber terbuka Godot!
 Temukan di [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Tersedia dalam beberapa bahasa."
+BuildUponGodot_Column_Header_title,Extend the editor with ease,,プラグインを簡単に開発できます,,,,,,,,,,
+BuildUponGodot_Column_Header_subtitle,,,,,,,,,,,,,
+BuildUponGodot_Column_Body_Row_TextBox_text,"The Godot editor is a Godot game! It relies on the same tools you'll use to make your game.
+
+Thanks to that, you can [color=#02E180]code add-ons and games the same way[/color].
+
+The [color=#26BFE3]open source Assets Library[/color] lets you download add-ons from GitHub into your projects.",,"Godotのエヂターは[color=#02E180]Godotゲーム[/color]なのでエンジンのAPIで開発されました。
+
+それで自分のゲームと開発環境のパラグインは両方[color=#02E180]同じツール[/color]で作られます。
+
+[color=#26BFE3]オーブンソースアセットライブラリー[/color]で無料でパラグインをGitHubからダウンロードできます。",,,,,,,,,,
+BuildUponGodot_Column_Footer_text,Projects: RPG in a Box by Justin Arnold and Procedural Mesh Generator by Bastiaan Olij,,プロジェクト： ジャスティン・アーノルドのRPG in a Box、 バスティアン・オリェのProcedural Mesh Generator,,,,,,,,,,
+Thank_you_tokyo_indies_Column_Header_title,Thank you!,,ありがとうございました,,,,,,,,,,
+Thank_you_tokyo_indies_Column_Header_subtitle,,,,,,,,,,,,,
+Thank_you_tokyo_indies_Column_Body_Row_TextBox_text,"All our game demos and tools are Free and Open Source!
+Find them on [url=https://github.com/GDquest/godot-3-presentation]GDquest's GitHub page[/url].
+
+Gdquest’s mission is to bring game developers together to become better creators.
+
+You can find us on:
+
+Twitter: [color=#26BFE3]@NathanGDquest[/color]
+YouTube: [color=#F2971A]youtube.com/c/gdquest[/color]",,"GDquestのゲームプロジェクトは全てオプンソース。
+GDquestの[url=https://github.com/GDquest/godot-3-presentation]GitHubページ[/url]でダウンロードできます。
+
+SNS:
+
+Twitter: [color=#26BFE3]@NathanGDquest[/color]
+YouTube: [color=#F2971A]youtube.com/c/gdquest[/color]",,,,,,,,,,
+Thank_you_tokyo_indies_Column_Footer_text,"If you have any questions, please get in touch anytime!",,質問があればいつでも連絡してください！,,,,,,,,,,
+Intro_GDquest_Column_Header_title,Game Design Quest,,,,,,,,,,,,
+Intro_GDquest_Column_Body_Row_TextBox_text,"GDquest's mission is to [color=#26BFE3]bring game developers together[/color] to become the creators they want to be.
+
+We create tutorials and open source game demos to help everyone to learn the techniques professionals use.
+
+All that with Free Software like the Godot game engine and Krita.",,"GDquestのミッションは、ゲームを作りたい方達と[color=#26BFE3]一緒になってすばらしいゲームデザイナーになること[/color]です。
+
+世界のゲームプランナー達がプロの方法を勉強できるために[color=#02E180]チュートリアル[/color]し[color=#02E180]オプンソースゲーム[/color]などを作ります。
+
+チームはフリソフトウェアで働いて貢献します。",,,,,,,,,,
