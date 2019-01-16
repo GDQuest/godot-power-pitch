@@ -11,9 +11,9 @@ func set_language_main(locale):
 	TranslationServer.set_locale(LANGUAGE_MAIN)
 
 func _ready():
-	slides.initialize()
-#	slides.save_as_png("res://out")
 #	save_as_csv(get_translatable_strings()) # Use this to save the presentation as CSV
+#	slides.save_as_png("res://out")
+	slides.initialize()
 
 func _input(event):
 	if LANGUAGE_MAIN == LANGUAGE_SECOND:
