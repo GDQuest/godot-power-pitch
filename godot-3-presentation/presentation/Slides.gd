@@ -11,6 +11,7 @@ enum Directions {PREVIOUS = -1, CURRENT = 0, NEXT = 1}
 var slide_current
 var slide_nodes = []
 
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed('ui_next'):
 		display(Directions.NEXT)
@@ -18,6 +19,14 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed('ui_previous'):
 		display(Directions.PREVIOUS)
 		get_tree().set_input_as_handled()
+
+	if event is InputEventSwipe:
+		if sign(event.direction.x) == 1:
+			display(Directions.NEXT)
+			get_tree().set_input_as_handled()
+		else:
+			display(Directions.PREVIOUS)
+			get_tree().set_input_as_handled()
 
 	if not event is InputEventMouseButton or not event.is_pressed():
 		return

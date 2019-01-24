@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "InputEvent",
+"class": "InputEventSwipe",
+"language": "GDScript",
+"path": "res://touch_controls/InputEventSwipe.gd"
+} ]
 _global_script_class_icons={
-
+"InputEventSwipe": ""
 }
 
 [application]
