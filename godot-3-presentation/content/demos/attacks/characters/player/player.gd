@@ -1,8 +1,8 @@
 extends "../character.gd"
 
 func _input(event):
-	if event.is_action_pressed("attack") and state != ATTACK:
-		_change_state(ATTACK)
+	if event.is_action_pressed("attack") and state != States.ATTACK:
+		_change_state(States.ATTACK)
 
 func _physics_process(delta):
 	input_direction = Vector2()

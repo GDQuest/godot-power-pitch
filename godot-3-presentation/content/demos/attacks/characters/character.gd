@@ -3,7 +3,7 @@ extends KinematicBody2D
 signal state_changed
 signal direction_changed
 
-enum STATES { IDLE, ATTACK, STAGGER, DIE, DEAD }
+enum States { IDLE, ATTACK, STAGGER, DIE, DEAD }
 var state = null
 
 # MOTION
@@ -22,7 +22,7 @@ var weapon = null
 
 
 func _ready():
-	_change_state(IDLE)
+	_change_state(States.IDLE)
 	$AnimationPlayer.connect('animation_finished', self, '_on_AnimationPlayer_animation_finished')
 	$Health.connect('health_changed', self, '_on_Health_health_changed')
 	$Health.connect('status_changed', self, '_on_Health_status_changed')
@@ -37,30 +37,30 @@ func _ready():
 
 func _change_state(new_state):
 	match state:
-		DIE:
+		States.DIE:
 			queue_free()
-		ATTACK:
+		States.ATTACK:
 			set_physics_process(true)
 
 	# Initialize the new state
 	match new_state:
-		IDLE:
+		States.IDLE:
 			$AnimationPlayer.play('idle')
-		ATTACK:
+		States.ATTACK:
 			set_physics_process(false)
 			if not weapon:
 				print("%s tries to attack but has no weapon" % get_name())
-				_change_state(IDLE)
+				_change_state(States.IDLE)
 				return
 
 			weapon.attack()
 			$AnimationPlayer.play('idle')
-		STAGGER:
+		States.STAGGER:
 			$Tween.interpolate_property(self, 'position', position, position + stagger_knockback * -knockback_direction, STAGGER_DURATION, Tween.TRANS_QUAD, Tween.EASE_OUT)
 			$Tween.start()
 
 			$AnimationPlayer.play('stagger')
-		DIE:
+		States.DIE:
 			set_process_input(false)
 			set_physics_process(false)
 			$CollisionShape2D.disabled = true
@@ -88,19 +88,19 @@ func take_damage(attacker_weapon, amount, effect):
 
 
 func _on_Weapon_attack_finished():
-	_change_state(IDLE)
+	_change_state(States.IDLE)
 
 
 func _on_AnimationPlayer_animation_finished(name):
 	if name == 'die':
-		_change_state(DEAD)
+		_change_state(States.DEAD)
 
 
 func _on_Health_health_changed(new_health):
 	if new_health == 0:
-		_change_state(DIE)
+		_change_state(States.DIE)
 	else:
-		_change_state(STAGGER)
+		_change_state(States.STAGGER)
 
 
 func _on_Health_status_changed(new_status):

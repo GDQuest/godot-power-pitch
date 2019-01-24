@@ -2,7 +2,7 @@ extends Control
 
 signal slide_change_requested(direction)
 
-enum DIRECTIONS {PREVIOUS = -1, NEXT = 1}
+enum Directions {PREVIOUS = -1, NEXT = 1}
 
 func _ready():
 	for child in get_children():
@@ -10,6 +10,6 @@ func _ready():
 
 func _on_touch_button_touched(button):
 	if button == $TouchButtonLeft:
-		emit_signal("slide_change_requested", PREVIOUS)
+		emit_signal("slide_change_requested", Directions.PREVIOUS)
 	if button == $TouchButtonRight:
-		emit_signal("slide_change_requested", NEXT)
+		emit_signal("slide_change_requested", Directions.NEXT)

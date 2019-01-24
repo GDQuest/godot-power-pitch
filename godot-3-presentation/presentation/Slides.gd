@@ -1,27 +1,33 @@
 tool
 extends Node
+"""
+Container for presentation Slide Nodes.
+Controls the currently displayed Slide.
+"""
 
-enum DIRECTIONS {PREVIOUS = -1, CURRENT = 0, NEXT = 1}
+
+enum Directions {PREVIOUS = -1, CURRENT = 0, NEXT = 1}
 
 var slide_current
 var slide_nodes = []
 
-func _input(event):
+func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed('ui_next'):
-		display(NEXT)
+		display(Directions.NEXT)
 		get_tree().set_input_as_handled()
 	if event.is_action_pressed('ui_previous'):
-		display(PREVIOUS)
+		display(Directions.PREVIOUS)
 		get_tree().set_input_as_handled()
 
 	if not event is InputEventMouseButton or not event.is_pressed():
 		return
 	match event.button_index:
 		BUTTON_LEFT:
-			display(NEXT)
+			display(Directions.NEXT)
 		BUTTON_RIGHT:
-			display(PREVIOUS)
+			display(Directions.PREVIOUS)
 	get_tree().set_input_as_handled()
+
 
 func initialize():
 	for slide in get_children():
@@ -32,7 +38,8 @@ func initialize():
 	add_child(slide_current)
 	slide_current.show()
 
-func display(direction=CURRENT, skip_animation=false):
+
+func display(direction=Directions.CURRENT, skip_animation=false):
 	set_process_input(false)
 	var previous_slide = slide_current
 	
@@ -47,7 +54,6 @@ func display(direction=CURRENT, skip_animation=false):
 	new_slide.show()
 	update_translations()
 	
-#	var animation = "enter_from_right" if direction == NEXT else "enter_from_left"
 	if not skip_animation:
 		var animation = "fade_in"
 		yield(new_slide.play(animation), "completed")
@@ -57,6 +63,7 @@ func display(direction=CURRENT, skip_animation=false):
 	slide_current = new_slide
 	
 	set_process_input(true)
+
 
 func update_translations():
 	for node in get_tree().get_nodes_in_group("translate"):
@@ -68,8 +75,10 @@ func update_translations():
 		if node.has_method('translate'):
 			node.translate()
 
+
 func get_translation_uid(node):
 	return node.owner.name + "_" + str(node.owner.get_path_to(node)).replace("/", "_")
+
 
 func save_as_png(output_folder):
 	get_tree().paused = true
@@ -84,7 +93,7 @@ func save_as_png(output_folder):
 		img.flip_y()
 		var path = output_folder.plus_file(str(id).pad_zeros(2) + '-' + slide.name + '.png')
 		img.save_png(path)
-		display(NEXT, true)
+		display(Directions.NEXT, true)
 		id += 1
 	get_viewport().set_clear_mode(Viewport.CLEAR_MODE_ALWAYS)
 	get_tree().paused = false
