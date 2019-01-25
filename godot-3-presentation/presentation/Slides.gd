@@ -8,33 +8,36 @@ Controls the currently displayed Slide.
 
 enum Directions {PREVIOUS = -1, CURRENT = 0, NEXT = 1}
 
+export var skip_animation : = false
+var index_active : = 0 setget set_index_active 
+
 var slide_current
 var slide_nodes = []
 
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed('ui_next'):
-		display(Directions.NEXT)
+		self.index_active += 1
 		get_tree().set_input_as_handled()
 	if event.is_action_pressed('ui_previous'):
-		display(Directions.PREVIOUS)
+		self.index_active -= 1
 		get_tree().set_input_as_handled()
 
 	if event is InputEventSwipe:
 		if sign(event.direction.x) == 1:
-			display(Directions.NEXT)
+			self.index_active += 1
 			get_tree().set_input_as_handled()
 		else:
-			display(Directions.PREVIOUS)
+			self.index_active -= 1
 			get_tree().set_input_as_handled()
 
 	if not event is InputEventMouseButton or not event.is_pressed():
 		return
 	match event.button_index:
 		BUTTON_LEFT:
-			display(Directions.NEXT)
+			self.index_active += 1
 		BUTTON_RIGHT:
-			display(Directions.PREVIOUS)
+			self.index_active -= 1
 	get_tree().set_input_as_handled()
 
 
@@ -47,18 +50,19 @@ func initialize():
 	add_child(slide_current)
 	slide_current.show()
 
+func set_index_active(value : int) -> void:
+	var index_previous : = index_active
+	index_active = clamp(value, 0, slide_nodes.size() - 1)
+	if index_active == index_previous:
+		set_process_input(true)
+	else:
+		display(index_active)
 
-func display(direction=Directions.CURRENT, skip_animation=false):
+
+func display(slide_index : int) -> void:
 	set_process_input(false)
 	var previous_slide = slide_current
-	
-	var previous_index = slide_nodes.find(slide_current)
-	var new_index = clamp(previous_index + direction, 0, slide_nodes.size() - 1)
-	if new_index == previous_index:
-		set_process_input(true)
-		return
-
-	var new_slide = slide_nodes[new_index]
+	var new_slide = slide_nodes[slide_index]
 	add_child(new_slide)
 	new_slide.show()
 	update_translations()
@@ -90,6 +94,7 @@ func get_translation_uid(node):
 
 
 func save_as_png(output_folder):
+	skip_animation = true
 	get_tree().paused = true
 	get_viewport().set_clear_mode(Viewport.CLEAR_MODE_ONLY_NEXT_FRAME)
 	var id = 0
@@ -102,7 +107,8 @@ func save_as_png(output_folder):
 		img.flip_y()
 		var path = output_folder.plus_file(str(id).pad_zeros(2) + '-' + slide.name + '.png')
 		img.save_png(path)
-		display(Directions.NEXT, true)
+		self.index_active += 1
 		id += 1
 	get_viewport().set_clear_mode(Viewport.CLEAR_MODE_ALWAYS)
 	get_tree().paused = false
+	skip_animation = false
