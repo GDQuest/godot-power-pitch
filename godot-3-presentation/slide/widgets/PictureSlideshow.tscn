@@ -2,43 +2,17 @@
 
 [ext_resource path="res://slide/widgets/PictureSlideshow.gd" type="Script" id=1]
 
-[node name="PictureSlideshow" type="Control" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
+[node name="PictureSlideshow" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Material", "Size Flags", "Visibility" ]
-DISPLAY_DURATION = 4.0
-TRANSITION_DURATION = 0.4
-COLOR_MODULATE_PAUSED = Color( 0.85098, 0.886275, 0.898039, 1 )
 
-[node name="Tween" type="Tween" parent="." index="0"]
+[node name="Tween" type="Tween" parent="."]
 
-repeat = false
-playback_process_mode = 1
-playback_speed = 1.0
-playback/active = false
-playback/repeat = false
-playback/speed = 1.0
-
-[node name="Timer" type="Timer" parent="." index="1"]
-
-process_mode = 1
-wait_time = 1.0
-one_shot = false
-autostart = false
+[node name="Timer" type="Timer" parent="."]
 
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
-
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
-
-

@@ -1,22 +1,32 @@
 extends Control
+"""
+Slideshow. Displays one child Control at a time and fades between them
+at constant time intervals.
+"""
 
-export(float, 0.0, 10.0) var DISPLAY_DURATION = 4.0
-export(float, 0.0, 1.0) var TRANSITION_DURATION = 0.4
-export(Color) var COLOR_MODULATE_PAUSED = Color('#d9e2e5')
+onready var tween : Tween = $Tween
+onready var timer : Timer = $Timer
 
-const COLOR_OPAQUE = Color("#ffffffff")
-const COLOR_TRANSPARENT = Color("#00ffffff")
+export(float, 0.0, 10.0) var display_duration : = 4.0
+export(float, 0.0, 1.0) var transition_duration : = 0.4
+export(Color) var color_pause : = Color('#d9e2e5')
 
-onready var tween = $Tween
-onready var timer = $Timer
+enum Directions {PREVIOUS = -1, CURRENT = 0, NEXT = 1}
 
-var paused = false setget set_paused
+const COLOR_OPAQUE : = Color("#ffffffff")
+const COLOR_TRANSPARENT : = Color("#00ffffff")
 
-var slides = []
-var index = 0
-var picture_active
+var paused : = false setget set_paused
 
-func _ready():
+var slides : = []
+var index_active : = 0 setget set_index_active
+
+var picture_active : Control
+var picture_previous : Control
+
+
+
+func _ready() -> void:
 	for node in get_children():
 		if not node is Control:
 			continue
@@ -25,57 +35,75 @@ func _ready():
 	for widget in slides:
 		widget.modulate = COLOR_TRANSPARENT
 		widget.hide()
+
+	tween.connect("tween_completed", self, "_on_tween_completed")
 	start()
 
+
+func start() -> void:
+	if not slides:
+		return
+	picture_active = slides[index_active]
+	picture_active.modulate = COLOR_OPAQUE
+	picture_active.show()
+	timer.wait_time = display_duration
+	timer.start()
+
+
 # Pause and navigation
-func _input(event):
+func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed('ui_accept'):
 		self.paused = not paused
+		accept_event()
 
 	if event.is_action_pressed('ui_left'):
-		display(index - 1, false)
+		display(Directions.PREVIOUS)
+		accept_event()
 	if event.is_action_pressed('ui_right'):
-		display(index + 1, false)
+		display(Directions.NEXT)
+		accept_event()
 
-func set_paused(value):
+
+func set_paused(value) -> void:
 	paused = value
 	timer.paused = value
 	if paused:
 		tween.stop_all()
-		modulate = COLOR_MODULATE_PAUSED
+		modulate = color_pause
 	else:
 		tween.resume_all()
 		modulate = COLOR_OPAQUE
 
-func _on_Timer_timeout():
-	display(index + 1)
 
-func display(slide_index, animate=true):
-	var picture_previous = picture_active
-	index = (slide_index + slides.size()) % slides.size()
-	picture_active = slides[index]
+func set_index_active(value) -> void:
+	index_active = (value + slides.size()) % slides.size()
+
+
+func display(direction:int, animate:=false) -> void:
+	self.index_active += direction
+	picture_previous = picture_active
+	picture_active = slides[index_active]
+	if picture_previous == picture_active:
+		return
+
+	picture_previous.modulate = COLOR_OPAQUE
+	picture_active.modulate = COLOR_TRANSPARENT
 	picture_active.show()
 
 	if animate:
-		tween.interpolate_property(picture_previous, 'modulate', COLOR_OPAQUE, COLOR_TRANSPARENT, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
-		tween.interpolate_property(picture_active, 'modulate', COLOR_TRANSPARENT, COLOR_OPAQUE, TRANSITION_DURATION, Tween.TRANS_LINEAR, Tween.EASE_IN)
+		tween.interpolate_property(picture_previous, 'modulate', COLOR_OPAQUE, COLOR_TRANSPARENT, transition_duration, Tween.TRANS_LINEAR, Tween.EASE_IN)
+		tween.interpolate_property(picture_active, 'modulate', COLOR_TRANSPARENT, COLOR_OPAQUE, transition_duration, Tween.TRANS_LINEAR, Tween.EASE_IN)
 		tween.start()
-		yield(tween, "tween_completed")
 
-	picture_previous.modulate = COLOR_TRANSPARENT
-	picture_active.modulate = COLOR_OPAQUE
+
+func _on_tween_completed(object:Object, key:String) -> void:
 	picture_previous.hide()
 	timer.start()
 
-func _on_tree_entered():
+
+func _on_tree_entered() -> void:
 	start()
 
-func start():
-	index = 0
-	if not slides:
-		return
-	picture_active = slides[index]
-	picture_active.modulate = COLOR_OPAQUE
-	picture_active.show()
-	timer.wait_time = DISPLAY_DURATION
-	timer.start()
+
+func _on_Timer_timeout() -> void:
+	display(Directions.NEXT, true)
