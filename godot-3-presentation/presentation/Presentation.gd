@@ -43,14 +43,6 @@ func set_language_active(locale) -> void:
 	slides.update_translations()
 
 
-# TODO: Make SwipeDetector generate InputEvents instead, and let Slides handle input
-func _on_SwipeDetector_swiped(direction):
-	if direction.x == 1:
-		slides.display(slides.NEXT)
-	if direction.x == -1:
-		slides.display(slides.PREVIOUS)
-
-
 func _on_TouchControls_slide_change_requested(direction):
 	slides.display(direction)
 
