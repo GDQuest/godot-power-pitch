@@ -23,8 +23,6 @@ func _ready():
 
 [node name="TokyoIndies" index="0" instance=ExtResource( 1 )]
 
-LANGUAGE_MAIN = "ja"
-
 [node name="TokyoIndiesTitle" parent="Slides" index="0" instance=ExtResource( 2 )]
 
 [node name="Intro_GDquest" parent="Slides" index="1" instance=ExtResource( 3 )]
@@ -44,32 +42,16 @@ LANGUAGE_MAIN = "ja"
 [node name="How_to_get_started" parent="Slides" index="8" instance=ExtResource( 10 )]
 
 [node name="Thank_you_tokyo_indies" parent="Slides" index="9" instance=ExtResource( 11 )]
-
 visible = false
 
 [node name="TouchControls" parent="." index="2"]
-
 visible = false
 
 [node name="Label" type="Label" parent="." index="3"]
-
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 0.0
 margin_top = -82.0
 margin_bottom = -68.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
 theme = ExtResource( 12 )
 text = "A 5 minutes intro to Godot [3.1] and the open projects on GDquest, for the Tokyo Indies meetup in Tokyo, Japan."
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
 script = SubResource( 1 )
-
 

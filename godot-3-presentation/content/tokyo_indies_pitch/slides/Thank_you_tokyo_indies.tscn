@@ -114,14 +114,12 @@ func get_translation_data():
 [node name="Thank_you_tokyo_indies" index="0" instance=ExtResource( 1 )]
 
 [node name="Column" parent="." index="1" instance=ExtResource( 2 )]
-
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 1921.0
 margin_bottom = 1080.0
 
 [node name="Header" parent="Column" index="0" instance=ExtResource( 3 )]
-
 anchor_right = 0.0
 margin_right = 1921.0
 margin_bottom = 210.0
@@ -129,7 +127,6 @@ script = SubResource( 1 )
 title = "Thank you!"
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
-
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 210.0
@@ -139,20 +136,18 @@ margin_bottom = 940.0
 [node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
-
 margin_right = 639.0
 margin_bottom = 730.0
 script = SubResource( 2 )
 text = "This presentation and our game projects are Free and Open Source!
 Find them on [url=https://github.com/GDquest/godot-3-presentation]GDquest's GitHub page[/url].
 
-GDquest's goal is to bring game creators together and become better designers. You can find us on:
+We are on:
 
 Twitter: [color=#26BFE3]@NathanGDquest[/color]
 YouTube: [color=#F2971A]youtube.com/c/gdquest[/color]"
 
 [node name="Picture" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
-
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 643.0
@@ -162,14 +157,12 @@ texture = ExtResource( 8 )
 script = ExtResource( 9 )
 
 [node name="Footer" parent="Column" index="2" instance=ExtResource( 10 )]
-
+visible = true
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1921.0
 margin_bottom = 1080.0
-stretch_mode = 0
-text = "Test"
-
+text = "Any questions? Message me anytime or let's talk after the presentations!"
 

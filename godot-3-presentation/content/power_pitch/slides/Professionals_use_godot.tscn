@@ -13,21 +13,18 @@
 [node name="Professionals_use_godot" index="0" instance=ExtResource( 1 )]
 
 [node name="Column" parent="." index="1" instance=ExtResource( 2 )]
-
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 1921.0
 margin_bottom = 1080.0
 
 [node name="Header" parent="Column" index="0" instance=ExtResource( 3 )]
-
 anchor_right = 0.0
 margin_right = 1921.0
 margin_bottom = 210.0
 title = "Professionals use Godot"
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
-
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 210.0
@@ -37,7 +34,6 @@ margin_bottom = 1080.0
 [node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
-
 margin_right = 639.0
 margin_bottom = 870.0
 text = "[color=#E3266F]Game studios[/color] like Gamblify, GuaranApps, Kivano...
@@ -46,7 +42,6 @@ text = "[color=#E3266F]Game studios[/color] like Gamblify, GuaranApps, Kivano...
 "
 
 [node name="Picture" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
-
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 643.0
@@ -54,5 +49,4 @@ margin_right = 1921.0
 margin_bottom = 870.0
 texture = ExtResource( 8 )
 script = ExtResource( 9 )
-
 

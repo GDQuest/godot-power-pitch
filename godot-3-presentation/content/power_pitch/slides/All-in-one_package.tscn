@@ -147,14 +147,12 @@ func get_translation_data():
 [node name="AllInOnePackage" index="0" instance=ExtResource( 1 )]
 
 [node name="Column" parent="." index="1" instance=ExtResource( 2 )]
-
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 1921.0
 margin_bottom = 1080.0
 
 [node name="Header" parent="Column" index="0" instance=ExtResource( 3 )]
-
 anchor_right = 0.0
 margin_right = 1921.0
 margin_bottom = 210.0
@@ -162,7 +160,6 @@ script = SubResource( 1 )
 title = "All-in-one package"
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
-
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 210.0
@@ -172,7 +169,6 @@ margin_bottom = 940.0
 [node name="Row" parent="Column/Body" index="0" instance=ExtResource( 5 )]
 
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
-
 margin_right = 639.0
 margin_bottom = 730.0
 script = SubResource( 2 )
@@ -185,7 +181,6 @@ text = "- [color=#E3266F]Code editor[/color] with embedded docs and autocompleti
 New tools get in with each version!"
 
 [node name="PictureSlideshow" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
-
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 643.0
@@ -193,76 +188,38 @@ margin_right = 1921.0
 margin_bottom = 730.0
 
 [node name="gdscript-editor-3.1" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="2"]
-
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 8 )
 expand = true
 stretch_mode = 6
 
 [node name="animation-editor-1" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="3"]
-
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 9 )
 expand = true
 stretch_mode = 6
-_sections_unfolded = [ "Size Flags" ]
 
 [node name="Column" parent="Column/Body/Row/PictureSlideshow" index="4" instance=ExtResource( 2 )]
-
 editor/display_folded = true
 visible = false
 
 [node name="animation-state-machine-2" type="TextureRect" parent="Column/Body/Row/PictureSlideshow/Column" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_right = 1278.0
 margin_bottom = 365.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
 size_flags_vertical = 3
 texture = ExtResource( 10 )
 expand = true
 stretch_mode = 7
-_sections_unfolded = [ "Size Flags", "Theme" ]
 
 [node name="anim-editor-03" type="TextureRect" parent="Column/Body/Row/PictureSlideshow/Column" index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_top = 365.0
 margin_right = 1278.0
 margin_bottom = 730.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 11 )
@@ -270,89 +227,50 @@ expand = true
 stretch_mode = 7
 
 [node name="skinning-editor" parent="Column/Body/Row/PictureSlideshow" index="5" instance=ExtResource( 12 )]
-
 visible = false
 texture = ExtResource( 13 )
 script = ExtResource( 14 )
 
 [node name="crackshot-tileset-editor" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="6"]
-
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 15 )
 expand = true
 stretch_mode = 6
 
 [node name="tilemap-editor-crackshot-securas" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="7"]
-
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 16 )
 expand = true
 stretch_mode = 6
 
 [node name="ui-theme-editor" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="8"]
-
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 17 )
 expand = true
 stretch_mode = 6
 
 [node name="ui-result" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="9"]
-
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 18 )
 expand = true
 stretch_mode = 6
 
 [node name="Footer" parent="Column" index="2" instance=ExtResource( 19 )]
-
+visible = true
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1921.0
 margin_bottom = 1080.0
-stretch_mode = 0
 script = SubResource( 3 )
 text = "2d IK available, meshes and skinning coming soon"
-
 
