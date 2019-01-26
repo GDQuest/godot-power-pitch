@@ -3,20 +3,12 @@
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 
 [node name="Body" type="ColorRect"]
-
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_min_size = Vector2( 1920, 210 )
-rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
-mouse_filter = 0
-mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource( 1 )
 color = Color( 0.937255, 0.945098, 0.960784, 1 )
-_sections_unfolded = [ "Pause", "Rect", "Size Flags", "Theme" ]
-
 

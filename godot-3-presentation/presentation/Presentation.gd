@@ -12,6 +12,7 @@ var language_active : = '' setget set_language_active
 
 func _ready():
 #	save_as_csv(get_translatable_strings()) # Use this to save the presentation as CSV
+#	return
 #	slides.save_as_png("res://out")
 	set_language_active(language_main)
 	slides.initialize()
