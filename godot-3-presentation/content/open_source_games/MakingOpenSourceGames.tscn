@@ -1,0 +1,80 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://presentation/Presentation.tscn" type="PackedScene" id=1]
+[ext_resource path="res://content/open_source_games/slides/OpenSourceGamesTitle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://content/tokyo_indies_pitch/slides/Intro_Nathan.tscn" type="PackedScene" id=3]
+[ext_resource path="res://content/open_source_games/slides/WeMakeFreeContent.tscn" type="PackedScene" id=4]
+[ext_resource path="res://content/open_source_games/slides/MakingGamesTogether.tscn" type="PackedScene" id=5]
+[ext_resource path="res://content/open_source_games/slides/WhySharingKnowledge.tscn" type="PackedScene" id=6]
+[ext_resource path="res://content/open_source_games/slides/WhyCodebase.tscn" type="PackedScene" id=7]
+[ext_resource path="res://content/open_source_games/slides/HowCrowdfunding.tscn" type="PackedScene" id=8]
+[ext_resource path="res://content/open_source_games/slides/HowEmpoweringCommunity.tscn" type="PackedScene" id=9]
+[ext_resource path="res://content/tokyo_indies_pitch/slides/TokyoIndiesTitle.tscn" type="PackedScene" id=10]
+[ext_resource path="res://content/power_pitch/slides/A_free_modern_engine.tscn" type="PackedScene" id=11]
+[ext_resource path="res://content/open_source_games/slides/HowKrita.tscn" type="PackedScene" id=12]
+[ext_resource path="res://content/open_source_games/slides/OpenGameProjects.tscn" type="PackedScene" id=13]
+[ext_resource path="res://content/open_source_games/ThankYou.tscn" type="PackedScene" id=14]
+[ext_resource path="res://theme/godot.theme" type="Theme" id=15]
+
+[sub_resource type="GDScript" id=1]
+
+script/source = "extends Label
+
+func _ready():
+	hide()
+"
+
+[node name="MakingOpenSourceGames" instance=ExtResource( 1 )]
+
+[node name="OpenSourceGamesTitle" parent="Slides" index="0" instance=ExtResource( 2 )]
+
+[node name="Intro_GDquest" parent="Slides" index="1" instance=ExtResource( 3 )]
+visible = false
+
+[node name="HalfFreeContent" parent="Slides" index="2" instance=ExtResource( 4 )]
+visible = false
+
+[node name="MakingGamesTogether" parent="Slides" index="3" instance=ExtResource( 5 )]
+visible = false
+
+[node name="WhySharingKnowledge" parent="Slides" index="4" instance=ExtResource( 6 )]
+visible = false
+
+[node name="WhyCodebase" parent="Slides" index="5" instance=ExtResource( 7 )]
+visible = false
+
+[node name="HowCrowdfunding" parent="Slides" index="6" instance=ExtResource( 8 )]
+visible = false
+
+[node name="HowEmpoweringCommunity" parent="Slides" index="7" instance=ExtResource( 9 )]
+visible = false
+
+[node name="GodotTitle" parent="Slides" index="8" instance=ExtResource( 10 )]
+visible = false
+
+[node name="A_free_modern_engine" parent="Slides" index="9" instance=ExtResource( 11 )]
+visible = false
+
+[node name="HowKrita" parent="Slides" index="10" instance=ExtResource( 12 )]
+visible = false
+
+[node name="OpenGameProjects" parent="Slides" index="11" instance=ExtResource( 13 )]
+visible = false
+margin_top = 1.0
+margin_bottom = 1.0
+
+[node name="ThankYou" parent="Slides" index="12" instance=ExtResource( 14 )]
+visible = false
+
+[node name="TouchControls" parent="." index="2"]
+visible = false
+
+[node name="Label" type="Label" parent="." index="3"]
+anchor_right = 1.0
+margin_top = -101.5
+margin_bottom = -14.5
+theme = ExtResource( 15 )
+text = "Short presentation about bringing people together to make Free and Open Source Games
+The goal is to poke people's interest in collaborative work, and hopefully Free Software like Godot, Krita..."
+script = SubResource( 1 )
+

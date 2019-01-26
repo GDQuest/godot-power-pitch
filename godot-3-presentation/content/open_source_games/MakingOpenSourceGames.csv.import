@@ -1,0 +1,16 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+
+[deps]
+
+files=[ "res://content/open_source_games/MakingOpenSourceGames.en.translation", "res://content/open_source_games/MakingOpenSourceGames.ja.translation" ]
+
+source_file="res://content/open_source_games/MakingOpenSourceGames.csv"
+dest_files=[ "res://content/open_source_games/MakingOpenSourceGames.en.translation", "res://content/open_source_games/MakingOpenSourceGames.ja.translation" ]
+
+[params]
+
+compress=true
+delimiter=0

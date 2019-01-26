@@ -1,0 +1,115 @@
+id,en,ja
+HalfFreeContent_Column_Header_title,A lot of free content,無料のコンテンツをたくさん作ってあげます
+HalfFreeContent_Column_Body_Row_TextBox_text,"More than 50% of the work we do is available for free:
+
+ - Hundreds of tutorials
+ - Contributions to Free Software
+ - Open source tools for game developers
+
+Sounds crazy? It is!
+But we get to work full-time on projects we love, and share everything we create from the start.
+","自分たちのコンテンツの五割以上を無料でもらえます：
+
+１．数百チュートリアル
+２．フリーソフトに貢献します
+３．ゲーム開発者のオープンソース道具
+
+クレージーでしょうか！
+でももう給料をもらえて好きなプロジェクトに毎日働けますよ。それで自由になんでも最初から交換できます。"
+MakingGamesTogether_Column_Header_title,Making games together,ゲームを世界の人たちと作ること
+MakingGamesTogether_Column_Body_Row_TextBox_text,"Since October 2018 we started Open Source projects with our community.
+
+- Our Zelda-like ARPG demo has 5 contributors.
+- Open RPG, our RPG gameplay engine, has 12 contributors already.
+
+And we are just getting started!","２０１８年１０月からオープンソースゲームプロジェクトを開発しはじめました。
+
+１．ZeldaみたいなARPGのゲームは５人の貢献者です
+２．オープンRPG、自分たちのRPGゲームプレイエンジンはもう１２人の貢献者で作っています
+
+プロジェクトが若い割にもう数人の貢献者が手伝ってくれました。"
+WhySharingKnowledge_Column_Header_title,Why? Everyone shares,どうして？みんなが技術を交換します
+WhySharingKnowledge_Column_Body_Row_TextBox_text,"We all share what we know.
+We are all mentors and students at the same time.
+
+In the community people are kind to one another. Sometimes we even become friends!
+
+The contributors get Free training and professional experience working in a team.","貢献者の皆さんが両方教員と学生になります。
+
+コミュニティの方たちは他のだれに優しく新しい技術を教えてたまに親しくなってしまいます。
+
+参加する人たちがゲームの仕方を勉強できてプロの経験を無料でもらえます。"
+WhySharingKnowledge_Column_Footer_text,Together we can create something greater than we could individually.,一人でより一緒に大きいプロジェクトを作れますね。
+WhyCodebase_Column_Header_title,Why? Better code,コードの書き方がうまくいっています
+WhyCodebase_Column_Body_Row_TextBox_text,"Working together forces us to write code that is easy to read and to maintain. 
+We're working on code guidelines that the entire community can use to that end.
+
+People find and fix bugs we didn't know about. Contributors add features we wouldn't have the time or resources to code ourselves.","世界の人たちが貢献するようにコードを読まなくてはいけませんから読みやすくて維持しやすいコードを書かなければなりません。
+そのためにコードガイドラインをだんだん作っています。
+
+貢献者がバッグをよくに見つけて直してくれます。時間がかかる新しい機能も書いてくれます。"
+WhyCodebase_Column_Footer_text,"Also, we're building up reusable tools and scripts to get new projects started faster.",皆のおかげで道具と将来のプロジェクトのためにまとめています
+HowCrowdfunding_Column_Header_title,How? Crowdfunding,クラウドファンディング
+HowCrowdfunding_Column_Header_subtitle,Half of our revenue comes from Kickstarter,会社のお金の半分がKickstarterでもらいます
+HowCrowdfunding_Column_Body_Row_TextBox_text,"Crowdfunding tips:
+
+1. Do a market study! You should secure sponsors and know how many persons will support you before you launch.
+2. Offer a unique product or service.
+3. Nurture your community. Keep great relationships with people.
+4. Prepare communication and content in advance.
+","クラウドファンディングのコツ：
+
+１．マケットを勉強しないといけません！スポンサーを開始する前に見つけたほうがいいでしょう
+２．ユニックサビスか商品を作らないと興味が少なくなります
+３．コミュニティと親しくコミュニケーションしたほうがいいでしょう
+４．宣伝とコンテンツをキャンペーンの前にじゅんびしたほうがいいです"
+HowCrowdfunding_Column_Footer_text,"This way, we got all three of our projects funded in 1 to 4 days",GDquestの３つのKickstarterは四日間以下で必要とするお金を受けれました。
+HowEmpoweringCommunity_Column_Header_title,How? Empower people,貢献者に力をあたえます
+HowEmpoweringCommunity_Column_Body_Row_TextBox_text,"You want to:
+
+1. Let people contribute ideas
+2. Delegate work to contributors
+3. Listen to the community
+
+People may code or design differently from you. Don't try to control everything: take their contributions as opportunities to learn new workflows and techniques!
+
+Also, review proposals and let people fix their work themselves.","１．皆さんのアイデアを聞いて
+２．仕事をいにんして
+３．コミュニティと相談したほうがいい
+
+他のだれの開発かデザインの仕方が違うでしょう。その貢献を新しい技術を勉強できる機会になりますよ！
+
+貢献者が成長できるようにコードを見直して失敗を教えたほうがいいです。"
+HowEmpoweringCommunity_Column_Footer_text,Did I mention our community is awesome?,コミュニティが素晴らしいですよ！
+HowKrita_Column_Body_Header_title,Game art: made with Krita,ゲームアート：Kritaで絵を書きます
+OpenGameProjects_Column_Header_title,Gdquest’s future,GDquestの将来
+OpenGameProjects_Column_Header_subtitle,Open Game projects,オープンゲームプロジェクト
+OpenGameProjects_Column_Body_Row_TextBox_text,"Our ambition is to make Open Game projects like Blender's Open Movies:
+
+1. Create great little games
+2. Improve our favorite Free Software
+3. Offer Free education to everyone
+
+Everyone's welcome to work together on this journey!
+We're already building the foundations.","Blender３Dのオープン動画というプロジェクトのようにオープンゲームを作ってみたいです。
+
+ゲームをつくって好きなフリーソフトに貢献してフリー教育を作ってみたいです。
+そのためにGodotエンジンのチームと一緒に共同作業しています。
+
+貢献したいなら皆を喜んでかんげいします！
+今はもうゆっくり準備しています。"
+ThankYou_Column_Header_title,Thank you!,ありがとうございました！
+ThankYou_Column_Body_Row_TextBox_text,"This presentation and our game projects are Free and Open Source!
+Find them on [url=https://github.com/GDquest/godot-3-presentation]GDquest's GitHub page[/url].
+
+We are on:
+
+Twitter: [color=#26BFE3]@NathanGDquest[/color]
+YouTube: [color=#F2971A]youtube.com/c/gdquest[/color]","このプレゼンとゲームプロジェクトは全てオプンソースです。
+GDquestの[url=https://github.com/GDquest/godot-3-presentation]GitHubページ[/url]でダウンロードできます。
+
+SNS:
+
+Twitter: [color=#26BFE3]@NathanGDquest[/color]
+YouTube: [color=#F2971A]youtube.com/c/gdquest[/color]"
+ThankYou_Column_Footer_text,Any questions? Message me anytime or let's talk after the presentations!,質問があればいつでも連絡してください！日本語は大丈夫です。
