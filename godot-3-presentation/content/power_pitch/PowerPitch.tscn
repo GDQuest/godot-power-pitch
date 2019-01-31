@@ -15,7 +15,7 @@
 [ext_resource path="res://content/power_pitch/slides/How_to_get_started.tscn" type="PackedScene" id=13]
 [ext_resource path="res://content/power_pitch/slides/Thank_you.tscn" type="PackedScene" id=14]
 
-[node name="PowerPitch" index="0" instance=ExtResource( 1 )]
+[node name="PowerPitch" instance=ExtResource( 1 )]
 
 [node name="Title" parent="Slides" index="0" instance=ExtResource( 2 )]
 
@@ -38,7 +38,6 @@ visible = false
 visible = false
 
 [node name="Professionals_use_godot" parent="Slides" index="7" instance=ExtResource( 9 )]
-visible = false
 
 [node name="Made_with_godot" parent="Slides" index="8" instance=ExtResource( 10 )]
 visible = false

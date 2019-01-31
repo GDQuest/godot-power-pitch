@@ -111,7 +111,7 @@ func get_translation_data():
 	return { 'text': text }
 "
 
-[node name="ThankYou" index="0" instance=ExtResource( 1 )]
+[node name="ThankYou" instance=ExtResource( 1 )]
 
 [node name="Column" parent="." index="1" instance=ExtResource( 2 )]
 anchor_right = 0.0
@@ -125,6 +125,7 @@ margin_right = 1921.0
 margin_bottom = 210.0
 script = SubResource( 1 )
 title = "Thank you!"
+subtitle = ""
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
 anchor_right = 0.0
@@ -146,6 +147,7 @@ We are on:
 
 Twitter: [color=#26BFE3]@NathanGDquest[/color]
 YouTube: [color=#F2971A]youtube.com/c/gdquest[/color]"
+center = false
 
 [node name="Picture" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
 anchor_right = 0.0

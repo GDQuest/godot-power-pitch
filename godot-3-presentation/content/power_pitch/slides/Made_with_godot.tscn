@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
@@ -8,32 +8,6 @@
 [ext_resource path="res://slide/widgets/Video.tscn" type="PackedScene" id=6]
 [ext_resource path="res://content/video/shooter-game.ogv" type="VideoStream" id=7]
 [ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=8]
-
-[sub_resource type="GDScript" id=1]
-
-script/source = "extends VideoPlayer
-
-export(String) var BASE_PATH = 'res://content/video/'
-
-func _input(event):
-	if event.is_action_pressed(\"toggle_pause\"):
-		paused = not paused
-
-func display(file_name, config={}):
-	rect_min_size = Vector2(1280, 720)
-	if 'video_size' in config.keys():
-		var video_size = config['video_size']
-		rect_min_size = Vector2(video_size['x'], video_size['y'])
-
-	visible = not file_name == \"\"
-	if file_name == \"\":
-		stream = null
-		return
-	var video_path = BASE_PATH + file_name
-	stream = load(video_path)
-	play()
-	paused = false
-"
 
 [node name="Made_with_godot" index="0" instance=ExtResource( 1 )]
 
@@ -68,9 +42,9 @@ margin_bottom = 725.0
 rect_min_size = Vector2( 1280, 720 )
 stream = ExtResource( 7 )
 autoplay = true
-script = SubResource( 1 )
 
 [node name="Footer2" parent="Column" index="2" instance=ExtResource( 8 )]
+visible = true
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0

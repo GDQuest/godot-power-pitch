@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
@@ -10,108 +10,7 @@
 [ext_resource path="res://content/power_pitch/img/godot-3.1-editor-2d-720p.jpg" type="Texture" id=8]
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=9]
 [ext_resource path="res://content/power_pitch/img/godot-3.1-editor-tps-demo-720p.jpg" type="Texture" id=10]
-[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=11]
-[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=12]
-
-[sub_resource type="GDScript" id=1]
-
-script/source = "tool
-extends Control
-
-export(String) var title = \"\" setget set_title
-export(String) var subtitle = \"\" setget set_subtitle
-
-var FONTS_DEFAULT = {
-	'title': preload(\"res://theme/fonts/title_montserrat.tres\"),
-	'subtitle': preload(\"res://theme/fonts/subtitle_montserrat.tres\"),
-}
-var FONTS_CJK = {
-	'title': preload(\"res://theme/fonts/title_noto.tres\"),
-	'subtitle': preload(\"res://theme/fonts/subtitle_noto.tres\"),
-}
-
-onready var title_node = $Column/Title
-onready var title_shadow_node = $Column/Title/Shadow
-onready var subtitle_node = $Column/Subtitle
-onready var subtitle_shadow_node = $Column/Subtitle/Shadow
-
-func _ready():
-	self.title = title
-	self.subtitle = subtitle
-
-func set_title(string):
-	title = string
-	if not title_node:
-		return
-	title_node.display(string)
-
-func set_subtitle(string):
-	subtitle = string
-	if not subtitle_node:
-		return
-	subtitle_node.display(string)
-
-func translate():
-	var locale = TranslationServer.get_locale()
-	var fonts = FONTS_DEFAULT
-	if locale in ['ja', 'ko', 'zh']:
-			fonts = FONTS_CJK
-
-	title_node.set('custom_fonts/font', fonts['title'])
-	title_shadow_node.set('custom_fonts/font', fonts['title'])
-	subtitle_node.set('custom_fonts/font', fonts['subtitle'])
-	subtitle_shadow_node.set('custom_fonts/font', fonts['subtitle'])
-
-func get_translation_data():
-	var data = { 'title': title }
-	if subtitle:
-		data['subtitle'] = subtitle
-	return data
-"
-
-[sub_resource type="GDScript" id=2]
-
-script/source = "tool
-extends Control
-
-export(String, MULTILINE) var text = \"\" setget set_text
-export(bool) var center = false setget set_center
-
-onready var _text = $Text
-var _text_processed = \"\"
-
-func _ready():
-	update_text()
-
-func set_text(string):
-	text = string
-	if not _text:
-		return
-	update_text()
-
-func set_center(value):
-	center = value
-	if not _text:
-		return
-	update_text()
-
-func update_text():
-	if center:
-		_text_processed = center_text(text)
-	else:
-		_text_processed = text
-	$Text.bbcode_text = _text_processed
-
-func center_text(string):
-	var bbcode = \"\"
-	for line in string.split(\"\\n\"):
-		line = \"%s%s%s\" % [\"[center]\", line, \"[/center]\"]
-		bbcode += line + \"\\n\"
-	return bbcode
-
-func get_translation_data():
-	return { 'text': text }
-"
+[ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=11]
 
 [node name="A_free_modern_engine" index="0" instance=ExtResource( 1 )]
 
@@ -125,8 +24,7 @@ margin_bottom = 1080.0
 anchor_right = 0.0
 margin_right = 1921.0
 margin_bottom = 210.0
-script = SubResource( 1 )
-title = "A Free modern engine"
+title = ""
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
 anchor_right = 0.0
@@ -140,12 +38,6 @@ margin_bottom = 940.0
 [node name="TextBox" parent="Column/Body/Row" index="0" instance=ExtResource( 6 )]
 margin_right = 639.0
 margin_bottom = 730.0
-script = SubResource( 2 )
-text = "Separate [color=#26BFE3]2d[/color] and [color=#E3266F]3d[/color] renderers
-Complete [color=#F2971A]game editor[/color]
-
-Create projects with Windows, Mac, Linux
-Build games for PC, mobile, web*"
 
 [node name="PictureSlideshow" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
 anchor_right = 0.0
@@ -153,9 +45,9 @@ anchor_bottom = 0.0
 margin_left = 643.0
 margin_right = 1921.0
 margin_bottom = 730.0
-DISPLAY_DURATION = 6.0
 
 [node name="godot_editor_2d" type="TextureRect" parent="Column/Body/Row/PictureSlideshow" index="2"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 8 )
@@ -163,11 +55,9 @@ expand = true
 stretch_mode = 6
 
 [node name="godot_editor_3d" parent="Column/Body/Row/PictureSlideshow" index="3" instance=ExtResource( 9 )]
-visible = false
 texture = ExtResource( 10 )
-script = ExtResource( 11 )
 
-[node name="Footer" parent="Column" index="2" instance=ExtResource( 12 )]
+[node name="Footer" parent="Column" index="2" instance=ExtResource( 11 )]
 visible = true
 anchor_top = 0.0
 anchor_right = 0.0

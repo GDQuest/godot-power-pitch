@@ -1,18 +1,21 @@
 extends TextureRect
+"""
+Loads and displays a picture from a path to an image file
+"""
 
-var path = "" setget set_path
+var path : = "" setget set_path
 
-const main_folder = "res://content/power_pitch/img/"
-const alternate_folder = "res://content/_old_presentation/img/"
+const main_folder : = "res://content/power_pitch/img/"
+const alternate_folder : = "res://content/_old_presentation/img/"
 
-func set_path(string):
+func set_path(string) -> void:
 	path = string
 	visible = path != ""
 	if path == "":
 		return
 
-	var abspath = path if path.begins_with("res://") else find_abs_path(path)
-	var image = ImageTexture.new()
+	var abspath : = path if path.begins_with("res://") else find_abs_path(path)
+	var image : = ImageTexture.new()
 	image.load(abspath)
 	texture = image
 

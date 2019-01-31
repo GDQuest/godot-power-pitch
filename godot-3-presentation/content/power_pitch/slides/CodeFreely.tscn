@@ -71,6 +71,7 @@ expand = true
 stretch_mode = 6
 
 [node name="Footer" parent="." index="3" instance=ExtResource( 10 )]
+visible = true
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0

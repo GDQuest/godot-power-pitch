@@ -2,257 +2,86 @@
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
 [ext_resource path="res://theme/sprites/header_dusk.png" type="Texture" id=2]
-[ext_resource path="res://theme/fonts/title_montserrat.tres" type="DynamicFont" id=3]
-[ext_resource path="res://theme/fonts/subtitle_montserrat.tres" type="DynamicFont" id=4]
-
-[sub_resource type="GDScript" id=1]
-
-script/source = "tool
-extends Control
-
-export(String) var title = \"\" setget set_title
-export(String) var subtitle = \"\" setget set_subtitle
-export(Resource) var font_override = null
-
-var FONTS_DEFAULT = {
-	'title': preload(\"res://theme/fonts/title_montserrat.tres\"),
-	'subtitle': preload(\"res://theme/fonts/subtitle_montserrat.tres\"),
-}
-var FONTS_CJK = {
-	'title': preload(\"res://theme/fonts/title_noto.tres\"),
-	'subtitle': preload(\"res://theme/fonts/subtitle_noto.tres\"),
-}
-
-onready var title_node = $Column/Title
-onready var title_shadow_node = $Column/Title/Shadow
-onready var subtitle_node = $Column/Subtitle
-onready var subtitle_shadow_node = $Column/Subtitle/Shadow
-
-func _ready():
-	self.title = title
-	self.subtitle = subtitle
-
-func set_title(string):
-	title = string
-	if not title_node:
-		return
-	title_node.display(string)
-
-func set_subtitle(string):
-	subtitle = string
-	if not subtitle_node:
-		return
-	subtitle_node.display(string)
-
-func translate():
-	var locale = TranslationServer.get_locale()
-	var fonts = FONTS_DEFAULT
-	if font_override:
-		title_node.set('custom_fonts/font', font_override)
-		title_shadow_node.set('custom_fonts/font', font_override)
-		return
-		
-	if locale in ['ja', 'ko', 'zh', 'ar']:
-			fonts = FONTS_CJK
-
-	title_node.set('custom_fonts/font', fonts['title'])
-	title_shadow_node.set('custom_fonts/font', fonts['title'])
-	subtitle_node.set('custom_fonts/font', fonts['subtitle'])
-	subtitle_shadow_node.set('custom_fonts/font', fonts['subtitle'])
-
-func get_translation_data():
-	var data = { 'title': title }
-	if subtitle:
-		data['subtitle'] = subtitle
-	return data
-"
-
-[sub_resource type="GDScript" id=2]
-
-script/source = "tool
-extends Label
-
-onready var shadow_node = $Shadow
-
-func display(string):
-	text = string
-	shadow_node.text = string
-
-func _on_Subtitle_visibility_updated(visible):
-	if visible:
-		valign = Label.VALIGN_BOTTOM
-		shadow_node.valign = Label.VALIGN_BOTTOM
-	else:
-		valign = Label.VALIGN_CENTER
-		shadow_node.valign = Label.VALIGN_CENTER
-"
-
-[sub_resource type="GDScript" id=3]
-
-script/source = "tool
-extends Label
-
-signal visibility_updated(visible)
-
-func display(string):
-	visible = string != \"\"
-	if not visible:
-		return
-	text = string
-	$Shadow.text = string
-
-func _on_visibility_changed():
-	emit_signal(\"visibility_updated\", visible)
-"
+[ext_resource path="res://slide/widgets/Header.gd" type="Script" id=3]
+[ext_resource path="res://theme/fonts/title_montserrat.tres" type="DynamicFont" id=4]
+[ext_resource path="res://slide/widgets/Header/Title.gd" type="Script" id=5]
+[ext_resource path="res://theme/fonts/subtitle_montserrat.tres" type="DynamicFont" id=6]
+[ext_resource path="res://slide/widgets/Header/Subtitle.gd" type="Script" id=7]
 
 [node name="Header" type="TextureRect" groups=[
 "translate",
 ]]
-
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 0.0
 rect_min_size = Vector2( 1920, 210 )
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
-size_flags_vertical = 1
 theme = ExtResource( 1 )
 texture = ExtResource( 2 )
 expand = true
-stretch_mode = 0
-script = SubResource( 1 )
-_sections_unfolded = [ "Rect", "Theme" ]
+script = ExtResource( 3 )
 title = "Title"
-subtitle = ""
-font_override = null
 
-[node name="Column" type="VBoxContainer" parent="." index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
+[node name="Column" type="VBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-alignment = 0
 
-[node name="Title" type="Label" parent="Column" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="Title" type="Label" parent="Column"]
 margin_right = 1920.0
 margin_bottom = 210.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.2
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = ExtResource( 4 )
 text = "Title"
 align = 1
 valign = 1
 clip_text = true
 uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-script = SubResource( 2 )
-_sections_unfolded = [ "BBCode", "Material", "Size Flags", "Theme", "custom_fonts" ]
+script = ExtResource( 5 )
 
-[node name="Shadow" type="Label" parent="Column/Title" index="0"]
-
+[node name="Shadow" type="Label" parent="Column/Title"]
 modulate = Color( 0.351563, 0, 0.703125, 0.487922 )
 show_behind_parent = true
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 6.0
 margin_bottom = 6.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.2
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = ExtResource( 4 )
 text = "Title"
 align = 1
 valign = 1
 clip_text = true
 uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "BBCode", "Material", "Size Flags", "Theme", "Visibility", "custom_fonts" ]
 
-[node name="Subtitle" type="Label" parent="Column" index="1"]
-
+[node name="Subtitle" type="Label" parent="Column"]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_top = 144.0
 margin_right = 1920.0
 margin_bottom = 210.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 6 )
 text = "Test"
 align = 1
 clip_text = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-script = SubResource( 3 )
-_sections_unfolded = [ "BBCode", "Theme", "custom_fonts" ]
+script = ExtResource( 7 )
 
-[node name="Shadow" type="Label" parent="Column/Subtitle" index="0"]
-
+[node name="Shadow" type="Label" parent="Column/Subtitle"]
 modulate = Color( 0.34902, 0, 0.701961, 0.486275 )
 show_behind_parent = true
-anchor_left = 0.0
-anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 4.0
 margin_bottom = 4.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
 mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 6 )
 text = "Test"
 align = 1
 clip_text = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-script = SubResource( 3 )
-_sections_unfolded = [ "BBCode", "Material", "Size Flags", "Theme", "Visibility", "custom_fonts" ]
+script = ExtResource( 7 )
 
 [connection signal="visibility_changed" from="Column/Subtitle" to="Column/Subtitle" method="_on_visibility_changed"]
-
 [connection signal="visibility_updated" from="Column/Subtitle" to="Column/Title" method="_on_Subtitle_visibility_updated"]
-
-

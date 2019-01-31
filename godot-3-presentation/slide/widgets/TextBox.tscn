@@ -1,121 +1,35 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://theme/godot.theme" type="Theme" id=1]
-
-[sub_resource type="GDScript" id=1]
-
-script/source = "tool
-extends Control
-
-export(String, MULTILINE) var text = \"\" setget set_text
-export(bool) var center = false setget set_center
-
-onready var _text = $Text
-var _text_processed = \"\"
-
-func _ready():
-	update_text()
-
-func set_text(string):
-	text = string
-	if not _text:
-		return
-	update_text()
-
-func set_center(value):
-	center = value
-	if not _text:
-		return
-	update_text()
-
-func update_text():
-	if center:
-		_text_processed = center_text(text)
-	else:
-		_text_processed = text
-	$Text.bbcode_text = _text_processed
-
-func center_text(string):
-	var bbcode = \"\"
-	for line in string.split(\"\\n\"):
-		line = \"%s%s%s\" % [\"[center]\", line, \"[/center]\"]
-		bbcode += line + \"\\n\"
-	return bbcode
-
-func get_translation_data():
-	return { 'text': text }
-"
+[ext_resource path="res://slide/widgets/TextBox.gd" type="Script" id=2]
 
 [node name="TextBox" type="MarginContainer" groups=[
 "translate",
 ]]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_right = 638.0
 margin_bottom = 1080.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource( 1 )
 custom_constants/margin_top = 32
 custom_constants/margin_bottom = 32
-script = SubResource( 1 )
-_sections_unfolded = [ "Size Flags", "Theme" ]
-text = ""
-center = false
+script = ExtResource( 2 )
 
-[node name="Text" type="RichTextLabel" parent="." index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="Text" type="RichTextLabel" parent="."]
 margin_left = 32.0
 margin_top = 32.0
 margin_right = 606.0
 margin_bottom = 1048.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = true
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 bbcode_enabled = true
-bbcode_text = ""
-visible_characters = -1
-percent_visible = 1.0
-meta_underlined = true
-tab_size = 4
-text = ""
 scroll_active = false
-scroll_following = false
-selection_enabled = false
-override_selected_font_color = false
-_sections_unfolded = [ "BBCode", "Margin", "Theme", "custom_fonts", "custom_styles" ]
 
-[node name="Shadow" type="RichTextLabel" parent="Text" index="1"]
-
+[node name="Shadow" type="RichTextLabel" parent="Text"]
 visible = false
 show_behind_parent = true
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_top = 2.0
 margin_right = 566.0
 margin_bottom = 676.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = true
-mouse_filter = 0
-mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
-size_flags_vertical = 1
 bbcode_enabled = true
 bbcode_text = "Un seul exécutable de [color=#26BFE3]20mo[/color]:
 
@@ -124,10 +38,6 @@ bbcode_text = "Un seul exécutable de [color=#26BFE3]20mo[/color]:
 
 Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#...
 "
-visible_characters = -1
-percent_visible = 1.0
-meta_underlined = true
-tab_size = 4
 text = "Un seul exécutable de 20mo:
 
 - Téléchargez le en quelques secondes
@@ -136,9 +46,4 @@ text = "Un seul exécutable de 20mo:
 Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#...
 "
 scroll_active = false
-scroll_following = false
-selection_enabled = false
-override_selected_font_color = false
-_sections_unfolded = [ "Rect" ]
-
 
