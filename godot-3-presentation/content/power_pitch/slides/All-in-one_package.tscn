@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
@@ -118,30 +118,6 @@ func center_text(string):
 
 func get_translation_data():
 	return { 'text': text }
-"
-
-[sub_resource type="GDScript" id=3]
-
-script/source = "tool
-extends Control
-
-export(String) var text = \"\" setget set_text
-
-var text_node
-
-func _ready():
-	text_node = $Text
-	self.text = text
-
-func set_text(string):
-	text = string
-	visible = text != \"\"
-	if not text_node:
-		return
-	text_node.display(string)
-
-func get_translation_data():
-	return {'text': text}
 "
 
 [node name="AllInOnePackage" index="0" instance=ExtResource( 1 )]
@@ -271,6 +247,4 @@ anchor_bottom = 0.0
 margin_top = 940.0
 margin_right = 1921.0
 margin_bottom = 1080.0
-script = SubResource( 3 )
-text = "2d IK available, meshes and skinning coming soon"
 
