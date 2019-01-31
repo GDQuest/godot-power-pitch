@@ -2,12 +2,12 @@ id,en,ja
 HalfFreeContent_Column_Header_title,A lot of free content,無料のコンテンツをたくさん作ってあげます
 HalfFreeContent_Column_Body_Row_TextBox_text,"More than 50% of the work we do is available for free:
 
- - Hundreds of tutorials
- - Contributions to Free Software
- - Open source tools for game developers
+- Hundreds of [color=#26BFE3]tutorials[/color]
+- Contributions to [color=#26BFE3]Free Software[/color]
+- Open source [color=#26BFE3]tools[/color] for game developers
 
 Sounds crazy? It is!
-But we get to work full-time on projects we love, and share everything we create from the start.
+But we get to work [color=#F2971A]full-time[/color] on projects we love, and share everything we create from the start.
 ","自分たちのコンテンツの五割以上を無料でもらえます：
 
 １．数百チュートリアル
@@ -17,7 +17,7 @@ But we get to work full-time on projects we love, and share everything we create
 クレージーでしょうか！
 でももう給料をもらえて好きなプロジェクトに毎日働けますよ。それで自由になんでも最初から交換できます。"
 MakingGamesTogether_Column_Header_title,Making games together,ゲームを世界の人たちと作ること
-MakingGamesTogether_Column_Body_Row_TextBox_text,"Since October 2018 we started Open Source projects with our community.
+MakingGamesTogether_Column_Body_Row_TextBox_text,"Since October 2018 we started [color=#E3266F]Open Source projects[/color] with our community.
 
 - Our Zelda-like ARPG demo has 5 contributors.
 - Open RPG, our RPG gameplay engine, has 12 contributors already.
@@ -30,7 +30,7 @@ And we are just getting started!","２０１８年１０月からオープンソ
 プロジェクトが若い割にもう数人の貢献者が手伝ってくれました。"
 WhySharingKnowledge_Column_Header_title,Why? Everyone shares,どうして？みんなが技術を交換します
 WhySharingKnowledge_Column_Body_Row_TextBox_text,"We all share what we know.
-We are all mentors and students at the same time.
+We are all [color=#26BFE3]mentors and students[/color] at the same time.
 
 In the community people are kind to one another. Sometimes we even become friends!
 
@@ -42,7 +42,7 @@ The contributors get Free training and professional experience working in a team
 WhySharingKnowledge_Column_Footer_text,Together we can create something greater than we could individually.,一人でより一緒に大きいプロジェクトを作れますね。
 WhyCodebase_Column_Header_title,Why? Better code,コードの書き方がうまくいっています
 WhyCodebase_Column_Body_Row_TextBox_text,"Working together forces us to write code that is easy to read and to maintain. 
-We're working on code guidelines that the entire community can use to that end.
+We're working on [color=#E3266F]code guidelines[/color] that the entire community can use to that end.
 
 People find and fix bugs we didn't know about. Contributors add features we wouldn't have the time or resources to code ourselves.","世界の人たちが貢献するようにコードを読まなくてはいけませんから読みやすくて維持しやすいコードを書かなければなりません。
 そのためにコードガイドラインをだんだん作っています。
@@ -51,19 +51,20 @@ People find and fix bugs we didn't know about. Contributors add features we woul
 WhyCodebase_Column_Footer_text,"Also, we're building up reusable tools and scripts to get new projects started faster.",皆のおかげで道具と将来のプロジェクトのためにまとめています
 HowCrowdfunding_Column_Header_title,How? Crowdfunding,クラウドファンディング
 HowCrowdfunding_Column_Header_subtitle,Half of our revenue comes from Kickstarter,会社のお金の半分がKickstarterでもらいます
-HowCrowdfunding_Column_Body_Row_TextBox_text,"Crowdfunding tips:
+HowCrowdfunding_Column_Body_Row_TextBox_text,"Crowdfunding works well for GDquest as the project is community-driven.
 
-1. Do a market study! You should secure sponsors and know how many persons will support you before you launch.
-2. Offer a unique product or service.
-3. Nurture your community. Keep great relationships with people.
-4. Prepare communication and content in advance.
-","クラウドファンディングのコツ：
+Some tips after 3 campaigns:
+
+1. Do a [color=#26BFE3]market study[/color]! You should secure sponsors and know how many persons will support you before you launch.
+2. Offer a [color=#E3266F]unique product[/color] or service.
+3. Nurture your community. Keep great [color=#26BFE3]relationships[/color] with people.
+4. Prepare communication and content in advance.","クラウドファンディングのコツ：
 
 １．マケットを勉強しないといけません！スポンサーを開始する前に見つけたほうがいいでしょう
 ２．ユニックサビスか商品を作らないと興味が少なくなります
 ３．コミュニティと親しくコミュニケーションしたほうがいいでしょう
 ４．宣伝とコンテンツをキャンペーンの前にじゅんびしたほうがいいです"
-HowCrowdfunding_Column_Footer_text,"This way, we got all three of our projects funded in 1 to 4 days",GDquestの３つのKickstarterは四日間以下で必要とするお金を受けれました。
+HowCrowdfunding_Column_Footer_text,We got all three of our projects funded in 1 to 4 days doing this,GDquestの３つのKickstarterは四日間以下で必要とするお金を受けれました。
 HowEmpoweringCommunity_Column_Header_title,How? Empower people,貢献者に力をあたえます
 HowEmpoweringCommunity_Column_Body_Row_TextBox_text,"You want to:
 

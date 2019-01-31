@@ -24,7 +24,7 @@ func _ready():
 	hide()
 "
 
-[node name="MakingOpenSourceGames" instance=ExtResource( 1 )]
+[node name="MakingOpenSourceGames" index="0" instance=ExtResource( 1 )]
 
 [node name="OpenSourceGamesTitle" parent="Slides" index="0" instance=ExtResource( 2 )]
 
@@ -32,7 +32,6 @@ func _ready():
 visible = false
 
 [node name="HalfFreeContent" parent="Slides" index="2" instance=ExtResource( 4 )]
-visible = false
 
 [node name="MakingGamesTogether" parent="Slides" index="3" instance=ExtResource( 5 )]
 visible = false
