@@ -79,6 +79,10 @@ func display(slide_index : int) -> void:
 
 
 func update_translations():
+	var translations = ProjectSettings.get_setting("locale/translations")
+	if not translations or translations.size() == 0:
+		return
+
 	for node in get_tree().get_nodes_in_group("translate"):
 		var node_uid = get_translation_uid(node)
 		var translatable_properties = node.get_translation_data()
