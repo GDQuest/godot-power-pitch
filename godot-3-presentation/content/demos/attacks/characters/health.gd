@@ -19,11 +19,11 @@ func _ready():
 
 func _change_status(new_status):
 	match status:
-		GlobalConstants.STATUS_POISONED:
+		GlobalConstants.Statuses.POISONED:
 			$PoisonTimer.stop()
 
 	match new_status:
-		GlobalConstants.STATUS_POISONED:
+		GlobalConstants.Statuses.POISONED:
 			poison_cycles = 0
 			$PoisonTimer.start()
 	status = new_status
@@ -31,7 +31,7 @@ func _change_status(new_status):
 
 
 func take_damage(amount, effect=null):
-	if status == GlobalConstants.STATUS_INVINCIBLE:
+	if status == GlobalConstants.Statuses.INVINCIBLE:
 		return
 	health -= amount
 	health = max(0, health)
@@ -40,8 +40,8 @@ func take_damage(amount, effect=null):
 	if not effect:
 		return
 	match effect[0]:
-		GlobalConstants.STATUS_POISONED:
-			_change_status(GlobalConstants.STATUS_POISONED)
+		GlobalConstants.Statuses.POISONED:
+			_change_status(GlobalConstants.Statuses.POISONED)
 			poison_cycles = effect[1]
 #	print("%s got hit and took %s damage. Health: %s/%s" % [get_name(), amount, health, max_health])
 
@@ -57,6 +57,6 @@ func _on_PoisonTimer_timeout():
 	take_damage(POISON_DAMAGE)
 	poison_cycles -= 1
 	if poison_cycles == 0:
-		_change_status(GlobalConstants.STATUS_NONE)
+		_change_status(GlobalConstants.Statuses.NONE)
 		return
 	$PoisonTimer.start()
