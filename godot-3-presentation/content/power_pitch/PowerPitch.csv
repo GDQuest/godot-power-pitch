@@ -664,7 +664,7 @@ Penghargaan:
 
 Presentasi ini adalah proyek sumber terbuka Godot!
 Temukan di [url=https://github.com/GDquest/godot-slides]GitHub[/url]. Tersedia dalam beberapa bahasa."
-BuildUponGodot_Column_Header_title,Extend the editor with ease,,プラグインを簡単に開発できます,,,,,,,,,,
+BuildUponGodot_Column_Header_title,Extend the editor with ease,,プラグインを簡単に開発できます,Extiende el editor con facilidad,,,,,,,,,
 BuildUponGodot_Column_Header_subtitle,,,,,,,,,,,,,
 BuildUponGodot_Column_Body_Row_TextBox_text,"The Godot editor is a Godot game! It relies on the same tools you'll use to make your game.
 
@@ -674,9 +674,13 @@ The [color=#26BFE3]open source Assets Library[/color] lets you download add-ons 
 
 それで自分のゲームと開発環境のパラグインは両方[color=#02E180]同じツール[/color]で作られます。
 
-[color=#26BFE3]オーブンソースアセットライブラリー[/color]で無料でパラグインをGitHubからダウンロードできます。",,,,,,,,,,
-BuildUponGodot_Column_Footer_text,Projects: RPG in a Box by Justin Arnold and Procedural Mesh Generator by Bastiaan Olij,,プロジェクト： ジャスティン・アーノルドのRPG in a Box、 バスティアン・オリェのProcedural Mesh Generator,,,,,,,,,,
-Thank_you_tokyo_indies_Column_Header_title,Thank you!,,ありがとうございました,,,,,,,,,,
+[color=#26BFE3]オーブンソースアセットライブラリー[/color]で無料でパラグインをGitHubからダウンロードできます。","El editor de Godot es un juego de Godot! Se basa en las mismas herramientas que usarás para crear tu juego.
+
+Gracias a eso, puedes [color=#02E180]programar add-ons y juegos de la misma manera[/color].
+
+La [color=#26BFE3]open source Assets Library[/color] te deja descargar add-ons desde GitHub a tus proyectos.",,,,,,,,,
+BuildUponGodot_Column_Footer_text,Projects: RPG in a Box by Justin Arnold and Procedural Mesh Generator by Bastiaan Olij,,プロジェクト： ジャスティン・アーノルドのRPG in a Box、 バスティアン・オリェのProcedural Mesh Generator,Proyectos: RPG in a Box de Justin Arnold y Procedural Mesh Generator de Bastiaan Olij,,,,,,,,,
+Thank_you_tokyo_indies_Column_Header_title,Thank you!,,ありがとうございました,¡Gracias!,,,,,,,,,
 Thank_you_tokyo_indies_Column_Header_subtitle,,,,,,,,,,,,,
 Thank_you_tokyo_indies_Column_Body_Row_TextBox_text,"All our game demos and tools are Free and Open Source!
 Find them on [url=https://github.com/GDquest/godot-3-presentation]GDquest's GitHub page[/url].
@@ -692,12 +696,22 @@ GDquestの[url=https://github.com/GDquest/godot-3-presentation]GitHubページ[/
 SNS:
 
 Twitter: [color=#26BFE3]@NathanGDquest[/color]
-YouTube: [color=#F2971A]youtube.com/c/gdquest[/color]",,,,,,,,,,
-Thank_you_tokyo_indies_Column_Footer_text,"If you have any questions, please get in touch anytime!",,質問があればいつでも連絡してください！,,,,,,,,,,
-Intro_GDquest_Column_Header_title,Game Design Quest,,,,,,,,,,,,
+YouTube: [color=#F2971A]youtube.com/c/gdquest[/color]","¡Todas nuestras demos de juegos y herramientas son gratis y libres!
+Encuéntralas en [url=https://github.com/GDquest/godot-3-presentation]el GitHub de GDquest[/url].
+
+La misión de Gdquest es reunir a los desarrolladores de juegos para que se conviertan en mejores creadores.
+
+Nos puedes encontrar en:
+
+Twitter: [color=#26BFE3]@NathanGDquest[/color]
+YouTube: [color=#F2971A]youtube.com/c/gdquest[/color]",,,,,,,,,
+Thank_you_tokyo_indies_Column_Footer_text,"If you have any questions, please get in touch anytime!",,質問があればいつでも連絡してください！,"¡Si tiene alguna pregunta, por favor ponte en contacto en cualquier momento!",,,,,,,,,
+Intro_GDquest_Column_Header_title,Game Design Quest,,,Game Design Quest,,,,,,,,,
 Intro_GDquest_Column_Body_Row_TextBox_text,"GDquest's mission is to [color=#26BFE3]bring people together[/color] to become better game developers.
 
 We do that creating Free and Open Source [color=#E3266F]game demos[/color], [color=#26BFE3]tutorials[/color], and [color=#F2971A]tools[/color] to help you learn professional game creation techniques.",,"GDquestのミッションは、ゲームを作りたい方達と[color=#26BFE3]一緒になってすばらしいゲームデザイナーになること[/color]です。
 
-世界のゲームプランナー達がプロの方法を勉強できるためにフリーソフトを使ってオープンソース[color=#E3266F]ゲームデモ[/color]を開発したり[color=#26BFE3]チュートリアルを作ったり[/color]ゲーム開発者の[color=#F2971A]道具[/color]をシェアしたりします",,,,,,,,,,
-Intro_GDquest_Column_Footer_text,"It's become my full-time job, and I can even pay people to work together with!",,自分の仕事になってしまったが毎日オープンソースの分野に働えてフリランサを雇えますよ！,,,,,,,,,,
+世界のゲームプランナー達がプロの方法を勉強できるためにフリーソフトを使ってオープンソース[color=#E3266F]ゲームデモ[/color]を開発したり[color=#26BFE3]チュートリアルを作ったり[/color]ゲーム開発者の[color=#F2971A]道具[/color]をシェアしたりします","La misión de GDquest es [color=#26BFE3]reunir a la gente[/color] para que se conviertan en mejores desarrolladores de videojuegos.
+
+Hacemos eso creando [color=#E3266F]demos de juegos[/color] gratis y libres, [color=#26BFE3]tutoriales[/color], y [color=#F2971A]herramientas[/color] para ayudarte a aprender técnicas profesionales de creación de videojuegos.",,,,,,,,,
+Intro_GDquest_Column_Footer_text,"It's become my full-time job, and I can even pay people to work together with!",,自分の仕事になってしまったが毎日オープンソースの分野に働えてフリランサを雇えますよ！,"¡Se ha convertido en mi trabajo a jornada completa, e incluso puedo pagar a gente con la que trabajar!",,,,,,,,,
