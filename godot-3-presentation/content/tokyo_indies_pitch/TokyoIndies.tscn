@@ -1,49 +1,46 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://src/presentation/Presentation.tscn" type="PackedScene" id=1]
-[ext_resource path="res://content/tokyo_indies_pitch/slides/TokyoIndiesTitle.tscn" type="PackedScene" id=2]
-[ext_resource path="res://content/tokyo_indies_pitch/slides/Intro_Nathan.tscn" type="PackedScene" id=3]
-[ext_resource path="res://content/power_pitch/slides/A_free_modern_engine.tscn" type="PackedScene" id=4]
-[ext_resource path="res://content/power_pitch/slides/All-in-one_package.tscn" type="PackedScene" id=5]
-[ext_resource path="res://content/power_pitch/slides/State_of_the_art_3d_engine.tscn" type="PackedScene" id=6]
-[ext_resource path="res://content/tokyo_indies_pitch/slides/ModularAndExtensible.tscn" type="PackedScene" id=7]
-[ext_resource path="res://content/power_pitch/slides/CodeFreely.tscn" type="PackedScene" id=8]
-[ext_resource path="res://content/power_pitch/slides/Godot_is_in_great_shape.tscn" type="PackedScene" id=9]
-[ext_resource path="res://content/power_pitch/slides/How_to_get_started.tscn" type="PackedScene" id=10]
-[ext_resource path="res://content/tokyo_indies_pitch/slides/Thank_you_tokyo_indies.tscn" type="PackedScene" id=11]
+[ext_resource path="res://content/power_pitch/slides/Godot_is_in_great_shape.tscn" type="PackedScene" id=1]
+[ext_resource path="res://content/power_pitch/slides/A_free_modern_engine.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/presentation/Presentation.tscn" type="PackedScene" id=3]
+[ext_resource path="res://content/power_pitch/slides/CodeFreely.tscn" type="PackedScene" id=4]
+[ext_resource path="res://content/power_pitch/slides/State_of_the_art_3d_engine.tscn" type="PackedScene" id=5]
+[ext_resource path="res://content/power_pitch/slides/All-in-one_package.tscn" type="PackedScene" id=6]
+[ext_resource path="res://content/tokyo_indies_pitch/slides/Intro_Nathan.tscn" type="PackedScene" id=7]
+[ext_resource path="res://content/power_pitch/slides/How_to_get_started.tscn" type="PackedScene" id=8]
+[ext_resource path="res://content/tokyo_indies_pitch/slides/Thank_you_tokyo_indies.tscn" type="PackedScene" id=9]
+[ext_resource path="res://content/tokyo_indies_pitch/slides/ModularAndExtensible.tscn" type="PackedScene" id=10]
+[ext_resource path="res://content/tokyo_indies_pitch/slides/TokyoIndiesTitle.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/theme/godot.theme" type="Theme" id=12]
 
-
-
 [sub_resource type="GDScript" id=1]
-
 script/source = "extends Label
 
 func _ready():
 	hide()
 "
 
-[node name="TokyoIndies" index="0" instance=ExtResource( 1 )]
+[node name="TokyoIndies" instance=ExtResource( 3 )]
 
-[node name="TokyoIndiesTitle" parent="Slides" index="0" instance=ExtResource( 2 )]
+[node name="TokyoIndiesTitle" parent="Slides" index="0" instance=ExtResource( 11 )]
 
-[node name="Intro_GDquest" parent="Slides" index="1" instance=ExtResource( 3 )]
+[node name="Intro_GDquest" parent="Slides" index="1" instance=ExtResource( 7 )]
 
-[node name="A_free_modern_engine" parent="Slides" index="2" instance=ExtResource( 4 )]
+[node name="A_free_modern_engine" parent="Slides" index="2" instance=ExtResource( 2 )]
 
-[node name="All_in_one_package" parent="Slides" index="3" instance=ExtResource( 5 )]
+[node name="All_in_one_package" parent="Slides" index="3" instance=ExtResource( 6 )]
 
-[node name="State_of_the_art_3d_engine" parent="Slides" index="4" instance=ExtResource( 6 )]
+[node name="State_of_the_art_3d_engine" parent="Slides" index="4" instance=ExtResource( 5 )]
 
-[node name="BuildUponGodot" parent="Slides" index="5" instance=ExtResource( 7 )]
+[node name="BuildUponGodot" parent="Slides" index="5" instance=ExtResource( 10 )]
 
-[node name="CodeFreely" parent="Slides" index="6" instance=ExtResource( 8 )]
+[node name="CodeFreely" parent="Slides" index="6" instance=ExtResource( 4 )]
 
-[node name="Godot_is_in_great_shape" parent="Slides" index="7" instance=ExtResource( 9 )]
+[node name="Godot_is_in_great_shape" parent="Slides" index="7" instance=ExtResource( 1 )]
 
-[node name="How_to_get_started" parent="Slides" index="8" instance=ExtResource( 10 )]
+[node name="How_to_get_started" parent="Slides" index="8" instance=ExtResource( 8 )]
 
-[node name="Thank_you_tokyo_indies" parent="Slides" index="9" instance=ExtResource( 11 )]
+[node name="Thank_you_tokyo_indies" parent="Slides" index="9" instance=ExtResource( 9 )]
 visible = false
 
 [node name="TouchControls" parent="." index="2"]
@@ -56,4 +53,3 @@ margin_bottom = -68.0
 theme = ExtResource( 12 )
 text = "A 5 minutes intro to Godot [3.1] and the open projects on GDquest, for the Tokyo Indies meetup in Tokyo, Japan."
 script = SubResource( 1 )
-
