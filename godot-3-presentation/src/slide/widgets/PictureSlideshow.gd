@@ -56,12 +56,11 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed('ui_accept'):
 		self.paused = not paused
 		accept_event()
-
-	if event.is_action_pressed('ui_left'):
-		display(Directions.PREVIOUS)
+	elif event.is_action_pressed('ui_left'):
+		self.index_active += Directions.PREVIOUS
 		accept_event()
-	if event.is_action_pressed('ui_right'):
-		display(Directions.NEXT)
+	elif event.is_action_pressed('ui_right'):
+		self.index_active -= Directions.PREVIOUS
 		accept_event()
 
 
@@ -76,14 +75,17 @@ func set_paused(value) -> void:
 		modulate = COLOR_OPAQUE
 
 
-func set_index_active(value) -> void:
-	index_active = (value + slides.size()) % slides.size()
+func set_index_active(value: int) -> void:
+	var index_previous: = index_active
+	var slides_count: = slides.size()
+	index_active = (value + slides_count) % slides_count
+	if index_active != index_previous:
+		_display(index_active, true)
 
 
-func display(direction:int, animate:=false) -> void:
-	self.index_active += direction
+func _display(index: int, animate: =false) -> void:
 	picture_previous = picture_active
-	picture_active = slides[index_active]
+	picture_active = slides[index]
 	if picture_previous == picture_active:
 		return
 
@@ -107,4 +109,4 @@ func _on_tree_entered() -> void:
 
 
 func _on_Timer_timeout() -> void:
-	display(Directions.NEXT, true)
+	self.index_active += Directions.NEXT
