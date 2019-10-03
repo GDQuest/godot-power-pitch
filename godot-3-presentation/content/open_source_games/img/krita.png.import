@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/krita.png-81ea0ed1170a232300dfedb5ba8677cd.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

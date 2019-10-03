@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/discord-openrpg.png-624a396524ab22307715da7c6d39b44b.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

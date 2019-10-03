@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/ks-campaign.png-0f87b63f9ee5d0f5672d8fe990eaf0ff.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

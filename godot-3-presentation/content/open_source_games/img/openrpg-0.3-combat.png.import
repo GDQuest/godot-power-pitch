@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/openrpg-0.3-combat.png-251554ce364e5b25c197e827dee8ed89.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

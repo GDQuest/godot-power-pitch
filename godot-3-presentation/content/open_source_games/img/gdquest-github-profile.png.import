@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/gdquest-github-profile.png-257111e1931a1bd3ca5ecaf002ae5768.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

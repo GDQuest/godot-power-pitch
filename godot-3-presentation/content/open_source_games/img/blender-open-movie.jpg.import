@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/blender-open-movie.jpg-19469444d10a87edaeaea32b539c555a.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
