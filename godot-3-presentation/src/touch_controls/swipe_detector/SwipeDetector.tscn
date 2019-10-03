@@ -4,11 +4,8 @@
 
 [node name="SwipeDetector" type="Node"]
 script = ExtResource( 1 )
-MAX_DIAGONAL_SLOPE = 1.3
 
-[node name="SwipeTimeout" type="Timer" parent="." index="0"]
-process_mode = 1
+[node name="SwipeTimeout" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
-autostart = false
 [connection signal="timeout" from="SwipeTimeout" to="." method="_on_Timer_timeout"]
