@@ -4,11 +4,14 @@ Displays a video and forces its minimum size.
 Add pause support to VideoPlayer
 """
 
+
 export(String) var base_path: = 'res://content/video/'
+
 
 func _unhandled_input(event) -> void:
 	if event.is_action_pressed("toggle_pause"):
 		paused = not paused
+
 
 func display(file_name, config={}) -> void:
 	rect_min_size = Vector2(1280, 720)

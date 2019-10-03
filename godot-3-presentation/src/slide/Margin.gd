@@ -1,11 +1,13 @@
 extends MarginContainer
 
+
 onready var margins: = {
 	'right' : get('custom_constants/margin_right'),
 	'top' : get('custom_constants/margin_top'),
 	'left' : get('custom_constants/margin_left'),
 	'bottom' : get('custom_constants/margin_bottom'),
 }
+
 
 func use_margins(value: float) -> void:
 	if value:

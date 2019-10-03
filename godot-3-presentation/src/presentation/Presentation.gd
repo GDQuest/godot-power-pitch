@@ -1,5 +1,6 @@
 extends Node
 
+
 signal language_changed()
 
 onready var slides: = $Slides
@@ -75,7 +76,7 @@ func save_as_csv(translation_data) -> void:
 	var folder_path: = filename.left(filename.rfind("/") + 1)
 	var save_path: = folder_path + name + ".csv"
 	var file: = File.new()
-	
+
 	file.open(save_path, File.WRITE)
 	if not file.is_open():
 		print("Error saving translation data: could not open file %s" % save_path)

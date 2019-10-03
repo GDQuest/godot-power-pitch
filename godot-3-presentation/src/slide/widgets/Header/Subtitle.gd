@@ -1,7 +1,9 @@
 tool
 extends Label
 
+
 signal visibility_updated(visible)
+
 
 func display(string: String) -> void:
 	visible = string != ""

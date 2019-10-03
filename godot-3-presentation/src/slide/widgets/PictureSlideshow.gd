@@ -4,8 +4,9 @@ Slideshow. Displays one child Control at a time and fades between them
 at constant time intervals.
 """
 
-onready var tween: Tween = $Tween
-onready var timer: Timer = $Timer
+
+onready var tween: = $Tween
+onready var timer: = $Timer
 
 export(float, 0.0, 10.0) var display_duration: = 4.0
 export(float, 0.0, 1.0) var transition_duration: = 0.4

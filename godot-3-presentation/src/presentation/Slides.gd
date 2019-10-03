@@ -52,6 +52,7 @@ func initialize() -> void:
 	add_child(slide_current)
 	slide_current.show()
 
+
 func set_index_active(value : int) -> void:
 	var index_previous: = index_active
 	index_active = clamp(value, 0, slide_nodes.size() - 1)

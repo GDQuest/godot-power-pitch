@@ -1,6 +1,7 @@
 tool
 extends Control
 
+
 export(String, MULTILINE) var text: = "" setget set_text
 
 onready var label: Label = $Text

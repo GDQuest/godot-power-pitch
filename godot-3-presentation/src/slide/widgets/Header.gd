@@ -10,7 +10,7 @@ onready var subtitle_shadow_node: = $Column/Subtitle/Shadow
 
 export var title: = "" setget set_title
 export var subtitle: = "" setget set_subtitle
-export var font_override: Resource 
+export var font_override: Resource
 
 var font_title_default: Resource = preload("res://assets/theme/fonts/title_montserrat.tres")
 var font_subtitle_default: Resource = preload("res://assets/theme/fonts/subtitle_montserrat.tres")
@@ -32,17 +32,20 @@ func _ready() -> void:
 	self.title = title
 	self.subtitle = subtitle
 
+
 func set_title(string: String) -> void:
 	title = string
 	if not title_node:
 		return
 	title_node.display(string)
 
+
 func set_subtitle(string: String) -> void:
 	subtitle = string
 	if not subtitle_node:
 		return
 	subtitle_node.display(string)
+
 
 func translate() -> void:
 	if font_override:
@@ -59,6 +62,7 @@ func translate() -> void:
 	title_shadow_node.set('custom_fonts/font', fonts['title'])
 	subtitle_node.set('custom_fonts/font', fonts['subtitle'])
 	subtitle_shadow_node.set('custom_fonts/font', fonts['subtitle'])
+
 
 func get_translation_data() -> Dictionary:
 	var data: = { 'title': title }

@@ -1,11 +1,14 @@
 tool
 extends Label
 
+
 onready var shadow_node: = $Shadow
+
 
 func display(string: String) -> void:
 	text = string
 	shadow_node.text = string
+
 
 func _on_Subtitle_visibility_updated(visible: bool) -> void:
 	if visible:

@@ -4,6 +4,7 @@ Detects swipe gestures and generates InputEventSwipe events
 that are fed back into the engine.
 """
 
+
 signal swipe_canceled(start_position)
 
 export(float, 1.0, 1.5) var max_diagonal_slope: = 1.3
