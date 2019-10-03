@@ -1,13 +1,13 @@
 tool
 extends Control
 
-export(String, MULTILINE) var text : = "" setget set_text
+export(String, MULTILINE) var text: = "" setget set_text
 
-onready var label : Label = $Text
-onready var label_shadow : Label = $Text/Shadow
+onready var label: Label = $Text
+onready var label_shadow: Label = $Text/Shadow
 
 
-func set_text(string):
+func set_text(string: String) -> void:
 	text = string
 	visible = text != ""
 	if not label:
@@ -19,5 +19,5 @@ func set_text(string):
 	label_shadow.text = string
 
 
-func get_translation_data():
+func get_translation_data() -> Dictionary:
 	return {'text': text}

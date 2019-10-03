@@ -16,6 +16,7 @@ theme = ExtResource( 2 )
 script = ExtResource( 3 )
 
 [node name="SwipeDetector" parent="." instance=ExtResource( 4 )]
+max_diagonal_slope = null
 
 [node name="TouchControls" parent="." instance=ExtResource( 5 )]
 [connection signal="slide_change_requested" from="TouchControls" to="." method="_on_TouchControls_slide_change_requested"]

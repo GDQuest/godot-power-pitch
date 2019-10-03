@@ -1,13 +1,13 @@
 tool
 extends Label
 
-onready var shadow_node = $Shadow
+onready var shadow_node: = $Shadow
 
-func display(string):
+func display(string: String) -> void:
 	text = string
 	shadow_node.text = string
 
-func _on_Subtitle_visibility_updated(visible):
+func _on_Subtitle_visibility_updated(visible: bool) -> void:
 	if visible:
 		valign = Label.VALIGN_BOTTOM
 		shadow_node.valign = Label.VALIGN_BOTTOM

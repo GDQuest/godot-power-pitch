@@ -19,13 +19,13 @@ size_flags_vertical = 1
 text = "tool
 extends TextEdit
 
-export (Color) var class_color = Color(0.6, 0.6, 1.0)
-export (Color) var member_color = Color(0.6, 1.0, 0.6)
-export (Color) var keyword_color = Color(1.0, 0.6, 0.6)
-export (Color) var quotes_color = Color(1.0, 1.0, 0.6)
+export (Color) var class_color: = Color(0.6, 0.6, 1.0)
+export (Color) var member_color: = Color(0.6, 1.0, 0.6)
+export (Color) var keyword_color: = Color(1.0, 0.6, 0.6)
+export (Color) var quotes_color: = Color(1.0, 1.0, 0.6)
 export (String, FILE, \"*.csv\") var keyword_data_path
 
-func _ready():
+func _ready() -> void:
 	add_color_region('\"', '\"', quotes_color)
 	add_color_region(\"'\", \"'\", quotes_color)
 	for c in ClassDB.get_class_list():
@@ -34,9 +34,9 @@ func _ready():
 			for key in m:
 				add_keyword_color(key, member_color)
 	
-	var file = File.new()
+	var file: = File.new()
 	file.open(keyword_data_path, file.READ)
-	var keywords = file.get_csv_line()
+	var keywords: = file.get_csv_line()
 	file.close()
 	for k in keywords:
 		add_keyword_color(k, keyword_color)"

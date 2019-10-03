@@ -4,24 +4,24 @@
 
 script/source = "extends Control
 
-export(String, FILE, \"*.tscn, *.scn\") var demo_path = \"\"
+export(String, FILE, \"*.tscn, *.scn\") var demo_path: = \"\"
 const DEMOS_FOLDER = \"res://content/demos/\"
 
-func play():
+func play() -> void:
 	if not demo_path.begins_with(\"res://\"):
 		demo_path = DEMOS_FOLDER + demo_path
 	add_child(load(demo_path).instance())
 	show()
 
-func unload():
+func unload() -> void:
 	for node in get_children():
 		node.queue_free()
 
-func _on_LegacySlide_shown():
+func _on_LegacySlide_shown() -> void:
 	if demo_path:
 		play()
 
-func _on_LegacySlide_hidden():
+func _on_LegacySlide_hidden() -> void:
 	unload()
 "
 _sections_unfolded = [ "Resource" ]

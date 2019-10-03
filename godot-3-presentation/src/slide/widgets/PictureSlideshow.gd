@@ -4,25 +4,25 @@ Slideshow. Displays one child Control at a time and fades between them
 at constant time intervals.
 """
 
-onready var tween : Tween = $Tween
-onready var timer : Timer = $Timer
+onready var tween: Tween = $Tween
+onready var timer: Timer = $Timer
 
-export(float, 0.0, 10.0) var display_duration : = 4.0
-export(float, 0.0, 1.0) var transition_duration : = 0.4
-export(Color) var color_pause : = Color('#d9e2e5')
+export(float, 0.0, 10.0) var display_duration: = 4.0
+export(float, 0.0, 1.0) var transition_duration: = 0.4
+export(Color) var color_pause: = Color('#d9e2e5')
 
 enum Directions {PREVIOUS = -1, CURRENT = 0, NEXT = 1}
 
 const COLOR_OPAQUE : = Color("#ffffffff")
 const COLOR_TRANSPARENT : = Color("#00ffffff")
 
-var paused : = false setget set_paused
+var paused: = false setget set_paused
 
-var slides : = []
-var index_active : = 0 setget set_index_active
+var slides: = []
+var index_active: = 0 setget set_index_active
 
-var picture_active : Control
-var picture_previous : Control
+var picture_active: Control
+var picture_previous: Control
 
 
 
