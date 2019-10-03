@@ -1,14 +1,16 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
-[ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
-[ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=3]
-[ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=4]
-[ext_resource path="res://slide/widgets/PictureSlideshow.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/slide/Slide.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/slide/widgets/Column.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/slide/widgets/Body.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/slide/layout/Row.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/slide/widgets/PictureSlideshow.tscn" type="PackedScene" id=5]
 [ext_resource path="res://content/open_source_games/img/krita.png" type="Texture" id=6]
-[ext_resource path="res://theme/godot.theme" type="Theme" id=7]
-[ext_resource path="res://theme/sprites/header_dusk.png" type="Texture" id=8]
-[ext_resource path="res://theme/fonts/title_montserrat.tres" type="DynamicFont" id=9]
+[ext_resource path="res://assets/theme/godot.theme" type="Theme" id=7]
+[ext_resource path="res://assets/theme/sprites/header_dusk.png" type="Texture" id=8]
+[ext_resource path="res://assets/theme/fonts/title_montserrat.tres" type="DynamicFont" id=9]
+
+
 
 [sub_resource type="GDScript" id=1]
 

@@ -1,13 +1,14 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
-[ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
-[ext_resource path="res://slide/widgets/Header.tscn" type="PackedScene" id=3]
-[ext_resource path="res://slide/widgets/Body.tscn" type="PackedScene" id=4]
-[ext_resource path="res://slide/layout/Row.tscn" type="PackedScene" id=5]
-[ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=6]
-[ext_resource path="res://slide/widgets/Video.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/slide/Slide.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/slide/widgets/Column.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/slide/widgets/Header.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/slide/widgets/Body.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/slide/layout/Row.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/slide/widgets/TextBox.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/slide/widgets/Video.tscn" type="PackedScene" id=7]
 [ext_resource path="res://content/video/vr-capture.ogv" type="VideoStream" id=8]
+
 
 [node name="Virtual_and_augmented_reality" index="0" instance=ExtResource( 1 )]
 

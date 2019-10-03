@@ -2,8 +2,10 @@
 
 [ext_resource path="res://content/demos/attacks/characters/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://content/demos/attacks/characters/monster/Dummy.tscn" type="PackedScene" id=2]
-[ext_resource path="res://theme/godot.theme" type="Theme" id=3]
-[ext_resource path="res://slide/widgets/text_edit/TextEdit.gd" type="Script" id=4]
+[ext_resource path="res://assets/theme/godot.theme" type="Theme" id=3]
+[ext_resource path="res://src/slide/widgets/text_edit/TextEdit.gd" type="Script" id=4]
+
+
 
 [node name="AttackDummies" type="Control"]
 

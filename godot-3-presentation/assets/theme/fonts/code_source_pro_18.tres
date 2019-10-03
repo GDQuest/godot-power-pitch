@@ -3,10 +3,6 @@
 [ext_resource path="res://content/demos/attacks/characters/debug/source-code-pro-bold.otf" type="DynamicFontData" id=1]
 
 [resource]
-
 size = 18
-use_mipmaps = false
 use_filter = true
 font_data = ExtResource( 1 )
-_sections_unfolded = [ "Font", "Settings" ]
-

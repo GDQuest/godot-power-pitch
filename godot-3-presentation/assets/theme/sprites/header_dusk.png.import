@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/footer_dusk.png-45452af3e3f7de2611b0828a76ac0298.stex"
+path="res://.import/header_dusk.png-2ceaa44ede42e00169008f135a46608a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://theme/sprites/footer_dusk.png"
-dest_files=[ "res://.import/footer_dusk.png-45452af3e3f7de2611b0828a76ac0298.stex" ]
+source_file="res://assets/theme/sprites/header_dusk.png"
+dest_files=[ "res://.import/header_dusk.png-2ceaa44ede42e00169008f135a46608a.stex" ]
 
 [params]
 

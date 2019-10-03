@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://presentation/Presentation.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/presentation/Presentation.tscn" type="PackedScene" id=1]
 [ext_resource path="res://content/open_source_games/slides/OpenSourceGamesTitle.tscn" type="PackedScene" id=2]
 [ext_resource path="res://content/tokyo_indies_pitch/slides/Intro_Nathan.tscn" type="PackedScene" id=3]
 [ext_resource path="res://content/open_source_games/slides/WeMakeFreeContent.tscn" type="PackedScene" id=4]
@@ -14,7 +14,9 @@
 [ext_resource path="res://content/open_source_games/slides/HowKrita.tscn" type="PackedScene" id=12]
 [ext_resource path="res://content/open_source_games/slides/OpenGameProjects.tscn" type="PackedScene" id=13]
 [ext_resource path="res://content/open_source_games/ThankYou.tscn" type="PackedScene" id=14]
-[ext_resource path="res://theme/godot.theme" type="Theme" id=15]
+[ext_resource path="res://assets/theme/godot.theme" type="Theme" id=15]
+
+
 
 [sub_resource type="GDScript" id=1]
 

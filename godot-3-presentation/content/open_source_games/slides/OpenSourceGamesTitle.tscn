@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
-[ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/slide/Slide.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/slide/widgets/Picture.tscn" type="PackedScene" id=2]
 [ext_resource path="res://content/open_source_games/img/thumbnail.jpg" type="Texture" id=3]
+
 
 [node name="OpenSourceGamesTitle" index="0" instance=ExtResource( 1 )]
 

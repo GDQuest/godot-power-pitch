@@ -1,12 +1,13 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://theme/godot.theme" type="Theme" id=1]
-[ext_resource path="res://theme/sprites/header_dusk.png" type="Texture" id=2]
+[ext_resource path="res://assets/theme/godot.theme" type="Theme" id=1]
+[ext_resource path="res://assets/theme/sprites/header_dusk.png" type="Texture" id=2]
 [ext_resource path="res://slide/widgets/Header.gd" type="Script" id=3]
-[ext_resource path="res://theme/fonts/title_montserrat.tres" type="DynamicFont" id=4]
+[ext_resource path="res://assets/theme/fonts/title_montserrat.tres" type="DynamicFont" id=4]
 [ext_resource path="res://slide/widgets/Header/Title.gd" type="Script" id=5]
-[ext_resource path="res://theme/fonts/subtitle_montserrat.tres" type="DynamicFont" id=6]
+[ext_resource path="res://assets/theme/fonts/subtitle_montserrat.tres" type="DynamicFont" id=6]
 [ext_resource path="res://slide/widgets/Header/Subtitle.gd" type="Script" id=7]
+
 
 [node name="Header" type="TextureRect" groups=[
 "translate",

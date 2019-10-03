@@ -1,23 +1,32 @@
 tool
 extends Control
 
-export(String) var title = "" setget set_title
-export(String) var subtitle = "" setget set_subtitle
-export(Resource) var font_override = null
-
-var FONTS_DEFAULT = {
-	'title': preload("res://theme/fonts/title_montserrat.tres"),
-	'subtitle': preload("res://theme/fonts/subtitle_montserrat.tres"),
-}
-var FONTS_CJK = {
-	'title': preload("res://theme/fonts/title_noto.tres"),
-	'subtitle': preload("res://theme/fonts/subtitle_noto.tres"),
-}
 
 onready var title_node = $Column/Title
 onready var title_shadow_node = $Column/Title/Shadow
 onready var subtitle_node = $Column/Subtitle
 onready var subtitle_shadow_node = $Column/Subtitle/Shadow
+
+
+export(String) var title = "" setget set_title
+export(String) var subtitle = "" setget set_subtitle
+export(Resource) var font_override = null
+
+var font_title_default: Resource = preload("res://assets/theme/fonts/title_montserrat.tres")
+var font_subtitle_default: Resource = preload("res://assets/theme/fonts/subtitle_montserrat.tres")
+var font_title_cjk: Resource = preload("res://assets/theme/fonts/title_noto.tres")
+var font_subtitle_cjk: Resource = preload("res://assets/theme/fonts/subtitle_noto.tres")
+
+
+var FONTS_DEFAULT = {
+	title=font_title_default,
+	subtitle=font_subtitle_default,
+}
+var FONTS_CJK = {
+	title=font_title_cjk,
+	subtitle=font_subtitle_cjk,
+}
+
 
 func _ready():
 	self.title = title
@@ -36,15 +45,15 @@ func set_subtitle(string):
 	subtitle_node.display(string)
 
 func translate():
-	var locale = TranslationServer.get_locale()
-	var fonts = FONTS_DEFAULT
 	if font_override:
 		title_node.set('custom_fonts/font', font_override)
 		title_shadow_node.set('custom_fonts/font', font_override)
 		return
 
+	var locale = TranslationServer.get_locale()
+	var fonts = FONTS_DEFAULT
 	if locale in ['ja', 'ko', 'zh', 'ar']:
-			fonts = FONTS_CJK
+		fonts = FONTS_CJK
 
 	title_node.set('custom_fonts/font', fonts['title'])
 	title_shadow_node.set('custom_fonts/font', fonts['title'])
