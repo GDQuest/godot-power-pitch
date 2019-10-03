@@ -46,7 +46,7 @@ func set_language_active(locale: String) -> void:
 
 
 func _on_TouchControls_slide_change_requested(direction: int) -> void:
-	slides.display(direction)
+	slides.index_active += direction
 
 
 """

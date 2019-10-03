@@ -59,10 +59,10 @@ func set_index_active(value : int) -> void:
 	if index_active == index_previous:
 		set_process_input(true)
 	else:
-		display(index_active)
+		_display(index_active)
 
 
-func display(slide_index : int) -> void:
+func _display(slide_index : int) -> void:
 	set_process_input(false)
 	var previous_slide = slide_current
 	var new_slide = slide_nodes[slide_index]
