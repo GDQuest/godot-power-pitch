@@ -9,35 +9,37 @@ Controls the currently displayed Slide.
 enum Directions {PREVIOUS = -1, CURRENT = 0, NEXT = 1}
 
 export var skip_animation : = false
-var index_active : = 0 setget set_index_active 
+var index_active : = 0 setget set_index_active
 
 var slide_current
 var slide_nodes = []
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	var valid_event: bool = (
+		event is InputEventSwipe or
+		event is InputEventMouseButton or
+		event.is_action('ui_next') or
+		event.is_action('ui_previous')
+	)
+	if not valid_event:
+		return
+
 	if event.is_action_pressed('ui_next'):
 		self.index_active += 1
-		get_tree().set_input_as_handled()
-	if event.is_action_pressed('ui_previous'):
+	elif event.is_action_pressed('ui_previous'):
 		self.index_active -= 1
-		get_tree().set_input_as_handled()
-
-	if event is InputEventSwipe:
+	elif event is InputEventSwipe:
 		if sign(event.direction.x) == 1:
 			self.index_active += 1
-			get_tree().set_input_as_handled()
 		else:
 			self.index_active -= 1
-			get_tree().set_input_as_handled()
-
-	if not event is InputEventMouseButton or not event.is_pressed():
-		return
-	match event.button_index:
-		BUTTON_LEFT:
-			self.index_active += 1
-		BUTTON_RIGHT:
-			self.index_active -= 1
+	elif event is InputEventMouseButton:
+		match event.button_index:
+			BUTTON_LEFT:
+				self.index_active += 1
+			BUTTON_RIGHT:
+				self.index_active -= 1
 	get_tree().set_input_as_handled()
 
 
@@ -66,15 +68,15 @@ func display(slide_index : int) -> void:
 	add_child(new_slide)
 	new_slide.show()
 	update_translations()
-	
+
 	if not skip_animation:
 		var animation = "fade_in"
 		yield(new_slide.play(animation), "completed")
-	
+
 	previous_slide.hide()
 	remove_child(previous_slide)
 	slide_current = new_slide
-	
+
 	set_process_input(true)
 
 
@@ -106,7 +108,7 @@ func save_as_png(output_folder):
 		# Need to wait two frames to ensure the screen capture works
 		yield(get_tree(), "idle_frame")
 		yield(get_tree(), "idle_frame")
-	
+
 		var img = get_viewport().get_texture().get_data()
 		img.flip_y()
 		var path = output_folder.plus_file(str(id).pad_zeros(2) + '-' + slide.name + '.png')
