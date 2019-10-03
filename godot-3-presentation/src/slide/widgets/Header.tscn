@@ -1,0 +1,86 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/theme/fonts/subtitle_montserrat.tres" type="DynamicFont" id=1]
+[ext_resource path="res://src/slide/widgets/Header/Title.gd" type="Script" id=2]
+[ext_resource path="res://src/slide/widgets/Header.gd" type="Script" id=3]
+[ext_resource path="res://assets/theme/fonts/title_montserrat.tres" type="DynamicFont" id=4]
+[ext_resource path="res://assets/theme/sprites/header_dusk.png" type="Texture" id=5]
+[ext_resource path="res://assets/theme/godot.theme" type="Theme" id=6]
+[ext_resource path="res://src/slide/widgets/Header/Subtitle.gd" type="Script" id=7]
+
+[node name="Header" type="TextureRect" groups=[
+"translate",
+]]
+anchor_right = 1.0
+rect_min_size = Vector2( 1920, 210 )
+size_flags_horizontal = 3
+theme = ExtResource( 6 )
+texture = ExtResource( 5 )
+expand = true
+script = ExtResource( 3 )
+title = "Title"
+
+[node name="Column" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Title" type="Label" parent="Column"]
+margin_right = 1920.0
+margin_bottom = 210.0
+mouse_filter = 0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.2
+custom_fonts/font = ExtResource( 4 )
+text = "Title"
+align = 1
+valign = 1
+clip_text = true
+uppercase = true
+script = ExtResource( 2 )
+
+[node name="Shadow" type="Label" parent="Column/Title"]
+modulate = Color( 0.351563, 0, 0.703125, 0.487922 )
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 6.0
+margin_bottom = 6.0
+mouse_filter = 0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.2
+custom_fonts/font = ExtResource( 4 )
+text = "Title"
+align = 1
+valign = 1
+clip_text = true
+uppercase = true
+
+[node name="Subtitle" type="Label" parent="Column"]
+visible = false
+margin_top = 144.0
+margin_right = 1920.0
+margin_bottom = 210.0
+mouse_filter = 0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Test"
+align = 1
+clip_text = true
+script = ExtResource( 7 )
+
+[node name="Shadow" type="Label" parent="Column/Subtitle"]
+modulate = Color( 0.34902, 0, 0.701961, 0.486275 )
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 4.0
+margin_bottom = 4.0
+mouse_filter = 0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Test"
+align = 1
+clip_text = true
+script = ExtResource( 7 )
+[connection signal="visibility_changed" from="Column/Subtitle" to="Column/Subtitle" method="_on_visibility_changed"]
+[connection signal="visibility_updated" from="Column/Subtitle" to="Column/Title" method="_on_Subtitle_visibility_updated"]

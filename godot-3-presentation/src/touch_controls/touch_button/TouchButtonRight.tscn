@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/touch_controls/touch_button/arrow_right.png" type="Texture" id=1]
+[ext_resource path="res://src/touch_controls/touch_button/TouchButton.tscn" type="PackedScene" id=2]
+
+[node name="TouchButtonRight" index="0" instance=ExtResource( 2 )]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -229.0
+margin_right = 0.0
+icon = ExtResource( 1 )

@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/touch_controls/touch_button/TouchButton.gd" type="Script" id=1]
+[ext_resource path="res://src/touch_controls/touch_button/arrow_left.png" type="Texture" id=2]
+
+[node name="TouchButton" type="Button" index="0"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+margin_right = 229.0
+rect_min_size = Vector2( 229, 1080 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+icon = ExtResource( 2 )
+flat = true
+align = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Margin", "Mouse", "Rect" ]
+
+[node name="Tween" type="Tween" parent="." index="0"]
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

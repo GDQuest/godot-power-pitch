@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/slide/widgets/PictureSlideshow.gd" type="Script" id=1]
+
+[node name="PictureSlideshow" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+script = ExtResource( 1 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

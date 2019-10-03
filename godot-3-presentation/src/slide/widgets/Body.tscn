@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/theme/godot.theme" type="Theme" id=1]
+
+[node name="Body" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 1920, 210 )
+rect_clip_content = true
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+color = Color( 0.937255, 0.945098, 0.960784, 1 )

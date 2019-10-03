@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/slide/widgets/TextBox.gd" type="Script" id=1]
+[ext_resource path="res://assets/theme/godot.theme" type="Theme" id=2]
+
+[node name="TextBox" type="MarginContainer" groups=[
+"translate",
+]]
+margin_right = 638.0
+margin_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 2 )
+custom_constants/margin_top = 32
+custom_constants/margin_bottom = 32
+script = ExtResource( 1 )
+
+[node name="Text" type="RichTextLabel" parent="."]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 606.0
+margin_bottom = 1048.0
+bbcode_enabled = true
+scroll_active = false
+
+[node name="Shadow" type="RichTextLabel" parent="Text"]
+visible = false
+show_behind_parent = true
+margin_top = 2.0
+margin_right = 566.0
+margin_bottom = 676.0
+size_flags_horizontal = 3
+bbcode_enabled = true
+bbcode_text = "Un seul exécutable de [color=#26BFE3]20mo[/color]:
+
+- Téléchargez le [color=#26BFE3]en quelques secondes[/color]
+- [color=#26BFE3]Pas d'installation[/color]
+
+Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#...
+"
+text = "Un seul exécutable de 20mo:
+
+- Téléchargez le en quelques secondes
+- Pas d'installation
+
+Tout ce qui ajoute du poids est en option: templates d'export mobile, mono et C#...
+"
+scroll_active = false
