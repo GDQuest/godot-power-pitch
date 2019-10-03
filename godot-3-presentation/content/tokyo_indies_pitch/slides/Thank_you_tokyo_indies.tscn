@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slide/widgets/Column.tscn" type="PackedScene" id=2]
@@ -8,11 +8,9 @@
 [ext_resource path="res://slide/widgets/TextBox.tscn" type="PackedScene" id=6]
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=7]
 [ext_resource path="res://content/power_pitch/img/gdquest-business-card.png" type="Texture" id=8]
-[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=9]
 [ext_resource path="res://slide/widgets/Footer.tscn" type="PackedScene" id=10]
 
 [sub_resource type="GDScript" id=1]
-
 script/source = "tool
 extends Control
 
@@ -68,7 +66,6 @@ func get_translation_data():
 "
 
 [sub_resource type="GDScript" id=2]
-
 script/source = "tool
 extends Control
 
@@ -125,6 +122,7 @@ margin_right = 1921.0
 margin_bottom = 210.0
 script = SubResource( 1 )
 title = "Thank you!"
+subtitle = ""
 
 [node name="Body" parent="Column" index="1" instance=ExtResource( 4 )]
 anchor_right = 0.0
@@ -146,6 +144,7 @@ We are on:
 
 Twitter: [color=#26BFE3]@NathanGDquest[/color]
 YouTube: [color=#F2971A]youtube.com/c/gdquest[/color]"
+center = false
 
 [node name="Picture" parent="Column/Body/Row" index="1" instance=ExtResource( 7 )]
 anchor_right = 0.0
@@ -154,7 +153,6 @@ margin_left = 643.0
 margin_right = 1921.0
 margin_bottom = 730.0
 texture = ExtResource( 8 )
-script = ExtResource( 9 )
 
 [node name="Footer" parent="Column" index="2" instance=ExtResource( 10 )]
 visible = true
@@ -165,4 +163,3 @@ margin_top = 940.0
 margin_right = 1921.0
 margin_bottom = 1080.0
 text = "Any questions? Message me anytime or let's talk after the presentations!"
-

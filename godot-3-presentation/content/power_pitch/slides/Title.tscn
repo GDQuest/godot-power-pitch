@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://slide/Slide.tscn" type="PackedScene" id=1]
 [ext_resource path="res://slide/widgets/Picture.tscn" type="PackedScene" id=2]
 [ext_resource path="res://content/power_pitch/img/godot-pres-intro.png" type="Texture" id=3]
-[ext_resource path="res://presentation/legacy/PictureLegacy.gd" type="Script" id=4]
 
 [node name="Title" index="0" instance=ExtResource( 1 )]
 
@@ -13,5 +12,3 @@ anchor_bottom = 0.0
 margin_right = 1921.0
 margin_bottom = 1080.0
 texture = ExtResource( 3 )
-script = ExtResource( 4 )
-
