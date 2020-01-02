@@ -1,8 +1,6 @@
 extends Control
-"""
-Slideshow. Displays one child Control at a time and fades between them
-at constant time intervals.
-"""
+# Slideshow. Displays one child Control at a time and fades between them
+# at constant time intervals.
 
 
 onready var tween: = $Tween

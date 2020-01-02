@@ -1,8 +1,6 @@
 extends VideoPlayer
-"""
-Displays a video and forces its minimum size.
-Add pause support to VideoPlayer
-"""
+# Displays a video and forces its minimum size.
+# Add pause support to VideoPlayer
 
 
 export(String) var base_path: = 'res://content/video/'

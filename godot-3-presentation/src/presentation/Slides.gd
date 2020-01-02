@@ -1,9 +1,7 @@
 tool
 extends Node
-"""
-Container for presentation Slide Nodes.
-Controls the currently displayed Slide.
-"""
+# Container for presentation Slide Nodes.
+# Controls the currently displayed Slide.
 
 
 enum Directions {PREVIOUS = -1, CURRENT = 0, NEXT = 1}

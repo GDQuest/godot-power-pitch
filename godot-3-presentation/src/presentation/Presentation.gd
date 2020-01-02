@@ -49,10 +49,8 @@ func _on_TouchControls_slide_change_requested(direction: int) -> void:
 	slides.index_active += direction
 
 
-"""
-Returns a dictionary with a list of { translatable_string_uid: string }
-and the version of the project in which the data was generated
-"""
+# Returns a dictionary with a list of { translatable_string_uid: string }
+# and the version of the project in which the data was generated
 func get_translatable_strings() -> Dictionary:
 	var data: = []
 	for node in get_tree().get_nodes_in_group("translate"):
@@ -68,10 +66,8 @@ func get_translatable_strings() -> Dictionary:
 
 
 # TODO: Move to a PresentationSaver class
-"""
-Saves translation data from get_translatable_strings() to
-this scene's folder, as scene_name.csv
-"""
+# Saves translation data from get_translatable_strings() to
+# this scene's folder, as scene_name.csv
 func save_as_csv(translation_data) -> void:
 	var folder_path: = filename.left(filename.rfind("/") + 1)
 	var save_path: = folder_path + name + ".csv"

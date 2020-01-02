@@ -1,8 +1,6 @@
 extends Node
-"""
-Detects swipe gestures and generates InputEventSwipe events
-that are fed back into the engine.
-"""
+# Detects swipe gestures and generates InputEventSwipe events
+# that are fed back into the engine.
 
 
 signal swipe_canceled(start_position)
