@@ -1,10 +1,4 @@
-<h1 align="center">
-Godot Power Pitch</br>
-</h1>
-
-<p align='center'>
-  <img src="https://i.imgur.com/bm30rQI.png" alt="Godot Slides logo" />
-</p>
+# Godot Power Pitch
 
 Godot Power Pitch is a Free and Open-Source presentation of the [Godot game engine](https://godotengine.org/) running in the game engine. As it's a Godot game, you can:
 
