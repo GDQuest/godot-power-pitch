@@ -1,22 +1,21 @@
 <h1 align="center">
-Godot Slides 2.0</br>
-<small>Build beautiful and gamified presentations</small>
+Godot Power Pitch</br>
 </h1>
 
 <p align='center'>
   <img src="https://i.imgur.com/bm30rQI.png" alt="Godot Slides logo" />
 </p>
 
-Godot Slides a tool to create elegant slideshows with the Godot game engine, using drag and drop UI widget. As it's a Godot game, you can:
+Godot Power Pitch is a Free and Open-Source presentation of the [Godot game engine](https://godotengine.org/) running in the game engine. As it's a Godot game, you can:
 
 - Run **games inside your slides**
 - **Translate your presentations** into many languages with only a spreadsheet editor
 - **Animate anything** with the animation editor or tweens, add particles and sounds
 - Or even be creative and display the slides inside of a game!
 
-Godot Slides comes with the Power Pitch, a 10 minutes presentation of the engine available in multiple languages. It'll save you hours of work if you want to introduce Godot at meetups and other gamedev events. And you can customize it to better suit your needs!
+It'll save you hours of work if you want to introduce Godot at meetups and other gamedev events. And you can customize it to better suit your needs!
 
-⚠ 2018/10/20: the git history got a full rewrite to make the repository and the project 4 times lighter. If you cloned it before and want to contribute, please delete your working copy and re-download it.
+Power Pitch was made also a slideshow system made in Godot, that now became its own project: [Godot presentations](https://github.com/GDQuest/godot-presentations).
 
 ## Videos and articles
 
